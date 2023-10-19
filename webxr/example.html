@@ -36,7 +36,7 @@
 
 				scene = new THREE.Scene();
 
-				//camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 0.1, 10 );
+				//camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 10 );
 				//camera.position.set( 0, 1.6, 1.5 );
 
                 camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -88,7 +88,7 @@
         function render() {
 
             plane.rotation.x += 0.005;
-            plane.rotation.y += 0.005;
+            //plane.rotation.y += 0.005;
 
             renderer.render( scene, camera );
 
