@@ -47,8 +47,8 @@ const planegeometry2 = new THREE.PlaneGeometry(8, 4.5);
 const planegeometry3 = new THREE.PlaneGeometry(8, 4.5);
                 const material = new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load('UWEcyber-desktop-red.png') });
 
-planegeometry1.translate( -0.5, 0, 0 );
-planegeometry2.translate( +0.5, 0, 0 );
+planegeometry1.translate( -2.5, 0, 0 );
+planegeometry2.translate( +2.5, 0, 0 );
 
                 plane1 = new THREE.Mesh(planegeometry1, material);
                 plane2 = new THREE.Mesh(planegeometry2, material);
@@ -95,13 +95,19 @@ scene.add(plane3);
 
         function render() {
 
+		plane1.rotation.y = -0.05;
+
+		plane2.rotation.y = +0.05;
+
+		//plane3.rotation.y += 0.005;
+
             //plane.rotation.x += 0.005;
 
-		plane1.rotation.x += 0.005;
+		//plane1.rotation.x += 0.005;
 
-		plane2.rotation.y += 0.005;
+		//plane2.rotation.y += 0.005;
 
-		plane3.rotation.z += 0.005;
+		//plane3.rotation.z += 0.005;
 		
             //plane.rotation.y += 0.005;
 
