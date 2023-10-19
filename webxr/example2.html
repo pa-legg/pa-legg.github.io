@@ -116,6 +116,18 @@ scene.add(plane3);
 
         }
 
+	renderer.xr.addEventListener('sessionstart', () => {
+
+                renderer.xr.getCamera().position.copy( camera.position);
+
+                renderer.xr.getCamera().lookAt( camera.target );
+
+                //camera.position.copy(renderer.xr.getCamera().position);
+
+                console.log("pos", renderer.xr.getCamera().position);
+
+            });
+
 
 
 
