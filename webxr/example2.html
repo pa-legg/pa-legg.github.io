@@ -13,6 +13,10 @@
           }
         }
       </script>
+
+<style>
+	#starting-position {transform: translateZ(1) rotateY(-90deg);}
+</style>
 </head>
 <body>
 
@@ -71,7 +75,7 @@ scene.add(plane3);
 				renderer.toneMappingExposure = 1;
 				document.body.appendChild( renderer.domElement );
 
-				document.body.appendChild( XRButton.createButton( renderer ) );
+				document.body.appendChild( XRButton.createButton( renderer, 'starting-position' ) );
 
 				window.addEventListener( 'resize', onWindowResize );
 
