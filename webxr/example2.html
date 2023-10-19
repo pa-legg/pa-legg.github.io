@@ -47,8 +47,8 @@ const planegeometry2 = new THREE.PlaneGeometry(8, 4.5);
 const planegeometry3 = new THREE.PlaneGeometry(8, 4.5);
                 const material = new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load('UWEcyber-desktop-red.png') });
 
-planegeometry1.translate( -5, 0, 0 );
-planegeometry2.translate( +5, 0, 0 );
+planegeometry1.translate( -0.1, 0, 0 );
+planegeometry2.translate( +0.1, 0, 0 );
 
                 plane1 = new THREE.Mesh(planegeometry1, material);
                 plane2 = new THREE.Mesh(planegeometry2, material);
