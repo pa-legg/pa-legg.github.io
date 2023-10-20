@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01 INTRODUCTION TO CYBER SECURITY DATA ANALYTICS &#8212; Cyber Security Analytics</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="02 SECURITY OPERATIONS AND INCIDENT MANAGEMENT" href="book-02-operationsandinfrastructure.html" />
+    <link rel="prev" title="CYBER SECURITY ANALYTICS" href="book-00-csa_start.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/uwecyber.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Cyber Security Analytics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-00-csa_start.html">
+   CYBER SECURITY ANALYTICS
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   01 INTRODUCTION TO CYBER SECURITY DATA ANALYTICS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-02-operationsandinfrastructure.html">
+   02 SECURITY OPERATIONS AND INCIDENT MANAGEMENT
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-03-operationsandmonitoring.html">
+   03 SECURITY OPERATIONS AND MONITORING
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-04-machinelearningandvisualisation.html">
+   04 MACHINE LEARNING AND VISUALISATION
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-05-cybertoolsthreatvuln.html">
+   05 CYBER SECURITY ANALYTICS TOOLS - THREAT HUNTING
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-06-cybertoolsincidentresp.html">
+   06 CYBER SECURITY ANALYTICS TOOLS - INCIDENT RESPONSE
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-07-malwareanalysis.html">
+   07 MALWARE ANALYSIS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-08-furtherresearch.html">
+   08 FURTHER RESEARCH DIRECTIONS
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/book-01-csa_intro.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   01 INTRODUCTION TO CYBER SECURITY DATA ANALYTICS
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-do-we-mean-by-cyber-security-data-analytics">
+     What do we mean by cyber security data analytics?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#security-data-visualisation-skills">
+   Security Data Visualisation Skills
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ai-and-cyber-security">
+   AI and Cyber Security
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-to-expect-from-the-cyber-security-analytics-module">
+   What to expect from the Cyber Security Analytics module?
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#educational-aims">
+     Educational Aims
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#outline-syllabus">
+     Outline Syllabus
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assessment-strategy">
+     Assessment Strategy
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>01 INTRODUCTION TO CYBER SECURITY DATA ANALYTICS</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   01 INTRODUCTION TO CYBER SECURITY DATA ANALYTICS
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-do-we-mean-by-cyber-security-data-analytics">
+     What do we mean by cyber security data analytics?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#security-data-visualisation-skills">
+   Security Data Visualisation Skills
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ai-and-cyber-security">
+   AI and Cyber Security
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-to-expect-from-the-cyber-security-analytics-module">
+   What to expect from the Cyber Security Analytics module?
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#educational-aims">
+     Educational Aims
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#outline-syllabus">
+     Outline Syllabus
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assessment-strategy">
+     Assessment Strategy
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="introduction-to-cyber-security-data-analytics">
+<h1>01 INTRODUCTION TO CYBER SECURITY DATA ANALYTICS<a class="headerlink" href="#introduction-to-cyber-security-data-analytics" title="Permalink to this headline">¶</a></h1>
+<p>The modern world is dependent on information systems, whether it be for conducting business, managing large-scale national infrastructure, or be it for socialising and leisure activities as part of society. Underpinning these systems is <strong>data</strong>, which as an information asset is extremely valuable both in our professional and personal lives. Businesses and individuals alike can become vulnerable to threats that undermine the confidentiality, integrity or accessibility of vital information assets. The consequences of such incidents can be significant to organisations, leading to loss of reputation, damage to assets, regulatory fines or result in physical injury. <a class="reference external" href="https://www.gov.uk/government/publications/crowded-places-guidance/cyber-security">More details…</a></p>
+<p>If <a class="reference external" href="https://www.ncsc.gov.uk/section/about-ncsc/what-is-cyber-security">cyber security is how individuals and organisations reduce the risk of cyber attack</a>, then Cyber Security Analytics is concerned with how we translate this concept into something actionable, through data science. Security is <em><strong>all about data</strong></em>. When we seek to detect cyber threats, we are analysing data in the form of files, logs, network packets and other artifacts. (See <em>Why Data Science Matters for Security</em> in <a class="reference external" href="https://www.malwaredatascience.com/">Malware Data Science</a>). Furthermore, the threat landscape has dramatically increased, and therefore hand-crafted manual processes alone for analysing malicious activities will not suffice. The combination of automated tooling for data gathering and analysis, coupled with human reasoning and understanding, makes for a powerful team. Having effective processes - such as gathering, storing, transforming, analysing and visualising data, as typically performed in data science - are crucial then for identifying and understanding potential risks, and fundamentally for responding and mitigating the impact on organisations and individual. Cyber Security Analytics is about well-informed decision making and improving our cyber situational awareness.</p>
+<p>In this section, we will cover:</p>
+<ul class="simple">
+<li><p>What do we mean by cyber security data analytics?</p></li>
+<li><p>Data science and machine learning in cyber security.</p></li>
+</ul>
+<div class="section" id="what-do-we-mean-by-cyber-security-data-analytics">
+<h2>What do we mean by cyber security data analytics?<a class="headerlink" href="#what-do-we-mean-by-cyber-security-data-analytics" title="Permalink to this headline">¶</a></h2>
+<p>For an organisation to be secure, a clear understanding of the operational environment is required. This is often described as <a class="reference external" href="https://en.wikipedia.org/wiki/Situation_awareness">situational awareness</a>, which is the perception of environmental elements and events, the comprehension of their meaning, and the projection of their future states. Increasingly, organisations are deploying <strong>security operations centres (SOC)</strong>, where analysts will seek to identify suspicious behaviour and understand the context and relevance to the organisational mission, often using <strong>Security Information and Event Management (SIEM)</strong> systems.</p>
+<p>Technology underpins modern organisations and having insight into the business operational environment is crucial to protect it. As a first stage, ensuring the safe and correct operation of our computer systems, and our networking infrastructure is a good place to start. Network traffic data (e.g., packet captures) can help to indicate what data has been communicated over a network, and what actions have been carried out as a result of this (e.g., access to a particular URL, or downloading of large files). Intrusion Detection Systems (IDS) are commonly used to inspect networking inbound and outbound network traffic, to identify suspicious activities. IDSs will generate log files, and these logs constitute another informative data attribute. Similarly, firewall rules can help understand how the network is configured, and Intrusion Prevention Systems (IPS) will make decisions and act on IDS activity to prevent potential harm.</p>
+<p>The remit of cyber security is far and wide and goes beyond traditional computers and network security. A holistic view is required of what we want to protect, and what attack vectors may be used to gain access. Therefore, aspects such as physical security, people security, and process security also need to be understood. Physical security may require CCTV, IoT sensor monitoring or GPS tracking. People security may require text analytics of social media and email usage. Process security may require analysis of business process models, supply chain security, organisational hierarchy information, and operational practice. Technology continues to influence how we conduct business across the global, and therefore we need to ensure that we understand our threat landscape and have clear monitoring in place to understand potential harms. In many cases, we are interested in spatial-temporal data, i.e., in what location did the activity occur and at what time? Given our highly connected society, location is becoming increasingly challenging (are we looking at the location of the attacker, the location of the data, the location of the breached system?), and as for time, devices are logging activities faster than we can humanly inspect them. There is then the need for big data cyber security analytics – to make this flow of data manageable and insightful, to highlight key attributes in the data, and to enable informed decisions to be made to respond and react to potential threats.</p>
+<p><strong>Security is about understanding systems, the people, and the processes that act upon these systems, such that they remain secure.</strong> Can we ever be fully secure? Probably not, but with greater insight of observed activities, we can manage this more effectively. Data analytics and visualisation techniques are one step towards achieving this.</p>
+<p><img alt="Alt text" src="_images/image2.jpeg" /></p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="security-data-visualisation-skills">
+<h1>Security Data Visualisation Skills<a class="headerlink" href="#security-data-visualisation-skills" title="Permalink to this headline">¶</a></h1>
+<p>Data science and security analytics requires a blend of skills that combines the ability to manipulate data, the understanding of statistical techniques, and the domain knowledge of what information is relevant and important for the purpose of informing a security investigation.</p>
+<ul class="simple">
+<li><p><strong>Cyber Security Substantive Expertise:</strong> This is the security domain knowledge, which will enable the security practitioner to understand the data, determine what is expected and find anomalies or metrics from visualization.</p></li>
+<li><p><strong>Data Hacking Skills:</strong> Data hacking skills are the skills from a data scientist language required for working with massive amount of data that should be acquired, cleaned and sanitized.</p></li>
+<li><p><strong>Math &amp; Statistics Knowledge:</strong> This knowledge is critical to understand which tools to use, understand the spread and other characteristics to derive insight from the data.</p></li>
+</ul>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="ai-and-cyber-security">
+<h1>AI and Cyber Security<a class="headerlink" href="#ai-and-cyber-security" title="Permalink to this headline">¶</a></h1>
+<p>DarkTrace, CheckPoint, Symantec, Sophos, FireEye, Cynet, Fortinet, Vectra, and Cylance. These are just a handful of vendors that now use Artificial Intelligence and Machine Learning as a part of their products and services for cyber security defence – there are plenty others too, but this just gives you <a class="reference external" href="https://www.comparitech.com/blog/information-security/leading-ai-cybersecurity-companies/">an impression of the direction that the industry is moving in</a>.</p>
+<p>Cyber security requires a holistic view to identify what should be protected, and how may it be vulnerable to attack. The volume of data generated by today’s systems means that humans cannot analyse this raw data effectively. With AI and machine learning techniques, we can filter and manage data observations, whilst visualisation can help human analysts understand and communicate about observations and appropriate responsive actions.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="what-to-expect-from-the-cyber-security-analytics-module">
+<h1>What to expect from the Cyber Security Analytics module?<a class="headerlink" href="#what-to-expect-from-the-cyber-security-analytics-module" title="Permalink to this headline">¶</a></h1>
+<p>In many organisations, the role of a cyber security analyst is to help protect an organisation by deploying a range of techniques and processes that can help to prevent, detect and manage cyber threats. Such threats may relate to network-based attacks and malware attacks, where an external actor is attempting to gain access to confidential information, or conducting a denial of service attack to compromise availability of services. Other threats may include insider threats, including the leaking of company secrets, data exfiltration, and accidental or social engineering attacks. This module will study the role of cyber security analytics, covering the technologies used in industry, the role of data analytics, statistics and machine learning to support analytical reasoning, and the domain-specific attributes relating to networking, malware and insider threat analysis, including the development of analytical testing environments and the use of industry-based tools to examine these threats.</p>
+<div class="section" id="educational-aims">
+<h2>Educational Aims<a class="headerlink" href="#educational-aims" title="Permalink to this headline">¶</a></h2>
+<p>This module will help students to understand the role of data analytics in the context of cyber security. It will address the common job role of cyber security analyst, often working security operations environments, and focus on the tasks and practices required for to examine, identify, assess and mitigate against active cyber threats. The module will introduce tools and techniques to support this function, including Security Incident and Event Management (SIEM) systems, and practical programming tasks for examining common threats in data streams such as networking traffic and computer activity.</p>
+</div>
+<div class="section" id="outline-syllabus">
+<h2>Outline Syllabus<a class="headerlink" href="#outline-syllabus" title="Permalink to this headline">¶</a></h2>
+<p>Purpose of a cyber security analyst, and common tools used</p>
+<ul class="simple">
+<li><p>Python, Bash, Linux, Wireshark, tshark, tcpdump</p></li>
+</ul>
+<p>Security Information and Event Management (SIEM) and Security Orchestration and Automated Response (SOAR) tools</p>
+<ul class="simple">
+<li><p>Splunk, ELK, SecurityOnion</p></li>
+</ul>
+<p>Intrusion detection and Intrusion Prevention</p>
+<ul class="simple">
+<li><p>Snort, Suricata</p></li>
+</ul>
+<p>Development of virtualised simulation environments for generating and analysing data</p>
+<ul class="simple">
+<li><p>VMware, Scapy, custom scripting</p></li>
+</ul>
+<p>Big data analytics for cyber security, machine learning concepts</p>
+<ul class="simple">
+<li><p>Unsupervised, supervised</p></li>
+</ul>
+<p>Use cases of cyber security analytics</p>
+<ul class="simple">
+<li><p>Network traffic analysis, malware analysis, user behavioural analysis, linguistic analysis</p></li>
+</ul>
+</div>
+<div class="section" id="assessment-strategy">
+<h2>Assessment Strategy<a class="headerlink" href="#assessment-strategy" title="Permalink to this headline">¶</a></h2>
+<p>Students will produce a practical portfolio of work as their final module assessment, worth 100% of the module. Portfolio tasks will build cumulatively, starting with initial design and configuration of an experimentation testbed, integration with a SIEM, generation and analysis of sample data, and investigation and response to some security incident. Students will learn the end-to-end process of data generation, collection, aggregation, analysis, and response, using a practical experimental testbed that they have designed and developed. As part of the portfolio task, students will be expected to demonstrate the functionality of their system through a narrated video demonstration.</p>
+<div class="admonition-module-preparation admonition">
+<p class="admonition-title">Module Preparation</p>
+<p>W3 Schools provide an excellent primer to the many different domains of Cyber security. The course will address four key areas related to this module: <a class="reference external" href="https://www.w3schools.com/cybersecurity/index.php">Cyber Security</a>, <a class="reference external" href="https://www.w3schools.com/cybersecurity/cybersecurity_networking.php">Networking</a>, <a class="reference external" href="https://www.w3schools.com/cybersecurity/cybersecurity_mapping_port_scanning.php">Cyber Attacks</a> and <a class="reference external" href="https://www.w3schools.com/cybersecurity/cybersecurity_security_operations.php">Cyber Defence</a>. <strong>You should complete this tutorial so that you have a fundamental understanding of these introductory topic areas, which we serve as a starting point to delve deeper during this module.</strong> <a class="reference external" href="https://www.w3schools.com/cybersecurity/index.php">More details at W3 Schools…</a></p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="book-00-csa_start.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">CYBER SECURITY ANALYTICS</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="book-02-operationsandinfrastructure.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">02 SECURITY OPERATIONS AND INCIDENT MANAGEMENT</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Prof. Phil Legg<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
