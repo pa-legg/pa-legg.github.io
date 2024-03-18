@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>2324-lab-08-splunk_attack_range</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>2324-lab-XX-scapy_examples</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14581,14 +14581,203 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><img src="https://pa-legg.github.io/images/uwe_banner.png"></p>
-<h1 id="UFCFFY-15-M-Cyber-Security-Analytics">UFCFFY-15-M Cyber Security Analytics<a class="anchor-link" href="#UFCFFY-15-M-Cyber-Security-Analytics">&#182;</a></h1><h2 id="Practical-Lab-8:-Splunk-Attack-Range">Practical Lab 8: Splunk Attack Range<a class="anchor-link" href="#Practical-Lab-8:-Splunk-Attack-Range">&#182;</a></h2><hr>
-<p>In this lab, we will experiment with the Splunk Attack Range. Firstly, we will want to use the UWEcyber 2022 (Ubuntu 20.04) image as a base operating system to work from. We also need to ensure that <strong><em>virtualise VT-x</em></strong> is enabled in VMware for this VM, so that we can virtualise systems within the host VM. Finally, this requires a fair amount of RAM to do so, therefore you may consider using a UWE lab machine if you have less than 32GB available on your machine.</p>
-<p>You will find the full documentation for the Splunk Attack Range and the follow URL: <a href="https://github.com/splunk/attack_range">https://github.com/splunk/attack_range</a>. Below we highlight the key details for getting up and running.</p>
-<p><strong>Follow the commands below within your Terminal environment, in your UWEcyber VM</strong></p>
+<h1 id="Using-Scapy-to-send-Network-Packets">Using Scapy to send Network Packets<a class="anchor-link" href="#Using-Scapy-to-send-Network-Packets">&#182;</a></h1><p>This notebook is to explore the use of Scapy, a network packet tool developed in Python. Scapy can be used as a standalone application or as a Python library - we will use the library to keep within our notebook environment.</p>
+<p>Note: To execute most commands in Scapy, you will require root priviledges. It is not recommended to typically start JupyterLab with root  riviledges, however we will do so purely for the purpose of this lab activity. For JupyterLab, you can start your notebook session by typing:</p>
+<ul>
+<li><strong>sudo python -m jupyterlab --allow-root</strong></li>
+</ul>
+<p>You should open Wireshark on your UWEcyber VM whilst interacting with this notebook, to observe the traffic behaviour.</p>
+<p>For the first tasks below, use the 'icmp' filter in Wireshark on your network interface.</p>
+<p>You will find more useful resources for Scapy at:</p>
+<ul>
+<li><a href="https://scapy.net/">https://scapy.net/</a></li>
+<li><a href="https://thepacketgeek.com/scapy/building-network-tools/">https://thepacketgeek.com/scapy/building-network-tools/</a></li>
+</ul>
 
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scapy.all</span> <span class="kn">import</span> <span class="n">ICMP</span><span class="p">,</span> <span class="n">IP</span><span class="p">,</span> <span class="n">sr1</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">sr1</span><span class="p">(</span><span class="n">IP</span><span class="p">(</span><span class="n">dst</span><span class="o">=</span><span class="s2">&quot;192.168.59.200&quot;</span><span class="p">)</span><span class="o">/</span><span class="n">ICMP</span><span class="p">())</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Begin emission:
+Finished sending 1 packets.
+
+Received 2 packets, got 1 answers, remaining 0 packets
+.*IP / ICMP 192.168.59.200 &gt; 192.168.59.136 echo-reply 0 / Padding
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scapy.all</span> <span class="kn">import</span> <span class="n">sniff</span>
+
+<span class="n">pkts</span> <span class="o">=</span> <span class="n">sniff</span><span class="p">(</span><span class="nb">filter</span><span class="o">=</span><span class="s2">&quot;arp&quot;</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pkts</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Ether / ARP who has 192.168.0.154 says 0.0.0.0 / Padding
+Ether / ARP who has 192.168.0.104 says 192.168.0.104 / Padding
+Ether / ARP who has 192.168.0.1 says 192.168.0.154 / Padding
+Ether / ARP who has 192.168.0.1 says 192.168.0.139 / Padding
+Ether / ARP who has 192.168.0.240 says 192.168.0.240 / Padding
+Ether / ARP who has 192.168.0.1 says 192.168.0.194 / Padding
+Ether / ARP who has 192.168.0.1 says 192.168.0.25
+Ether / ARP is at ac:f8:cc:c6:f9:8b says 192.168.0.1 / Padding
+Ether / ARP who has 192.168.0.50 says 192.168.0.50 / Padding
+Ether / ARP who has 192.168.0.35 says 192.168.0.35 / Padding
+None
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scapy.all</span> <span class="kn">import</span> <span class="n">ARP</span><span class="p">,</span> <span class="n">sniff</span>
+
+<span class="k">def</span> <span class="nf">arp_display</span><span class="p">(</span><span class="n">pkt</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">pkt</span><span class="p">[</span><span class="n">ARP</span><span class="p">]</span><span class="o">.</span><span class="n">op</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># who-has (request)</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Request: </span><span class="si">{</span><span class="n">pkt</span><span class="p">[</span><span class="n">ARP</span><span class="p">]</span><span class="o">.</span><span class="n">psrc</span><span class="si">}</span><span class="s2"> is asking about </span><span class="si">{</span><span class="n">pkt</span><span class="p">[</span><span class="n">ARP</span><span class="p">]</span><span class="o">.</span><span class="n">pdst</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">if</span> <span class="n">pkt</span><span class="p">[</span><span class="n">ARP</span><span class="p">]</span><span class="o">.</span><span class="n">op</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>  <span class="c1"># is-at (response)</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;*Response: </span><span class="si">{</span><span class="n">pkt</span><span class="p">[</span><span class="n">ARP</span><span class="p">]</span><span class="o">.</span><span class="n">hwsrc</span><span class="si">}</span><span class="s2"> has address </span><span class="si">{</span><span class="n">pkt</span><span class="p">[</span><span class="n">ARP</span><span class="p">]</span><span class="o">.</span><span class="n">psrc</span><span class="si">}</span><span class="s2">&quot;</span>
+
+<span class="n">sniff</span><span class="p">(</span><span class="n">prn</span><span class="o">=</span><span class="n">arp_display</span><span class="p">,</span> <span class="nb">filter</span><span class="o">=</span><span class="s2">&quot;arp&quot;</span><span class="p">,</span> <span class="n">store</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Request: 192.168.0.23 is asking about 192.168.0.23
+Request: 192.168.0.52 is asking about 192.168.0.52
+Request: 192.168.0.100 is asking about 192.168.0.1
+Request: 192.168.0.233 is asking about 192.168.0.233
+Request: 192.168.0.104 is asking about 192.168.0.104
+Request: 192.168.0.15 is asking about 192.168.0.1
+Request: 0.0.0.0 is asking about 192.168.0.154
+Request: 192.168.0.240 is asking about 192.168.0.240
+Request: 192.168.0.50 is asking about 192.168.0.50
+Request: 192.168.0.35 is asking about 192.168.0.35
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;Sniffed: TCP:0 UDP:0 ICMP:0 Other:0&gt;</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14596,19 +14785,67 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Making-a-Christmas-Tree-Packet">Making a Christmas Tree Packet<a class="anchor-link" href="#Making-a-Christmas-Tree-Packet">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+<span class="kn">from</span> <span class="nn">scapy.all</span> <span class="kn">import</span> <span class="n">IP</span><span class="p">,</span> <span class="n">TCP</span><span class="p">,</span> <span class="n">send</span>
 
-<pre><code>#!/bin/bash
-sudo apt-get update
-sudo apt-get install -y python3-dev linux-headers-generic python-dev unzip python3-pip vagrant virtualbox virtualbox-dkms python3-virtualenv git
-sudo gem install winrm-elevated
-sudo gem install winrm
-sudo apt install ansible
-git clone https://github.com/splunk/attack_range_local
-ansible-galaxy collection install community.windows</code></pre>
+<span class="c1"># Create the skeleton of our packet</span>
+<span class="n">template</span> <span class="o">=</span> <span class="n">IP</span><span class="p">(</span><span class="n">dst</span><span class="o">=</span><span class="s2">&quot;192.168.59.200&quot;</span><span class="p">)</span><span class="o">/</span><span class="n">TCP</span><span class="p">()</span>
+
+<span class="c1"># Start lighting up those bits!</span>
+<span class="n">template</span><span class="p">[</span><span class="n">TCP</span><span class="p">]</span><span class="o">.</span><span class="n">flags</span> <span class="o">=</span> <span class="s1">&#39;UFP&#39;</span>
+
+<span class="c1"># Create a list with a large number of packets to send</span>
+<span class="c1"># Each packet will have a random TCP dest port for attack obfuscation</span>
+<span class="n">xmas</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">pktNum</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">):</span>
+  <span class="n">xmas</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">template</span><span class="p">)</span>
+  <span class="n">xmas</span><span class="p">[</span><span class="n">pktNum</span><span class="p">][</span><span class="n">TCP</span><span class="p">]</span><span class="o">.</span><span class="n">dport</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">65535</span><span class="p">)</span>
+
+<span class="c1"># Send the list of packets</span>
+<span class="n">send</span><span class="p">(</span><span class="n">xmas</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>....................................................................................................
+Sent 100 packets.
+</pre>
+</div>
+</div>
 
 </div>
+
 </div>
-</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14616,12 +14853,238 @@ ansible-galaxy collection install community.windows</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>You can use a script to execute the above commands.</p>
-<p>Below, execute these as single lines in your terminal.</p>
+<h1 id="DNS">DNS<a class="anchor-link" href="#DNS">&#182;</a></h1>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scapy.all</span> <span class="kn">import</span> <span class="n">DNS</span><span class="p">,</span> <span class="n">DNSQR</span><span class="p">,</span> <span class="n">IP</span><span class="p">,</span> <span class="n">sr1</span><span class="p">,</span> <span class="n">UDP</span>
+
+<span class="n">dns_req</span> <span class="o">=</span> <span class="n">IP</span><span class="p">(</span><span class="n">dst</span><span class="o">=</span><span class="s1">&#39;8.8.8.8&#39;</span><span class="p">)</span><span class="o">/</span><span class="n">UDP</span><span class="p">(</span><span class="n">dport</span><span class="o">=</span><span class="mi">53</span><span class="p">)</span><span class="o">/</span><span class="n">DNS</span><span class="p">(</span><span class="n">rd</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">qd</span><span class="o">=</span><span class="n">DNSQR</span><span class="p">(</span><span class="n">qname</span><span class="o">=</span><span class="s1">&#39;www.thepacketgeek.com&#39;</span><span class="p">))</span>
+<span class="n">answer</span> <span class="o">=</span> <span class="n">sr1</span><span class="p">(</span><span class="n">dns_req</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">answer</span><span class="p">[</span><span class="n">DNS</span><span class="p">]</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>DNS Ans &#34;b&#39;thepacketgeek.github.io.&#39;&#34; 
+</pre>
+</div>
+</div>
 
 </div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scapy.all</span> <span class="kn">import</span> <span class="n">DNS</span><span class="p">,</span> <span class="n">DNSQR</span><span class="p">,</span> <span class="n">IP</span><span class="p">,</span> <span class="n">sr1</span><span class="p">,</span> <span class="n">UDP</span>
+
+<span class="n">dns_req</span> <span class="o">=</span> <span class="n">IP</span><span class="p">(</span><span class="n">dst</span><span class="o">=</span><span class="s1">&#39;8.8.8.8&#39;</span><span class="p">)</span><span class="o">/</span><span class="n">UDP</span><span class="p">(</span><span class="n">dport</span><span class="o">=</span><span class="mi">53</span><span class="p">)</span><span class="o">/</span><span class="n">DNS</span><span class="p">(</span><span class="n">rd</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">qd</span><span class="o">=</span><span class="n">DNSQR</span><span class="p">(</span><span class="n">qname</span><span class="o">=</span><span class="s1">&#39;uwe.ac.uk&#39;</span><span class="p">))</span>
+<span class="n">answer</span> <span class="o">=</span> <span class="n">sr1</span><span class="p">(</span><span class="n">dns_req</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">answer</span><span class="p">[</span><span class="n">DNS</span><span class="p">]</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
+</pre></div>
+
+     </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>DNS Ans &#34;164.11.4.40&#34; 
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scapy.all</span> <span class="kn">import</span> <span class="n">DNS</span><span class="p">,</span> <span class="n">DNSQR</span><span class="p">,</span> <span class="n">DNSRR</span><span class="p">,</span> <span class="n">IP</span><span class="p">,</span> <span class="n">send</span><span class="p">,</span> <span class="n">sniff</span><span class="p">,</span> <span class="n">sr1</span><span class="p">,</span> <span class="n">UDP</span>
+
+<span class="n">IFACE</span> <span class="o">=</span> <span class="s2">&quot;lo0&quot;</span>   <span class="c1"># Or your default interface</span>
+<span class="n">DNS_SERVER_IP</span> <span class="o">=</span> <span class="s2">&quot;127.0.0.1&quot;</span>  <span class="c1"># Your local IP</span>
+
+<span class="n">BPF_FILTER</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;udp port 53 and ip dst </span><span class="si">{</span><span class="n">DNS_SERVER_IP</span><span class="si">}</span><span class="s2">&quot;</span>
+
+
+<span class="k">def</span> <span class="nf">dns_responder</span><span class="p">(</span><span class="n">local_ip</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">forward_dns</span><span class="p">(</span><span class="n">orig_pkt</span><span class="p">:</span> <span class="n">IP</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Forwarding: </span><span class="si">{</span><span class="n">orig_pkt</span><span class="p">[</span><span class="n">DNSQR</span><span class="p">]</span><span class="o">.</span><span class="n">qname</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">sr1</span><span class="p">(</span>
+            <span class="n">IP</span><span class="p">(</span><span class="n">dst</span><span class="o">=</span><span class="s1">&#39;8.8.8.8&#39;</span><span class="p">)</span><span class="o">/</span>
+                <span class="n">UDP</span><span class="p">(</span><span class="n">sport</span><span class="o">=</span><span class="n">orig_pkt</span><span class="p">[</span><span class="n">UDP</span><span class="p">]</span><span class="o">.</span><span class="n">sport</span><span class="p">)</span><span class="o">/</span>
+                <span class="n">DNS</span><span class="p">(</span><span class="n">rd</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="n">orig_pkt</span><span class="p">[</span><span class="n">DNS</span><span class="p">]</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">qd</span><span class="o">=</span><span class="n">DNSQR</span><span class="p">(</span><span class="n">qname</span><span class="o">=</span><span class="n">orig_pkt</span><span class="p">[</span><span class="n">DNSQR</span><span class="p">]</span><span class="o">.</span><span class="n">qname</span><span class="p">)),</span>
+            <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">resp_pkt</span> <span class="o">=</span> <span class="n">IP</span><span class="p">(</span><span class="n">dst</span><span class="o">=</span><span class="n">orig_pkt</span><span class="p">[</span><span class="n">IP</span><span class="p">]</span><span class="o">.</span><span class="n">src</span><span class="p">,</span> <span class="n">src</span><span class="o">=</span><span class="n">DNS_SERVER_IP</span><span class="p">)</span><span class="o">/</span><span class="n">UDP</span><span class="p">(</span><span class="n">dport</span><span class="o">=</span><span class="n">orig_pkt</span><span class="p">[</span><span class="n">UDP</span><span class="p">]</span><span class="o">.</span><span class="n">sport</span><span class="p">)</span><span class="o">/</span><span class="n">DNS</span><span class="p">()</span>
+        <span class="n">resp_pkt</span><span class="p">[</span><span class="n">DNS</span><span class="p">]</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="n">DNS</span><span class="p">]</span>
+        <span class="n">send</span><span class="p">(</span><span class="n">resp_pkt</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Responding to </span><span class="si">{</span><span class="n">orig_pkt</span><span class="p">[</span><span class="n">IP</span><span class="p">]</span><span class="o">.</span><span class="n">src</span><span class="si">}</span><span class="s2">&quot;</span>
+
+    <span class="k">def</span> <span class="nf">get_response</span><span class="p">(</span><span class="n">pkt</span><span class="p">:</span> <span class="n">IP</span><span class="p">):</span>
+        <span class="k">if</span> <span class="p">(</span>
+            <span class="n">DNS</span> <span class="ow">in</span> <span class="n">pkt</span> <span class="ow">and</span>
+            <span class="n">pkt</span><span class="p">[</span><span class="n">DNS</span><span class="p">]</span><span class="o">.</span><span class="n">opcode</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span>
+            <span class="n">pkt</span><span class="p">[</span><span class="n">DNS</span><span class="p">]</span><span class="o">.</span><span class="n">ancount</span> <span class="o">==</span> <span class="mi">0</span>
+        <span class="p">):</span>
+            <span class="k">if</span> <span class="s2">&quot;trailers.apple.com&quot;</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">pkt</span><span class="p">[</span><span class="s2">&quot;DNS Question Record&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">qname</span><span class="p">):</span>
+                <span class="n">spf_resp</span> <span class="o">=</span> <span class="n">IP</span><span class="p">(</span><span class="n">dst</span><span class="o">=</span><span class="n">pkt</span><span class="p">[</span><span class="n">IP</span><span class="p">]</span><span class="o">.</span><span class="n">src</span><span class="p">)</span><span class="o">/</span><span class="n">UDP</span><span class="p">(</span><span class="n">dport</span><span class="o">=</span><span class="n">pkt</span><span class="p">[</span><span class="n">UDP</span><span class="p">]</span><span class="o">.</span><span class="n">sport</span><span class="p">,</span> <span class="n">sport</span><span class="o">=</span><span class="mi">53</span><span class="p">)</span><span class="o">/</span><span class="n">DNS</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">pkt</span><span class="p">[</span><span class="n">DNS</span><span class="p">]</span><span class="o">.</span><span class="n">id</span><span class="p">,</span><span class="n">ancount</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">an</span><span class="o">=</span><span class="n">DNSRR</span><span class="p">(</span><span class="n">rrname</span><span class="o">=</span><span class="n">pkt</span><span class="p">[</span><span class="n">DNSQR</span><span class="p">]</span><span class="o">.</span><span class="n">qname</span><span class="p">,</span> <span class="n">rdata</span><span class="o">=</span><span class="n">local_ip</span><span class="p">)</span><span class="o">/</span><span class="n">DNSRR</span><span class="p">(</span><span class="n">rrname</span><span class="o">=</span><span class="s2">&quot;trailers.apple.com&quot;</span><span class="p">,</span><span class="n">rdata</span><span class="o">=</span><span class="n">local_ip</span><span class="p">))</span>
+                <span class="n">send</span><span class="p">(</span><span class="n">spf_resp</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">iface</span><span class="o">=</span><span class="n">IFACE</span><span class="p">)</span>
+                <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Spoofed DNS Response Sent: </span><span class="si">{</span><span class="n">pkt</span><span class="p">[</span><span class="n">IP</span><span class="p">]</span><span class="o">.</span><span class="n">src</span><span class="si">}</span><span class="s2">&quot;</span>
+
+            <span class="k">else</span><span class="p">:</span>
+                <span class="c1"># make DNS query, capturing the answer and send the answer</span>
+                <span class="k">return</span> <span class="n">forward_dns</span><span class="p">(</span><span class="n">pkt</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">get_response</span>
+
+<span class="n">sniff</span><span class="p">(</span><span class="nb">filter</span><span class="o">=</span><span class="n">BPF_FILTER</span><span class="p">,</span> <span class="n">prn</span><span class="o">=</span><span class="n">dns_responder</span><span class="p">(</span><span class="n">DNS_SERVER_IP</span><span class="p">),</span> <span class="n">iface</span><span class="o">=</span><span class="n">IFACE</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">OSError</span>                                   Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [16], line 41</span>
+<span class="ansi-green-intense-fg ansi-bold">     37</span>                 <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> forward_dns(pkt)
+<span class="ansi-green-intense-fg ansi-bold">     39</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> get_response
+<span class="ansi-green-fg">---&gt; 41</span> <span class="ansi-yellow-bg">sniff</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">filter</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">BPF_FILTER</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">prn</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">dns_responder</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">DNS_SERVER_IP</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">iface</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">IFACE</span><span class="ansi-yellow-bg">)</span>
+
+File <span class="ansi-green-fg">/usr/local/lib/python3.8/dist-packages/scapy/sendrecv.py:1263</span>, in <span class="ansi-cyan-fg">sniff</span><span class="ansi-blue-fg">(*args, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1259</span> <span style="color: rgb(175,0,255)">@conf</span><span style="color: rgb(98,98,98)">.</span>commands<span style="color: rgb(98,98,98)">.</span>register
+<span class="ansi-green-intense-fg ansi-bold">   1260</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">sniff</span>(<span style="color: rgb(98,98,98)">*</span>args, <span style="color: rgb(98,98,98)">*</span><span style="color: rgb(98,98,98)">*</span>kwargs):
+<span class="ansi-green-intense-fg ansi-bold">   1261</span>     <span style="color: rgb(95,135,135)"># type: (*Any, **Any) -&gt; PacketList</span>
+<span class="ansi-green-intense-fg ansi-bold">   1262</span>     sniffer <span style="color: rgb(98,98,98)">=</span> AsyncSniffer()
+<span class="ansi-green-fg">-&gt; 1263</span>     <span class="ansi-yellow-bg">sniffer</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_run</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">args</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1264</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> cast(PacketList, sniffer<span style="color: rgb(98,98,98)">.</span>results)
+
+File <span class="ansi-green-fg">/usr/local/lib/python3.8/dist-packages/scapy/sendrecv.py:1127</span>, in <span class="ansi-cyan-fg">AsyncSniffer._run</span><span class="ansi-blue-fg">(self, count, store, offline, quiet, prn, lfilter, L2socket, timeout, opened_socket, stop_filter, iface, started_callback, session, session_kwargs, **karg)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1121</span>         sniff_sockets<span style="color: rgb(98,98,98)">.</span>update(
+<span class="ansi-green-intense-fg ansi-bold">   1122</span>             (L2socket(<span style="color: rgb(0,135,0)">type</span><span style="color: rgb(98,98,98)">=</span>ETH_P_ALL, iface<span style="color: rgb(98,98,98)">=</span>ifname, <span style="color: rgb(98,98,98)">*</span><span style="color: rgb(98,98,98)">*</span>karg),
+<span class="ansi-green-intense-fg ansi-bold">   1123</span>              iflabel)
+<span class="ansi-green-intense-fg ansi-bold">   1124</span>             <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> ifname, iflabel <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> six<span style="color: rgb(98,98,98)">.</span>iteritems(iface)
+<span class="ansi-green-intense-fg ansi-bold">   1125</span>         )
+<span class="ansi-green-intense-fg ansi-bold">   1126</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
+<span class="ansi-green-fg">-&gt; 1127</span>         sniff_sockets[<span class="ansi-yellow-bg">L2socket</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">type</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">ETH_P_ALL</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">iface</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">iface</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">   1128</span> <span class="ansi-yellow-bg">                               </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">karg</span><span class="ansi-yellow-bg">)</span>] <span style="color: rgb(98,98,98)">=</span> iface
+<span class="ansi-green-intense-fg ansi-bold">   1130</span> <span style="color: rgb(95,135,135)"># Get select information from the sockets</span>
+<span class="ansi-green-intense-fg ansi-bold">   1131</span> _main_socket <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">next</span>(<span style="color: rgb(0,135,0)">iter</span>(sniff_sockets))
+
+File <span class="ansi-green-fg">/usr/local/lib/python3.8/dist-packages/scapy/arch/linux.py:497</span>, in <span class="ansi-cyan-fg">L2Socket.__init__</span><span class="ansi-blue-fg">(self, iface, type, promisc, filter, nofilter, monitor)</span>
+<span class="ansi-green-intense-fg ansi-bold">    495</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">filter</span> <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
+<span class="ansi-green-intense-fg ansi-bold">    496</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">try</span>:
+<span class="ansi-green-fg">--&gt; 497</span>         <span class="ansi-yellow-bg">attach_filter</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">ins</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">filter</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">iface</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    498</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">except</span> <span class="ansi-bold" style="color: rgb(215,95,95)">ImportError</span> <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> ex:
+<span class="ansi-green-intense-fg ansi-bold">    499</span>         log_runtime<span style="color: rgb(98,98,98)">.</span>error(<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">Cannot set filter: </span><span class="ansi-bold" style="color: rgb(175,95,135)">%s</span><span style="color: rgb(175,0,0)">&#34;</span>, ex)
+
+File <span class="ansi-green-fg">/usr/local/lib/python3.8/dist-packages/scapy/arch/linux.py:166</span>, in <span class="ansi-cyan-fg">attach_filter</span><span class="ansi-blue-fg">(sock, bpf_filter, iface)</span>
+<span class="ansi-green-intense-fg ansi-bold">    157</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">attach_filter</span>(sock, bpf_filter, iface):
+<span class="ansi-green-intense-fg ansi-bold">    158</span>     <span style="color: rgb(95,135,135)"># type: (socket.socket, str, Union[NetworkInterface, str]) -&gt; None</span>
+<span class="ansi-green-intense-fg ansi-bold">    159</span>     <span style="color: rgb(175,0,0)">&#34;&#34;&#34;</span>
+<span class="ansi-green-intense-fg ansi-bold">    160</span> <span style="color: rgb(175,0,0)">    Compile bpf filter and attach it to a socket</span>
+<span class="ansi-green-intense-fg ansi-bold">    161</span> 
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">    164</span> <span style="color: rgb(175,0,0)">    :param iface: the interface used to compile</span>
+<span class="ansi-green-intense-fg ansi-bold">    165</span> <span style="color: rgb(175,0,0)">    &#34;&#34;&#34;</span>
+<span class="ansi-green-fg">--&gt; 166</span>     bp <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">compile_filter</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">bpf_filter</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">iface</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    167</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> conf<span style="color: rgb(98,98,98)">.</span>use_pypy <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> sys<span style="color: rgb(98,98,98)">.</span>pypy_version_info <span style="color: rgb(98,98,98)">&lt;</span><span style="color: rgb(98,98,98)">=</span> (<span style="color: rgb(98,98,98)">7</span>, <span style="color: rgb(98,98,98)">3</span>, <span style="color: rgb(98,98,98)">2</span>):  <span style="color: rgb(95,135,135)"># type: ignore</span>
+<span class="ansi-green-intense-fg ansi-bold">    168</span>         <span style="color: rgb(95,135,135)"># PyPy &lt; 7.3.2 has a broken behavior</span>
+<span class="ansi-green-intense-fg ansi-bold">    169</span>         <span style="color: rgb(95,135,135)"># https://foss.heptapod.net/pypy/pypy/-/issues/3298</span>
+<span class="ansi-green-intense-fg ansi-bold">    170</span>         bp <span style="color: rgb(98,98,98)">=</span> struct<span style="color: rgb(98,98,98)">.</span>pack(
+<span class="ansi-green-intense-fg ansi-bold">    171</span>             <span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">HL</span><span style="color: rgb(175,0,0)">&#39;</span>,
+<span class="ansi-green-intense-fg ansi-bold">    172</span>             bp<span style="color: rgb(98,98,98)">.</span>bf_len, ctypes<span style="color: rgb(98,98,98)">.</span>addressof(bp<span style="color: rgb(98,98,98)">.</span>bf_insns<span style="color: rgb(98,98,98)">.</span>contents)
+<span class="ansi-green-intense-fg ansi-bold">    173</span>         )
+
+File <span class="ansi-green-fg">/usr/local/lib/python3.8/dist-packages/scapy/arch/common.py:150</span>, in <span class="ansi-cyan-fg">compile_filter</span><span class="ansi-blue-fg">(filter_exp, iface, linktype, promisc)</span>
+<span class="ansi-green-intense-fg ansi-bold">    148</span> error <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">bytes</span>(<span style="color: rgb(0,135,0)">bytearray</span>(err))<span style="color: rgb(98,98,98)">.</span>strip(<span style="color: rgb(175,0,0)">b</span><span style="color: rgb(175,0,0)">&#34;</span><span class="ansi-bold" style="color: rgb(175,95,0)">\x00</span><span style="color: rgb(175,0,0)">&#34;</span>)
+<span class="ansi-green-intense-fg ansi-bold">    149</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> error:
+<span class="ansi-green-fg">--&gt; 150</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">OSError</span>(error)
+<span class="ansi-green-intense-fg ansi-bold">    151</span> ret <span style="color: rgb(98,98,98)">=</span> pcap_compile(
+<span class="ansi-green-intense-fg ansi-bold">    152</span>     pcap, ctypes<span style="color: rgb(98,98,98)">.</span>byref(bpf), bpf_filter, <span style="color: rgb(98,98,98)">0</span>, <span style="color: rgb(98,98,98)">-</span><span style="color: rgb(98,98,98)">1</span>
+<span class="ansi-green-intense-fg ansi-bold">    153</span> )
+<span class="ansi-green-intense-fg ansi-bold">    154</span> pcap_close(pcap)
+
+<span class="ansi-red-fg">OSError</span>: b&#39;lo0: No such device exists (SIOCGIFHWADDR: No such device)&#39;</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14629,74 +15092,105 @@ ansible-galaxy collection install community.windows</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><code>cd attack_range_local</code></p>
-<p><code>virtualenv -p python3 venv</code></p>
-<p><code>source venv/bin/activate</code></p>
-<p><code>pip install -r requirements.txt</code></p>
-<p><code>python attack_range_local.py -a build</code></p>
-
+<h1 id="TCP">TCP<a class="anchor-link" href="#TCP">&#182;</a></h1>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>If you find that you attack-range-splunk-server halts with a dependency error on hyper-v, close the VM window for the attack-range-splunk-server, and retry the Python script <code>python attack_range_local.py -a build</code></p>
-<p>(Adapted from <a href="https://github.com/splunk/attack_range_local/wiki/Ubuntu-18.04-Installation">https://github.com/splunk/attack_range_local/wiki/Ubuntu-18.04-Installation</a>)</p>
-<p>(<a href="https://github.com/splunk/attack_range_local/">https://github.com/splunk/attack_range_local/</a>)</p>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">from</span> <span class="nn">scapy.all</span> <span class="kn">import</span> <span class="n">ICMP</span><span class="p">,</span> <span class="n">IP</span><span class="p">,</span> <span class="n">sr1</span><span class="p">,</span> <span class="n">TCP</span>
+
+<span class="c1"># Define end host and TCP port range</span>
+<span class="n">host</span> <span class="o">=</span> <span class="s2">&quot;192.168.56.200&quot;</span>
+<span class="n">port_range</span> <span class="o">=</span> <span class="p">[</span><span class="mi">22</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">443</span><span class="p">,</span> <span class="mi">3389</span><span class="p">]</span>
+
+<span class="c1"># Send SYN with random Src Port for each Dst port</span>
+<span class="k">for</span> <span class="n">dst_port</span> <span class="ow">in</span> <span class="n">port_range</span><span class="p">:</span>
+    <span class="n">src_port</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1025</span><span class="p">,</span><span class="mi">65534</span><span class="p">)</span>
+    <span class="n">resp</span> <span class="o">=</span> <span class="n">sr1</span><span class="p">(</span>
+        <span class="n">IP</span><span class="p">(</span><span class="n">dst</span><span class="o">=</span><span class="n">host</span><span class="p">)</span><span class="o">/</span><span class="n">TCP</span><span class="p">(</span><span class="n">sport</span><span class="o">=</span><span class="n">src_port</span><span class="p">,</span><span class="n">dport</span><span class="o">=</span><span class="n">dst_port</span><span class="p">,</span><span class="n">flags</span><span class="o">=</span><span class="s2">&quot;S&quot;</span><span class="p">),</span><span class="n">timeout</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">resp</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">host</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">dst_port</span><span class="si">}</span><span class="s2"> is filtered (silently dropped).&quot;</span><span class="p">)</span>
+
+    <span class="k">elif</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">haslayer</span><span class="p">(</span><span class="n">TCP</span><span class="p">)):</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">getlayer</span><span class="p">(</span><span class="n">TCP</span><span class="p">)</span><span class="o">.</span><span class="n">flags</span> <span class="o">==</span> <span class="mh">0x12</span><span class="p">):</span>
+            <span class="c1"># Send a gratuitous RST to close the connection</span>
+            <span class="n">send_rst</span> <span class="o">=</span> <span class="n">sr</span><span class="p">(</span>
+                <span class="n">IP</span><span class="p">(</span><span class="n">dst</span><span class="o">=</span><span class="n">host</span><span class="p">)</span><span class="o">/</span><span class="n">TCP</span><span class="p">(</span><span class="n">sport</span><span class="o">=</span><span class="n">src_port</span><span class="p">,</span><span class="n">dport</span><span class="o">=</span><span class="n">dst_port</span><span class="p">,</span><span class="n">flags</span><span class="o">=</span><span class="s1">&#39;R&#39;</span><span class="p">),</span>
+                <span class="n">timeout</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">host</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">dst_port</span><span class="si">}</span><span class="s2"> is open.&quot;</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">getlayer</span><span class="p">(</span><span class="n">TCP</span><span class="p">)</span><span class="o">.</span><span class="n">flags</span> <span class="o">==</span> <span class="mh">0x14</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">host</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">dst_port</span><span class="si">}</span><span class="s2"> is closed.&quot;</span><span class="p">)</span>
+
+    <span class="k">elif</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">haslayer</span><span class="p">(</span><span class="n">ICMP</span><span class="p">)):</span>
+        <span class="k">if</span><span class="p">(</span>
+            <span class="nb">int</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">getlayer</span><span class="p">(</span><span class="n">ICMP</span><span class="p">)</span><span class="o">.</span><span class="n">type</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span> <span class="ow">and</span>
+            <span class="nb">int</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">getlayer</span><span class="p">(</span><span class="n">ICMP</span><span class="p">)</span><span class="o">.</span><span class="n">code</span><span class="p">)</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">13</span><span class="p">]</span>
+        <span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">host</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">dst_port</span><span class="si">}</span><span class="s2"> is filtered (silently dropped).&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>192.168.56.200:22 is filtered (silently dropped).
+192.168.56.200:23 is filtered (silently dropped).
+192.168.56.200:80 is filtered (silently dropped).
+192.168.56.200:443 is filtered (silently dropped).
+192.168.56.200:3389 is filtered (silently dropped).
+</pre>
+</div>
+</div>
 
 </div>
+
 </div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><img src="./images/vm_spec.png" alt=""></p>
-<p>You will need to ensure that you have allocated sufficient RAM and CPU cores to your virtual machine. We recommend using 16GB RAM and 8 processor cores (if necessary, please use the UWE lab machines). In addition, as we will be running nested virtual machines (i.e., we will run VMs within this primary VM) we need to enable <strong><em>Virtualise Intel VT-x</em></strong>.</p>
-<div class="alert alert-block alert-danger">
-If you have Hyper-V enabled on your system, there is the possibility that this can cause a conflict for this setting. Disabling Hyper-V should resolve this issue.
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Perform-Attack-Simulation">Perform Attack Simulation<a class="anchor-link" href="#Perform-Attack-Simulation">&#182;</a></h2><ul>
-<li><code>python attack_range_local.py -a simulate -st T1003.001 -t attack-range-windows-domain-controller</code></li>
-</ul>
-<h2 id="Show-Attack-Range-Status">Show Attack Range Status<a class="anchor-link" href="#Show-Attack-Range-Status">&#182;</a></h2><ul>
-<li><code>python attack_range_local.py -lm</code></li>
-</ul>
-<h2 id="Destroy-Attack-Range-Local">Destroy Attack Range Local<a class="anchor-link" href="#Destroy-Attack-Range-Local">&#182;</a></h2><ul>
-<li><code>python attack_range_local.py -a destroy</code></li>
-</ul>
-<h2 id="Stop-Attack-Range-Local">Stop Attack Range Local<a class="anchor-link" href="#Stop-Attack-Range-Local">&#182;</a></h2><ul>
-<li><code>python attack_range_local.py -a stop</code></li>
-</ul>
-<h2 id="Resume-Attack-Range-Local">Resume Attack Range Local<a class="anchor-link" href="#Resume-Attack-Range-Local">&#182;</a></h2><ul>
-<li><code>python attack_range_local.py -a resume</code></li>
-</ul>
-<h2 id="Dump-Attack-Range-Data">Dump Attack Range Data<a class="anchor-link" href="#Dump-Attack-Range-Data">&#182;</a></h2><ul>
-<li><code>python attack_range_local.py -a dump -dn dump_data_folder</code></li>
-</ul>
-<p>See <a href="https://github.com/splunk/attack_range_local/">full documentation</a> on GitHub</p>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
 
+     </div>
 </div>
 </div>
 </div>
+
 </div>
 </body>
 

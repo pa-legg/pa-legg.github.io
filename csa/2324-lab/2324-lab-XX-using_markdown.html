@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>2324-lab-08-splunk_attack_range</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>2324-lab-XX-using_markdown</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14581,10 +14581,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><img src="https://pa-legg.github.io/images/uwe_banner.png"></p>
-<h1 id="UFCFFY-15-M-Cyber-Security-Analytics">UFCFFY-15-M Cyber Security Analytics<a class="anchor-link" href="#UFCFFY-15-M-Cyber-Security-Analytics">&#182;</a></h1><h2 id="Practical-Lab-8:-Splunk-Attack-Range">Practical Lab 8: Splunk Attack Range<a class="anchor-link" href="#Practical-Lab-8:-Splunk-Attack-Range">&#182;</a></h2><hr>
-<p>In this lab, we will experiment with the Splunk Attack Range. Firstly, we will want to use the UWEcyber 2022 (Ubuntu 20.04) image as a base operating system to work from. We also need to ensure that <strong><em>virtualise VT-x</em></strong> is enabled in VMware for this VM, so that we can virtualise systems within the host VM. Finally, this requires a fair amount of RAM to do so, therefore you may consider using a UWE lab machine if you have less than 32GB available on your machine.</p>
-<p>You will find the full documentation for the Splunk Attack Range and the follow URL: <a href="https://github.com/splunk/attack_range">https://github.com/splunk/attack_range</a>. Below we highlight the key details for getting up and running.</p>
-<p><strong>Follow the commands below within your Terminal environment, in your UWEcyber VM</strong></p>
+<h1 id="UFCFFY-15-M-Cyber-Security-Analytics">UFCFFY-15-M Cyber Security Analytics<a class="anchor-link" href="#UFCFFY-15-M-Cyber-Security-Analytics">&#182;</a></h1><h2 id="Practical-Lab-XX:-Using-Markdown">Practical Lab XX: Using Markdown<a class="anchor-link" href="#Practical-Lab-XX:-Using-Markdown">&#182;</a></h2><hr>
+<p>In this lab, we will cover some basic Markdown notation.</p>
+<p>The following guide is particularly useful:</p>
+<p><a href="https://www.ibm.com/docs/en/watson-studio-local/1.2.3?topic=notebooks-markdown-jupyter-cheatsheet">https://www.ibm.com/docs/en/watson-studio-local/1.2.3?topic=notebooks-markdown-jupyter-cheatsheet</a></p>
 
 </div>
 </div>
@@ -14596,15 +14596,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-<pre><code>#!/bin/bash
-sudo apt-get update
-sudo apt-get install -y python3-dev linux-headers-generic python-dev unzip python3-pip vagrant virtualbox virtualbox-dkms python3-virtualenv git
-sudo gem install winrm-elevated
-sudo gem install winrm
-sudo apt install ansible
-git clone https://github.com/splunk/attack_range_local
-ansible-galaxy collection install community.windows</code></pre>
+<hr>
+<h1 id="Further-useful-Markdown-tips">Further useful Markdown tips<a class="anchor-link" href="#Further-useful-Markdown-tips">&#182;</a></h1><p>You can also embed HTML within Markdown. Below we show a few examples of how you may highlight key details within your notebook.</p>
 
 </div>
 </div>
@@ -14616,25 +14609,10 @@ ansible-galaxy collection install community.windows</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>You can use a script to execute the above commands.</p>
-<p>Below, execute these as single lines in your terminal.</p>
-
+<div class="alert alert-block alert-info">
+<b>Tip:</b> Use blue boxes (alert-info) for tips and notes. 
+If it’s a note, you don’t have to include the word “Note”.
 </div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><code>cd attack_range_local</code></p>
-<p><code>virtualenv -p python3 venv</code></p>
-<p><code>source venv/bin/activate</code></p>
-<p><code>pip install -r requirements.txt</code></p>
-<p><code>python attack_range_local.py -a build</code></p>
-
 </div>
 </div>
 </div>
@@ -14645,24 +14623,8 @@ ansible-galaxy collection install community.windows</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>If you find that you attack-range-splunk-server halts with a dependency error on hyper-v, close the VM window for the attack-range-splunk-server, and retry the Python script <code>python attack_range_local.py -a build</code></p>
-<p>(Adapted from <a href="https://github.com/splunk/attack_range_local/wiki/Ubuntu-18.04-Installation">https://github.com/splunk/attack_range_local/wiki/Ubuntu-18.04-Installation</a>)</p>
-<p>(<a href="https://github.com/splunk/attack_range_local/">https://github.com/splunk/attack_range_local/</a>)</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><img src="./images/vm_spec.png" alt=""></p>
-<p>You will need to ensure that you have allocated sufficient RAM and CPU cores to your virtual machine. We recommend using 16GB RAM and 8 processor cores (if necessary, please use the UWE lab machines). In addition, as we will be running nested virtual machines (i.e., we will run VMs within this primary VM) we need to enable <strong><em>Virtualise Intel VT-x</em></strong>.</p>
 <div class="alert alert-block alert-danger">
-If you have Hyper-V enabled on your system, there is the possibility that this can cause a conflict for this setting. Disabling Hyper-V should resolve this issue.
+    <b>Warning:</b> If you have Hyper-V enabled on your system, there is the possibility that this can cause a conflict for this setting. Disabling Hyper-V should resolve this issue.
 </div>
 </div>
 </div>
@@ -14674,25 +14636,36 @@ If you have Hyper-V enabled on your system, there is the possibility that this c
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Perform-Attack-Simulation">Perform Attack Simulation<a class="anchor-link" href="#Perform-Attack-Simulation">&#182;</a></h2><ul>
-<li><code>python attack_range_local.py -a simulate -st T1003.001 -t attack-range-windows-domain-controller</code></li>
-</ul>
-<h2 id="Show-Attack-Range-Status">Show Attack Range Status<a class="anchor-link" href="#Show-Attack-Range-Status">&#182;</a></h2><ul>
-<li><code>python attack_range_local.py -lm</code></li>
-</ul>
-<h2 id="Destroy-Attack-Range-Local">Destroy Attack Range Local<a class="anchor-link" href="#Destroy-Attack-Range-Local">&#182;</a></h2><ul>
-<li><code>python attack_range_local.py -a destroy</code></li>
-</ul>
-<h2 id="Stop-Attack-Range-Local">Stop Attack Range Local<a class="anchor-link" href="#Stop-Attack-Range-Local">&#182;</a></h2><ul>
-<li><code>python attack_range_local.py -a stop</code></li>
-</ul>
-<h2 id="Resume-Attack-Range-Local">Resume Attack Range Local<a class="anchor-link" href="#Resume-Attack-Range-Local">&#182;</a></h2><ul>
-<li><code>python attack_range_local.py -a resume</code></li>
-</ul>
-<h2 id="Dump-Attack-Range-Data">Dump Attack Range Data<a class="anchor-link" href="#Dump-Attack-Range-Data">&#182;</a></h2><ul>
-<li><code>python attack_range_local.py -a dump -dn dump_data_folder</code></li>
-</ul>
-<p>See <a href="https://github.com/splunk/attack_range_local/">full documentation</a> on GitHub</p>
+<div class="alert alert-block alert-warning">
+<b>Example:</b> Use yellow boxes for examples that are not 
+inside code cells, or use for mathematical formulas if needed.
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="alert alert-block alert-success">
+<b>Up to you:</b> Use green boxes sparingly, and only for some specific 
+purpose that the other boxes can't cover. For example, if you have a lot 
+of related content to link to, maybe you decide to use green boxes for 
+related links from each section of a notebook.
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 
 </div>
 </div>
