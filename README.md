@@ -1,3 +1,3 @@
 # pa-legg.github.io
 
-Personal webpage for various activity
+Please visit https://pa-legg.github.io/ for full webpage details
