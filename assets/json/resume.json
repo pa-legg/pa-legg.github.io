@@ -1,200 +1,170 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Phil Legg",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "Phil.Legg@uwe.ac.uk",
+    "phone": "0117 32 82880",
+    "url": "https://pa-legg.github.io",
+    "summary": "Passion for computing and technology.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+      "address": "Office 4Q59, Frenchay Campus, Coldharbour Lane",
+      "postalCode": "BS16 1QY",
+      "city": "Bristol",
+      "countryCode": "UK"
+    }
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
+      "name": "University of the West of England (UWE Bristol)",
+      "position": "Professor of Cyber Security",
+      "url": "http://www.uwe.ac.uk",
+      "startDate": "2022-01-01",
+      "endDate": "Present",
+      "summary": "School of Computing and Creative Technologies",
+      "highlights": [""]
+    },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "University of the West of England (UWE Bristol)",
+      "position": "Associate Professor of Cyber Security",
+      "url": "http://www.uwe.ac.uk",
+      "startDate": "2018-09-30",
+      "endDate": "2022-01-01",
+      "summary": "Computer Science and Creative Technologies",
+      "highlights": [""]
+    },
+    {
+      "name": "University of the West of England (UWE Bristol)",
+      "position": "Senior Lecturer in Computer Science",
+      "url": "http://www.uwe.ac.uk",
+      "startDate": "2015-02-09",
+      "endDate": "2018-09-30",
+      "summary": "Computer Science and Creative Technologies",
+      "highlights": [""]
+    },
+    {
+      "name": "University of Oxford",
+      "position": "Post-Doctoral Research Associate",
+      "url": "http://www.oxford.ac.uk",
+      "startDate": "2013-03-20",
+      "endDate": "2015-02-09",
+      "summary": "Cyber Security Centre, Department of Computer Science",
+      "highlights": [""]
+    },
+    {
+      "name": "Swansea University",
+      "position": "Post-Doctoral Research Assistant",
+      "url": "http://www.oxford.ac.uk",
+      "startDate": "2013-03-20",
+      "endDate": "2015-02-09",
+      "summary": "Department of Computer Science",
+      "highlights": [""]
+    },
+    {
+      "name": "Freelance",
+      "position": "Software Developer",
+      "url": "",
+      "startDate": "2010-05-01",
+      "endDate": "2015-02-09",
+      "summary": "",
+      "highlights": [""]
+    },
+    {
+      "name": "Cardiff University",
+      "position": "Software Developer",
+      "url": "",
+      "startDate": "2010-05-01",
+      "endDate": "2015-07-31",
+      "summary": "Development of research-led Android mobile application, GeoCaption.",
+      "highlights": [""]
     }
   ],
+  
+
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
-    }
-  ],
-  "awards": [
+      "institution": "University of the West of England (UWE Bristol)",
+      "location": "Bristol, UK",
+      "url": "https://www.uwe.ac.uk/",
+      "area": "Postgraduate Certificate in Teaching and Learning for Higher Education",
+      "studyType": "PGCert",
+      "startDate": "2015-10-01",
+      "endDate": "2016-07-01",
+      "courses": [""]
+    },
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "institution": "Cardiff University",
+      "location": "Cardiff, UK",
+      "url": "https://www.cardiff.ac.uk/",
+      "area": "Computer Science",
+      "studyType": "PhD",
+      "startDate": "2006-10-01",
+      "endDate": "2010-03-01",
+      "courses": ["Multi-modal Retinal Imaging: Improving Accuracy and Efficiency of Image Registration using Mutual Information"]
+    },
+    {
+      "institution": "Cardiff University",
+      "location": "Cardiff, UK",
+      "url": "https://www.cardiff.ac.uk/",
+      "area": "Computer Science",
+      "studyType": "BSc",
+      "startDate": "2003-10-01",
+      "endDate": "2006-07-01",
+      "courses": ["Multi-player Internet Game: Chinese Checkers"]
     }
   ],
+
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "name": "CompTIA SecurityX CAS-005",
+      "date": "2024-07-16",
+      "issuer": "CompTIA",
+      "url": "https://www.credly.com/badges/78b0b945-2196-442f-b666-0d84e78afd29/public_url",
+      "icon": "fa-solid fa-clipboard-check"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "name": "CompTIA PenTest+ PT0-002",
+      "date": "2021-05-07",
+      "issuer": "CompTIA",
+      "url": "https://www.credly.com/badges/4260e82a-aff4-4a57-b6ab-6a7a74796bb1/public_url",
+      "icon": "fa-solid fa-clipboard-check"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
+      "name": "CompTIA Security+",
+      "date": "2020-07-02",
+      "issuer": "CompTIA",
+      "url": "https://www.credly.com/badges/902a8305-7c19-4a09-b79b-68f4841ee375/public_url",
+      "icon": "fa-solid fa-clipboard-check"
     },
     {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
+      "name": "Azure Fundamentals AZ-900",
+      "date": "2020-10-07",
+      "issuer": "Microsoft",
+      "url": "https://www.credly.com/badges/1f4e81fd-d8d8-490a-84f1-e1db736ad533/public_url",
+      "icon": "fa-solid fa-clipboard-check"
     },
     {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
+      "name": "Security, Compliance, and Identity Fundamentals SC-900",
+      "date": "2021-04-20",
+      "issuer": "Microsoft",
+      "url": "https://www.credly.com/badges/52101c96-e767-4cdd-bc1e-bab49e3afb51/public_url",
+      "icon": "fa-solid fa-clipboard-check"
     },
     {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
+      "name": "Azure Data Fundamentals DP-900",
+      "date": "2021-03-16",
+      "issuer": "Microsoft",
+      "url": "https://www.credly.com/badges/0c345f09-2810-422c-8605-fbbdaa2d70ea/public_url",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
+      "name": "Azure AI Fundamentals AI-900",
+      "date": "2021-02-06",
+      "issuer": "Microsoft",
+      "url": "https://www.credly.com/badges/d517f0c0-a43a-4070-9a0d-fa5a0cceb179/public_url",
       "icon": "fa-solid fa-clipboard-check"
     }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
-    }
+    
   ]
+  
+  
 }
