@@ -1,0 +1,500 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05 CYBER SECURITY ANALYTICS TOOLS - THREAT HUNTING &#8212; Cyber Security Analytics</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="06 CYBER SECURITY ANALYTICS TOOLS - INCIDENT RESPONSE" href="book-06-cybertoolsincidentresp.html" />
+    <link rel="prev" title="04 MACHINE LEARNING AND VISUALISATION" href="book-04-machinelearningandvisualisation.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/uwecyber.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Cyber Security Analytics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-00-csa_start.html">
+   CYBER SECURITY ANALYTICS
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-01-csa_intro.html">
+   01 INTRODUCTION TO CYBER SECURITY DATA ANALYTICS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-02-operationsandinfrastructure.html">
+   02 SECURITY OPERATIONS AND INCIDENT MANAGEMENT
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-03-operationsandmonitoring.html">
+   03 SECURITY OPERATIONS AND MONITORING
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-04-machinelearningandvisualisation.html">
+   04 MACHINE LEARNING AND VISUALISATION
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   05 CYBER SECURITY ANALYTICS TOOLS - THREAT HUNTING
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-06-cybertoolsincidentresp.html">
+   06 CYBER SECURITY ANALYTICS TOOLS - INCIDENT RESPONSE
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-07-malwareanalysis.html">
+   07 MALWARE ANALYSIS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-08-furtherresearch.html">
+   08 FURTHER RESEARCH DIRECTIONS
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/book-05-cybertoolsthreatvuln.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#threat-hunting-investigations">
+   Threat hunting investigations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#baselining">
+     Baselining
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-prevalent-is-powershell-in-your-environment">
+     How prevalent is PowerShell in your environment?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#attack-specific-hunts">
+     Attack-Specific Hunts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#time-sensitivity">
+     Time Sensitivity
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#third-party-sources">
+     Third-Party Sources
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#five-threat-hunting-steps">
+   Five threat hunting steps
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-cyber-threat-intelligence">
+   What is Cyber threat intelligence?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-did-threat-intelligence-platforms-work">
+   How did threat intelligence platforms work?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#heres-the-cyber-threat-intelligence-tools-list">
+   Here’s the Cyber Threat Intelligence Tools List:
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>05 CYBER SECURITY ANALYTICS TOOLS - THREAT HUNTING</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#threat-hunting-investigations">
+   Threat hunting investigations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#baselining">
+     Baselining
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-prevalent-is-powershell-in-your-environment">
+     How prevalent is PowerShell in your environment?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#attack-specific-hunts">
+     Attack-Specific Hunts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#time-sensitivity">
+     Time Sensitivity
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#third-party-sources">
+     Third-Party Sources
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#five-threat-hunting-steps">
+   Five threat hunting steps
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-cyber-threat-intelligence">
+   What is Cyber threat intelligence?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-did-threat-intelligence-platforms-work">
+   How did threat intelligence platforms work?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#heres-the-cyber-threat-intelligence-tools-list">
+   Here’s the Cyber Threat Intelligence Tools List:
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="cyber-security-analytics-tools-threat-hunting">
+<h1>05 CYBER SECURITY ANALYTICS TOOLS - THREAT HUNTING<a class="headerlink" href="#cyber-security-analytics-tools-threat-hunting" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://www.mcafee.com/enterprise/en-us/security-awareness/operations/what-is-cyber-threat-hunting.html">What is Cyber Threat Hunting?</a>: Cyber threat hunting is a proactive security search through networks, endpoints, and datasets to hunt malicious, suspicious, or risky activities that have evaded detection by existing tools. Thus, there is a distinction between cyber threat detection versus cyber threat hunting. Threat detection is a somewhat passive approach to monitoring data and systems for potential security issues, but it’s still a necessity and can aid a threat hunter. Proactive cyber threat hunting tactics have evolved to use new threat intelligence on previously collected data to identify and categorize potential threats in advance of attack.</p>
+<p>Security personnel can’t afford to believe that their security system is impenetrable. They must remain ever vigilant for the next threat or vulnerability. Rather than sit back and wait for threats to strike, cyber threat hunting develops hypotheses based on knowing the behaviors of threat actors and validating those hypotheses through active searches in the environment. With threat hunting, an expert doesn’t start from an alert or even Indicators of Compromise (IOC) but deeper reasoning and forensics. In many cases the hunter’s efforts create and substantiate the alert or IOC. Cyber threat hunting aggressively assumes that a breach in the enterprise has or will occur. Security personnel hunt down threats in their environment rather than deploy the latest tool.</p>
+<div class="section" id="threat-hunting-investigations">
+<h2>Threat hunting investigations<a class="headerlink" href="#threat-hunting-investigations" title="Permalink to this headline">¶</a></h2>
+<p>Traditional cyber threat hunting is based on a manual process in which a security analyst scrutinizes data based on their knowledge of the network and systems to build assumptions about potential threats. Cyber threat hunting has advanced in effectiveness and efficiency through the addition of automation, machine learning, and user and entity behavior analytics (UEBA) to alert enterprise security teams of potential risks.</p>
+<p>Once the risk or potential risk, as well as frequency of a hunt has been determined, an investigation is initiated. Examples of Cyber Threat Hunting investigations include:</p>
+<ul class="simple">
+<li><p><strong>Hypothesis Driven Investigations:</strong> When significant information of a new, imminent threat vector is discovered, cyber threat hunting will delve deeper into network or system logs in search of hidden anomalies or trends that could signal the new threat. Analytics Driven Investigation: Searches based on information gathered from Machine Learning (ML) and Artificial Intelligence (AI) tools.</p></li>
+<li><p><strong>Tactics, Techniques, and Procedures (TTP) Investigation:</strong> Hunting for attack mannerisms typically use the same operational techniques. This is helpful to source or attribute the threat and to leverage existing remediation methods that worked with these behaviors.
+Threat hunting is specific to each environment, but some techniques can be applied to almost any environment. Core threat hunting techniques include:</p></li>
+</ul>
+<div class="section" id="baselining">
+<h3>Baselining<a class="headerlink" href="#baselining" title="Permalink to this headline">¶</a></h3>
+<p>Baselining helps the hunter understand what “normal” looks like within an organization. SANS describes the value of baselining as looking for a needle in a haystack by removing the hay in double-digit percentages to shorten the time needed for the needle to become visible. To help minimize the time needed to combine baseline analysis with attacker technique, SANS suggests hunters consider the following questions:</p>
+</div>
+<div class="section" id="how-prevalent-is-powershell-in-your-environment">
+<h3>How prevalent is PowerShell in your environment?<a class="headerlink" href="#how-prevalent-is-powershell-in-your-environment" title="Permalink to this headline">¶</a></h3>
+<p>If prevalent, what does normal system administrator activity look like?
+Where does PowerShell activity typically come from, and what user accounts typically run it?
+As a result, a hunter may not need to baseline all of PowerShell, but rather look for unexpected outliers or attacker-specific command structures.</p>
+</div>
+<div class="section" id="attack-specific-hunts">
+<h3>Attack-Specific Hunts<a class="headerlink" href="#attack-specific-hunts" title="Permalink to this headline">¶</a></h3>
+<p>Baselining aids the hunter in understanding the overall hunt environment, but attack-specific hunts can help track malicious activity faster. Attack-specific hunts typically focus on a specific threat actor or threat. However, the limits of their specific hunt model can throw off false positives. Attack-specific hunts combine with baselining often produce good results.</p>
+</div>
+<div class="section" id="time-sensitivity">
+<h3>Time Sensitivity<a class="headerlink" href="#time-sensitivity" title="Permalink to this headline">¶</a></h3>
+<p>All hunts are time sensitive, and therefore require hunters to validate their baseline terms periodically. SANS recommends confirming that new software implementations are not causing unnecessary traffic resulting in false-positive data. Keeping up with attackers’ shifting to new techniques – or reverting back to old techniques – require hunters to validate intelligence-based hunts and even hunt again if legacy techniques are detected.</p>
+</div>
+<div class="section" id="third-party-sources">
+<h3>Third-Party Sources<a class="headerlink" href="#third-party-sources" title="Permalink to this headline">¶</a></h3>
+<p>Hunting for needles in a data haystack can overwhelm teams of hunters. Third-party providers can help guide hunters to more successful hunts. SANS lists the following benefits hunters can gather from third-party sources:</p>
+<ul class="simple">
+<li><p>Ruling out false positive leads</p></li>
+<li><p>Focus on interesting leads</p></li>
+<li><p>IP lookups</p></li>
+<li><p>Geolocation</p></li>
+<li><p>Encrypted traffic metadata</p></li>
+<li><p>Log detection</p></li>
+<li><p>Attacker technique overlays</p></li>
+<li><p>Link analysis of internal vs. external or host vs. network data points</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="five-threat-hunting-steps">
+<h2>Five threat hunting steps<a class="headerlink" href="#five-threat-hunting-steps" title="Permalink to this headline">¶</a></h2>
+<p>A cyber threat hunt is composed of steps or processes designed for an efficient, successful hunt. These steps include:</p>
+<ul class="simple">
+<li><p><strong>Step 1: Hypothesis</strong> Threat hunts begin with a hypothesis or a statement about the hunter’s ideas of what threats might be in the environment and how to go about finding them. A hypothesis can include a suspected attacker’s tactics, techniques, and procedures (TTPs). Threat hunters use threat intelligence, environmental knowledge, and their own experience and creativity to build a logical path to detection.</p></li>
+<li><p><strong>Step 2: Collect and Process Intelligence and Data</strong> Hunting for threats requires quality intelligence and data. A plan for collecting, centralizing, and processing data is required. Security Information and Event Management (SIEM) software can provide insight and a track record of activities in an enterprise’s IT environment.</p></li>
+<li><p><strong>Step 3: Trigger</strong> A hypothesis can act as a trigger when advanced detection tools point threat hunters to initiate an investigation of a particular system or specific area of a network.</p></li>
+<li><p><strong>Step 4: Investigation</strong> Investigative technology, such as Endpoint Detection and Response (EDR), can hunt or search deep into potentially malicious anomalies in a system or network, ultimately determined to be benign or confirmed as malicious.</p></li>
+<li><p><strong>Step 5: Response/Resolution</strong> Data gathered from confirmed malicious activity can be entered into automated security technology to respond, resolve, and mitigate threats. Actions can include removing malware files, restoring altered or deleted files to their original state, updating firewall /IPS rules, deploying security patches, and changing system configurations – all the while better understanding what occurred and how to improve your security against similar future attacks.</p></li>
+</ul>
+<hr class="docutils" />
+<p><a class="reference external" href="https://www.slideshare.net/ashwin_patil/threat-hunting-using-notebook-technologies">Threat Hunting using Notebook Technologies</a></p>
+<p><a class="reference external" href="https://infosecjupyterthon.com/introduction.html">Infosec Jupyterthon</a></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://nbviewer.org/github/ashwin-patil/threat-hunting-with-notebooks/blob/master/Azure%20Data%20Explorer-%20Kqlmagic%20Demo.ipynb">Exploratory Data Analysis on Windows Failed Logon Data</a></p></li>
+<li><p><a class="reference external" href="https://nbviewer.org/github/ashwin-patil/threat-hunting-with-notebooks/blob/master/threat-hunting-with-ipaddress-from-logs-Public.ipynb">Threat Hunting with IP address Data from Logs</a></p></li>
+<li><p><a class="reference external" href="https://nbviewer.org/github/ashwin-patil/threat-hunting-with-notebooks/blob/master/Open%20Source%20Threat%20Intel%20lookup%20using%20Requests%20API.ipynb">Open Soure Threat Intel Lookups using Requests API</a></p></li>
+<li><p><a class="reference external" href="https://nbviewer.org/github/ashwin-patil/threat-hunting-with-notebooks/blob/master/Jupyterthon-TimeSeries%20Demo.ipynb">Anomaly detection and visualization using Time Series Decomposition</a></p></li>
+</ul>
+<p><a class="reference external" href="https://analyticsindiamag.com/meet-msticpy-a-python-defender-tool-for-security-investigations-hunting/">Msticpy (Microsoft Threat Intelligence Python Security Tools): A Python Defender Tool For Security Investigations &amp; Hunting</a></p>
+<p><a class="reference external" href="https://threathunterplaybook.com/introduction.html">Threat Hunter Playbook</a></p>
+<p><a class="reference external" href="https://www.greynoise.io/">Greynoise</a></p>
+<p><a class="reference external" href="https://www.splunk.com/">Splunk</a>: One of most commonly used SIEM platforms, Splunk is well known for data ingest and analysis.</p>
+<p><a class="reference external" href="https://www.elastic.co/">elastic</a>: Formerly known as ELK stack, a suite comprised of ElasticSearch, Logstash and Kibana for instrumenting data collection and analysis to create a SIEM environment.</p>
+<p><a class="reference external" href="https://securityonionsolutions.com/">Security Onion</a>: a free and open platform for threat hunting, network security monitoring, and log management. Security Onion includes best-of-breed free and open tools including Suricata, Zeek, Wazuh, the Elastic Stack and many others.</p>
+<p><a class="reference external" href="https://www.kali.org/">Kali Linux</a>: A widely-used Linux distribution for security, built upon Debian, it comes pre-loaded with a wide range of security tools and software.</p>
+<p><a class="reference external" href="https://www.python.org/">Python</a>: Programming/scripting language for rapid code development. Used widely by security professionals and software developers alike.</p>
+<p><a class="reference external" href="https://www.tutorialspoint.com/unix_commands/bash.htm">Bash</a>: GNU Bourne Again SHell. A sh-compatible command language interpreter that executes commands read from the standard input or from a file. Used as part of the Linux command line interface.</p>
+<p><a class="reference external" href="https://www.wireshark.org/">Wireshark</a>: A widely-used packet capture (PCAP) tool for analysing network traffic. Alternative tools include <em>tcpdump</em> that is a command line packet capture tool, and <em>tshark</em> that is a CLI tool for Wireshark.</p>
+<p><a class="reference external" href="https://scapy.net/">Scapy</a> is a powerful interactive packet manipulation program. It is able to forge or decode packets of a wide number of protocols, send them on the wire, capture them, match requests and replies, and much more. It can easily handle most classical tasks like scanning, tracerouting, probing, unit tests, attacks or network discovery (it can replace hping, 85% of nmap, arpspoof, arp-sk, arping, tcpdump, tshark, p0f, etc.). It also performs very well at a lot of other specific tasks that most other tools can’t handle, like sending invalid frames, injecting your own 802.11 frames, and much more.</p>
+<p><a class="reference external" href="https://www.checkpoint.com/cyber-hub/threat-prevention/soar-security-what-is-security-orchestration-automation-and-response/">Security orchestration, automation and response (SOAR)</a>: Designed to integrate multiple components, often from different vendors. They allow organizations to streamline security operations in three key areas: threat and vulnerability management, incident response, and security operations automation.</p>
+</div>
+<div class="section" id="what-is-cyber-threat-intelligence">
+<h2>What is Cyber threat intelligence?<a class="headerlink" href="#what-is-cyber-threat-intelligence" title="Permalink to this headline">¶</a></h2>
+<p>Cyber threat intelligence is the process of knowing about the threats and test the harmful vulnerabilities in cyberspace. Such sources include open-source intelligence, social media intelligence, human intelligence, technical intelligence, or intelligence from the deep and dark web. These are critical security tools that use global security data to help proactively identify, mitigate, and remediate security threats.</p>
+</div>
+<div class="section" id="how-did-threat-intelligence-platforms-work">
+<h2>How did threat intelligence platforms work?<a class="headerlink" href="#how-did-threat-intelligence-platforms-work" title="Permalink to this headline">¶</a></h2>
+<p>A Threat Intelligence Platform works with SIEM and Log management system vendors behind the scenes, pulling down indicators to push across to security solutions within the customer network infrastructure. The burden of establishing and maintaining these integrations is therefore lifted from the analysts and instead shifted over to the SIEM and TIP vendors.</p>
+<p>It’s very useful to many teams within an organization such as Security Operations Center (SOC) Teams, Threat Intelligence Teams, Management, and Executive Teams. And Possible security product integrations include API, SIEM, Endpoint, IPS, and Firewall.</p>
+</div>
+<div class="section" id="heres-the-cyber-threat-intelligence-tools-list">
+<h2>Here’s the Cyber Threat Intelligence Tools List:<a class="headerlink" href="#heres-the-cyber-threat-intelligence-tools-list" title="Permalink to this headline">¶</a></h2>
+<p>A Threat Intelligence is an evidence-based knowledge, which including context, mechanisms, indicators, implications, and actionable advice, about an existing or emerging menace or hazard to assets that can be used to inform decisions regarding the subject’s response to that menace or hazard. <a class="reference external" href="https://github.com/hslatman/awesome-threat-intelligence">For more details, please check here</a>.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="book-04-machinelearningandvisualisation.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">04 MACHINE LEARNING AND VISUALISATION</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="book-06-cybertoolsincidentresp.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">06 CYBER SECURITY ANALYTICS TOOLS - INCIDENT RESPONSE</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Prof. Phil Legg<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
