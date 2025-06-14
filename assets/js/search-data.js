@@ -296,6 +296,16 @@ ninja.data = [{
           description: "Advancing Software Fuzzing Techniques through the Exploration of Cryptographic Concepts and Machine Learning",
           section: "Projects",handler: () => {
               window.location.href = "/projects/phd_sadegh/";
+            },},{id: "projects-cyber-security-analytics",
+          title: 'Cyber Security Analytics',
+          description: "Postgraduate module",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/teaching_csa/";
+            },},{id: "projects-security-data-analytics-and-visualisation",
+          title: 'Security Data Analytics and Visualisation',
+          description: "Final year undergraduate module",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/teaching_sdav/";
             },},{
         id: 'social-email',
         title: 'email',
