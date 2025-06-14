@@ -7,6 +7,4 @@ importance: 4
 category: modules
 ---
 
-# Cyber Security Analytics
-
 Previous module content <a href="http://pa-legg.github.io/csa/">available here</a>.
