@@ -233,7 +233,17 @@ ninja.data = [{
           section: "News",},{id: "news-andrew-mccarthy-3rd-year-phd-student-has-successfully-been-accepted-for-publication-of-his-recent-work-defending-against-adversarial-machine-learning-attacks-using-hierarchical-learning-a-case-study-on-network-traffic-attack-classification-in-the-journal-of-information-security-and-applications-i-also-served-as-a-phd-external-examiner-for-de-montfort-university-leicester-on-the-topic-of-re-identification-attacks-on-anonymised-databases",
           title: 'Andrew McCarthy (3rd Year PhD student) has successfully been accepted for publication of...',
           description: "",
-          section: "News",},{id: "news-uwecyber-shortlisted-for-cyber-university-of-the-year-2024",
+          section: "News",},{id: "news-invited-panel-hosted-by-dsit-on-regional-cyber-skills",
+          title: 'Invited panel hosted by DSIT on regional cyber skills',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2023-03-27-dsit-panel-engine-shed/";
+            },},{id: "news-thanks-to-all-uwecyber-speakers-for-2023",
+          title: 'Thanks to all UWEcyber speakers for 2023!',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2023-12-20-thanks-uwecyber-speakers/";
+            },},{id: "news-uwecyber-shortlisted-for-cyber-university-of-the-year-2024",
           title: 'UWEcyber shortlisted for Cyber University of the Year 2024',
           description: "",
           section: "News",handler: () => {
@@ -252,6 +262,11 @@ ninja.data = [{
           title: 'Edited book on Advances in Teaching and Learning for Cyber Security Education',
           description: "",
           section: "News",handler: () => {
+              window.location.href = "/news/2024-07-18-graduation/";
+            },},{id: "news-edited-book-on-advances-in-teaching-and-learning-for-cyber-security-education",
+          title: 'Edited book on Advances in Teaching and Learning for Cyber Security Education',
+          description: "",
+          section: "News",handler: () => {
               window.location.href = "/news/2025-01-01-cse-book/";
             },},{id: "news-10-years-at-uwe",
           title: '10 years at UWE',
@@ -263,6 +278,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-03-12-plymouth-talk/";
+            },},{id: "news-belkasoft-forensics-training",
+          title: 'Belkasoft Forensics Training',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-03-28-belkasoft/";
             },},{id: "news-new-research-paper-on-machine-learning-based-software-fuzzing",
           title: 'New research paper on machine learning-based software fuzzing',
           description: "",
