@@ -85,8 +85,8 @@
       "institution": "University of the West of England (UWE Bristol)",
       "location": "Bristol, UK",
       "url": "https://www.uwe.ac.uk/",
-      "area": "Postgraduate Certificate in Teaching and Learning for Higher Education",
-      "studyType": "PGCert",
+      "area": " ",
+      "studyType": "Postgraduate Certificate in Teaching and Learning for Higher Education (PGCert)",
       "startDate": "2015-10-01",
       "endDate": "2016-07-01",
       "courses": [""]
@@ -95,8 +95,8 @@
       "institution": "Cardiff University",
       "location": "Cardiff, UK",
       "url": "https://www.cardiff.ac.uk/",
-      "area": "Computer Science",
-      "studyType": "PhD",
+      "area": " ",
+      "studyType": "PhD Computer Science",
       "startDate": "2006-10-01",
       "endDate": "2010-03-01",
       "courses": ["Multi-modal Retinal Imaging: Improving Accuracy and Efficiency of Image Registration using Mutual Information"]
@@ -105,11 +105,11 @@
       "institution": "Cardiff University",
       "location": "Cardiff, UK",
       "url": "https://www.cardiff.ac.uk/",
-      "area": "Computer Science",
-      "studyType": "BSc",
+      "area": " ",
+      "studyType": "BSc Computer Science",
       "startDate": "2003-10-01",
       "endDate": "2006-07-01",
-      "courses": ["Multi-player Internet Game: Chinese Checkers"]
+      "courses": ["Final Year Project: A Multi-player Internet Game with AI opponent - Chinese Checkers"]
     }
   ],
 
