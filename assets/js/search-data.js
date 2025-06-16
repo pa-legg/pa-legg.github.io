@@ -233,7 +233,22 @@ ninja.data = [{
           section: "News",},{id: "news-andrew-mccarthy-3rd-year-phd-student-has-successfully-been-accepted-for-publication-of-his-recent-work-defending-against-adversarial-machine-learning-attacks-using-hierarchical-learning-a-case-study-on-network-traffic-attack-classification-in-the-journal-of-information-security-and-applications-i-also-served-as-a-phd-external-examiner-for-de-montfort-university-leicester-on-the-topic-of-re-identification-attacks-on-anonymised-databases",
           title: 'Andrew McCarthy (3rd Year PhD student) has successfully been accepted for publication of...',
           description: "",
-          section: "News",},{id: "news-10-years-at-uwe",
+          section: "News",},{id: "news-uwecyber-shortlisted-for-cyber-university-of-the-year-2024",
+          title: 'UWEcyber shortlisted for Cyber University of the Year 2024',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2024-08-01-shortlisted-for-cyber-university-of-the-year/";
+            },},{id: "news-welcome-to-two-new-phd-students-yen-and-michael",
+          title: 'Welcome to two new PhD students, Yen and Michael',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2024-10-01-welcome-yen-and-michael/";
+            },},{id: "news-a-year-in-review-2024",
+          title: 'A year in review 2024',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2024-12-23-year-in-review/";
+            },},{id: "news-10-years-at-uwe",
           title: '10 years at UWE',
           description: "",
           section: "News",handler: () => {
