@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Invited panel hosted by DSIT on regional cyber skills
-date: 2023-12-20
+date: 2023-03-27
 inline: false
 related_posts: false
 ---

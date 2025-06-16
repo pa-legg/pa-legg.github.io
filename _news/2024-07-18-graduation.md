@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Edited book on Advances in Teaching and Learning for Cyber Security Education
-date: 2025-01-01
+title: Congratulations to our new graduates!
+date: 2024-07-18
 inline: false
 related_posts: false
 ---
