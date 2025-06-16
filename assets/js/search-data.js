@@ -233,7 +233,22 @@ ninja.data = [{
           section: "News",},{id: "news-andrew-mccarthy-3rd-year-phd-student-has-successfully-been-accepted-for-publication-of-his-recent-work-defending-against-adversarial-machine-learning-attacks-using-hierarchical-learning-a-case-study-on-network-traffic-attack-classification-in-the-journal-of-information-security-and-applications-i-also-served-as-a-phd-external-examiner-for-de-montfort-university-leicester-on-the-topic-of-re-identification-attacks-on-anonymised-databases",
           title: 'Andrew McCarthy (3rd Year PhD student) has successfully been accepted for publication of...',
           description: "",
-          section: "News",},{id: "news-sparkles-a-long-overdue-refresh-of-my-web-pages-sparkles-smile",
+          section: "News",},{id: "news-new-research-paper-on-machine-learning-based-software-fuzzing",
+          title: 'New research paper on machine learning-based software fuzzing',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-03-30-mtfuzz-paper/";
+            },},{id: "news-new-research-paper-on-industrial-control-systems-cyber-threat-simulation",
+          title: 'New research paper on industrial control systems cyber threat simulation',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-04-28-trist/";
+            },},{id: "news-cyberuk-2025-in-manchester",
+          title: 'CyberUK 2025 in Manchester',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-05-cyberuk2025/";
+            },},{id: "news-sparkles-a-long-overdue-refresh-of-my-web-pages-sparkles-smile",
           title: ':sparkles: A long overdue refresh of my web pages :sparkles: :smile:',
           description: "",
           section: "News",},{id: "news-congratulations-to-sadegh-for-passing-his-phd",
