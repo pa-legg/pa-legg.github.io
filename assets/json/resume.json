@@ -53,9 +53,9 @@
     {
       "name": "Swansea University",
       "position": "Post-Doctoral Research Assistant",
-      "url": "http://www.oxford.ac.uk",
-      "startDate": "2013-03-20",
-      "endDate": "2015-02-09",
+      "url": "http://www.swansea.ac.uk",
+      "startDate": "2010-07-01",
+      "endDate": "2013-03-20",
       "summary": "Department of Computer Science",
       "highlights": [""]
     },
@@ -72,8 +72,8 @@
       "name": "Cardiff University",
       "position": "Software Developer",
       "url": "",
-      "startDate": "2010-05-01",
-      "endDate": "2015-07-31",
+      "startDate": "2010-04-01",
+      "endDate": "2015-07-01",
       "summary": "Development of research-led Android mobile application, GeoCaption.",
       "highlights": [""]
     }
