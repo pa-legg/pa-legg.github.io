@@ -248,8 +248,8 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2024-12-23-year-in-review/";
-            },},{id: "news-10-years-at-uwe",
-          title: '10 years at UWE',
+            },},{id: "news-edited-book-on-advances-in-teaching-and-learning-for-cyber-security-education",
+          title: 'Edited book on Advances in Teaching and Learning for Cyber Security Education',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-01-01-cse-book/";
