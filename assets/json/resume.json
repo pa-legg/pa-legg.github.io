@@ -81,17 +81,14 @@
       "institution": "University of the West of England (UWE Bristol)",
       "location": "Bristol, UK",
       "url": "https://www.uwe.ac.uk/",
-      "area": " ",
       "studyType": "Postgraduate Certificate in Teaching and Learning for Higher Education (PGCert)",
       "startDate": "2015-10-01",
-      "endDate": "2016-07-01",
-      "courses": [""]
+      "endDate": "2016-07-01"
     },
     {
       "institution": "Cardiff University",
       "location": "Cardiff, UK",
       "url": "https://www.cardiff.ac.uk/",
-      "area": " ",
       "studyType": "PhD Computer Science",
       "startDate": "2006-10-01",
       "endDate": "2010-03-01",
@@ -101,11 +98,10 @@
       "institution": "Cardiff University",
       "location": "Cardiff, UK",
       "url": "https://www.cardiff.ac.uk/",
-      "area": " ",
       "studyType": "BSc Computer Science",
       "startDate": "2003-10-01",
       "endDate": "2006-07-01",
-      "courses": ["Final Year Project: A Multi-player Internet Game with AI opponent - Chinese Checkers"]
+      "courses": ["Final Year Project: Chinese Checkers Multi-player Internet Game with AI opponent"]
     }
   ],
 
