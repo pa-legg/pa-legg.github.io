@@ -243,6 +243,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2023-12-20-thanks-uwecyber-speakers/";
+            },},{id: "news-cyberuk-2024-in-birmingham",
+          title: 'CyberUK 2024 in Birmingham',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2024-05-cyberuk2024/";
             },},{id: "news-uwecyber-shortlisted-for-cyber-university-of-the-year-2024",
           title: 'UWEcyber shortlisted for Cyber University of the Year 2024',
           description: "",
