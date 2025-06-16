@@ -248,6 +248,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2024-05-cyberuk2024/";
+            },},{id: "news-congratulations-to-our-new-graduates",
+          title: 'Congratulations to our new graduates!',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2024-07-18-graduation/";
             },},{id: "news-uwecyber-shortlisted-for-cyber-university-of-the-year-2024",
           title: 'UWEcyber shortlisted for Cyber University of the Year 2024',
           description: "",
@@ -263,11 +268,6 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2024-12-23-year-in-review/";
-            },},{id: "news-edited-book-on-advances-in-teaching-and-learning-for-cyber-security-education",
-          title: 'Edited book on Advances in Teaching and Learning for Cyber Security Education',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/2024-07-18-graduation/";
             },},{id: "news-edited-book-on-advances-in-teaching-and-learning-for-cyber-security-education",
           title: 'Edited book on Advances in Teaching and Learning for Cyber Security Education',
           description: "",
