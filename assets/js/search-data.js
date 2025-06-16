@@ -233,7 +233,22 @@ ninja.data = [{
           section: "News",},{id: "news-andrew-mccarthy-3rd-year-phd-student-has-successfully-been-accepted-for-publication-of-his-recent-work-defending-against-adversarial-machine-learning-attacks-using-hierarchical-learning-a-case-study-on-network-traffic-attack-classification-in-the-journal-of-information-security-and-applications-i-also-served-as-a-phd-external-examiner-for-de-montfort-university-leicester-on-the-topic-of-re-identification-attacks-on-anonymised-databases",
           title: 'Andrew McCarthy (3rd Year PhD student) has successfully been accepted for publication of...',
           description: "",
-          section: "News",},{id: "news-new-research-paper-on-machine-learning-based-software-fuzzing",
+          section: "News",},{id: "news-10-years-at-uwe",
+          title: '10 years at UWE',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-01-01-cse-book/";
+            },},{id: "news-10-years-at-uwe",
+          title: '10 years at UWE',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-02-09-10years-UWE/";
+            },},{id: "news-invited-talk-at-university-of-plymouth",
+          title: 'Invited talk at University of Plymouth',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-03-12-plymouth-talk/";
+            },},{id: "news-new-research-paper-on-machine-learning-based-software-fuzzing",
           title: 'New research paper on machine learning-based software fuzzing',
           description: "",
           section: "News",handler: () => {
