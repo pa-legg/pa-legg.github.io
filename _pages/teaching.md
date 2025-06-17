@@ -2,10 +2,10 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for various modules, workshops, and outreach - coming soon.
+description: Taught modules, outreach workshops, and other teaching activities
 nav: true
 nav_order: 3
-display_categories: [modules, workshops, outreach, neat ideas]
+display_categories: [modules, workshops, neat ideas]
 horizontal: false
 ---
 

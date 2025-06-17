@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Research activities, coding examples, and PhD studentships - coming soon.
+description: PhD studentships, research projects, external activities and code
 nav: true
 nav_order: 2
-display_categories: [phd students, research, code, cool things]
+display_categories: [phd students, projects, code, cool things]
 horizontal: false
 ---
 
