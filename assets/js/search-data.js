@@ -571,6 +571,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/projects_2023_humansensor/";
+            },},{id: "projects-resources-for-phd-students",
+          title: 'Resources for PhD Students',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/resources_phdguide/";
             },},{id: "projects-cyber-security-analytics",
           title: 'Cyber Security Analytics',
           description: "Postgraduate module",
