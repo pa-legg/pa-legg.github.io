@@ -311,6 +311,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-06-13-02-sadegh/";
+            },},{id: "news-appointed-to-uk-government-cyber-advisory-board",
+          title: 'Appointed to UK Government Cyber Advisory Board',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-06-18-gcab/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
