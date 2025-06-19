@@ -361,36 +361,66 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-facebounce",
+          title: 'Facebounce',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/dev_2010_fundusreg%20copy/";
+            },},{id: "projects-fundus-slo-registration",
+          title: 'Fundus-SLO Registration',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/dev_2010_fundusreg/";
+            },},{id: "projects-matchpad",
+          title: 'MatchPad',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/dev_2011_matchpad/";
+            },},{id: "projects-pocketcoder",
+          title: 'PocketCoder',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/dev_2011_pocketcoder/";
+            },},{id: "projects-shipping-forecast",
+          title: 'Shipping Forecast',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/dev_2011_shipping-forecast/";
+            },},{id: "projects-tide-times",
+          title: 'Tide Times',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/dev_2011_tidetimes/";
             },},{id: "projects-insidervis",
           title: 'InsiderVis',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/code_2015_insidervis/";
+              window.location.href = "/projects/dev_2015_insidervis/";
             },},{id: "projects-interactive-pca",
           title: 'Interactive PCA',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/code_2015_interactivepca/";
+              window.location.href = "/projects/dev_2015_interactivepca/";
             },},{id: "projects-activate-visual-analytics-in-active-machine-learning",
           title: 'ActiVAte - Visual Analytics in Active Machine Learning',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/code_2018_activate/";
+              window.location.href = "/projects/dev_2018_activate/";
             },},{id: "projects-haste",
           title: 'HASTE',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/code_2019_haste/";
+              window.location.href = "/projects/dev_2019_haste/";
             },},{id: "projects-phishvis",
           title: 'PhishVis',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/code_2019_phishvis/";
+              window.location.href = "/projects/dev_2019_phishvis/";
             },},{id: "projects-morrigu-anti-evasion-malware-analysis",
           title: 'MORRIGU - Anti-Evasion Malware Analysis',
           description: "Alan Mills and Phil Legg",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/code_2020_morrigu/";
+              window.location.href = "/projects/dev_2020_morrigu/";
             },},{id: "projects-mitigating-poisoning-attacks-in-federated-learning-environment",
           title: 'Mitigating poisoning attacks in federated learning environment',
           description: "Aimen Djemaa",
