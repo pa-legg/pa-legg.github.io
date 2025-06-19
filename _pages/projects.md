@@ -5,7 +5,7 @@ permalink: /projects/
 description: PhD studentships, research projects, external activities and code
 nav: true
 nav_order: 2
-display_categories: [phd students, projects, code, resources, cool things]
+display_categories: [phd students, projects, dev, resources, cool things]
 horizontal: false
 ---
 

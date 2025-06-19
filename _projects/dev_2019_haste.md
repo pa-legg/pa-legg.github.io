@@ -4,7 +4,7 @@ title: HASTE
 description: 
 img: assets/img/haste.jpg
 importance: 4
-category: code
+category: dev
 ---
 
 (2018)

@@ -4,7 +4,7 @@ title: MORRIGU - Anti-Evasion Malware Analysis
 description: Alan Mills and Phil Legg
 img: assets/img/morrigu.jpg
 importance: 4
-category: code
+category: dev
 ---
 
 (2020)

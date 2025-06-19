@@ -4,7 +4,7 @@ title: InsiderVis
 description: 
 img: assets/img/insidervis.jpg
 importance: 4
-category: code
+category: dev
 ---
 
 (2015)

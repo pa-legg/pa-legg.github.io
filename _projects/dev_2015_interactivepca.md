@@ -4,7 +4,7 @@ title: Interactive PCA
 description: 
 img: assets/img/ipca.jpg
 importance: 4
-category: code
+category: dev
 ---
 
 (2015)

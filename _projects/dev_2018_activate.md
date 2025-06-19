@@ -4,7 +4,7 @@ title: ActiVAte - Visual Analytics in Active Machine Learning
 description: 
 img: assets/img/activate.jpg
 importance: 4
-category: code
+category: dev
 ---
 
 (2018)

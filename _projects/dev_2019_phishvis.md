@@ -4,7 +4,7 @@ title: PhishVis
 description: 
 img: assets/img/phishvis.jpg
 importance: 4
-category: code
+category: dev
 ---
 
 (2019)
