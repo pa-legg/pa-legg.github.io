@@ -19,7 +19,7 @@ Paper: https://lnkd.in/eW-B3aZY
 
 hashtag#cyber hashtag#security hashtag#software hashtag#testing hashtag#fuzzing hashtag#neuralnetwork
 
-<p style="text-align:center;">
+<p>
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7317482203691581440" height="1637" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 </p>
 
