@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Encryption Teaching Tool</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 2em auto;
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.5em;
+    }
+    button {
+      margin-top: 1em;
+      padding: 0.5em 1em;
+    }
+    .output {
+      margin-top: 1em;
+      padding: 0.5em;
+      background-color: #f4f4f4;
+      border-radius: 4px;
+    }
+    pre {
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Encryption Teaching Tool</h1>
+
+  <label for="cipherType">Select Cipher:</label>
+  <select id="cipherType" onchange="updateCipher()">
+    <option value="caesar">Caesar Cipher</option>
+    <option value="reverse">Reverse Cipher</option>
+    <option value="xor">XOR Cipher</option>
+    <option value="rsa">RSA (demo)</option>
+  </select>
+
+  <label for="plaintext">Enter text (numbers 0-9 for RSA):</label>
+  <textarea id="plaintext" rows="2" oninput="updateCipher()"></textarea>
+
+  <label for="key">Enter key (number or character):</label>
+  <input type="text" id="key" value="3" oninput="updateCipher()"/>
+
+  <button onclick="clearText()">Clear</button>
+
+  <div class="output">
+    <strong>Encrypted text:</strong>
+    <p id="ciphertext"></p>
+  </div>
+
+  <div class="output">
+    <strong>Decrypted text (from encrypted):</strong>
+    <p id="decrypted"></p>
+  </div>
+
+  <div class="output" id="rsaInfo" style="display:none;">
+    <strong>RSA Keys / Steps:</strong>
+    <pre id="rsaDetails"></pre>
+  </div>
+
+  <script>
+    function caesarShift(str, key) {
+      key = parseInt(key) || 0;
+      let result = "";
+      for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+        if (char.match(/[a-z]/i)) {
+          let code = str.charCodeAt(i);
+          if (code >= 65 && code <= 90) {
+            char = String.fromCharCode(((code - 65 + key + 26) % 26) + 65);
+          } else if (code >= 97 && code <= 122) {
+            char = String.fromCharCode(((code - 97 + key + 26) % 26) + 97);
+          }
+        }
+        result += char;
+      }
+      return result;
+    }
+
+    function reverseCipher(str) {
+      return str.split("").reverse().join("");
+    }
+
+    function xorCipher(str, key) {
+      if (!key) return str;
+      let k = key.charCodeAt(0);
+      let result = "";
+      for (let i = 0; i < str.length; i++) {
+        result += String.fromCharCode(str.charCodeAt(i) ^ k);
+      }
+      return result;
+    }
+
+    // RSA helpers
+    function gcd(a, b) {
+      return b === 0 ? a : gcd(b, a % b);
+    }
+
+    function modInverse(e, phi) {
+      let m0 = phi, t, q;
+      let x0 = 0, x1 = 1;
+      while (e > 1) {
+        q = Math.floor(e / phi);
+        t = phi;
+        phi = e % phi;
+        e = t;
+        t = x0;
+        x0 = x1 - q * x0;
+        x1 = t;
+      }
+      if (x1 < 0) x1 += m0;
+      return x1;
+    }
+
+    function rsaGenerate() {
+      const p = 3, q = 11; // small primes for demo
+      const n = p * q;
+      const phi = (p - 1) * (q - 1);
+      let e = 3;
+      while (gcd(e, phi) !== 1) e++;
+      const d = modInverse(e, phi);
+      return { p, q, n, phi, e, d };
+    }
+
+    function rsaEncrypt(text, keys) {
+      return text.split("").map(char => {
+        let m = parseInt(char);
+        if (isNaN(m)) return "?";
+        return Math.pow(m, keys.e) % keys.n;
+      }).join(" ");
+    }
+
+    function rsaDecrypt(text, keys) {
+      return text.split(" ").map(num => {
+        let c = parseInt(num);
+        if (isNaN(c)) return "?";
+        return Math.pow(c, keys.d) % keys.n;
+      }).join("");
+    }
+
+    function encrypt(text, cipher, key, rsaKeys) {
+      switch(cipher) {
+        case 'caesar':
+          return caesarShift(text, key);
+        case 'reverse':
+          return reverseCipher(text);
+        case 'xor':
+          return xorCipher(text, key);
+        case 'rsa':
+          return rsaEncrypt(text, rsaKeys);
+        default:
+          return text;
+      }
+    }
+
+    function decrypt(text, cipher, key, rsaKeys) {
+      switch(cipher) {
+        case 'caesar':
+          return caesarShift(text, -parseInt(key) || 0);
+        case 'reverse':
+          return reverseCipher(text);
+        case 'xor':
+          return xorCipher(text, key);
+        case 'rsa':
+          return rsaDecrypt(text, rsaKeys);
+        default:
+          return text;
+      }
+    }
+
+    function updateCipher() {
+      const cipherType = document.getElementById("cipherType").value;
+      const text = document.getElementById("plaintext").value.trim();
+      const key = document.getElementById("key").value;
+
+      let rsaKeys = null;
+      if (cipherType === "rsa") {
+        rsaKeys = rsaGenerate();
+        document.getElementById("rsaInfo").style.display = "block";
+        document.getElementById("rsaDetails").textContent =
+`p=${rsaKeys.p}, q=${rsaKeys.q}, n=${rsaKeys.n}
+phi=${rsaKeys.phi}, e=${rsaKeys.e}, d=${rsaKeys.d}`;
+      } else {
+        document.getElementById("rsaInfo").style.display = "none";
+      }
+
+      const encrypted = encrypt(text, cipherType, key, rsaKeys);
+      const decrypted = decrypt(encrypted, cipherType, key, rsaKeys);
+
+      document.getElementById("ciphertext").textContent = encrypted;
+      document.getElementById("decrypted").textContent = decrypted;
+    }
+
+    function clearText() {
+      document.getElementById("plaintext").value = "";
+      document.getElementById("ciphertext").textContent = "";
+      document.getElementById("decrypted").textContent = "";
+      document.getElementById("rsaInfo").style.display = "none";
+    }
+
+    // Initialize
+    updateCipher();
+  </script>
+
+</body>
+</html>

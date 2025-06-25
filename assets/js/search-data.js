@@ -44,7 +44,84 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-security-data-analytics-a-pipeline-process",
+        },{id: "post-security-data-analytics-09-future-research-directions",
+        
+          title: 'Security Data Analytics — 09 — Future Research Directions <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/security-data-analytics-09-future-research-directions-4b6811d7c2c0?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-security-data-analytics-08-file-image-and-video-analytics",
+        
+          title: 'Security Data Analytics — 08 — File, Image and Video Analytics <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/security-data-analytics-08-file-image-and-video-analytics-ca74bf915312?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-security-data-analytics-07-text-analytics",
+        
+          title: 'Security Data Analytics — 07 — Text Analytics <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/security-data-analytics-07-text-analytics-72620bdd0028?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-security-data-analytics-06-visual-analytics",
+        
+          title: 'Security Data Analytics — 06 — Visual Analytics <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/security-data-analytics-06-visual-analytics-d914156553cc?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-security-data-analytics-05-visualisation",
+        
+          title: 'Security Data Analytics — 05 — Visualisation <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/security-data-analytics-05-visualisation-492820fd7cd0?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-security-data-analytics-04-machine-learning",
+        
+          title: 'Security Data Analytics — 04 — Machine Learning <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/security-data-analytics-04-machine-learning-5edef0e764f0?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-security-data-analytics-03-statistical-analysis",
+        
+          title: 'Security Data Analytics — 03 — Statistical Analysis <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/security-data-analytics-03-statistical-analysis-d0f0d944dcc0?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-security-data-analytics-a-pipeline-process",
         
           title: 'Security Data Analytics – A Pipeline Process <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
