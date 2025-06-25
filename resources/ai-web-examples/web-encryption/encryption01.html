@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Encryption Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 2em auto;
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.5em;
+    }
+    button {
+      margin-top: 1em;
+      padding: 0.5em 1em;
+    }
+    .output {
+      margin-top: 1em;
+      padding: 0.5em;
+      background-color: #f4f4f4;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Simple Encryption Demo</h1>
+
+  <label for="plaintext">Enter text to encrypt:</label>
+  <textarea id="plaintext" rows="4"></textarea>
+
+  <label for="key">Enter key (number):</label>
+  <input type="number" id="key" value="3"/>
+
+  <button onclick="encrypt()">Encrypt</button>
+
+  <div class="output">
+    <strong>Encrypted text:</strong>
+    <p id="ciphertext"></p>
+  </div>
+
+  <script>
+    function encrypt() {
+      const text = document.getElementById("plaintext").value;
+      const key = parseInt(document.getElementById("key").value) || 0;
+      let result = "";
+
+      for (let i = 0; i < text.length; i++) {
+        let char = text[i];
+        if (char.match(/[a-z]/i)) {
+          let code = text.charCodeAt(i);
+          if (code >= 65 && code <= 90) {
+            char = String.fromCharCode(((code - 65 + key) % 26) + 65);
+          } else if (code >= 97 && code <= 122) {
+            char = String.fromCharCode(((code - 97 + key) % 26) + 97);
+          }
+        }
+        result += char;
+      }
+
+      document.getElementById("ciphertext").textContent = result;
+    }
+  </script>
+
+</body>
+</html>
