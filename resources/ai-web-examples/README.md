@@ -10,3 +10,4 @@ Perfect for embedding in different learning platforms (Virtual Learning Environm
 * [Python Example 01](https://pa-legg.github.io/resources/ai-web-examples/python-examples/python-example01.html)
 * [Python Example 02](https://pa-legg.github.io/resources/ai-web-examples/python-examples/python-example02.html)
 * [Python Example 03](https://pa-legg.github.io/resources/ai-web-examples/python-examples/python-example03.html)
+* [Cyber Fundamentals Quiz Example 01](https://pa-legg.github.io/resources/ai-web-examples/cyber-fundamentals-quiz-examples/cyber-fundamentals-quiz01.html)
