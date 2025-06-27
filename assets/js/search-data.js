@@ -393,6 +393,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-06-18-gcab/";
+            },},{id: "news-presented-at-the-usa-ncyte-cyber-security-across-disciplines-conference",
+          title: 'Presented at the USA NCyTE Cyber Security Across Disciplines conference',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-06-27-cyad/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
