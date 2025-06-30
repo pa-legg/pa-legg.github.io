@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Security Data Analytics and Visualisation
-description: Final year undergraduate module
-img: assets/img/7.jpg
+description: Final year BSc Cyber Security and Digital Forensics module (2017-2024)
+img: assets/img/owl-teaching.jpg
 importance: 4
 category: modules
 ---

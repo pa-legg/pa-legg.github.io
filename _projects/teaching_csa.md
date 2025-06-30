@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Cyber Security Analytics
-description: Postgraduate module
-img: assets/img/6.jpg
+description: Postgraduate module (2021-present)
+img: assets/img/owl-teaching.jpg
 importance: 4
 category: modules
 ---
