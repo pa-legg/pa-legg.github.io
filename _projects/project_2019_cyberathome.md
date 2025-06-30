@@ -2,7 +2,7 @@
 layout: page
 title: Cyber Security in the Home - Detecting IoT Threats
 description: Phil Legg and Jonathan White
-img: assets/img/6.jpg
+img: assets/img/thumbs/brain-binary.jpeg
 importance: 4
 category: projects
 ---

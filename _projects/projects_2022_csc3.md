@@ -2,7 +2,7 @@
 layout: page
 title: Cyber Security and Cyber Crime Cluster (CSC3)
 description: Phil Legg and Nic Ryder
-img: assets/img/6.jpg
+img: assets/img/thumbs/brain-binary.jpeg
 importance: 4
 category: projects
 ---

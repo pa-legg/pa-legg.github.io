@@ -2,7 +2,7 @@
 layout: page
 title: Teaching CyBOK Cyber-Physical Systems Security through Interactive Simulation
 description: Phil Legg, Jon Stadon, and Ian Johnson
-img: assets/img/9.jpg
+img: assets/img/thumbs/brain-binary.jpeg
 importance: 4
 category: [projects, workshops]
 ---

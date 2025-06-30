@@ -2,7 +2,7 @@
 layout: page
 title: Analysis and Visualisation of Ransomware and Malicious Network Propagation
 description: Phil Legg and Jacob Williams
-img: assets/img/6.jpg
+img: assets/img/thumbs/brain-binary.jpeg
 importance: 4
 category: projects
 ---

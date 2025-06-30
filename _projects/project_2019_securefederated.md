@@ -2,7 +2,7 @@
 layout: page
 title: Shared Collaborative Project Planning in Secure Federated Learning Environments
 description: Phil Legg
-img: assets/img/6.jpg
+img: assets/img/thumbs/brain-binary.jpeg
 importance: 4
 category: projects
 ---

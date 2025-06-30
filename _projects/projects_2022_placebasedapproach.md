@@ -2,7 +2,7 @@
 layout: page
 title: Building a place-based approach to preventing online sexual abuse
 description: Kieran McCartan (PI), Ameila Anning, Ian Johnson, Matt Wood, Nick Addis, Phil Legg
-img: assets/img/6.jpg
+img: assets/img/thumbs/brain-binary.jpeg
 importance: 4
 category: projects
 ---

@@ -2,7 +2,7 @@
 layout: page
 title: Methods for improving robustness against adversarial machine learning attacks
 description: Andrew McCarthy (2023)
-img: assets/img/6.jpg
+img: assets/img/thumbs/phd-notepad.jpg
 importance: 4
 category: phd students
 ---

@@ -2,7 +2,7 @@
 layout: page
 title: Cyber security analytics in telecommunications systems: Managing security and service in complex real-time 5G networks
 description: Phil Legg
-img: assets/img/6.jpg
+img: assets/img/thumbs/brain-binary.jpeg
 importance: 4
 category: projects
 ---

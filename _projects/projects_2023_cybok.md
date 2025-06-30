@@ -2,7 +2,7 @@
 layout: page
 title: Teaching CyBOK through Cyber Physical Systems
 description: Alan Mills, Jonathan White and Phil Legg 
-img: assets/img/9.jpg
+img: assets/img/thumbs/brain-binary.jpeg
 importance: 4
 category: [projects, workshops]
 ---

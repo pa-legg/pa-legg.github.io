@@ -2,7 +2,7 @@
 layout: page
 title: Cyber Sandpit: Linking cyber effect to mission objectives
 description: Craig Williams and Phil Legg 
-img: assets/img/6.jpg
+img: assets/img/thumbs/brain-binary.jpeg
 importance: 4
 category: [projects]
 ---

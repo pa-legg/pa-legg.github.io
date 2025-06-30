@@ -2,7 +2,7 @@
 layout: page
 title: CITD - Corporate Insider Threat Detection
 description: Phil Legg (RA), Jason Nurse, Oliver Buckley, Jassim Happa, Ioannis Agrafiotis, Michael Goldsmith, Sadie Creese
-img: assets/img/6.jpg
+img: assets/img/thumbs/brain-binary.jpeg
 importance: 4
 category: projects
 ---

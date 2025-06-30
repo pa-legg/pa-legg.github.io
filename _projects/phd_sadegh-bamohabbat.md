@@ -2,7 +2,7 @@
 layout: page
 title: Advancing software fuzzing techniques through the exploration of cryptographic concepts and machine learning
 description: Sadegh Bamohabbat Chafjiri (2025)
-img: assets/img/7.jpg
+img: assets/img/thumbs/phd-notepad.jpg
 importance: 4
 category: phd students
 ---

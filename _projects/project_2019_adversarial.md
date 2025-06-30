@@ -2,7 +2,7 @@
 layout: page
 title: Interactive Inspection of Adversarial Machine Learning for Collaborative Human-Machine Trust and Security in Data-Driven Military and Defence
 description: Phil Legg
-img: assets/img/6.jpg
+img: assets/img/thumbs/brain-binary.jpeg
 importance: 4
 category: projects
 ---

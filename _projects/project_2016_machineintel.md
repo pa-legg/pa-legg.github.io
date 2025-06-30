@@ -2,7 +2,7 @@
 layout: page
 title: Creating Machine Intelligence with Intelligent Interactive Visualisation
 description: Phil Legg and Jim Smith
-img: assets/img/6.jpg
+img: assets/img/thumbs/brain-binary.jpeg
 importance: 4
 category: projects
 ---
