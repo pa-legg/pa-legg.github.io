@@ -706,7 +706,7 @@ ninja.data = [{
               window.location.href = "/projects/resources_phdguide/";
             },},{id: "projects-cyber-security-analytics",
           title: 'Cyber Security Analytics',
-          description: "Postgraduate module (2021-present)",
+          description: "MSc Cyber Security module (2021-present)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/teaching_csa/";
             },},{id: "projects-cyber-security-consultancy",
