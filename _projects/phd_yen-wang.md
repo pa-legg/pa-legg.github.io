@@ -2,7 +2,7 @@
 layout: page
 title: Advancing rust-based malware analysis
 description: Yen Wang
-img: assets/img/8.jpg
+img: assets/img/phd-notepad.jpeg
 importance: 4
 category: phd students
 ---
