@@ -157,6 +157,42 @@
     }
     
   ]
-  
+  "invited-talks": [
+    {
+      "name": "Artificial Intelligence, agents, and what does it mean for cyber security?",
+      "date": "2025-03-01",
+      "issuer": "Cyber security research seminar series, Centre for Cyber Security, Communications and Network Research, University of Plymouth",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
+      "name": "Cyber Security and Artificial Intelligence - AI for Security or the Security of AI?",
+      "date": "2023-06-01",
+      "issuer": "International Conference on Future Tech, CASUGOL Singapore Keynote Speaker, June 2023.",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
+      "name": "Panel Member - Upskilling South West of England",
+      "date": "2023-03-01",
+      "issuer": "Cyber Growth and Innovation Forum - Bristol, Department for Science, Innovation and Technology, March 2023.",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
+      "name": "Panel Chair - Student discussion on Cyber Skills",
+      "date": "2023-03-01",
+      "issuer": "Cynam, March 2023.",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
+      "name": "Breaking into Cyber Security",
+      "date": "2022-10-01",
+      "issuer": "CASUGOL Singapore, October 2022",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
+      "name": "Getting into Cyber Security",
+      "date": "2022-08-01",
+      "issuer": "NCSC CyberFirst Futures, August 2022",
+      "icon": "fa-solid fa-clipboard-check"
+    }
   
 }
