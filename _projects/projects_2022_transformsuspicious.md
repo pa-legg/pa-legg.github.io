@@ -2,7 +2,7 @@
 layout: page
 title: Transform Suspicious Activity Reports (SARs); UK's First Technology Line of Defence
 description: Nic Ryder, Phil Legg, Demelza Hall, Sam Bourton, Diana Johnson
-img: assets/img/6.jpg
+img: assets/img/thumbs/brain-binary.jpeg
 importance: 4
 category: projects
 ---
