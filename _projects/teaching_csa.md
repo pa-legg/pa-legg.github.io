@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cyber Security Analytics
-description: Postgraduate module (2021-present)
+description: MSc Cyber Security module (2021-present)
 img: assets/img/owl-teaching.jpg
 importance: 4
 category: modules
