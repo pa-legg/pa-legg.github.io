@@ -2,7 +2,7 @@
 layout: page
 title: Turing Network Development Awards
 description: Matt Studley, Phil Legg (Co-I), Nic Ryder, and Felix Ritchie
-img: assets/img/6.jpg
+img: assets/img/thumbs/brain-binary.jpeg
 importance: 4
 category: projects
 ---
