@@ -2,7 +2,7 @@
 layout: page
 title: Identifying and Tackling Counter-Terrorism Finances through Investigation Automation (SCOUT A fully automated enhanced risk assessment engine)
 description: Nic Ryder, Phil Legg and Henry Hillman
-img: assets/img/6.jpg
+img: assets/img/thumbs/moneylaunder.jpg
 importance: 4
 category: projects
 ---
