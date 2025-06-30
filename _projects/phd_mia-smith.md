@@ -2,7 +2,7 @@
 layout: page
 title: Cybersecurity for the internet of medical things
 description: Mia Smith
-img: assets/img/thumbs/phd-notepad.jpeg
+img: assets/img/thumbs/phd-notepad.jpg
 importance: 4
 category: phd students
 ---
