@@ -2,7 +2,7 @@
 layout: page
 title: Cyber Security Assessment for Project CAV Forth
 description: Phil Legg, Kun Wei, Chris Harper and Tony Pipe
-img: assets/img/6.jpg
+img: assets/img/cavforth.jpg
 importance: 4
 category: projects
 ---
