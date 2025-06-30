@@ -2,7 +2,7 @@
 layout: page
 title: Mitigating poisoning attacks in federated learning environment
 description: Aimen Djemaa
-img: assets/img/thumbs/phd-notepad.jpeg
+img: assets/img/thumbs/phd-notepad.jpg
 importance: 4
 category: phd students
 ---
