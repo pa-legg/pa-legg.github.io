@@ -2,7 +2,7 @@
 layout: page
 title: HASTE - Human-centric Active-learning for decision Support in Threat Exploration
 description: Phil Legg and Jim Smith
-img: assets/img/haste2.jpg
+img: assets/img/thumbs/haste2.jpg
 importance: 4
 category: projects
 ---
