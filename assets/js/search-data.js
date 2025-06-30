@@ -579,9 +579,9 @@ ninja.data = [{
           description: "Phil Legg",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project_2015_enhancedpsa/";
-            },},{id: "projects-richerpicture-automated-network-defence-through-business-and-threat-led-machine-learning",
-          title: 'RicherPicture - Automated network defence through business and threat-led machine learning',
-          description: "Jassim Happa, Phil Legg, Thomas Bashford-Rogers, Ioannis Agrafiotis, Michael Goldsmith and Sadie Creese",
+            },},{id: "projects-",
+          title: '',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project_2015_richerpicture/";
             },},{id: "projects-creating-machine-intelligence-with-intelligent-interactive-visualisation",
