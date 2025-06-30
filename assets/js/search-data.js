@@ -706,14 +706,34 @@ ninja.data = [{
               window.location.href = "/projects/resources_phdguide/";
             },},{id: "projects-cyber-security-analytics",
           title: 'Cyber Security Analytics',
-          description: "Postgraduate module",
+          description: "Postgraduate module (2021-present)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/teaching_csa/";
+            },},{id: "projects-cyber-security-consultancy",
+          title: 'Cyber Security Consultancy',
+          description: "Final year BSc Cyber Security and Digital Forensics module (2024-present)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/teaching_csc/";
+            },},{id: "projects-information-risk-management",
+          title: 'Information Risk Management',
+          description: "MSc Cyber Security module (2018-2021)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/teaching_irm/";
+            },},{id: "projects-object-orientated-analysis-design-and-programming",
+          title: 'Object-orientated Analysis, Design and Programming',
+          description: "MSc Software Engineering module (2016-2018)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/teaching_ooadp/";
             },},{id: "projects-security-data-analytics-and-visualisation",
           title: 'Security Data Analytics and Visualisation',
-          description: "Final year undergraduate module",
+          description: "Final year BSc Cyber Security and Digital Forensics module (2017-2024)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/teaching_sdav/";
+            },},{id: "projects-security-management-in-practice",
+          title: 'Security Management in Practice',
+          description: "Final year BSc Cyber Security and Digital Forensics module (2015-2019)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/teaching_smip/";
             },},{
         id: 'social-email',
         title: 'email',
