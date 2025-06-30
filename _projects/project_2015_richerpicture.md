@@ -1,6 +1,6 @@
 ---
 layout: page
-title: RicherPicture: Automated network defence through business and threat-led machine learning
+title: RicherPicture - Automated network defence through business and threat-led machine learning
 description: Jassim Happa, Phil Legg, Thomas Bashford-Rogers, Ioannis Agrafiotis, Michael Goldsmith and Sadie Creese
 img: assets/img/richerpicture.jpg
 importance: 4
