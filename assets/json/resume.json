@@ -156,7 +156,7 @@
       "icon": "fa-solid fa-clipboard-check"
     }
     
-  ]
+  ],
   "invited-talks": [
     {
       "name": "Artificial Intelligence, agents, and what does it mean for cyber security?",
@@ -194,5 +194,6 @@
       "issuer": "NCSC CyberFirst Futures, August 2022",
       "icon": "fa-solid fa-clipboard-check"
     }
+  ]
   
 }
