@@ -2,7 +2,7 @@
 layout: page
 title: A defence model for large language models (LLMs) against multi-turn jailbreak attacks
 description: Michael Tchuindjang
-img: assets/img/phd-notepad.jpeg
+img: assets/img/thumbs/phd-notepad.jpeg
 importance: 4
 category: phd students
 ---
