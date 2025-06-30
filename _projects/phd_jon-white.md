@@ -2,7 +2,7 @@
 layout: page
 title: Security, privacy and performance analysis of federated learning systems
 description: Jonathan White
-img: assets/img/4.jpg
+img: assets/img/phd-notepad.jpeg
 importance: 4
 category: phd students
 ---
