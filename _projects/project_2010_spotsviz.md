@@ -2,7 +2,7 @@
 layout: page
 title: Sports Video Visualisation
 description: Phil Legg (RA), David Chung, Matthew Parry, Iwan Griffiths, David Marshall, Min Chen
-img: assets/img/6.jpg
+img: assets/img/matchpad.png
 importance: 4
 category: projects
 ---
