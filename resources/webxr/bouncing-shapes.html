@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Three.js Moving Shapes</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script>
+    // Basic setup
+    const scene = new THREE.Scene();
+    const camera = new THREE.OrthographicCamera(-400, 400, 300, -300, 1, 1000);
+    camera.position.z = 10;
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    // Helper function for circle geometry
+    function createCircleGeometry(radius, segments) {
+      const shape = new THREE.Shape();
+      shape.absarc(0, 0, radius, 0, Math.PI * 2, false);
+      return new THREE.ShapeGeometry(shape, segments);
+    }
+
+    // Create shapes
+    const shapes = [];
+
+    // Blue Triangle
+    const triangleGeometry = new THREE.BufferGeometry();
+    triangleGeometry.setAttribute('position', new THREE.Float32BufferAttribute([
+      0, 50, 0,
+      -50, -50, 0,
+      50, -50, 0
+    ], 3));
+    const triangleMaterial = new THREE.MeshBasicMaterial({ color: 'blue' });
+    const triangle = new THREE.Mesh(triangleGeometry, triangleMaterial);
+    triangle.position.set(-100, 0, 0);
+    scene.add(triangle);
+    shapes.push({ mesh: triangle, velocity: new THREE.Vector2(0.8, 0.6), radius: 50 });
+
+    // Red Square
+    const squareGeometry = new THREE.PlaneGeometry(100, 100);
+    const squareMaterial = new THREE.MeshBasicMaterial({ color: 'red' });
+    const square = new THREE.Mesh(squareGeometry, squareMaterial);
+    square.position.set(100, 0, 0);
+    scene.add(square);
+    shapes.push({ mesh: square, velocity: new THREE.Vector2(-0.7, 0.4), radius: 70 });
+
+    // Green Circle
+    const circleGeometry = createCircleGeometry(50, 32);
+    const circleMaterial = new THREE.MeshBasicMaterial({ color: 'green' });
+    const circle = new THREE.Mesh(circleGeometry, circleMaterial);
+    circle.position.set(0, 100, 0);
+    scene.add(circle);
+    shapes.push({ mesh: circle, velocity: new THREE.Vector2(0.4, -0.5), radius: 50 });
+
+    // Resize listener
+    window.addEventListener('resize', () => {
+      const aspect = window.innerWidth / window.innerHeight;
+      camera.left = -400;
+      camera.right = 400;
+      camera.top = 400 / aspect;
+      camera.bottom = -400 / aspect;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+
+    // Simple collision detection between circular bounds
+    function detectAndResolveCollisions() {
+      for (let i = 0; i < shapes.length; i++) {
+        const a = shapes[i];
+        for (let j = i + 1; j < shapes.length; j++) {
+          const b = shapes[j];
+          const dx = a.mesh.position.x - b.mesh.position.x;
+          const dy = a.mesh.position.y - b.mesh.position.y;
+          const dist = Math.hypot(dx, dy);
+          const minDist = a.radius + b.radius;
+
+          if (dist < minDist) {
+            // Swap velocities (basic elastic collision)
+            const temp = a.velocity.clone();
+            a.velocity = b.velocity.clone();
+            b.velocity = temp;
+          }
+        }
+      }
+    }
+
+    // Animation loop
+    function animate() {
+      requestAnimationFrame(animate);
+
+      const bounds = { left: -400, right: 400, top: 300, bottom: -300 };
+
+      for (const obj of shapes) {
+        obj.mesh.position.x += obj.velocity.x;
+        obj.mesh.position.y += obj.velocity.y;
+
+        if (obj.mesh.position.x + obj.radius > bounds.right || obj.mesh.position.x - obj.radius < bounds.left) {
+          obj.velocity.x *= -1;
+        }
+        if (obj.mesh.position.y + obj.radius > bounds.top || obj.mesh.position.y - obj.radius < bounds.bottom) {
+          obj.velocity.y *= -1;
+        }
+      }
+
+      detectAndResolveCollisions();
+      renderer.render(scene, camera);
+    }
+
+    animate();
+  </script>
+</body>
+</html>
