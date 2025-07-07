@@ -8,3 +8,5 @@ category: modules
 ---
 
 Previous module content <a href="http://pa-legg.github.io/csa/">available here</a>.
+
+[Earlier module repository here](https://github.com/pa-legg/csa-module)
