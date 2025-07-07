@@ -10,3 +10,5 @@ category: [projects, workshops]
 Funded by National Cyber Security Centre (£40k)
 
 September 2023 – March 2024
+
+[Find out more here](https://github.com/uwe-cyber/teachersworkshop2024)
