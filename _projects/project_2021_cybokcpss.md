@@ -10,3 +10,5 @@ category: [projects, workshops]
 Funded by CyBOK (Cyber Security Body of Knowledge) and NCSC (£5k)
 
 January 2021 – April 2021
+
+[Find out more here](https://uwe-cyber.github.io/cpss/)
