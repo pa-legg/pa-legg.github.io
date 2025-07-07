@@ -11,4 +11,6 @@ Funded by National Cyber Security Centre (£40k)
 
 September 2022 – March 2023
 
-[Cyber Security Education Resources](https://github.com/pa-legg/school)
+[Workshop materials for KS3, KS4, and KS5](https://github.com/uwe-cyber/teachersworkshop2023)
+
+[Additional Cyber Security Education Resources](https://github.com/pa-legg/school)
