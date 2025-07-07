@@ -7,4 +7,4 @@ importance: 4
 category: modules
 ---
 
-Previous module content to appear soon.
+Please visit the [module repository](https://github.com/pa-legg/irm-module/).
