@@ -7,4 +7,4 @@ importance: 4
 category: modules
 ---
 
-Previous module content to appear soon.
+[Module repository](https://github.com/pa-legg/smip-module)
