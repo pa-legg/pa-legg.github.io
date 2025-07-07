@@ -10,3 +10,5 @@ category: [projects, workshops]
 Funded by National Cyber Security Centre (£40k)
 
 September 2022 – March 2023
+
+[Cyber Security Education Resources](https://github.com/pa-legg/school)
