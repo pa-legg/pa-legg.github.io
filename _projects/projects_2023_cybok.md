@@ -10,3 +10,5 @@ category: [projects, workshops]
 Funded by CyBOK and National Cyber Security Centre (£5k)
 
 January 2023 – June 2023
+
+[Find out more here](https://www.cybok.org/resourcesforoutreach/)
