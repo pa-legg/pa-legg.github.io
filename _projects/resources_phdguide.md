@@ -11,10 +11,10 @@ A collection of web resources that may be useful for researchers.
 
 ### UWE Doctoral Academy Resources
 
-* [UWE Postgraduate Research Study](https://www.uwe.ac.uk/research/postgraduate-research-study)
+* [Postgraduate Research Study](https://www.uwe.ac.uk/research/postgraduate-research-study)
 * [Current studentship opportunities](https://www.uwe.ac.uk/research/postgraduate-research-study/how-to-apply/studentship-opportunities)
-* [UWE Doctoral Academy Handbook](https://www.uwe.ac.uk/research/postgraduate-research-study/current-postgraduate-researchers/doctoral-academy-handbook)
-* [UWE Doctoral Academy Handbook: Confirmation of Project (CP1)](https://www.uwe.ac.uk/research/postgraduate-research-study/current-postgraduate-researchers/doctoral-academy-handbook/research-project)
+* [Doctoral Academy Handbook](https://www.uwe.ac.uk/research/postgraduate-research-study/current-postgraduate-researchers/doctoral-academy-handbook)
+* [Doctoral Academy Handbook: Confirmation of Project (CP1)](https://www.uwe.ac.uk/research/postgraduate-research-study/current-postgraduate-researchers/doctoral-academy-handbook/research-project)
 * [Information for current postgraduate researchers](https://www.uwe.ac.uk/research/postgraduate-research-study/current-postgraduate-researchers)
 
 ### What is it to do a PhD?
