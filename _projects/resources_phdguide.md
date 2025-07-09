@@ -9,25 +9,25 @@ category: [resources]
 
 A collection of web resources that may be useful for researchers.
 
-## UWE Doctoral Academy Resources
+### UWE Doctoral Academy Resources
 
 * [UWE Graduate School (Postgraduate Research Study)](https://www.uwe.ac.uk/research/postgraduate-research-study)
 * [UWE Doctoral Academy Handbook](https://www.uwe.ac.uk/research/postgraduate-research-study/current-postgraduate-researchers/doctoral-academy-handbook)
 * [UWE Doctoral Academy Handbook: Confirmation of Project (CP1)](https://www.uwe.ac.uk/research/postgraduate-research-study/current-postgraduate-researchers/doctoral-academy-handbook/research-project)
 
-## What is it to do a PhD?
+### What is it to do a PhD?
 
 * [The illustrated guide to a Ph.D.](https://matt.might.net/articles/phd-school-in-pictures/)
 * [Thesis Whisperer](https://thesiswhisperer.com/useful-resources-for-students-and-supervisors/)
 * [How to Get a PhD - Slides by Dr Sira Gratz (Glasgow)](https://smstc.ac.uk/downloads/perth2019/Gratz_Get_PhD.pdf)
 * [PhD Comics](https://phdcomics.com/)
 
-## What is it to supervise a PhD?
+### What is it to supervise a PhD?
 
 * [What makes a good PhD supervisor](https://www.discoverphds.com/blog/what-makes-a-good-phd-supervisor)
 * [The Good Supervision Guide for new and experienced research supervisors of PhDs](https://www.ucl.ac.uk/teaching-learning/publications/2019/aug/good-supervision-guide-new-and-experienced-research-supervisors-phds)
 
-## Relavent journals 
+### Relavent journals 
 
 *Note: (Impact Factors last updated July 2025)*
 
@@ -59,7 +59,7 @@ A collection of web resources that may be useful for researchers.
 * [Internet of Things (Elsevier - Impact Factor 7.6)](https://www.sciencedirect.com/journal/internet-of-things)
 
 
-## Publication search libraries and related tools
+### Publication search libraries and related tools
 
 * [Google Scholar](https://scholar.google.co.uk/)
 * [IEEE Xplore Library](https://ieeexplore.ieee.org/Xplore/home.jsp)
@@ -67,11 +67,11 @@ A collection of web resources that may be useful for researchers.
 * [Computer Security Conference Ranking and Statistic (Guofei Gu)](https://people.engr.tamu.edu/guofei/sec_conf_stat.htm)
 * [Connected Papers](https://www.connectedpapers.com/)
 
-## LaTeX writing tools
+### LaTeX writing tools
 
 * [Overleaf](https://www.overleaf.com/)
 
-## Datasets and resources for cyber security research
+### Datasets and resources for cyber security research
 
 * [AZSecure-data.org - Intelligence and Security Informatics Data Sets - University of Arizona, Drexel University, University of Virginia, University of Texas at Dallas, and University of Utah](https://www.azsecure-data.org/home.html)
 * [Malware Traffic Analysis](https://www.malware-traffic-analysis.net/)
