@@ -73,6 +73,12 @@ A collection of web resources that may be useful for researchers.
 
 * [Overleaf](https://www.overleaf.com/)
 
+### Advice for academic reading
+
+* [How to read a paper]([https://scholar.google.co.uk/](https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf)
+* [How to read a research paper](https://www.eecs.harvard.edu/~michaelm/postscripts/ReadPaper.pdf)
+* [How to read an academic article](https://libguides.tees.ac.uk/read_article)
+
 ### Datasets and resources for cyber security research
 
 * [AZSecure-data.org - Intelligence and Security Informatics Data Sets - University of Arizona, Drexel University, University of Virginia, University of Texas at Dallas, and University of Utah](https://www.azsecure-data.org/home.html)
