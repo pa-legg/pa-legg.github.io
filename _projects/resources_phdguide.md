@@ -33,11 +33,11 @@ A collection of web resources that may be useful for researchers.
 
 *Note: (Impact Factors last updated July 2025)*
 
-* [IEEE Security and Privacy - Impact Factor 3](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8013)
-* [Computers and Security (Elsevier) - Impact Factor 5.4](https://www.sciencedirect.com/journal/computers-and-security)
+* [IEEE Security and Privacy (IEEE - Impact Factor 3)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8013)
+* [Computers and Security (Elsevier - Impact Factor 5.4)](https://www.sciencedirect.com/journal/computers-and-security)
 * [Journal of Information Security and Applications (Elsevier - Impact Factor 3.7)](https://www.sciencedirect.com/journal/journal-of-information-security-and-applications)
-* [Journal of Network and Computer Applications (Elsevier) - Impact Factor 8.0](https://www.sciencedirect.com/journal/journal-of-network-and-computer-applications)
-* [Cybersecurity (SpringerOpen)](https://cybersecurity.springeropen.com/)
+* [Journal of Network and Computer Applications (Elsevier - Impact Factor 8.0)](https://www.sciencedirect.com/journal/journal-of-network-and-computer-applications)
+* [Cybersecurity (Springer - Impact Factor 3.7)](https://cybersecurity.springeropen.com/)
 * [Computer Standards and Interfaces (Elsevier - Impact Factor 3.1)](https://www.sciencedirect.com/journal/computer-standards-and-interfaces)
 * [Cyber Security and Applications (Elsevier - No current IF)](https://www.sciencedirect.com/journal/cyber-security-and-applications)
 * [MDPI Journal of Cybersecurity and Privacy (Elsevier - No current IF)](https://www.mdpi.com/journal/jcp)
@@ -51,10 +51,10 @@ A collection of web resources that may be useful for researchers.
 * [Journal of Computational Mathematics and Data Science (Elsevier -  No current IF)](https://www.sciencedirect.com/journal/journal-of-computational-mathematics-and-data-science)
 * [Big Data Research (Elsevier - Impact Factor 4.2)](https://www.sciencedirect.com/journal/big-data-research)
 * [Internet of Things and Cyber-Physical Systems (Elsevier - No current IF)](https://www.sciencedirect.com/journal/internet-of-things-and-cyber-physical-systems)
-* [ACM Transactions on Internet Technology](https://dl.acm.org/journal/TOIT)
-* [ACM Transactions on Privacy and Security](https://dl.acm.org/journal/tops)
-* [ACM Transactions on Cyber-Physical Systems](https://dl.acm.org/journal/tcps)
-* [Digital Threats: Research and Practice](https://dl.acm.org/journal/dtrap)
+* [ACM Transactions on Internet Technology (ACM - Impact Factor 3.9)](https://dl.acm.org/journal/TOIT)
+* [ACM Transactions on Privacy and Security (ACM - Impact Factor 3.0)](https://dl.acm.org/journal/tops)
+* [ACM Transactions on Cyber-Physical Systems (ACM - Impact Factor 2.0)](https://dl.acm.org/journal/tcps)
+* [Digital Threats: Research and Practice (ACM - No current IF)](https://dl.acm.org/journal/dtrap)
 * [Expert Systems with Applications (Elsevier - Impact Factor 7.5)](https://www.sciencedirect.com/journal/expert-systems-with-applications/publish/guide-for-authors)
 * [Artificial Intelligence in Medicine (Elsevier - Impact Factor 6.2)](https://www.sciencedirect.com/journal/artificial-intelligence-in-medicine)
 * [Journal of Systems Architecture (Elsevier - Impact Factor 4.1)](https://www.sciencedirect.com/journal/journal-of-systems-architecture)
@@ -75,7 +75,7 @@ A collection of web resources that may be useful for researchers.
 
 ### Advice for academic reading
 
-* [How to read a paper]([https://scholar.google.co.uk/](https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf)
+* [How to read a paper](https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf)
 * [How to read a research paper](https://www.eecs.harvard.edu/~michaelm/postscripts/ReadPaper.pdf)
 * [How to read an academic article](https://libguides.tees.ac.uk/read_article)
 
