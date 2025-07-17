@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-ai-for-rapid-prototyping-in-education",
+        },{id: "post-quick-setup-of-a-virtual-machine-in-a-web-browser-using-kasm-and-docker",
+        
+          title: 'Quick setup of a Virtual Machine in a Web Browser using Kasm and... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/quick-setup-of-a-virtual-machine-in-a-web-browser-using-kasm-and-docker-01f3445146d1?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-ai-for-rapid-prototyping-in-education",
         
           title: 'AI for rapid prototyping in education <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
@@ -141,17 +152,6 @@ ninja.data = [{
         handler: () => {
           
             window.open("https://medium.com/@plegg/security-data-analytics-a-pipeline-process-9be6356f0a8d?source=rss-b5e2ee2ae6ee------2", "_blank");
-          
-        },
-      },{id: "post-security-data-analytics-an-introduction",
-        
-          title: 'Security Data Analytics - An Introduction <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://medium.com/@plegg/1-introduction-to-cyber-security-data-analytics-2e9b524c772b?source=rss-b5e2ee2ae6ee------2", "_blank");
           
         },
       },{id: "books-the-godfather",
@@ -394,8 +394,8 @@ ninja.data = [{
             },},{id: "news-sparkles-a-long-overdue-refresh-of-my-web-pages-sparkles-smile",
           title: ':sparkles: A long overdue refresh of my web pages :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "news-congratulations-to-sadegh-for-passing-his-phd",
-          title: 'Congratulations to Sadegh for passing his PhD!',
+          section: "News",},{id: "news-congratulations-to-sadegh-for-passing-his-phd-viva-on-software-security-testing",
+          title: 'Congratulations to Sadegh for passing his PhD viva on software security testing',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-06-13-02-sadegh/";
