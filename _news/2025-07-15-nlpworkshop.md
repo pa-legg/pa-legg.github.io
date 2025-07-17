@@ -12,6 +12,9 @@ THis work gives a preview of his upcoming accepted paper "Jailbreaking LLMs Thro
 
 Fantastic work Michael - well done!
 
-![image](https://media.licdn.com/dms/image/v2/D4E22AQFubW5z0Y2N2g/feedshare-shrink_1280/B4EZgKMN9GGwAk-/0/1752517633919?e=1755734400&v=beta&t=G-WXrp1YvXTVUs6PTDmWGzksiZFlDra34Nt9z6hB2KI)
+Visit his [LinkedIn](https://www.linkedin.com/posts/michael-tchuindjang-38829317b_what-a-fantastic-day-at-the-4th-cardiff-nlp-activity-7350591729969889280-Dith?utm_source=share&utm_medium=member_desktop&rcm=ACoAAASsf1IBBS8TwjfxN9YkLARF-4pptV_CCu8) for more detail.
 
-[Michael's Post](https://www.linkedin.com/posts/michael-tchuindjang-38829317b_what-a-fantastic-day-at-the-4th-cardiff-nlp-activity-7350591729969889280-Dith?utm_source=share&utm_medium=member_desktop&rcm=ACoAAASsf1IBBS8TwjfxN9YkLARF-4pptV_CCu8)
+
+<img src="[https://media.licdn.com/dms/image/v2/D4E22AQGJRNJLJME_QA/feedshare-shrink_2048_1536/B4EZesCZ_lHYAo-/0/1750938005114?e=1753920000&v=beta&t=7PUfadt9FsOkoB4HrtlCUQDBU324qKAMW2-FuRtvH7o](https://media.licdn.com/dms/image/v2/D4E22AQFubW5z0Y2N2g/feedshare-shrink_1280/B4EZgKMN9GGwAk-/0/1752517633919?e=1755734400&v=beta&t=G-WXrp1YvXTVUs6PTDmWGzksiZFlDra34Nt9z6hB2KI)" alt="Michaelpresenting" width="100%"/>
+
+
