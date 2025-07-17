@@ -409,6 +409,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-06-27-cyad/";
+            },},{id: "news-phd-student-presents-research-at-cardiff-university-nlp-workshop",
+          title: 'PhD student presents research at Cardiff University NLP Workshop',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-07-15-nlpworkshop/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
