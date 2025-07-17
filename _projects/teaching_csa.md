@@ -2,7 +2,7 @@
 layout: page
 title: Cyber Security Analytics
 description: MSc Cyber Security module (2021-present)
-img: assets/img/owl-teaching.jpg
+img: assets/img/robot-teacher1.png
 importance: 4
 category: modules
 ---
