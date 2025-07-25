@@ -24,6 +24,8 @@ Dr Charles Clarke Natalie Coull 🟠 Steph Aldridge 🌵 John Madelin Nigel A. J
 
 [Original LinkedIn Post](https://www.linkedin.com/posts/prof-phil-legg_uwecyber-activity-7353550384264536064-3bSE?utm_source=share&utm_medium=member_desktop&rcm=ACoAAASsf1IBBS8TwjfxN9YkLARF-4pptV_CCu8)
 
+[Find out more about CSE Connect](https://www.cseconnect.org)
+
 <img src="http://pa-legg.github.io/assets/img/cseconnect25/im1.jpeg" alt="cse1" width="100%"/>
 <img src="http://pa-legg.github.io/assets/img/cseconnect25/im2.jpeg" alt="cse1" width="100%"/>
 <img src="http://pa-legg.github.io/assets/img/cseconnect25/im3.jpeg" alt="cse1" width="100%"/>
