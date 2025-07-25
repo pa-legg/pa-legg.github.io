@@ -414,6 +414,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-07-15-nlpworkshop/";
+            },},{id: "news-hosted-the-5th-annual-conference-on-advances-in-cyber-security-education-at-university-of-warwick",
+          title: 'Hosted the 5th Annual Conference on Advances in Cyber Security Education at University...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-07-22-cseconnect/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
