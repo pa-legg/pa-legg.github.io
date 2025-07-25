@@ -93,5 +93,7 @@ A collection of web resources that may be useful for researchers.
 
 ### Advice for writing an academic literature review
 
+* [Ten Simple Rules for Writing a Literature Review (Original source of the LinkedIn post below](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003149)
+
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7354511030703546368?collapsed=1" height="566" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 
