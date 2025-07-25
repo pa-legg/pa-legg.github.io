@@ -90,3 +90,8 @@ A collection of web resources that may be useful for researchers.
 * [Awesome Cybersecurity, Github](https://github.com/liyansong2018/awesome-cybersecurity)
 * [Cyber-Security-Dataset-collections, Github](https://github.com/Hackinfinity/Cyber-Security-Dataset-collections)
 * [MIMIC-III Clinical Database](https://physionet.org/content/mimiciii/1.4/)
+
+### Advice for writing an academic literature review
+
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7354511030703546368?collapsed=1" height="566" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+
