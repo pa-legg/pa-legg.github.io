@@ -419,6 +419,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-07-22-cseconnect/";
+            },},{id: "news-uwecyber-shortlisted-as-cyber-university-of-the-year-for-second-year-running",
+          title: 'UWEcyber shortlisted as Cyber University of the Year for second year running',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-07-30-cyberawards/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
