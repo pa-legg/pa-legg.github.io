@@ -7,6 +7,6 @@ importance: 4
 category: projects
 ---
 
-Funded by UWE Partnership PhD scheme in collaboration with Montvieux Ltd. (£70k)
+Funded by UWE Partnership PhD scheme in collaboration with Montvieux Ltd.
 
 October 2016 – September 2019
