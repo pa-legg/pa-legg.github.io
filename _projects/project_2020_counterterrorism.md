@@ -7,7 +7,7 @@ importance: 4
 category: projects
 ---
 
-Funded by InnovateUK (£81k)
+Funded by InnovateUK
 
 Collaboration with Synalogik Innovations Ltd.
 
