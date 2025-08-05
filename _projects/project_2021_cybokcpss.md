@@ -7,7 +7,7 @@ importance: 4
 category: [projects, workshops]
 ---
 
-Funded by CyBOK (Cyber Security Body of Knowledge) and NCSC (£5k)
+Funded by CyBOK (Cyber Security Body of Knowledge) and NCSC
 
 January 2021 – April 2021
 
