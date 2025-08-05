@@ -685,7 +685,7 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/projects_2022_telco/";
             },},{id: "projects-transform-suspicious-activity-reports-sars-uk-39-s-first-technology-line-of-defence",
-          title: 'Transform Suspicious Activity Reports (SARs); UK&amp;#39;s First Technology Line of Defence',
+          title: 'Transform Suspicious Activity Reports (SARs) - UK&amp;#39;s First Technology Line of Defence',
           description: "Nic Ryder, Phil Legg, Demelza Hall, Sam Bourton, Diana Johnson",
           section: "Projects",handler: () => {
               window.location.href = "/projects/projects_2022_transformsuspicious/";
@@ -694,9 +694,9 @@ ninja.data = [{
           description: "Matt Studley, Phil Legg (Co-I), Nic Ryder, and Felix Ritchie",
           section: "Projects",handler: () => {
               window.location.href = "/projects/projects_2022_turingnetwork/";
-            },},{id: "projects-",
-          title: '',
-          description: "",
+            },},{id: "projects-cyber-sandpit-linking-cyber-effect-to-mission-objectives",
+          title: 'Cyber Sandpit - Linking cyber effect to mission objectives',
+          description: "Craig Williams and Phil Legg",
           section: "Projects",handler: () => {
               window.location.href = "/projects/projects_2023_cybersandpit/";
             },},{id: "projects-cyberwest-west-of-england-schools-and-teachers",
@@ -709,9 +709,9 @@ ninja.data = [{
           description: "Alan Mills, Jonathan White and Phil Legg",
           section: "Projects",handler: () => {
               window.location.href = "/projects/projects_2023_cybok/";
-            },},{id: "projects-",
-          title: '',
-          description: "",
+            },},{id: "projects-every-human-a-sensor-crowdsourcing-cyber-data",
+          title: 'Every human a sensor - Crowdsourcing Cyber Data',
+          description: "Nicola Turner and Phil Legg",
           section: "Projects",handler: () => {
               window.location.href = "/projects/projects_2023_humansensor/";
             },},{id: "projects-resources-for-phd-students",
