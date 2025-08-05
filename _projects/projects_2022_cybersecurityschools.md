@@ -7,7 +7,7 @@ importance: 4
 category: [projects, workshops]
 ---
 
-Funded by National Cyber Security Centre (£40k)
+Funded by National Cyber Security Centre
 
 September 2022 – March 2023
 
