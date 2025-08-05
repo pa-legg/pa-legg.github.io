@@ -7,6 +7,6 @@ importance: 4
 category: [projects, workshops]
 ---
 
-Funded by National Cyber Security Centre (NCSC) (£50k)
+Funded by National Cyber Security Centre (NCSC)
 
 September 2021 – February 2022
