@@ -7,6 +7,6 @@ importance: 4
 category: projects
 ---
 
-Funded by UWE Vice-Chancellor's Early Career Researcher Development Awards (£12k)
+Funded by UWE Vice-Chancellor's Early Career Researcher Development Awards
 
 August 2015 – July 2016
