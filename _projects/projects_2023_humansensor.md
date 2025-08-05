@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Every human a sensor: Crowdsourcing Cyber Data
+title: Every human a sensor - Crowdsourcing Cyber Data
 description: Nicola Turner and Phil Legg 
 img: assets/img/thumbs/brain-binary.jpeg
 importance: 4
