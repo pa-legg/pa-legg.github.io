@@ -5,7 +5,7 @@ title: teaching
 description: Taught modules, outreach workshops, and other teaching activities
 nav: true
 nav_order: 3
-display_categories: [modules, workshops, neat ideas]
+display_categories: [modules, workshops, resources]
 horizontal: false
 ---
 
