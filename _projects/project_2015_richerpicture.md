@@ -7,11 +7,8 @@ importance: 4
 category: projects
 ---
 
-Phase 2:
-Funded by DSTL Centre for Defence Enterprise (£280k)
-April 2016 – March 2017
-
-Phase 1:
-Funded by DSTL Centre for Defence Enterprise (£108k)
-April 2015 - September 2015
+:
+Funded by DSTL Centre for Defence Enterprise
+April 2015 - September 2015 (Phase 1)
+April 2016 – March 2017 (Phase 2)
 
