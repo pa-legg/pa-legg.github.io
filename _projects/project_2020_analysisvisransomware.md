@@ -7,6 +7,6 @@ importance: 4
 category: projects
 ---
 
-Funded by National Cyber Security Centre (£3k)
+Funded by National Cyber Security Centre
 
 May 2020 – September 2020
