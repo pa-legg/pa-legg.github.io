@@ -9,7 +9,7 @@ category: projects
 
 An Autonomous Bus Service From Park & Ride Across Forth Bridge to Edinburgh Park Train & Tram Interchange
 
-Funded by Innovate UK and Centre for Connected and Autonomous Vehicles (£30k)
+Funded by Innovate UK and Centre for Connected and Autonomous Vehicles
 
 Collaboration with Fusion Processing Ltd.
 
