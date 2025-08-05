@@ -7,7 +7,7 @@ importance: 4
 category: [projects, workshops]
 ---
 
-Funded by CyBOK and National Cyber Security Centre (£5k)
+Funded by CyBOK and National Cyber Security Centre
 
 January 2023 – June 2023
 
