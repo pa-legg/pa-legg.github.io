@@ -44,7 +44,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-quick-setup-of-a-virtual-machine-in-a-web-browser-using-kasm-and-docker",
+        },{id: "post-wazuh-ubuntu-kali-caldera-a-super-quick-way-of-building-a-disposable-cyber-lab",
+        
+          title: 'Wazuh, Ubuntu, Kali, Caldera — a super quick way of building a disposable cyber lab... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/wazuh-ubuntu-kali-caldera-a-super-quick-way-of-building-a-disposable-cyber-lab-1ad693665fa5?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-more-fun-with-kasm-and-docker-quickly-spin-up-x86-based-ubuntu-or-kali-on-macos",
+        
+          title: 'More Fun with Kasm and Docker: Quickly spin up x86-based Ubuntu or Kali... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/more-fun-with-kasm-and-docker-quickly-spin-up-x86-based-ubuntu-or-kali-on-macos-b982e4536f6c?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-quick-setup-of-a-virtual-machine-in-a-web-browser-using-kasm-and-docker",
         
           title: 'Quick setup of a Virtual Machine in a Web Browser using Kasm and... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
@@ -130,28 +152,6 @@ ninja.data = [{
         handler: () => {
           
             window.open("https://medium.com/@plegg/security-data-analytics-04-machine-learning-5edef0e764f0?source=rss-b5e2ee2ae6ee------2", "_blank");
-          
-        },
-      },{id: "post-security-data-analytics-03-statistical-analysis",
-        
-          title: 'Security Data Analytics — 03 — Statistical Analysis <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://medium.com/@plegg/security-data-analytics-03-statistical-analysis-d0f0d944dcc0?source=rss-b5e2ee2ae6ee------2", "_blank");
-          
-        },
-      },{id: "post-security-data-analytics-a-pipeline-process",
-        
-          title: 'Security Data Analytics – A Pipeline Process <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://medium.com/@plegg/security-data-analytics-a-pipeline-process-9be6356f0a8d?source=rss-b5e2ee2ae6ee------2", "_blank");
           
         },
       },{id: "books-the-godfather",
@@ -719,6 +719,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/resources_phdguide/";
+            },},{id: "projects-resources-for-teaching-cyber-security",
+          title: 'Resources for teaching Cyber Security',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/resources_startingcyber/";
             },},{id: "projects-cyber-security-analytics",
           title: 'Cyber Security Analytics',
           description: "MSc Cyber Security module (2021-present)",
