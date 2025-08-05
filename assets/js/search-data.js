@@ -679,9 +679,9 @@ ninja.data = [{
           description: "Kieran McCartan (PI), Ameila Anning, Ian Johnson, Matt Wood, Nick Addis, Phil Legg",
           section: "Projects",handler: () => {
               window.location.href = "/projects/projects_2022_placebasedapproach/";
-            },},{id: "projects-",
-          title: '',
-          description: "",
+            },},{id: "projects-cyber-security-analytics-in-telecommunications-systems-managing-security-and-service-in-complex-real-time-5g-networks",
+          title: 'Cyber security analytics in telecommunications systems - Managing security and service in complex...',
+          description: "Phil Legg",
           section: "Projects",handler: () => {
               window.location.href = "/projects/projects_2022_telco/";
             },},{id: "projects-transform-suspicious-activity-reports-sars-uk-39-s-first-technology-line-of-defence",
