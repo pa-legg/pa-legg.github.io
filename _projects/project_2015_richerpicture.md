@@ -7,7 +7,6 @@ importance: 4
 category: projects
 ---
 
-:
 Funded by DSTL Centre for Defence Enterprise
 April 2015 - September 2015 (Phase 1)
 April 2016 – March 2017 (Phase 2)
