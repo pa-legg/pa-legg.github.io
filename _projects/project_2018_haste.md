@@ -7,6 +7,6 @@ importance: 4
 category: projects
 ---
 
-Funded by DSTL Defence and Security Accelerator (£85k)
+Funded by DSTL Defence and Security Accelerator
 
 February 2018 – July 2018
