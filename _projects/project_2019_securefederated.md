@@ -7,6 +7,6 @@ importance: 4
 category: projects
 ---
 
-Funded by UWE Partnership PhD scheme in collaboration with Techmodal Ltd. (£70k)
+Funded by UWE Partnership PhD scheme in collaboration with Techmodal Ltd.
 
 October 2019 – September 2022
