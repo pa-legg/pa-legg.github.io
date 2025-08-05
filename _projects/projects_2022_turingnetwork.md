@@ -7,6 +7,6 @@ importance: 4
 category: projects
 ---
 
-Funded by Alan Turing Institute (£25k)
+Funded by Alan Turing Institute
 
 February 2022 – January 2023
