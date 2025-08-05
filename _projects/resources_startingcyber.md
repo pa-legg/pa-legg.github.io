@@ -32,10 +32,17 @@ Here I highlight a series of (free) TryHackMe rooms that help stage learning for
 
 * [VulnHub - Vulnerable Virtual Machines](https://www.vulnhub.com)
 * [VulHub - Vulnerable Docker Container Images](https://vulhub.org)
-* [OWASP Juice Shop - Original Source](https://owasp.org/www-project-juice-shop/)
-* [Over The Wire](https://overthewire.org/wargames/)
-* [Hack the Box](https://www.hackthebox.com)
-* [CTFd](https://ctfd.io)
+* [OWASP Juice Shop - Home](https://owasp.org/www-project-juice-shop/)
+* [Over The Wire - Online CTF activities](https://overthewire.org/wargames/)
+* [Hack the Box - Online boot 2 root activities](https://www.hackthebox.com)
+* [CTFd - platform for hosting CTFs](https://ctfd.io)
+
+### Docker virtual labs usign Kasm web-based VNC
+
+* [Kasm - Ubuntu Image - Run an OS with web-based VNC in a Docker container](https://hub.docker.com/r/kasmweb/ubuntu-jammy-desktop)
+* [Kasm - More Workspace Images](https://github.com/kasmtech/workspaces-images)
+* [Kasm - Building custom images](https://kasmweb.com/docs/latest/how_to/building_images.html?utm_campaign=Github&utm_source=github)
+* [Docker-Ubuntu-VNC-Desktop - Like Kasm but with older Ubuntu images available](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/#quick-start)
 
 ### Hands-on Practical Activities
 
