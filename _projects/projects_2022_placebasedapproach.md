@@ -7,7 +7,7 @@ importance: 4
 category: projects
 ---
 
-Funded by Vice Chancellor’s Challenge Fund 2022-23 (£25k)
+Funded by Vice Chancellor’s Challenge Fund 2022-23
 
 September 2022 – August 2023
 
