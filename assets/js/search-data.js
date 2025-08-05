@@ -709,9 +709,9 @@ ninja.data = [{
           description: "Alan Mills, Jonathan White and Phil Legg",
           section: "Projects",handler: () => {
               window.location.href = "/projects/projects_2023_cybok/";
-            },},{id: "projects-every-human-a-sensor-crowdsourcing-cyber-data",
-          title: 'Every human a sensor - Crowdsourcing Cyber Data',
-          description: "Nicola Turner and Phil Legg",
+            },},{id: "projects-",
+          title: '',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/projects_2023_humansensor/";
             },},{id: "projects-resources-for-phd-students",
