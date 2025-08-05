@@ -7,6 +7,6 @@ importance: 4
 category: projects
 ---
 
-Funded by UWE Expanding Research Excellence Scheme (£100k)
+Funded by UWE Expanding Research Excellence Scheme 
 
 January 2022 – July 2023
