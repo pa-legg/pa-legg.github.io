@@ -7,7 +7,7 @@ importance: 4
 category: projects
 ---
 
-Funded by Defence Science and Technology Laboratory (£5k)
+Funded by Defence Science and Technology Laboratory
 
 Collaboration with Trimetis Ltd. and PA Consulting Ltd.
 
