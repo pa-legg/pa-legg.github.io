@@ -28,7 +28,7 @@ Here I highlight a series of (free) TryHackMe rooms that help stage learning for
 * [Vulnversity](https://tryhackme.com/room/vulnversity)
 * [Basic Pentesting](https://tryhackme.com/room/basicpentestingjt)
 
-### Resources for building CTF style activities
+### Resources for CTF style activities
 
 * [VulnHub - Vulnerable Virtual Machines](https://www.vulnhub.com)
 * [VulHub - Vulnerable Docker Container Images](https://vulhub.org)
@@ -36,6 +36,7 @@ Here I highlight a series of (free) TryHackMe rooms that help stage learning for
 * [Over The Wire - Online CTF activities](https://overthewire.org/wargames/)
 * [Hack the Box - Online boot 2 root activities](https://www.hackthebox.com)
 * [CTFd - platform for hosting CTFs](https://ctfd.io)
+* [Splunk Boss of the SOC - A Docker container for challenges v1, v2 and v3](https://github.com/pa-legg/splunk-bots-docker)
 
 ### Docker virtual labs usign Kasm web-based VNC
 
