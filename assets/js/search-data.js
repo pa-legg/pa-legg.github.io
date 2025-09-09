@@ -424,6 +424,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-07-30-cyberawards/";
+            },},{id: "news-phd-student-wins-best-paper-award-at-ukci",
+          title: 'PhD student wins Best Paper award at UKCI',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-09-05-ukci-best-paper/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
