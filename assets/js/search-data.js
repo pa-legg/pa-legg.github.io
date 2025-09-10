@@ -724,6 +724,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/resources_phdguide/";
+            },},{id: "projects-resources-and-presentations",
+          title: 'Resources and Presentations',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/resources_presentations/";
             },},{id: "projects-resources-for-teaching-cyber-security",
           title: 'Resources for teaching Cyber Security',
           description: "",
