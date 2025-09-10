@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Resources for UWEcyber guest talks
+title: UWEcyber Guest Seminars
 description: 
 img: assets/img/6.jpg
 importance: 4
