@@ -36,5 +36,5 @@ A collection of presentations used over the years relating to various Computer S
 * [2014-06 Corporate Insider Threat Detection, SMi Oil and Gas Cyber Security Conference](https://pa-legg.github.io/presentations/2014-06_oilgascyber.pdf)
 * [2012-05 Interactive Glyph-Based Visualisation for Real-Time Sports Performance Analysis](https://pa-legg.github.io/presentations/2012-05_glyphworkshop.pdf)
 * [2011-04 vLunch Sports Video Visualisation](https://pa-legg.github.io/presentations/2011-10_vlunchcardiff.pdf)
-* [2011-04 Sports Video Visualisation - Swansea University](https://pa-legg.github.io/presentations/2011-04_sports.pdf)
+* [2011-04 Sports Video Visualisation](https://pa-legg.github.io/presentations/2011-04_sports.pdf)
 
