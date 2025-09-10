@@ -13,6 +13,17 @@ A collection of presentations used over the years relating to various Computer S
 
 * [2025-09 Connecting our students with the Cyber Ecosystem](https://pa-legg.github.io/presentations/2025-09-11-scct-student-experience.pdf)
 * [2025-03 Artificial Intelligence, agents, and what does it mean for cyber security?](https://pa-legg.github.io/presentations/2025-03-llm-agents.pdf)
+* [2023-12 Improving search space analysis of fuzzing metators using cryptographic structures](https://pa-legg.github.io/presentations/2023-12-ICCS-fuzzing.pdf)
+* [2022-11 Teaching offensive and defensive cyber security in schools using a Raspberry Pi cyber range](https://pa-legg.github.io/presentations/2022-11-cisse.pdf)
+* [2022-07 Cyber Security @ UWE](https://pa-legg.github.io/presentations/2022-07-cyber_overview.pdf)
+* [2021-06 Hacking an IoT Home: New opportunities for cyber security education combining remote learning with cyber-physical systems](https://pa-legg.github.io/presentations/2021-06_cyberscience_IoT.pdf)
+* [2021-03 Light bulbs and race cars: Cyber security education using cyber-physical systems](https://pa-legg.github.io/presentations/2021-03_cardiff.pdf)
+* [2020-09 Cyber Security, AI and Digital Futures](https://pa-legg.github.io/presentations/2020-09_casugol.pdf)
+* [2020-06 Shouting through letterboxes: A study on attack susceptibility of voice assistants](https://pa-legg.github.io/presentations/2020-06_cybersa_voice.pdf)
+* [2020-06 What did you say? Extract unintentional secrets from predictive text learning systems](https://pa-legg.github.io/presentations/2020-06_cybersa_text.pdf)
+* [2020-06 The Visual Design of Network Data to Enhance Cyber Security Awareness of the Everyday Internet User](https://pa-legg.github.io/presentations/2020-06_cybersa_design.pdf)
+* [2019-06 NODENS Efficient and Interpretable Real-Time Malware Detection Using Random Forest](https://pa-legg.github.io/presentations/2019-06_cybersanodens.pdf)
+* [2019-06 What makes for effective visualisation in Cyber Situational Awareness for Non-Expert Users?](https://pa-legg.github.io/presentations/2019-06_cybersa_space.pdf)
 * [2018-10 Cybercrime and insider threat: Can AI save us from these adversaries? FBL Financial Crime Research Network](https://pa-legg.github.io/presentations/2018-10_fblcrime.pdf)
 * [2018-09 HASTE: Human-centric Active-learning for decision support in threat exploration, DSTL](https://pa-legg.github.io/presentations/2018-09_dstl.pdf)
 * [2018-06 What do we really mean by "Understanding Cyber Security"? Bristol Festival of Learning](https://pa-legg.github.io/presentations/2018-06_bristolfestivaloflearning.pdf)
@@ -26,3 +37,4 @@ A collection of presentations used over the years relating to various Computer S
 * [2012-05 Interactive Glyph-Based Visualisation for Real-Time Sports Performance Analysis](https://pa-legg.github.io/presentations/2012-05_glyphworkshop.pdf)
 * [2011-04 vLunch Sports Video Visualisation](https://pa-legg.github.io/presentations/2011-10_vlunchcardiff.pdf)
 * [2011-04 Sports Video Visualisation - Swansea University](https://pa-legg.github.io/presentations/2011-04_sports.pdf)
+
