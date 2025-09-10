@@ -1,4 +1,4 @@
-<img width="210" height="31" alt="image" src="https://github.com/user-attachments/assets/5c931d37-2702-499f-8d1e-e9dc771651ed" />---
+---
 layout: page
 title: Resources for UWEcyber guest talks
 description: 
