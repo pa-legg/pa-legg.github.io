@@ -734,6 +734,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/resources_startingcyber/";
+            },},{id: "projects-resources-for-uwecyber-guest-talks",
+          title: 'Resources for UWEcyber guest talks',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/resources_uwecybertalks/";
             },},{id: "projects-cyber-security-analytics",
           title: 'Cyber Security Analytics',
           description: "MSc Cyber Security module (2021-present)",
