@@ -16,7 +16,8 @@ All talks are subject to change, please refer to Blackboard annoucements for fur
 
 * Monday 15th December 2025 - "How to start in to the Penetration Testing Field?" Ahmed Hassan, Cyber Security Engineer & Penetration Tester, Condignum GmbH
 * Monday 8th December 2025 - "Experience of working in the Digital Forensic Unit at the Serious Fraud Office" Nikesh Vaghela and Mariqa Joy Cumberbatch, Serious Fraud Office
-* Monday 1st December 2025 - "What Lurks Below: The Hidden Security Risks of Mobile Apps" Meletius Mgbeodichimma Igbokwe, Senior Modern Workplace Engineer, Lima
+* Monday 1st December 2025 - "The Help Desk That Cost £440M: Securing the Extended Enterprise" Adaora Uche-Ezennia, GRC Lead, THG Ingenuity
+* Monday 24th November 2025 - "What Lurks Below: The Hidden Security Risks of Mobile Apps" Meletius Mgbeodichimma Igbokwe, Senior Modern Workplace Engineer, Lima
 * Monday 17th November 2025 - "UKI Product Security & Systems Evaluation: Introduction for OT/ICS + IoT" Elyot Hoy, Security Delivery Manager, Accenture
 * Monday 10th November 2025 - "Beyond the Top 10: A Professional Guide to Verifiable Application Security with OWASP ASVS" Chris Wood, Principal Application Security SME, Immersive
 * Monday 3rd November 2025 - "From Hard Drives to Global Threat Actors: Evolving Forensic Skills for Modern Cyber Defence" Scott Eggins, Global head of Cyber Threat Intelligence, ComputerShare
