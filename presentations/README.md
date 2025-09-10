@@ -2,7 +2,7 @@
 
 A collection of presentations that are shared with the community.
 
-* [2025-09-11 Connecting our students with the Cyber Ecosystem](https://pa-legg.github.io/presentations/2025-09-11-scct-student-experience.pdf)
+* [2025-09 Connecting our students with the Cyber Ecosystem](https://pa-legg.github.io/presentations/2025-09-11-scct-student-experience.pdf)
 * [2025-03 Artificial Intelligence, agents, and what does it mean for cyber security?](https://pa-legg.github.io/presentations/2025-03-llm-agents.pdf)
 * [2018-10 Cybercrime and insider threat: Can AI save us from these adversaries? FBL Financial Crime Research Network](https://pa-legg.github.io/presentations/2018-10_fblcrime.pdf)
 * [2018-09 HASTE: Human-centric Active-learning for decision support in threat exploration, DSTL](https://pa-legg.github.io/presentations/2018-09_dstl.pdf)
