@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Useful resources for teaching Cyber Security
+title: Resources for teaching Cyber Security
 description: 
 img: assets/img/6.jpg
 importance: 4
