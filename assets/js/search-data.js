@@ -719,18 +719,18 @@ ninja.data = [{
           description: "Nicola Turner and Phil Legg",
           section: "Projects",handler: () => {
               window.location.href = "/projects/projects_2023_humansensor/";
-            },},{id: "projects-resources-for-phd-students",
-          title: 'Resources for PhD Students',
+            },},{id: "projects-useful-resources-for-phd-students",
+          title: 'Useful resources for PhD Students',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/resources_phdguide/";
-            },},{id: "projects-resources-and-presentations",
-          title: 'Resources and Presentations',
+            },},{id: "projects-presentations",
+          title: 'Presentations',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/resources_presentations/";
-            },},{id: "projects-resources-for-teaching-cyber-security",
-          title: 'Resources for teaching Cyber Security',
+            },},{id: "projects-useful-resources-for-teaching-cyber-security",
+          title: 'Useful resources for teaching Cyber Security',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/resources_startingcyber/";
