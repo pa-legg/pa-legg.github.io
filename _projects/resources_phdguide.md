@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Resources for PhD Students
+title: Useful resources for PhD Students
 description: 
 img: assets/img/6.jpg
 importance: 4
