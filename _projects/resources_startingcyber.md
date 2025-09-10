@@ -11,7 +11,7 @@ A collection of web resources for getting started in Cyber Security.
 
 ### Online Activities
 
-* [OWASP Juice Shop - UWE Offer Holder Day Activity](https://github.com/pa-legg/pa-legg.github.io/tree/main/resources/uwe-ohd2025))
+* [OWASP Juice Shop - UWE Offer Holder Day Activity](https://github.com/pa-legg/pa-legg.github.io/tree/main/resources/uwe-ohd2025)
 * [OhSINT - Open Source Intelligence activity](https://github.com/pa-legg/school/blob/main/ohsint.md)
 * [Factory.IO for Cyber Physical Systems Security](https://uwe-cyber.github.io/cpss/)
 
