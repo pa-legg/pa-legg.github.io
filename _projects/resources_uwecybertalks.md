@@ -11,10 +11,11 @@ Schedule of invited talks for the UWEcyber guest seminar programme.
 
 All talks are subject to change, please refer to Blackboard annoucements for further detail.
 
+
 ## Current Term
 
 * Monday 15th December 2025 - "How to start in to the Penetration Testing Field?" Ahmed Hassan, Cyber Security Engineer & Penetration Tester, Condignum GmbH
-* Monday 8th December 2025 - "The Help Desk That Cost £440M: Securing the Extended Enterprise" Adaora Uche-Ezennia, GRC Lead, THG Ingenuity
+* Monday 8th December 2025 - "Experience of working in the Digital Forensic Unit at the Serious Fraud Office" Nikesh Vaghela and Mariqa Joy Cumberbatch, Serious Fraud Office
 * Monday 1st December 2025 - "What Lurks Below: The Hidden Security Risks of Mobile Apps" Meletius Mgbeodichimma Igbokwe, Senior Modern Workplace Engineer, Lima
 * Monday 17th November 2025 - "UKI Product Security & Systems Evaluation: Introduction for OT/ICS + IoT" Elyot Hoy, Security Delivery Manager, Accenture
 * Monday 10th November 2025 - "Beyond the Top 10: A Professional Guide to Verifiable Application Security with OWASP ASVS" Chris Wood, Principal Application Security SME, Immersive
@@ -33,7 +34,7 @@ All talks are subject to change, please refer to Blackboard annoucements for fur
 * Monday 24th February 2025 - "More tales from the front line of Digital Forensics" Craig Porter, Senior Account Executive at OpenText
 * Monday 17th February 2025 - "Bridging the Gap: My cybersecurity journey and insights for your step into industry" Katie Wood, Senior Information Security Architect at Bibby Financial Services
 * Monday 10th February 2025 - "Data Security at Microsoft" Maddi Skinner, Cloud Solution Architect, Microsoft
-* Monday 27th January 2025 - "Digital Forensic Unit Placement Experience" Mariqa Joy Cumberbatch, Serious Fraud Office
+* Monday 27th January 2025 - "Experience of working in the Digital Forensic Unit at the Serious Fraud Office" Mariqa Joy Cumberbatch, Serious Fraud Office
 * Monday 18th November 2024 - "Visualising cyberspace as a contested operating environment" Nigel A. Jones, BSc, MScEcon, FBCS, FRGS, Independent consultant
 * Monday 4th November 2024 - "Online Safety at Ofcom" Dr Andreas Haggman, Principal - Privacy, Security and Academic Partnerships, Ofcom
 * Monday 28th October 2024 - "Human Factors in Cyber Security: Applying Theory to Practice" Dr George Raywood-Burke, Human Factors Scientist, Trimetis
