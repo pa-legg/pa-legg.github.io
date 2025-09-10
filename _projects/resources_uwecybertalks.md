@@ -1,4 +1,4 @@
----
+<img width="210" height="31" alt="image" src="https://github.com/user-attachments/assets/5c931d37-2702-499f-8d1e-e9dc771651ed" />---
 layout: page
 title: Resources for UWEcyber guest talks
 description: 
@@ -7,7 +7,24 @@ importance: 4
 category: [resources]
 ---
 
-A schedule of invited talks for the UWEcyber guest seminar programme.
+Schedule of invited talks for the UWEcyber guest seminar programme.
+
+All talks are subject to change, please refer to Blackboard annoucements for further detail.
+
+## Current Term
+
+* Monday 15th December 2025 - "How to start in to the Penetration Testing Field?" Ahmed Hassan, Cyber Security Engineer & Penetration Tester, Condignum GmbH
+* Monday 8th December 2025 - "The Help Desk That Cost £440M: Securing the Extended Enterprise" Adaora Uche-Ezennia, GRC Lead, THG Ingenuity
+* Monday 1st December 2025 - "What Lurks Below: The Hidden Security Risks of Mobile Apps" Meletius Mgbeodichimma Igbokwe, Senior Modern Workplace Engineer, Lima
+* Monday 17th November 2025 - "UKI Product Security & Systems Evaluation: Introduction for OT/ICS + IoT" Elyot Hoy, Security Delivery Manager, Accenture
+* Monday 10th November 2025 - "Beyond the Top 10: A Professional Guide to Verifiable Application Security with OWASP ASVS" Chris Wood, Principal Application Security SME, Immersive
+* Monday 3rd November 2025 - "From Hard Drives to Global Threat Actors: Evolving Forensic Skills for Modern Cyber Defence" Scott Eggins, Global head of Cyber Threat Intelligence, ComputerShare
+* Monday 20th October 2025 - "From Keyboard to Cabinet: How Cyber Security Shapes National Security" Jack Marley, P3M Works
+* Monday 13th October 2025 - "Cyber Security at BMT" BMT
+* Monday 6th October 2025 - "Cyber Security at Leonardo" Leonardo MW Ltd.
+* Monday 29th September 2025 - "Society Talk: UWE CTF Falcons and CyberWomen@UWE" Mateusz Madrzynski and Megan Jones, UWE.
+
+## Previous Talks
 
 * Monday 24th March 2025 - "CSI: Common Sense Investigations", Adam Harrison, Managing Director at FTI Consulting and SANS Instructor
 * Monday 17th March 2025 - "Cyber Threat Intelligence – Lifting the Shadows" Ian Parsons, Cyber Threat Lead, Quilter
