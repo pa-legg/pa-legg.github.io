@@ -729,8 +729,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/resources_presentations/";
-            },},{id: "projects-useful-resources-for-teaching-cyber-security",
-          title: 'Useful resources for teaching Cyber Security',
+            },},{id: "projects-resources-for-teaching-cyber-security",
+          title: 'Resources for teaching Cyber Security',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/resources_startingcyber/";
