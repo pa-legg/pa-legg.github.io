@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Resources and Presentations
+title: Presentations
 description: 
 img: assets/img/6.jpg
 importance: 4
