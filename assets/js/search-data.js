@@ -734,8 +734,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/resources_startingcyber/";
-            },},{id: "projects-resources-for-uwecyber-guest-talks",
-          title: 'Resources for UWEcyber guest talks',
+            },},{id: "projects-uwecyber-guest-seminars",
+          title: 'UWEcyber Guest Seminars',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/resources_uwecybertalks/";
