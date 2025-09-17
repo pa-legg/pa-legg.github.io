@@ -807,7 +807,8 @@
   preview={2022bamohabbatimproving.jpg},
   html={https://link.springer.com/chapter/10.1007/978-981-97-3973-8_10},
   doi={10.1007/978-981-97-3973-8_10},
-  pdf={example_pdf.pdf}
+  pdf={example_pdf.pdf},
+abstract={This paper introduces a novel approach to enhance the performance of software fuzzing mutator tools, by leveraging cryptographic structures known as substitution-permutation networks and Feistel networks. By integrating these structures into the existing HonggFuzz fuzzing library, we propose HonggFuzz+ and demonstrate its effectiveness over other leading fuzzers, such as how the method can uncover bugs and edges earlier due to enhanced search space optimisation. By introducing these two structures, we can diversify memory region relationships that can ultimately improve the performance of HonggFuzz. We demonstrate our approach on a range of common software examples from previous software fuzzing literature. Our results show better or as good performance across a range of software targets when compared to other leading fuzzing techniques. We discuss the relevance of the findings and consider future directions for improving software fuzzing search space analysis.}
 }
 
 @misc{legg2024advances,
@@ -818,7 +819,10 @@
   html={https://link.springer.com/book/10.1007/978-3-031-77524-6},
   doi={10.1007/978-3-031-77524-6},
   pdf={example_pdf.pdf},
-  selected={true}
+  selected={true},
+abstract={This book showcases latest trends and innovations for how we teach and approach cyber security education. Cyber security underpins the technological advances of the 21st century and is a fundamental requirement in today’s society. Therefore, how we teach and educate on topics of cyber security and how we overcome challenges in this space require a collective effort between academia, industry and government.
+The variety of works in this book include AI and LLMs for cyber security, digital forensics and how teaching cases can be generated at scale, events and initiatives to inspire the younger generations to pursue cyber pathways, assessment methods that provoke and develop adversarial cyber security mindsets and innovative approaches for teaching cyber management concepts. As a rapidly growing area of education, there are many fascinating examples of innovative teaching and assessment taking place; however, as a community we can do more to share best practice and enhance collaboration across the education sector. CSE Connect is a community group that aims to promote sharing and collaboration in cyber security education so that we can upskill and innovate the community together.
+The chapters of this book were presented at the 4th Annual Advances in Teaching and Learning for Cyber Security Education conference, hosted by CSE Connect at the University of the West of England, Bristol, the UK, on July 2, 2024. The book is of interest to educators, students and practitioners in cyber security, both for those looking to upskill in cyber security education, as well as those aspiring to work within the cyber security sector.}
 }
 
 @incollection{legg2024privacy,
@@ -829,7 +833,10 @@
   pages={14},
   year={2024},
   publisher={CRC Press},
-  html={https://www.taylorfrancis.com/books/edit/10.1201/9781003471103/advancements-cyber-crime-investigations-modern-data-analytics-shishir-kumar-shandilya-devangana-sujay-gupta}
+  html={https://www.taylorfrancis.com/books/edit/10.1201/9781003471103/advancements-cyber-crime-investigations-modern-data-analytics-shishir-kumar-shandilya-devangana-sujay-gupta},
+abstract={Suspicious Activity Reports (SAR) form a vital part of incident response and case management for the investigation of known or suspected money laundering. However, those submitting SARs, and those tasked with analysing SARs, often find the task overwhelming due to the complexity of reporting, the incompleteness of information available, and the ability to classify reports effectively for further processing. We explore the use of Natural Language Processing to facilitate this process. Specifically, we
+ utilise the recent advances of Large Language Models to understand and classify SARs against the glossary code terms set out by the UK National Crime Agency. We also explore the privacy concerns of handling confidential and sensitive data with recent AI advancements and propose the use of offline open-source models, coupled with bespoke fine-tuning,
+ to improve task-specific performance using a model that can be deployed locally without requiring data to be shared with external third parties. Our results show that this approach can yield effective classification accuracy on our test cases, offering a solution to develop bespoke smaller, offline models that maintain privacy and confidentiality, over online models that would compromise data privacy.}
 }
 
 @article{ahsan2025explainable,
@@ -840,7 +847,8 @@
   preview={2025ahsan.jpg},
   html={https://www.sciencedirect.com/science/article/pii/S2772918425000074},
   doi={10.1016/j.csa.2025.100090},
-  pdf={example_pdf.pdf}
+  pdf={example_pdf.pdf},
+abstract={Intrusion Detection Systems (IDS) are widely employed to detect and mitigate external network security events. Vehicle ad-hoc Networks (VANETs) continue to evolve, especially with developments related to Connected Autonomous Vehicles (CAVs). In this study, we explore the detection of cyber threats in vehicle networks through ensemble-based machine learning, to strengthen the performance of the learnt model compared to relying on a single model. We propose a model that uses Random Forest and CatBoost as our main ’investigators’, with Logistic Regression used to then reason on their outputs to make a final decision. To further aid analysis, we use SHAP (SHapley Additive exPlanations) analysis to examine feature importance towards the final decision stage. We use the Vehicular Reference Misbehavior (VeReMi) dataset for our experimentation and observe that our approach improves classification accuracy, and results in fewer misclassifications compared to previous works. Overall, this layered approach to decision-making - combining teamwork among models with an explainable view of why they act as they do - can help to achieve a more reliable and easy-to-understand cyber security solution for smart transportation networks.}
 }
 
 @article{chafjiri2025leveraging,
@@ -851,7 +859,10 @@
   preview={2025bamohabbat.jpg},
   html={https://www.sciencedirect.com/science/article/pii/S0920548925000406},
   doi={10.1016/j.csi.2025.104011},
-  pdf={example_pdf.pdf}
+  pdf={example_pdf.pdf},
+abstract={Fuzzing is a common technique for identifying vulnerabilities in software. Recent approaches, like She et al.’s Multi-Task Fuzzing (MTFuzz), use neural networks to improve fuzzing efficiency. However, key elements like network architecture and hyperparameter tuning are still not well-explored. Factors like activation layers, optimisation function design, and vanishing gradient strategies can significantly impact fuzzing results by improving test case selection. This paper delves into these aspects to improve neural network-driven fuzz testing.
+We focus on three key neural network parameters to improve fuzz testing: the Leaky Rectified Linear Unit (LReLU) activation, Nesterov-accelerated Adaptive Moment Estimation (Nadam) optimisation, and sensitivity analysis. LReLU adds non-linearity, aiding feature extraction, while Nadam helps to improve weight updates by considering both current and future gradient directions. Sensitivity analysis optimises layer selection for gradient calculation, enhancing fuzzing efficiency.
+Based on these insights, we propose LMTFuzz, a novel fuzzing scheme optimised for these Machine Learning (ML) strategies. We explore the individual and combined effects of LReLU, Nadam, and sensitivity analysis, as well as their hybrid configurations, across six different software targets. Experimental results demonstrate that LReLU, individually or when paired with sensitivity analysis, significantly enhances fuzz testing performance. However, when combined with Nadam, LReLU shows improvement on some targets, though less pronounced than its combination with sensitivity analysis. This combination improves accuracy, reduces loss, and increases edge coverage, with improvements of up to 23.8%. Furthermore, it leads to a significant increase in unique bug detection, with some targets detecting up to 2.66 times more bugs than baseline methods.}
 }
 
 @inproceedings{lo2025trist,
@@ -863,7 +874,8 @@
   doi={10.1007/978-981-96-0401-2_13},
   preview={2024lotrist.jpg},
   pdf={example_pdf.pdf},
-  selected={true}
+  selected={true},
+abstract={Cyber-attacks on Industrial Control Systems (ICS), as exemplified by the incidents at the Maroochy water treatment plant and the Ukraine’s electric power grid, have demonstrated that cyber threats can inflict significant physical impacts. These incidents caused widespread service disruptions and substantial economic losses, underscoring the urgent need for an in-depth understanding of cyber threats in industrial environments. Industrial security research is usually conducted on physical testbeds to avoid safety issues, production interruptions and other operational constraints in industrial processes. Nevertheless, security defenders often encounter obstacles in developing or accessing physical testbeds due to associated costs and complexities. These factors hinder research progress to devise early detection mechanisms for cyber threats—essential for effective incident response. To overcome these obstacles, this paper presents a container-based virtual testbed. Its lightweight architecture enables replicable and efficient deployment of testbeds at low cost for simulating cyber threats on Cyber-Physical Systems (CPS)—the cornerstone of industrial automation and control systems. Also, the container-based virtual testbed provides a cost-effective option for producing datasets for training, testing and optimization of unsupervised anomaly detection models. Besides, an evaluation on resource consumption is conducted. The paper also discusses the benefits and limitations of proposed container-based ICS testbeds and suggests future research areas.}
 }
 
 @misc{legg2025machine,
@@ -874,7 +886,8 @@
   preview={2025legg.jpg},
   html={https://www.mdpi.com/books/reprint/10756-machine-learning-and-data-analytics-for-cyber-security},
   pdf={example_pdf.pdf},
-  selected={true}
+  selected={true},
+abstract={The aim of this reprint is to provide an overview of the current challenges within the cyber security community today, as recognized by our contributors. This reprint provides 16 papers from the Topical Collection on “Machine Learning and Data Analytics for Cyber Security” that cover topics of large language models for cybersecurity claim classification, adversarial machine learning attacks against intrusion detection systems, the detection of PLC process control anomalies, identifying session-replay bots compared to human users, and mitigating against side-channel attacks.}
 }
 
 @article{mills2025gh0stedit,
@@ -884,7 +897,8 @@
   year={2025},
   publisher={arXiv},
   html={https://arxiv.org/abs/2506.08218},
-  pdf={https://arxiv.org/pdf/2506.08218}
+  pdf={https://arxiv.org/pdf/2506.08218},
+abstract={Containerisation is a popular deployment process for application-level virtualisation using a layer-based approach. Docker is a leading provider of containerisation, and through the Docker Hub, users can supply Docker images for sharing and repurposing popular software application containers. Using a combination of in-built inspection commands, publicly displayed image layer content, and static image scanning, Docker images are designed to ensure end users can clearly assess the content of the image before running them. In this paper we present gh0stEdit , a vulnerability that fundamentally undermines the integrity of Docker images and subverts the assumed trust and transparency they utilise. The use of gh0stEdit allows an attacker to maliciously edit Docker images, in a way that is not shown within the image history, hierarchy or commands. This attack can also be carried out against signed images (Docker Content Trust) without invalidating the image signature. We present two use case studies for this vulnerability, and showcase how gh0stEdit is able to poison an image in a way that is not picked up through static or dynamic scanning tools. Our attack case studies highlight the issues in the current approach to Docker image security and trust, and expose an attack method which could potentially be exploited in the wild without being detected. To the best of our knowledge we are the first to provide detailed discussion on the exploit of this vulnerability.}
 }
 
 @Inbook{Addis2025,
@@ -915,7 +929,8 @@ html={https://link.springer.com/chapter/10.1007/978-3-031-93634-0_5},
   pages={xxx--xxx},
   year={2025},
   organization={Springer International Publishing},
-  html={https://ukci2025.napier.ac.uk}
+  html={https://ukci2025.napier.ac.uk},
+abstract={Large Language Models (LLMs) have demonstrated great potential across many domains, however their susceptibility to jailbreak attacks presents opportunities for malicious actors. These attacks manipulate LLMs to divulge sensitive information or generate harmful content, that could further be utilised in nefarious ways, including as part of cyber-enabled crime, hence presenting a crucial cyber security challenge for the safe and secure interaction of AI-enabled systems. Previous studies highlight the security challenges posed by multi-turn interactions, in which attackers strategically conceal their malicious intent through extended conversations. However, the influence of tense variations on the efficacy of such attacks has received limited attention. This study addresses this gap by systematically examining the role of tense manipulation in multi-turn jailbreak attacks on LLMs. We introduce a novel multi-turn jailbreak attack that specifically exploits past tense reformulation, along with a multi-turn dialogue dataset designed for cyber-related attacks. Experiments conducted on both open-source LLMs (Llama 2-7B, Qwen 2-7B) and closed-source LLMs (GPT-4o-mini, Gemini 2-flash) demonstrate that past tense reformulation significantly enhances attack performance, yielding an average increase of 25.30\% with larger effect on closed-source models. These findings highlight the urgent need to strengthen LLM defence strategies against tense variations in multi-turn dialogues. The dataset and jailbreak artefacts are available at: https://github.com/Micdejc/llm_multiturn_attacks}
 }
 
 
