@@ -429,6 +429,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-09-05-ukci-best-paper/";
+            },},{id: "news-uwecyber-recognised-as-finalist-in-national-cyber-awards-for-the-second-year-running",
+          title: 'UWEcyber recognised as Finalist in National Cyber Awards for the second year running...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-09-29-cyberawards/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
