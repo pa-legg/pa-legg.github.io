@@ -112,8 +112,10 @@ All talks are subject to change, please refer to Blackboard annoucements for fur
 * 23th October 2019: Android Permissions, To Allow or Deny, Dr Panagiotis Andriotis
 * 9th October 2019: Research in UWEcyber, Dr Phil Legg
 * 2nd October 2019: UWE Cyber Security Society
-
-
+* 13th June 2019: Neil Hoose, Bittern Consultancy Ltd. and Centre for Transport Studies, Imperial College London
+* 27th February 2019: Matt Disley, CGI
+* 6th February 2019: Tamar Everson, Context IS
+  
 ## Future talks to be scheduled
 
 * TBC - "How to start in to the Penetration Testing Field?" Ahmed Hassan, Cyber Security Engineer & Penetration Tester, Condignum GmbH
