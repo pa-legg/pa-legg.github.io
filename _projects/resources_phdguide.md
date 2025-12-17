@@ -93,7 +93,7 @@ A collection of web resources that may be useful for researchers.
 
 ### Advice for writing an academic literature review
 
-* [Ten Simple Rules for Writing a Literature Review (Original source of the LinkedIn post below)](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003149)
+* [Ten Simple Rules for Writing a Literature Review](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003149)
 
 ### Cyber Security Academic Conferences 2026
 
