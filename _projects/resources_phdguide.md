@@ -95,5 +95,23 @@ A collection of web resources that may be useful for researchers.
 
 * [Ten Simple Rules for Writing a Literature Review (Original source of the LinkedIn post below)](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003149)
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7354511030703546368?collapsed=1" height="566" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+### Cyber Security Academic Conferences 2026
+
+* [European Interdisciplinary Cybersecurity Conference](https://www.fvv.um.si/eicc2026/) - Submissions: 18th January 2026
+* [IEEE Cyber Security and Resilience](https://www.ieee-csr.org/#cfp) - Submissions: 2nd February 2026
+* [USENIX Security '26](https://www.usenix.org/conference/usenixsecurity26/call-for-papers)  - Submissions: 5th February 2026
+* [ESORICS 2026](https://sites.google.com/di.uniroma1.it/esorics2026/call-for/papers) - Submissions: 9th January and 21st April 2026
+* [IEEE Security and Privacy Workshops](https://sp2026.ieee-security.org/workshops.html)
+* [ACM CCS 2026](https://www.sigsac.org/ccs/CCS2026/) - Submissions: 14th January and 29th April 2026
+* [Cyber Science](https://c-mric.org) - Submissions: 28th February 2026
+  
+### Other Academic Conferences 2026
+
+* [IEEE CyberBio](https://cyberbio26.ieee-security.org/cfp.html) - Submissions: 30th January 2026
+* [IEEE VIS](https://ieeevis.org/year/2025/welcome)
+* [IEEE International Conference on Communications](https://icc2026.ieee-icc.org)
+* [ICCS](https://iccs2025.iaasse.org)
+* [UKCI](https://ukci2025.napier.ac.uk)
+* [MICCAI](https://miccai.org/index.php/)
+* [MIUA](https://www.ucd.ie/medicine/miua2026/)
 
