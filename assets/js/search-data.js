@@ -789,6 +789,13 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/prof-phil-legg", "_blank");
         },
       },{
+        id: 'social-medium',
+        title: 'Medium',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://medium.com/@plegg", "_blank");
+        },
+      },{
         id: 'social-orcid',
         title: 'ORCID',
         section: 'Socials',
@@ -801,6 +808,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://scholar.google.com/citations?user=Tn43ogoAAAAJ&hl", "_blank");
+        },
+      },{
+        id: 'social-work',
+        title: 'Work',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://people.uwe.ac.uk/Person/PhilLegg", "_blank");
         },
       },{
       id: 'light-theme',
