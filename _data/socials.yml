@@ -10,7 +10,7 @@
 email: Phil.Legg@uwe.ac.uk # your email address
 # facebook_id: # your facebook id
 # flickr_id: # your flickr id
-# github_username: # your GitHub user name
+# github_username: pa-legg # your GitHub user name
 # gitlab_username: # your GitLab user name
 # ieee_id: # your ieeexplore.ieee.org/author/id
 # inspirehep_id: 1010907 # Inspire HEP author ID
@@ -22,7 +22,7 @@ email: Phil.Legg@uwe.ac.uk # your email address
 # leetcode_id: # your LeetCode id
 linkedin_username: prof-phil-legg # your LinkedIn user name
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-# medium_username: # your Medium username
+medium_username: @plegg # your Medium username
 orcid_id: 0000-0003-3460-5609 # your ORCID ID
 # osf_id: # your OSF ID
 # pinterest_id: # your pinterest id
@@ -41,9 +41,9 @@ scholar_userid: Tn43ogoAAAAJ&hl # your Google Scholar ID
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 # wikidata_id: # your wikidata id
 # wikipedia_id: # your wikipedia id (Case sensitive)
-# work_url: # work page URL
+work_url: https://people.uwe.ac.uk/Person/PhilLegg # work page URL
 # x_username: # your X handle
-# youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
+# youtube_id: youtube.com/@phillegg347 # your youtube channel id (youtube.com/@<youtube_id>)
 # zotero_username: # your zotero username
 # custom_social: # can be any name here other than the ones already defined above
 #  logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
