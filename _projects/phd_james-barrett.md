@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Interactive machine learning for identifying threats to security and service in large-scale mobile networks
+title: Interactive machine learning for identifying threats to security and service in large scale mobile networks
 description: James Barrett (2026)
 img: assets/img/thumbs/phd-notepad.jpg
 importance: 4
