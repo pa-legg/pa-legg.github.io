@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Micro-, Meso-, and Macro-Level Detection of Advanced Persistent Threats (APT) in Industrial Cyber-Physical Systems: A Focus on Living-off-the-Land Techniques
+title: Micro, Meso, and Macro-Level Detection of Advanced Persistent Threats (APT) in Industrial Cyber-Physical Systems - A Focus on Living-off-the-Land Techniques
 description: Carol Lo (2026)
 img: assets/img/thumbs/phd-notepad.jpg
 importance: 4
