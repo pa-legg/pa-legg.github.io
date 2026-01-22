@@ -549,14 +549,14 @@ ninja.data = [{
           description: "Andrew McCarthy (2023)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/phd_andy-mccarthy/";
-            },},{id: "projects-design-of-a-secure-digital-twin-to-detect-and-mitigate-advanced-persistent-threats-on-cyber-physical-systems-in-smart-manufacturing",
-          title: 'Design of a secure digital twin to detect and mitigate advanced persistent threats...',
-          description: "Carol Lo",
+            },},{id: "projects-micro-meso-and-macro-level-detection-of-advanced-persistent-threats-apt-in-industrial-cyber-physical-systems-techniques",
+          title: 'Micro, Meso, and Macro Level Detection of Advanced Persistent Threats (APT) in Industrial...',
+          description: "Carol Lo (2026)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/phd_carol-lo/";
             },},{id: "projects-interactive-machine-learning-for-identifying-threats-to-security-and-service-in-large-scale-mobile-networks",
-          title: 'Interactive machine learning for identifying threats to security and service in large-scale mobile...',
-          description: "James Barrett",
+          title: 'Interactive machine learning for identifying threats to security and service in large scale...',
+          description: "James Barrett (2026)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/phd_james-barrett/";
             },},{id: "projects-security-privacy-and-performance-analysis-of-federated-learning-systems",
@@ -808,6 +808,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://scholar.google.com/citations?user=Tn43ogoAAAAJ&hl", "_blank");
+        },
+      },{
+        id: 'social-youtube',
+        title: 'YouTube',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://youtube.com/@youtube.com/@phillegg347", "_blank");
         },
       },{
         id: 'social-work',
