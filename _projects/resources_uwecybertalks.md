@@ -14,6 +14,14 @@ All talks are subject to change, please refer to Blackboard annoucements for fur
 
 ## Current Term
 
+* Monday 23rd March 2026 - "Talk TBC" TBC
+* Monday 9th March 2026 - "Talk TBC" TBC
+* Monday 23rd February 2026 - "More tales from the front line of Digital Forensics" Craig Porter, Senior Account Executive at OpenText
+* Monday 9th February 2026 - "Talk TBC" Joe Wells, CyberHerd
+* Monday 26th January 2026 - "Intelligence-led operations at CGI in the evolving cyber threat landscape" Thomas Higgs, Cyber Threat Intelligence Lead, CGI
+
+## Previous Talks
+
 * Monday 15th December 2025 - "From Campus to Industry: Lessons from a Cybersecurity Consultant" Harri Renney, Senior Research and Development Engineer, Kaze Consulting
 * Monday 8th December 2025 - "Experience of working in the Digital Forensic Unit at the Serious Fraud Office" Nikesh Vaghela and Mariqa Joy Cumberbatch, Serious Fraud Office
 * Monday 1st December 2025 - "The Help Desk That Cost £440M: Securing the Extended Enterprise" Adaora Uche-Ezennia, GRC Lead, THG Ingenuity
@@ -24,9 +32,6 @@ All talks are subject to change, please refer to Blackboard annoucements for fur
 * Monday 13th October 2025 - "Cyber Security at BMT" BMT
 * Monday 6th October 2025 - "Cyber Security at Leonardo" Leonardo MW Ltd.
 * Monday 29th September 2025 - "Society Talk: UWE CTF Falcons and CyberWomen@UWE" Mateusz Madrzynski and Megan Jones, UWE.
-
-## Previous Talks
-
 * Monday 24th March 2025 - "CSI: Common Sense Investigations", Adam Harrison, Managing Director at FTI Consulting and SANS Instructor
 * Monday 17th March 2025 - "Cyber Threat Intelligence – Lifting the Shadows" Ian Parsons, Cyber Threat Lead, Quilter
 * Monday 10th March 2025 - "Human Risk" Lucy Finlay, Delivery Director of Security Behaviour and Analytics, Think Cyber Security Ltd.
