@@ -1,3 +1,419 @@
+% Legg Bibtex file - updated Friday 23rd January 2026
+% More recent entries being populated in reverse chronological order
+
+% 2026
+
+@article{LO2026108382,
+title = {LOTL-hunter: Detecting multi-stage living-off-the-land attacks in cyber-physical systems using decision fusion techniques with digital twins},
+journal = {Future Generation Computer Systems},
+volume = {180},
+pages = {108382},
+year = {2026},
+issn = {0167-739X},
+doi = {https://doi.org/10.1016/j.future.2026.108382},
+url = {https://www.sciencedirect.com/science/article/pii/S0167739X26000166},
+author = {Carol Lo and Thu Yein Win and Zeinab Rezaeifar and Zaheer Khan and Phil Legg},
+preview={2026lo.jpg},
+selected={true},
+keywords = {Digital twins, ICS testbed, Cyber physical systems, Big data analytics, Decision fusion, Threat hunting, Threat simulation, Advanced persistent threats, Multi-stage attacks, Living off the land attacks},
+abstract = {The integration of smart sensors and actuators in industrial environments has expanded the cyber-physical attack surface, making it increasingly difficult to distinguish anomalies caused by cyberattacks from those due to mechanical or electrical faults. This challenge is exacerbated by stealthy, multi-stage attacks leveraging Living off the Land (LOTL) techniques, which often evade conventional anomaly detection or intrusion detection systems (IDS). This study presents a Digital Twin-based testbed for safe, repeatable simulation of multi-stage cyber-physical attacks targeting Cyber-Physical Systems (CPS) and Industrial Control Systems (ICS). We propose a two-level decision fusion method that aggregates and aligns anomalies across network, process, and host domains in synchronized 1-minute intervals. The first-level fusion improves OT-layer detection by applying confidence-aware decision logic to outputs combined from (a) a supervised deep learning model (LSTM-FCN) for process anomalies, (b) an unsupervised model (Isolation Forest) for OPC UA network anomalies, and (c) process alarm signals. The second-level fusion integrates these results with host-based anomalies, computed through point-based scoring of Wazuh alerts, to provide comprehensive IT/OT situational awareness. Experimental results demonstrate improved detection of stealthy, multi-stage APT attack behaviours. Additionally, Large Language Models (LLM) provide summarization of the integrated IT/OT anomaly logs into human-readable insights, enhancing interpretability and supporting cyber threat hunting.}
+}
+
+% 2025
+
+
+@article{ahsan2025explainable,
+  title={An Explainable Ensemble-based Intrusion Detection System for Software-Defined Vehicle Ad-hoc Networks},
+  author={Ahsan, Shakil Ibne and Legg, Phil and Alam, S M Iftekharul},
+  journal={Cyber Security and Applications},
+  year={2025},
+  preview={2025ahsan.jpg},
+  html={https://www.sciencedirect.com/science/article/pii/S2772918425000074},
+  doi={10.1016/j.csa.2025.100090},
+abstract={Intrusion Detection Systems (IDS) are widely employed to detect and mitigate external network security events. Vehicle ad-hoc Networks (VANETs) continue to evolve, especially with developments related to Connected Autonomous Vehicles (CAVs). In this study, we explore the detection of cyber threats in vehicle networks through ensemble-based machine learning, to strengthen the performance of the learnt model compared to relying on a single model. We propose a model that uses Random Forest and CatBoost as our main ’investigators’, with Logistic Regression used to then reason on their outputs to make a final decision. To further aid analysis, we use SHAP (SHapley Additive exPlanations) analysis to examine feature importance towards the final decision stage. We use the Vehicular Reference Misbehavior (VeReMi) dataset for our experimentation and observe that our approach improves classification accuracy, and results in fewer misclassifications compared to previous works. Overall, this layered approach to decision-making - combining teamwork among models with an explainable view of why they act as they do - can help to achieve a more reliable and easy-to-understand cyber security solution for smart transportation networks.}
+}
+
+@article{chafjiri2025leveraging,
+  title={Leveraging activation and optimisation layers as dynamic strategies in the multi-task fuzzing scheme},
+  author={Chafjiri, Sadegh Bamohabbat and Legg, Phil and Tsompanas, Michail-Antisthenis and Hong, Jun},
+  journal={Computer Standards \& Interfaces},
+  year={2025},
+  preview={2025bamohabbat.jpg},
+  html={https://www.sciencedirect.com/science/article/pii/S0920548925000406},
+  doi={10.1016/j.csi.2025.104011},
+abstract={Fuzzing is a common technique for identifying vulnerabilities in software. Recent approaches, like She et al.’s Multi-Task Fuzzing (MTFuzz), use neural networks to improve fuzzing efficiency. However, key elements like network architecture and hyperparameter tuning are still not well-explored. Factors like activation layers, optimisation function design, and vanishing gradient strategies can significantly impact fuzzing results by improving test case selection. This paper delves into these aspects to improve neural network-driven fuzz testing.
+We focus on three key neural network parameters to improve fuzz testing: the Leaky Rectified Linear Unit (LReLU) activation, Nesterov-accelerated Adaptive Moment Estimation (Nadam) optimisation, and sensitivity analysis. LReLU adds non-linearity, aiding feature extraction, while Nadam helps to improve weight updates by considering both current and future gradient directions. Sensitivity analysis optimises layer selection for gradient calculation, enhancing fuzzing efficiency.
+Based on these insights, we propose LMTFuzz, a novel fuzzing scheme optimised for these Machine Learning (ML) strategies. We explore the individual and combined effects of LReLU, Nadam, and sensitivity analysis, as well as their hybrid configurations, across six different software targets. Experimental results demonstrate that LReLU, individually or when paired with sensitivity analysis, significantly enhances fuzz testing performance. However, when combined with Nadam, LReLU shows improvement on some targets, though less pronounced than its combination with sensitivity analysis. This combination improves accuracy, reduces loss, and increases edge coverage, with improvements of up to 23.8%. Furthermore, it leads to a significant increase in unique bug detection, with some targets detecting up to 2.66 times more bugs than baseline methods.}
+}
+
+@inproceedings{lo2025trist,
+  title={TRIST: Towards a Container-Based ICS Testbed for Cyber Threat Simulation and Anomaly Detection},
+  author={Lo, C. and Christie, J. and Win, T.Y. and Rezaeifar, Z. and Khan, Z. and Legg, P},
+  booktitle={Proceedings of the International Conference on Cybersecurity, Situational Awareness and Social Media (Cyber Science 2024)},
+  year={2025},
+  html={https://link.springer.com/chapter/10.1007/978-981-96-0401-2_13},
+  doi={10.1007/978-981-96-0401-2_13},
+  preview={2024lotrist.jpg},
+  selected={true},
+abstract={Cyber-attacks on Industrial Control Systems (ICS), as exemplified by the incidents at the Maroochy water treatment plant and the Ukraine’s electric power grid, have demonstrated that cyber threats can inflict significant physical impacts. These incidents caused widespread service disruptions and substantial economic losses, underscoring the urgent need for an in-depth understanding of cyber threats in industrial environments. Industrial security research is usually conducted on physical testbeds to avoid safety issues, production interruptions and other operational constraints in industrial processes. Nevertheless, security defenders often encounter obstacles in developing or accessing physical testbeds due to associated costs and complexities. These factors hinder research progress to devise early detection mechanisms for cyber threats—essential for effective incident response. To overcome these obstacles, this paper presents a container-based virtual testbed. Its lightweight architecture enables replicable and efficient deployment of testbeds at low cost for simulating cyber threats on Cyber-Physical Systems (CPS)—the cornerstone of industrial automation and control systems. Also, the container-based virtual testbed provides a cost-effective option for producing datasets for training, testing and optimization of unsupervised anomaly detection models. Besides, an evaluation on resource consumption is conducted. The paper also discusses the benefits and limitations of proposed container-based ICS testbeds and suggests future research areas.}
+}
+
+@misc{legg2025machine,
+  title={Machine Learning and Data Analytics for Cyber Security},
+  author={Legg, Phil and Giacinto, Giorgio},
+  year={2025},
+selected={true},
+  publisher={MDPI-Multidisciplinary Digital Publishing Institute},
+  preview={2025legg.jpg},
+  html={https://www.mdpi.com/books/reprint/10756-machine-learning-and-data-analytics-for-cyber-security},
+abstract={The aim of this reprint is to provide an overview of the current challenges within the cyber security community today, as recognized by our contributors. This reprint provides 16 papers from the Topical Collection on “Machine Learning and Data Analytics for Cyber Security” that cover topics of large language models for cybersecurity claim classification, adversarial machine learning attacks against intrusion detection systems, the detection of PLC process control anomalies, identifying session-replay bots compared to human users, and mitigating against side-channel attacks.}
+}
+
+@article{mills2025gh0stedit,
+  title={gh0stEdit: Exploiting Layer-Based Access Vulnerability Within Docker Container Images},
+  author={Mills, Alan and White, Jonathan and Legg, Phil},
+  journal={arXiv},
+  year={2025},
+  publisher={arXiv},
+  html={https://arxiv.org/abs/2506.08218},
+  pdf={https://arxiv.org/pdf/2506.08218},
+abstract={Containerisation is a popular deployment process for application-level virtualisation using a layer-based approach. Docker is a leading provider of containerisation, and through the Docker Hub, users can supply Docker images for sharing and repurposing popular software application containers. Using a combination of in-built inspection commands, publicly displayed image layer content, and static image scanning, Docker images are designed to ensure end users can clearly assess the content of the image before running them. In this paper we present gh0stEdit , a vulnerability that fundamentally undermines the integrity of Docker images and subverts the assumed trust and transparency they utilise. The use of gh0stEdit allows an attacker to maliciously edit Docker images, in a way that is not shown within the image history, hierarchy or commands. This attack can also be carried out against signed images (Docker Content Trust) without invalidating the image signature. We present two use case studies for this vulnerability, and showcase how gh0stEdit is able to poison an image in a way that is not picked up through static or dynamic scanning tools. Our attack case studies highlight the issues in the current approach to Docker image security and trust, and expose an attack method which could potentially be exploited in the wild without being detected. To the best of our knowledge we are the first to provide detailed discussion on the exploit of this vulnerability.}
+}
+
+@Inbook{Addis2025,
+author="Addis, Nick
+and Rees, Ella
+and Johnson, Ian
+and Legg, Phil
+and Brennan, Maggie",
+editor="McCartan, Kieran
+and Eason, Anne
+and Senker, Sarah
+and Addis, Nick
+and Porter, Cody",
+title="Examining the Role of Online Communities in the Prevention of Child Sexual Abuse",
+bookTitle="Developing and Implementing a Public Health and Criminological Approach to Tackling Sexual Abuse: Prevention, Treatment and Integration",
+year="2025",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="87--110",
+abstract="2024 witnessed the highest levels of online child sexual abuse material ever observed since records began, with the Internet Watch Foundation (IWF) identifying 291,273 webpages containing child sexual abuse imagery, links to imagery, or the advertising of this (IWF, 2025), facilitated through online communities accessible via the surface web (i.e. social media platforms, and online gaming communities). The sheer scale and harms caused by these crimes have led to calls for this to be viewed as a global public health issue, in need of an immediate and coordinated response. However, research into the nature of such online communities is largely limited in scope, with focus predominantly targeting potential perpetrators and their access to online communities (rather than the safeguarding activities of specific online platforms). This chapter seeks to bridge this gap, presenting work exploring the role played by online communities (i.e. through social media and gaming platforms) in preventing online child sexual abuse. Specifically, the chapter examines current practices utilised by such platforms (as well as challenges faced) in the fight against online child sexual abuse. This includes the impact of the ever-growing use of generative AI, as well as the need to hold technology companies to account for content hosted on their platforms, particularly considering the recently implemented Online Safety Act 2023.",
+html={https://link.springer.com/chapter/10.1007/978-3-031-93634-0_5},
+}
+
+@inproceedings{tchuindjang2025jailbreaking,
+  title={Jailbreaking LLMs Through Tense Manipulation in Multi-Turn Dialogues},
+  author={Tchuindjang, Michael and Duran, Nathan and Legg, Phil and Medjek, Faiza},
+  booktitle={Advances in Computational Intelligence Systems: Contributions Presented at the 24th UK Workshop on Computational Intelligence, September 3-5, 2025, Edinburgh, UK},
+  year={2025},
+  organization={Springer International Publishing},
+  html={https://doi.org/10.1007/978-3-032-07938-1_24},
+selected={true},
+preview={2025jailbreakingllm.jpg},
+abstract={Large Language Models (LLMs) have demonstrated great potential across many domains, however their susceptibility to jailbreak attacks presents opportunities for malicious actors. These attacks manipulate LLMs to divulge sensitive information or generate harmful content, that could further be utilised in nefarious ways, including as part of cyber-enabled crime, hence presenting a crucial cyber security challenge for the safe and secure interaction of AI-enabled systems. Previous studies highlight the security challenges posed by multi-turn interactions, in which attackers strategically conceal their malicious intent through extended conversations. However, the influence of tense variations on the efficacy of such attacks has received limited attention. This study addresses this gap by systematically examining the role of tense manipulation in multi-turn jailbreak attacks on LLMs. We introduce a novel multi-turn jailbreak attack that specifically exploits past tense reformulation, along with a multi-turn dialogue dataset designed for cyber-related attacks. Experiments conducted on both open-source LLMs (Llama 2-7B, Qwen 2-7B) and closed-source LLMs (GPT-4o-mini, Gemini 2-flash) demonstrate that past tense reformulation significantly enhances attack performance, yielding an average increase of 25.30\% with larger effect on closed-source models. These findings highlight the urgent need to strengthen LLM defence strategies against tense variations in multi-turn dialogues. The dataset and jailbreak artefacts are available at: https://github.com/Micdejc/llm_multiturn_attacks}
+}
+
+
+@Article{bdcc9090238,
+AUTHOR = {Zafar, Saniya and White, Jonathan and Legg, Phil},
+TITLE = {Federated Learning with Adversarial Optimisation for Secure and Efficient 5G Edge Computing Networks},
+JOURNAL = {Big Data and Cognitive Computing},
+VOLUME = {9},
+YEAR = {2025},
+NUMBER = {9},
+ARTICLE-NUMBER = {238},
+html={https://www.mdpi.com/2504-2289/9/9/238},
+ISSN = {2504-2289},
+ABSTRACT = {With the evolution of 5G edge computing networks, privacy-aware applications are gaining significant attention due to their decentralised processing capabilities. However, these networks face substantial challenges to ensure privacy and security, specifically in a Federated Learning (FL) setup, where adversarial attacks can potentially influence the model integrity. Conventional privacy-preserving FL mechanisms are often susceptible to such attacks, leading to degraded model performance and severe security vulnerabilities. To address this issue, we propose FL with adversarial optimisation framework to improve adversarial robustness in 5G edge computing networks while ensuring privacy preservation. The proposed framework considers two models; a classifier model and an adversary model, where the classifier model is integrated with the adversary model, trained jointly considering Fast Gradient Sign Method (FGSM) for generation of adversarial perturbations. This adversarial optimisation enhances classifier’s resilience to attacks, thereby improving both privacy preservation and model accuracy. Experimental analysis reveals that the proposed model achieves up to 99.44% accuracy on adversarial test data, while improving robustness and sustaining high precision and recall across varying client scenarios. The experimental results further ensure the effectiveness of the proposed model in terms of communication efficiency and computational efficiency while reducing inference time and FLOPs making it ideal for secure 5G edge computing applications.},
+DOI = {10.3390/bdcc9090238},
+selected={true},
+preview={2025zafar.jpg}
+}
+
+% 2024
+
+
+@InProceedings{10.1007/978-3-031-77524-6_12,
+author="Mills, Alan
+and Caple, Ian
+and Legg, Phil
+and Fenn, Sophie
+and Abzhaparova, Aida",
+editor="Legg, Phil
+and Coull, Natalie
+and Clarke, Charles",
+title="Cyber Security Unplugged: Teaching Security Management Through Immersive Gameplay",
+booktitle="Advances in Teaching and Learning for Cyber Security Education",
+year="2024",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="213--234",
+abstract="Cyber security education and the online safety of young people is key on the government agenda. A variety of initiatives are designed to raise awareness about the threats and safeguards related to children and their use of technology. Furthermore, cyber security incidents are frequently impacting young people by directly disrupting the services they rely on, from schools to social media. As a result of a vast array of national, regional and local government funded programmes, young people are becoming increasingly aware of the importance of cyber security, both as an a societal need but also as a potential career path. However, what remains is still a gap between the need for cyber education and the diverse range of careers in this field. This chapter presents an innovative pedagogic and gamified experience for teaching fundamental security management concepts, that differs from typical learning environments that focus on technical skills. The game was co-developed with school teachers and designed for teachers and educators to use in a variety of settings, such as schools, HE, and business. This game has been successful in demystifying the field of cyber security for new players, explaining the entry points into the field, and demonstrating the wide-range of skills and behaviours required to pursue careers in cyber security. By drawing from the successful application of this game, the chapter highlights the importance of using immersive, offline, and non-technical (``unplugged'') pedagogies. Furthermore, it demonstrates how educators can explain the complexities of cyber security and entice young people to further explore a multitude of roles and careers in this field.",
+isbn="978-3-031-77524-6",
+html="https://link.springer.com/chapter/10.1007/978-3-031-77524-6_12"
+}
+
+
+
+
+@misc{legg2024advances,
+  title={Advances in Teaching and Learning for Cyber Security Education},
+  author={Legg, Phil and Coull, Natalie and Clarke, Charles},
+  year={2024},
+  preview={2024leggadvances.jpg},
+  html={https://link.springer.com/book/10.1007/978-3-031-77524-6},
+  doi={10.1007/978-3-031-77524-6},
+  selected={true},
+abstract={This book showcases latest trends and innovations for how we teach and approach cyber security education. Cyber security underpins the technological advances of the 21st century and is a fundamental requirement in today’s society. Therefore, how we teach and educate on topics of cyber security and how we overcome challenges in this space require a collective effort between academia, industry and government.
+The variety of works in this book include AI and LLMs for cyber security, digital forensics and how teaching cases can be generated at scale, events and initiatives to inspire the younger generations to pursue cyber pathways, assessment methods that provoke and develop adversarial cyber security mindsets and innovative approaches for teaching cyber management concepts. As a rapidly growing area of education, there are many fascinating examples of innovative teaching and assessment taking place; however, as a community we can do more to share best practice and enhance collaboration across the education sector. CSE Connect is a community group that aims to promote sharing and collaboration in cyber security education so that we can upskill and innovate the community together.
+The chapters of this book were presented at the 4th Annual Advances in Teaching and Learning for Cyber Security Education conference, hosted by CSE Connect at the University of the West of England, Bristol, the UK, on July 2, 2024. The book is of interest to educators, students and practitioners in cyber security, both for those looking to upskill in cyber security education, as well as those aspiring to work within the cyber security sector.}
+}
+
+@incollection{legg2024privacy,
+  title={Privacy-Based Triage of Suspicious Activity Reports Using Offline Large Language Models},
+  author={Legg, Phil and Ryder, Nicholas and Bourton, Samantha and Johnson, Diana and Walker, Reuben},
+  booktitle={Advancements in Cyber Crime Investigations and Modern Data Analytics},
+  volume={1},
+  pages={14},
+  year={2024},
+  publisher={CRC Press},
+preview={2025leggllm.jpg},
+selected={true},
+  html={https://www.taylorfrancis.com/books/edit/10.1201/9781003471103/advancements-cyber-crime-investigations-modern-data-analytics-shishir-kumar-shandilya-devangana-sujay-gupta},
+abstract={Suspicious Activity Reports (SAR) form a vital part of incident response and case management for the investigation of known or suspected money laundering. However, those submitting SARs, and those tasked with analysing SARs, often find the task overwhelming due to the complexity of reporting, the incompleteness of information available, and the ability to classify reports effectively for further processing. We explore the use of Natural Language Processing to facilitate this process. Specifically, we
+ utilise the recent advances of Large Language Models to understand and classify SARs against the glossary code terms set out by the UK National Crime Agency. We also explore the privacy concerns of handling confidential and sensitive data with recent AI advancements and propose the use of offline open-source models, coupled with bespoke fine-tuning,
+ to improve task-specific performance using a model that can be deployed locally without requiring data to be shared with external third parties. Our results show that this approach can yield effective classification accuracy on our test cases, offering a solution to develop bespoke smaller, offline models that maintain privacy and confidentiality, over online models that would compromise data privacy.}
+}
+
+
+@article{ahsan2024privacy,
+  title={Privacy-preserving intrusion detection in software-defined VANET using federated learning with BERT},
+  author={Ahsan, Shakil Ibne and Legg, Phil and Alam, SM},
+  journal={arXiv preprint arXiv:2401.07343},
+  year={2024},
+  html={https://arxiv.org/abs/2401.07343}
+}
+
+@inproceedings{mills2024cyber,
+  title={Cyber Funfair: Creating Immersive and Educational Experiences for Teaching Cyber Physical Systems Security},
+  author={Mills, Alan and White, Jonathan and Legg, Phil},
+  booktitle={SIGCSE 2024: Proceedings of the 55th ACM Technical Symposium on Computer Science Education},
+  volume={1},
+  number={March 2024},
+  pages={847--852},
+  year={2024},
+  organization={ACM},
+  preview={2024millscyberfunfair.jpg},
+selected={true},
+  html={https://dl.acm.org/doi/10.1145/3626252.3630820#:~:text=To%20address%20this%20need%2C%20we,device%20with%20LEGO%20SPIKE%20kits.},
+abstract={Delivering meaningful and inspiring cyber security education for younger audiences can often be a challenge due to limited expertise and resources. Key to any outreach activity is that it both develops a learner's curiosity, as well as providing educational objectives. To address this need, we developed a novel learning and awareness activity that addresses the Cyber Physical Systems (CPS) Security knowledge area as mapped by the Cyber Security Body of Knowledge (CyBOK). At the core of our activity is the integration of the Raspberry Pi device with LEGO SPIKE kits. LEGO SPIKE is part of the LEGO Education system that combines colourful LEGO building blocks with motors and sensors, creating an adaptable and engaging learning environment. This hands-on approach allows participants to witness the tangible consequences of cyber and network actions in a physical and engaging format. To evaluate the effectiveness of the activity, we used the activity as part of an outreach activity day attended by approximately 300 students aged between 12-14 from schools across the West of England. Participants of the activity were surveyed and the results showed an increase in understanding of CPS specific and wider cyber security for over 90% of respondents. Activity engagement was also well received with no negative feedback. We report on our survey findings and discuss best practices to support other practitioners in developing hands-on interactive experiences for engaging and educational cyber security activities.}
+}
+
+@article{chafjiri2024vulnerability,
+  title={Vulnerability detection through machine learning-based fuzzing: A systematic review},
+  author={Chafjiri, Sadegh Bamohabbat and Legg, Phil and Hong, Jun and Tsompanas, Michail-Antisthenis},
+  journal={Computers \& Security},
+  year={2024},
+selected={true},
+  preview={2024bamohabbat.jpg},
+  html={https://www.sciencedirect.com/science/article/pii/S0167404824002050},
+abstract={Modern software and networks underpin our digital society, yet the rapid growth of vulnerabilities that are uncovered within these threaten our cyber security posture. Addressing these issues at scale requires automated proactive approaches that can identify and mitigate these vulnerabilities in a suitable time frame. Fuzzing techniques have emerged as crucial methods to preemptively tackle these risks. However, traditional fuzzing methods encounter various challenges, such as a lack of strategy for deep bug identification, time-intensive bug analysis, quality of inputs, seed scheduling and others. To overcome these challenges, diverse Machine Learning (ML) models and optimisation techniques have been employed, including advanced feature engineering, optimised seed selection, refined predictive/fitness models, and Gradient-based optimisation. Furthermore, the use of ML architectures such as Long Short-Term Memory (LSTM), Generative Adversarial Network (GAN), Sequence-to-Sequence (Seq2Seq), and Generative Randomised Unit (GRU), have demonstrated greater effectiveness within ML-based fuzzing. In this paper, we delve into this paradigm shift, aiming to address fundamental challenges across different ML categories. We survey popular ML categories such as Traditional Machine Learning (TML), Deep Learning (DL), Reinforcement Learning (RL), and Deep Reinforcement Learning (DRL), to investigate their potential for enhancing traditional fuzzing approaches. We explore the respective advantages in each category of ML-based fuzzing, while also analysing the challenges unique to each category. Our work provides a comprehensive survey across the fuzzing domain and how machine learning techniques have been utilised, that we believe will be of use to future researchers in this domain.}
+}
+
+@inproceedings{chafjiri2024improving,
+  title={Improving Search Space Analysis of Fuzzing Mutators Using Cryptographic Structures},
+  author={Chafjiri, Sadegh Bamohabbat and Legg, Phil and Tsompanas, Michail-Antisthenis and Hong, Jun},
+  booktitle={Proceedings of Ninth International Conference on Cyber Security, Privacy in Communication Networks (ICCS 2023)},
+  pages={153--172},
+  year={2024},
+  preview={2022bamohabbatimproving.jpg},
+  html={https://link.springer.com/chapter/10.1007/978-981-97-3973-8_10}
+}
+
+@article{mills2024goibhniuwe,
+  title={GoibhniUWE: A Lightweight and Modular Container-Based Cyber Range},
+  author={Mills, Alan and White, Jonathan and Legg, Phil},
+  journal={Journal of Cybersecurity and Privacy},
+  volume={4},
+  number={3},
+  pages={615--628},
+  year={2024},
+  publisher={MDPI},
+  preview={2024millsgoibhniuwe.jpg},
+  html={https://www.mdpi.com/2624-800X/4/3/29},
+  pdf={https://www.mdpi.com/2624-800X/4/3/29/pdf?version=1724495720}
+}
+
+@inproceedings{lo2024digital,
+  title={Digital twins of cyber physical systems in smart manufacturing for threat simulation and detection with deep learning for time series classification},
+  author={Lo, Carol and Win, Thu Yein and Rezaeifar, Zeinab and Khan, Zaheer and Legg, Phil},
+  booktitle={29th International Conference on Automation and Computing (ICAC2024), University of Sunderland, UK},
+  year={2024},
+  preview={2024lo.jpg},
+  html={https://ieeexplore.ieee.org/document/10718749}
+  
+}
+
+@inproceedings{barrett2024analyst,
+  title={Analyst-driven XAI for time series forecasting: Analytics for telecoms maintenance},
+  author={Barrett, James and Legg, Phil and Smith, Jim and Boyle, Chip},
+  booktitle={ACM 9th International Conference on Machine Learning Technologies (ICMLT) 2024},
+  pages={30--35},
+  year={2024},
+  preview={2024barrett.jpg},
+  html={https://dl.acm.org/doi/10.1145/3674029.3674035}
+}
+
+@inproceedings{white2024evaluating,
+  title={Evaluating data distribution strategies in federated learning: A trade-off analysis between privacy and performance for IoT security},
+  author={White, Jonathan and Legg, Phil},
+  booktitle={Proceedings of Ninth International Conference on Cyber Security, Privacy in Communication Networks (ICCS 2023)},
+  pages={17--37},
+  year={2024},
+  preview={2022white.jpg},
+  html={https://link.springer.com/chapter/10.1007/978-981-97-3973-8_2}
+}
+
+@article{barrett2024trends,
+  title={Trends and Challenges in Data Analytics and Machine Learning Using Call Detail Records in Telecom Systems},
+  author={Barrett, James and Legg, Phil and Smith, Jim and Barnes, Tim and Boyle, Charles},
+  year={2024},
+  journal={Preprints},
+  year={2024},
+  publisher={MDPI},
+  html={https://www.preprints.org/manuscript/202409.1334/v1},
+  pdf={https://www.preprints.org/manuscript/202409.1334/v1}
+}
+
+
+% 2023
+
+
+@inproceedings{bamohabbat2023improving,
+  title={Improving Search Space Analysis of Fuzzing Mutators Using Cryptographic Structures},
+  author={Bamohabbat Chafjiri, Sadegh and Legg, Phil and Tsompanas, Michail-Antisthenis and Hong, Jun},
+  booktitle={International Conference on Cyber Security, Privacy in Communication Networks},
+  pages={153--172},
+  year={2023},
+  organization={Springer Nature Singapore Singapore},
+  preview={2022bamohabbatimproving.jpg},
+  html={https://link.springer.com/chapter/10.1007/978-981-97-3973-8_10},
+  doi={10.1007/978-981-97-3973-8_10},
+abstract={This paper introduces a novel approach to enhance the performance of software fuzzing mutator tools, by leveraging cryptographic structures known as substitution-permutation networks and Feistel networks. By integrating these structures into the existing HonggFuzz fuzzing library, we propose HonggFuzz+ and demonstrate its effectiveness over other leading fuzzers, such as how the method can uncover bugs and edges earlier due to enhanced search space optimisation. By introducing these two structures, we can diversify memory region relationships that can ultimately improve the performance of HonggFuzz. We demonstrate our approach on a range of common software examples from previous software fuzzing literature. Our results show better or as good performance across a range of software targets when compared to other leading fuzzing techniques. We discuss the relevance of the findings and consider future directions for improving software fuzzing search space analysis.}
+}
+
+
+
+
+@incollection{white2023federated,
+  title={Federated Learning: Data Privacy and Cyber Security in Edge-Based Machine Learning},
+  author={White, Jonathan and Legg, Phil},
+  booktitle={Data Protection in a Post-Pandemic Society},
+  pages={169--193},
+  year={2023},
+  publisher={Springer},
+  html={https://link.springer.com/chapter/10.1007/978-3-031-34006-2_6}
+}
+
+@article{mills2023longitudinal,
+  title={Longitudinal Risk-based Security Assessment of Docker Software Container Images},
+  author={Mills, Alan and White, Jonathan and Legg, Phil},
+  journal={Computers and Security},
+  year={2023},
+  publisher={Elsevier},
+  preview={2023mills.jpg},
+  selected={true},
+  html={https://www.sciencedirect.com/science/article/pii/S0167404823003887},
+  abstract={As the use of software containerisation has increased, so too has the need for security research on their usage, with various surveys and studies conducted to assess the overall security posture of software container images. To date, there has been very little work that has taken a longitudinal view of container security to observe whether vulnerabilities are being resolved over time, as well as understanding the real-world implications of reported vulnerabilities, to assess the evolving security posture. In this work, we study the evolution of 380 software container images across 3 analysis periods between July 2022 and January 2023 to analyse maintenance and vulnerabilities factors over time. We sample across the 3 DockerHub categories: Official, Verified and OSS (Sponsored) Open Source Software. We found that the number of vulnerabilities present increased over time despite many containers receiving regular updates by providers. We also found that the choice of container OS can dramatically impact the number of reported vulnerabilities present over time, with Debian-based images typically having many more vulnerabilities that other Linux distributions, and with some containers still reporting vulnerabilities that date back as far as 1999. However, when taking into account additional reported attributes such as the attack vector required and the existence of a public exploit rated higher than negligible, we found that for each analysis period, less than 1% of all vulnerabilities present what we would consider as high risk real-world impact. Through our investigation, we aim to improve the understanding of the threat landscape posed by software containerisation that is further complicated by the discrepancies between different vulnerability reporting tools.}
+}
+
+
+% 2022
+
+
+@article{williams2022investigating,
+  title={Investigating Malware Propagation and Behaviour Using System and Network Pixel-Based Visualisation},
+  author={Williams, Jacob and Legg, Phil},
+  journal={SN Computer Science},
+  volume={3},
+  number={1},
+  pages={53},
+  year={2022},
+  publisher={Springer Singapore Singapore},
+  preview={2021williams.jpg},
+  html={https://link.springer.com/article/10.1007/s42979-021-00926-9}
+}
+
+@article{mccarthy2022functionality,
+  title={Functionality-preserving adversarial machine learning for robust classification in cybersecurity and intrusion detection domains: A survey},
+  author={McCarthy, Andrew and Ghadafi, Essam and Andriotis, Panagiotis and Legg, Phil},
+  journal={Journal of Cybersecurity and Privacy},
+  volume={2},
+  number={1},
+  pages={154--190},
+  year={2022},
+  publisher={MDPI},
+  preview={2022mccarthyfunctionality.jpg},
+  html={https://www.mdpi.com/2624-800X/2/1/10},
+  pdf={https://www.mdpi.com/2624-800X/2/1/10/pdf?version=1647919586}
+
+}
+
+@inproceedings{mills2022ogma,
+  title={OGMA: visualisation for software container security analysis and automated remediation},
+  author={Mills, Alan and White, Jonathan and Legg, Phil},
+  booktitle={2022 IEEE International Conference on Cyber Security and Resilience (CSR)},
+  pages={76--81},
+  year={2022},
+  organization={IEEE},
+  preview={2022millsogma.jpg},
+  html={https://ieeexplore.ieee.org/document/9850335}
+}
+
+@inproceedings{legg2022teaching,
+  title={Teaching Offensive and Defensive Cyber Security in Schools using a Raspberry Pi Cyber Range},
+  author={Legg, Phil and Mills, Alan and Johnson, Ian},
+  booktitle={Colloquium on Information Systems Security Education (CISSE)},
+  year={2022},
+  preview={2023legg.jpg},
+  html={https://cisse.info/journal/index.php/cisse/article/view/172}
+}
+
+@article{mccarthy2022defending,
+  title={Defending against adversarial machine learning attacks using hierarchical learning: A case study on network traffic attack classification},
+  author={McCarthy, Andrew and Ghadafi, Essam and Andriotis, Panagiotis and Legg, Phil},
+  journal={Journal of Information Security and Applications},
+  volume={72},
+  year={2022},
+  publisher={Elsevier},
+  selected={true},
+  preview={2022mccarthydefending.jpg},
+  html={https://www.sciencedirect.com/science/article/pii/S2214212622002423},
+abstract={Machine learning is key for automated detection of malicious network activity to ensure that computer networks and organizations are protected against cyber security attacks. Recently, there has been growing interest in the domain of adversarial machine learning, which explores how a machine learning model can be compromised by an adversary, resulting in misclassified output. Whilst to date, most focus has been given to visual domains, the challenge is present in all applications of machine learning where a malicious attacker would want to cause unintended functionality, including cyber security and network traffic analysis. We first present a study on conducting adversarial attacks against a well-trained network traffic classification model. We show how well-crafted adversarial examples can be constructed so that known attack types are misclassified by the model as benign activity. To combat this, we present a novel defensive strategy based on hierarchical learning to help reduce the attack surface that an adversarial example can exploit within the constraints of the parameter space of the intended attack. Our results show that our defensive learning model can withstand crafted adversarial attacks and can achieve classification accuracy in line with our original model when not under attack.}
+}
+
+@inproceedings{white2022interactive,
+  title={Interactive cyber-physical system hacking: Engaging students early using Scalextric},
+  author={White, Jonathan and Legg, Phil and Mills, Alan},
+  booktitle={Colloquium on Information Systems Security Education (CISSE)},
+  year={2022},
+  preview={2023white.jpg},
+  html={https://cisse.info/journal/index.php/cisse/article/view/163}
+}
+
+
+
+% Older articles before 2021
+
+
+
+
+
+
+
+
+
+
 @inproceedings{walker2013force,
   title={Force-directed parallel coordinates},
   author={Walker, Rick and Legg, Philip A and Pop, Serban and Geng, Zhao and Laramee, Robert S and Roberts, Jonathan C},
@@ -625,385 +1041,8 @@ abstract={One of the greatest challenges for managing organisational cyber secur
   html={https://ieeexplore.ieee.org/document/9478248}
 }
 
-@article{williams2022investigating,
-  title={Investigating Malware Propagation and Behaviour Using System and Network Pixel-Based Visualisation},
-  author={Williams, Jacob and Legg, Phil},
-  journal={SN Computer Science},
-  volume={3},
-  number={1},
-  pages={53},
-  year={2022},
-  publisher={Springer Singapore Singapore},
-  preview={2021williams.jpg},
-  html={https://link.springer.com/article/10.1007/s42979-021-00926-9}
-}
-
-@article{mccarthy2022functionality,
-  title={Functionality-preserving adversarial machine learning for robust classification in cybersecurity and intrusion detection domains: A survey},
-  author={McCarthy, Andrew and Ghadafi, Essam and Andriotis, Panagiotis and Legg, Phil},
-  journal={Journal of Cybersecurity and Privacy},
-  volume={2},
-  number={1},
-  pages={154--190},
-  year={2022},
-  publisher={MDPI},
-  preview={2022mccarthyfunctionality.jpg},
-  html={https://www.mdpi.com/2624-800X/2/1/10},
-  pdf={https://www.mdpi.com/2624-800X/2/1/10/pdf?version=1647919586}
-
-}
-
-@inproceedings{mills2022ogma,
-  title={OGMA: visualisation for software container security analysis and automated remediation},
-  author={Mills, Alan and White, Jonathan and Legg, Phil},
-  booktitle={2022 IEEE International Conference on Cyber Security and Resilience (CSR)},
-  pages={76--81},
-  year={2022},
-  organization={IEEE},
-  preview={2022millsogma.jpg},
-  html={https://ieeexplore.ieee.org/document/9850335}
-}
-
-@inproceedings{legg2022teaching,
-  title={Teaching Offensive and Defensive Cyber Security in Schools using a Raspberry Pi Cyber Range},
-  author={Legg, Phil and Mills, Alan and Johnson, Ian},
-  booktitle={Colloquium on Information Systems Security Education (CISSE)},
-  year={2022},
-  preview={2023legg.jpg},
-  html={https://cisse.info/journal/index.php/cisse/article/view/172}
-}
-
-@article{mccarthy2022defending,
-  title={Defending against adversarial machine learning attacks using hierarchical learning: A case study on network traffic attack classification},
-  author={McCarthy, Andrew and Ghadafi, Essam and Andriotis, Panagiotis and Legg, Phil},
-  journal={Journal of Information Security and Applications},
-  volume={72},
-  year={2022},
-  publisher={Elsevier},
-  selected={true},
-  preview={2022mccarthydefending.jpg},
-  html={https://www.sciencedirect.com/science/article/pii/S2214212622002423},
-abstract={Machine learning is key for automated detection of malicious network activity to ensure that computer networks and organizations are protected against cyber security attacks. Recently, there has been growing interest in the domain of adversarial machine learning, which explores how a machine learning model can be compromised by an adversary, resulting in misclassified output. Whilst to date, most focus has been given to visual domains, the challenge is present in all applications of machine learning where a malicious attacker would want to cause unintended functionality, including cyber security and network traffic analysis. We first present a study on conducting adversarial attacks against a well-trained network traffic classification model. We show how well-crafted adversarial examples can be constructed so that known attack types are misclassified by the model as benign activity. To combat this, we present a novel defensive strategy based on hierarchical learning to help reduce the attack surface that an adversarial example can exploit within the constraints of the parameter space of the intended attack. Our results show that our defensive learning model can withstand crafted adversarial attacks and can achieve classification accuracy in line with our original model when not under attack.}
-}
-
-@inproceedings{white2022interactive,
-  title={Interactive cyber-physical system hacking: Engaging students early using Scalextric},
-  author={White, Jonathan and Legg, Phil and Mills, Alan},
-  booktitle={Colloquium on Information Systems Security Education (CISSE)},
-  year={2022},
-  preview={2023white.jpg},
-  html={https://cisse.info/journal/index.php/cisse/article/view/163}
-}
-
-
-@incollection{white2023federated,
-  title={Federated Learning: Data Privacy and Cyber Security in Edge-Based Machine Learning},
-  author={White, Jonathan and Legg, Phil},
-  booktitle={Data Protection in a Post-Pandemic Society},
-  pages={169--193},
-  year={2023},
-  publisher={Springer},
-  html={https://link.springer.com/chapter/10.1007/978-3-031-34006-2_6}
-}
-
-@article{mills2023longitudinal,
-  title={Longitudinal Risk-based Security Assessment of Docker Software Container Images},
-  author={Mills, Alan and White, Jonathan and Legg, Phil},
-  journal={Computers and Security},
-  year={2023},
-  publisher={Elsevier},
-  preview={2023mills.jpg},
-  selected={true},
-  html={https://www.sciencedirect.com/science/article/pii/S0167404823003887},
-  abstract={As the use of software containerisation has increased, so too has the need for security research on their usage, with various surveys and studies conducted to assess the overall security posture of software container images. To date, there has been very little work that has taken a longitudinal view of container security to observe whether vulnerabilities are being resolved over time, as well as understanding the real-world implications of reported vulnerabilities, to assess the evolving security posture. In this work, we study the evolution of 380 software container images across 3 analysis periods between July 2022 and January 2023 to analyse maintenance and vulnerabilities factors over time. We sample across the 3 DockerHub categories: Official, Verified and OSS (Sponsored) Open Source Software. We found that the number of vulnerabilities present increased over time despite many containers receiving regular updates by providers. We also found that the choice of container OS can dramatically impact the number of reported vulnerabilities present over time, with Debian-based images typically having many more vulnerabilities that other Linux distributions, and with some containers still reporting vulnerabilities that date back as far as 1999. However, when taking into account additional reported attributes such as the attack vector required and the existence of a public exploit rated higher than negligible, we found that for each analysis period, less than 1% of all vulnerabilities present what we would consider as high risk real-world impact. Through our investigation, we aim to improve the understanding of the threat landscape posed by software containerisation that is further complicated by the discrepancies between different vulnerability reporting tools.}
-}
-
-@article{ahsan2024privacy,
-  title={Privacy-preserving intrusion detection in software-defined VANET using federated learning with BERT},
-  author={Ahsan, Shakil Ibne and Legg, Phil and Alam, SM},
-  journal={arXiv preprint arXiv:2401.07343},
-  year={2024},
-  html={https://arxiv.org/abs/2401.07343}
-}
-
-@inproceedings{mills2024cyber,
-  title={Cyber Funfair: Creating Immersive and Educational Experiences for Teaching Cyber Physical Systems Security},
-  author={Mills, Alan and White, Jonathan and Legg, Phil},
-  booktitle={SIGCSE 2024: Proceedings of the 55th ACM Technical Symposium on Computer Science Education},
-  volume={1},
-  number={March 2024},
-  pages={847--852},
-  year={2024},
-  organization={ACM},
-  preview={2024millscyberfunfair.jpg},
-selected={true},
-  html={https://dl.acm.org/doi/10.1145/3626252.3630820#:~:text=To%20address%20this%20need%2C%20we,device%20with%20LEGO%20SPIKE%20kits.},
-abstract={Delivering meaningful and inspiring cyber security education for younger audiences can often be a challenge due to limited expertise and resources. Key to any outreach activity is that it both develops a learner's curiosity, as well as providing educational objectives. To address this need, we developed a novel learning and awareness activity that addresses the Cyber Physical Systems (CPS) Security knowledge area as mapped by the Cyber Security Body of Knowledge (CyBOK). At the core of our activity is the integration of the Raspberry Pi device with LEGO SPIKE kits. LEGO SPIKE is part of the LEGO Education system that combines colourful LEGO building blocks with motors and sensors, creating an adaptable and engaging learning environment. This hands-on approach allows participants to witness the tangible consequences of cyber and network actions in a physical and engaging format. To evaluate the effectiveness of the activity, we used the activity as part of an outreach activity day attended by approximately 300 students aged between 12-14 from schools across the West of England. Participants of the activity were surveyed and the results showed an increase in understanding of CPS specific and wider cyber security for over 90% of respondents. Activity engagement was also well received with no negative feedback. We report on our survey findings and discuss best practices to support other practitioners in developing hands-on interactive experiences for engaging and educational cyber security activities.}
-}
-
-@article{chafjiri2024vulnerability,
-  title={Vulnerability detection through machine learning-based fuzzing: A systematic review},
-  author={Chafjiri, Sadegh Bamohabbat and Legg, Phil and Hong, Jun and Tsompanas, Michail-Antisthenis},
-  journal={Computers \& Security},
-  year={2024},
-selected={true},
-  preview={2024bamohabbat.jpg},
-  html={https://www.sciencedirect.com/science/article/pii/S0167404824002050},
-abstract={Modern software and networks underpin our digital society, yet the rapid growth of vulnerabilities that are uncovered within these threaten our cyber security posture. Addressing these issues at scale requires automated proactive approaches that can identify and mitigate these vulnerabilities in a suitable time frame. Fuzzing techniques have emerged as crucial methods to preemptively tackle these risks. However, traditional fuzzing methods encounter various challenges, such as a lack of strategy for deep bug identification, time-intensive bug analysis, quality of inputs, seed scheduling and others. To overcome these challenges, diverse Machine Learning (ML) models and optimisation techniques have been employed, including advanced feature engineering, optimised seed selection, refined predictive/fitness models, and Gradient-based optimisation. Furthermore, the use of ML architectures such as Long Short-Term Memory (LSTM), Generative Adversarial Network (GAN), Sequence-to-Sequence (Seq2Seq), and Generative Randomised Unit (GRU), have demonstrated greater effectiveness within ML-based fuzzing. In this paper, we delve into this paradigm shift, aiming to address fundamental challenges across different ML categories. We survey popular ML categories such as Traditional Machine Learning (TML), Deep Learning (DL), Reinforcement Learning (RL), and Deep Reinforcement Learning (DRL), to investigate their potential for enhancing traditional fuzzing approaches. We explore the respective advantages in each category of ML-based fuzzing, while also analysing the challenges unique to each category. Our work provides a comprehensive survey across the fuzzing domain and how machine learning techniques have been utilised, that we believe will be of use to future researchers in this domain.}
-}
-
-@inproceedings{chafjiri2024improving,
-  title={Improving Search Space Analysis of Fuzzing Mutators Using Cryptographic Structures},
-  author={Chafjiri, Sadegh Bamohabbat and Legg, Phil and Tsompanas, Michail-Antisthenis and Hong, Jun},
-  booktitle={Proceedings of Ninth International Conference on Cyber Security, Privacy in Communication Networks (ICCS 2023)},
-  pages={153--172},
-  year={2024},
-  preview={2022bamohabbatimproving.jpg},
-  html={https://link.springer.com/chapter/10.1007/978-981-97-3973-8_10}
-}
-
-@article{mills2024goibhniuwe,
-  title={GoibhniUWE: A Lightweight and Modular Container-Based Cyber Range},
-  author={Mills, Alan and White, Jonathan and Legg, Phil},
-  journal={Journal of Cybersecurity and Privacy},
-  volume={4},
-  number={3},
-  pages={615--628},
-  year={2024},
-  publisher={MDPI},
-  preview={2024millsgoibhniuwe.jpg},
-  html={https://www.mdpi.com/2624-800X/4/3/29},
-  pdf={https://www.mdpi.com/2624-800X/4/3/29/pdf?version=1724495720}
-}
-
-@inproceedings{lo2024digital,
-  title={Digital twins of cyber physical systems in smart manufacturing for threat simulation and detection with deep learning for time series classification},
-  author={Lo, Carol and Win, Thu Yein and Rezaeifar, Zeinab and Khan, Zaheer and Legg, Phil},
-  booktitle={29th International Conference on Automation and Computing (ICAC2024), University of Sunderland, UK},
-  year={2024},
-  preview={2024lo.jpg},
-  html={https://ieeexplore.ieee.org/document/10718749}
-  
-}
-
-@inproceedings{barrett2024analyst,
-  title={Analyst-driven XAI for time series forecasting: Analytics for telecoms maintenance},
-  author={Barrett, James and Legg, Phil and Smith, Jim and Boyle, Chip},
-  booktitle={ACM 9th International Conference on Machine Learning Technologies (ICMLT) 2024},
-  pages={30--35},
-  year={2024},
-  preview={2024barrett.jpg},
-  html={https://dl.acm.org/doi/10.1145/3674029.3674035}
-}
-
-@inproceedings{white2024evaluating,
-  title={Evaluating data distribution strategies in federated learning: A trade-off analysis between privacy and performance for IoT security},
-  author={White, Jonathan and Legg, Phil},
-  booktitle={Proceedings of Ninth International Conference on Cyber Security, Privacy in Communication Networks (ICCS 2023)},
-  pages={17--37},
-  year={2024},
-  preview={2022white.jpg},
-  html={https://link.springer.com/chapter/10.1007/978-981-97-3973-8_2}
-}
-
-@article{barrett2024trends,
-  title={Trends and Challenges in Data Analytics and Machine Learning Using Call Detail Records in Telecom Systems},
-  author={Barrett, James and Legg, Phil and Smith, Jim and Barnes, Tim and Boyle, Charles},
-  year={2024},
-  journal={Preprints},
-  year={2024},
-  publisher={MDPI},
-  html={https://www.preprints.org/manuscript/202409.1334/v1},
-  pdf={https://www.preprints.org/manuscript/202409.1334/v1}
-}
-
-@inproceedings{bamohabbat2023improving,
-  title={Improving Search Space Analysis of Fuzzing Mutators Using Cryptographic Structures},
-  author={Bamohabbat Chafjiri, Sadegh and Legg, Phil and Tsompanas, Michail-Antisthenis and Hong, Jun},
-  booktitle={International Conference on Cyber Security, Privacy in Communication Networks},
-  pages={153--172},
-  year={2023},
-  organization={Springer Nature Singapore Singapore},
-  preview={2022bamohabbatimproving.jpg},
-  html={https://link.springer.com/chapter/10.1007/978-981-97-3973-8_10},
-  doi={10.1007/978-981-97-3973-8_10},
-abstract={This paper introduces a novel approach to enhance the performance of software fuzzing mutator tools, by leveraging cryptographic structures known as substitution-permutation networks and Feistel networks. By integrating these structures into the existing HonggFuzz fuzzing library, we propose HonggFuzz+ and demonstrate its effectiveness over other leading fuzzers, such as how the method can uncover bugs and edges earlier due to enhanced search space optimisation. By introducing these two structures, we can diversify memory region relationships that can ultimately improve the performance of HonggFuzz. We demonstrate our approach on a range of common software examples from previous software fuzzing literature. Our results show better or as good performance across a range of software targets when compared to other leading fuzzing techniques. We discuss the relevance of the findings and consider future directions for improving software fuzzing search space analysis.}
-}
-
-@InProceedings{10.1007/978-3-031-77524-6_12,
-author="Mills, Alan
-and Caple, Ian
-and Legg, Phil
-and Fenn, Sophie
-and Abzhaparova, Aida",
-editor="Legg, Phil
-and Coull, Natalie
-and Clarke, Charles",
-title="Cyber Security Unplugged: Teaching Security Management Through Immersive Gameplay",
-booktitle="Advances in Teaching and Learning for Cyber Security Education",
-year="2024",
-publisher="Springer Nature Switzerland",
-address="Cham",
-pages="213--234",
-abstract="Cyber security education and the online safety of young people is key on the government agenda. A variety of initiatives are designed to raise awareness about the threats and safeguards related to children and their use of technology. Furthermore, cyber security incidents are frequently impacting young people by directly disrupting the services they rely on, from schools to social media. As a result of a vast array of national, regional and local government funded programmes, young people are becoming increasingly aware of the importance of cyber security, both as an a societal need but also as a potential career path. However, what remains is still a gap between the need for cyber education and the diverse range of careers in this field. This chapter presents an innovative pedagogic and gamified experience for teaching fundamental security management concepts, that differs from typical learning environments that focus on technical skills. The game was co-developed with school teachers and designed for teachers and educators to use in a variety of settings, such as schools, HE, and business. This game has been successful in demystifying the field of cyber security for new players, explaining the entry points into the field, and demonstrating the wide-range of skills and behaviours required to pursue careers in cyber security. By drawing from the successful application of this game, the chapter highlights the importance of using immersive, offline, and non-technical (``unplugged'') pedagogies. Furthermore, it demonstrates how educators can explain the complexities of cyber security and entice young people to further explore a multitude of roles and careers in this field.",
-isbn="978-3-031-77524-6",
-html="https://link.springer.com/chapter/10.1007/978-3-031-77524-6_12"
-}
 
 
 
-
-@misc{legg2024advances,
-  title={Advances in Teaching and Learning for Cyber Security Education},
-  author={Legg, Phil and Coull, Natalie and Clarke, Charles},
-  year={2024},
-  preview={2024leggadvances.jpg},
-  html={https://link.springer.com/book/10.1007/978-3-031-77524-6},
-  doi={10.1007/978-3-031-77524-6},
-  selected={true},
-abstract={This book showcases latest trends and innovations for how we teach and approach cyber security education. Cyber security underpins the technological advances of the 21st century and is a fundamental requirement in today’s society. Therefore, how we teach and educate on topics of cyber security and how we overcome challenges in this space require a collective effort between academia, industry and government.
-The variety of works in this book include AI and LLMs for cyber security, digital forensics and how teaching cases can be generated at scale, events and initiatives to inspire the younger generations to pursue cyber pathways, assessment methods that provoke and develop adversarial cyber security mindsets and innovative approaches for teaching cyber management concepts. As a rapidly growing area of education, there are many fascinating examples of innovative teaching and assessment taking place; however, as a community we can do more to share best practice and enhance collaboration across the education sector. CSE Connect is a community group that aims to promote sharing and collaboration in cyber security education so that we can upskill and innovate the community together.
-The chapters of this book were presented at the 4th Annual Advances in Teaching and Learning for Cyber Security Education conference, hosted by CSE Connect at the University of the West of England, Bristol, the UK, on July 2, 2024. The book is of interest to educators, students and practitioners in cyber security, both for those looking to upskill in cyber security education, as well as those aspiring to work within the cyber security sector.}
-}
-
-@incollection{legg2024privacy,
-  title={Privacy-Based Triage of Suspicious Activity Reports Using Offline Large Language Models},
-  author={Legg, Phil and Ryder, Nicholas and Bourton, Samantha and Johnson, Diana and Walker, Reuben},
-  booktitle={Advancements in Cyber Crime Investigations and Modern Data Analytics},
-  volume={1},
-  pages={14},
-  year={2024},
-  publisher={CRC Press},
-preview={2025leggllm.jpg},
-selected={true},
-  html={https://www.taylorfrancis.com/books/edit/10.1201/9781003471103/advancements-cyber-crime-investigations-modern-data-analytics-shishir-kumar-shandilya-devangana-sujay-gupta},
-abstract={Suspicious Activity Reports (SAR) form a vital part of incident response and case management for the investigation of known or suspected money laundering. However, those submitting SARs, and those tasked with analysing SARs, often find the task overwhelming due to the complexity of reporting, the incompleteness of information available, and the ability to classify reports effectively for further processing. We explore the use of Natural Language Processing to facilitate this process. Specifically, we
- utilise the recent advances of Large Language Models to understand and classify SARs against the glossary code terms set out by the UK National Crime Agency. We also explore the privacy concerns of handling confidential and sensitive data with recent AI advancements and propose the use of offline open-source models, coupled with bespoke fine-tuning,
- to improve task-specific performance using a model that can be deployed locally without requiring data to be shared with external third parties. Our results show that this approach can yield effective classification accuracy on our test cases, offering a solution to develop bespoke smaller, offline models that maintain privacy and confidentiality, over online models that would compromise data privacy.}
-}
-
-@article{ahsan2025explainable,
-  title={An Explainable Ensemble-based Intrusion Detection System for Software-Defined Vehicle Ad-hoc Networks},
-  author={Ahsan, Shakil Ibne and Legg, Phil and Alam, S M Iftekharul},
-  journal={Cyber Security and Applications},
-  year={2025},
-  preview={2025ahsan.jpg},
-  html={https://www.sciencedirect.com/science/article/pii/S2772918425000074},
-  doi={10.1016/j.csa.2025.100090},
-abstract={Intrusion Detection Systems (IDS) are widely employed to detect and mitigate external network security events. Vehicle ad-hoc Networks (VANETs) continue to evolve, especially with developments related to Connected Autonomous Vehicles (CAVs). In this study, we explore the detection of cyber threats in vehicle networks through ensemble-based machine learning, to strengthen the performance of the learnt model compared to relying on a single model. We propose a model that uses Random Forest and CatBoost as our main ’investigators’, with Logistic Regression used to then reason on their outputs to make a final decision. To further aid analysis, we use SHAP (SHapley Additive exPlanations) analysis to examine feature importance towards the final decision stage. We use the Vehicular Reference Misbehavior (VeReMi) dataset for our experimentation and observe that our approach improves classification accuracy, and results in fewer misclassifications compared to previous works. Overall, this layered approach to decision-making - combining teamwork among models with an explainable view of why they act as they do - can help to achieve a more reliable and easy-to-understand cyber security solution for smart transportation networks.}
-}
-
-@article{chafjiri2025leveraging,
-  title={Leveraging activation and optimisation layers as dynamic strategies in the multi-task fuzzing scheme},
-  author={Chafjiri, Sadegh Bamohabbat and Legg, Phil and Tsompanas, Michail-Antisthenis and Hong, Jun},
-  journal={Computer Standards \& Interfaces},
-  year={2025},
-  preview={2025bamohabbat.jpg},
-  html={https://www.sciencedirect.com/science/article/pii/S0920548925000406},
-  doi={10.1016/j.csi.2025.104011},
-abstract={Fuzzing is a common technique for identifying vulnerabilities in software. Recent approaches, like She et al.’s Multi-Task Fuzzing (MTFuzz), use neural networks to improve fuzzing efficiency. However, key elements like network architecture and hyperparameter tuning are still not well-explored. Factors like activation layers, optimisation function design, and vanishing gradient strategies can significantly impact fuzzing results by improving test case selection. This paper delves into these aspects to improve neural network-driven fuzz testing.
-We focus on three key neural network parameters to improve fuzz testing: the Leaky Rectified Linear Unit (LReLU) activation, Nesterov-accelerated Adaptive Moment Estimation (Nadam) optimisation, and sensitivity analysis. LReLU adds non-linearity, aiding feature extraction, while Nadam helps to improve weight updates by considering both current and future gradient directions. Sensitivity analysis optimises layer selection for gradient calculation, enhancing fuzzing efficiency.
-Based on these insights, we propose LMTFuzz, a novel fuzzing scheme optimised for these Machine Learning (ML) strategies. We explore the individual and combined effects of LReLU, Nadam, and sensitivity analysis, as well as their hybrid configurations, across six different software targets. Experimental results demonstrate that LReLU, individually or when paired with sensitivity analysis, significantly enhances fuzz testing performance. However, when combined with Nadam, LReLU shows improvement on some targets, though less pronounced than its combination with sensitivity analysis. This combination improves accuracy, reduces loss, and increases edge coverage, with improvements of up to 23.8%. Furthermore, it leads to a significant increase in unique bug detection, with some targets detecting up to 2.66 times more bugs than baseline methods.}
-}
-
-@inproceedings{lo2025trist,
-  title={TRIST: Towards a Container-Based ICS Testbed for Cyber Threat Simulation and Anomaly Detection},
-  author={Lo, C. and Christie, J. and Win, T.Y. and Rezaeifar, Z. and Khan, Z. and Legg, P},
-  booktitle={Proceedings of the International Conference on Cybersecurity, Situational Awareness and Social Media (Cyber Science 2024)},
-  year={2025},
-  html={https://link.springer.com/chapter/10.1007/978-981-96-0401-2_13},
-  doi={10.1007/978-981-96-0401-2_13},
-  preview={2024lotrist.jpg},
-  selected={true},
-abstract={Cyber-attacks on Industrial Control Systems (ICS), as exemplified by the incidents at the Maroochy water treatment plant and the Ukraine’s electric power grid, have demonstrated that cyber threats can inflict significant physical impacts. These incidents caused widespread service disruptions and substantial economic losses, underscoring the urgent need for an in-depth understanding of cyber threats in industrial environments. Industrial security research is usually conducted on physical testbeds to avoid safety issues, production interruptions and other operational constraints in industrial processes. Nevertheless, security defenders often encounter obstacles in developing or accessing physical testbeds due to associated costs and complexities. These factors hinder research progress to devise early detection mechanisms for cyber threats—essential for effective incident response. To overcome these obstacles, this paper presents a container-based virtual testbed. Its lightweight architecture enables replicable and efficient deployment of testbeds at low cost for simulating cyber threats on Cyber-Physical Systems (CPS)—the cornerstone of industrial automation and control systems. Also, the container-based virtual testbed provides a cost-effective option for producing datasets for training, testing and optimization of unsupervised anomaly detection models. Besides, an evaluation on resource consumption is conducted. The paper also discusses the benefits and limitations of proposed container-based ICS testbeds and suggests future research areas.}
-}
-
-@misc{legg2025machine,
-  title={Machine Learning and Data Analytics for Cyber Security},
-  author={Legg, Phil and Giacinto, Giorgio},
-  year={2025},
-selected={true},
-  publisher={MDPI-Multidisciplinary Digital Publishing Institute},
-  preview={2025legg.jpg},
-  html={https://www.mdpi.com/books/reprint/10756-machine-learning-and-data-analytics-for-cyber-security},
-abstract={The aim of this reprint is to provide an overview of the current challenges within the cyber security community today, as recognized by our contributors. This reprint provides 16 papers from the Topical Collection on “Machine Learning and Data Analytics for Cyber Security” that cover topics of large language models for cybersecurity claim classification, adversarial machine learning attacks against intrusion detection systems, the detection of PLC process control anomalies, identifying session-replay bots compared to human users, and mitigating against side-channel attacks.}
-}
-
-@article{mills2025gh0stedit,
-  title={gh0stEdit: Exploiting Layer-Based Access Vulnerability Within Docker Container Images},
-  author={Mills, Alan and White, Jonathan and Legg, Phil},
-  journal={arXiv},
-  year={2025},
-  publisher={arXiv},
-  html={https://arxiv.org/abs/2506.08218},
-  pdf={https://arxiv.org/pdf/2506.08218},
-abstract={Containerisation is a popular deployment process for application-level virtualisation using a layer-based approach. Docker is a leading provider of containerisation, and through the Docker Hub, users can supply Docker images for sharing and repurposing popular software application containers. Using a combination of in-built inspection commands, publicly displayed image layer content, and static image scanning, Docker images are designed to ensure end users can clearly assess the content of the image before running them. In this paper we present gh0stEdit , a vulnerability that fundamentally undermines the integrity of Docker images and subverts the assumed trust and transparency they utilise. The use of gh0stEdit allows an attacker to maliciously edit Docker images, in a way that is not shown within the image history, hierarchy or commands. This attack can also be carried out against signed images (Docker Content Trust) without invalidating the image signature. We present two use case studies for this vulnerability, and showcase how gh0stEdit is able to poison an image in a way that is not picked up through static or dynamic scanning tools. Our attack case studies highlight the issues in the current approach to Docker image security and trust, and expose an attack method which could potentially be exploited in the wild without being detected. To the best of our knowledge we are the first to provide detailed discussion on the exploit of this vulnerability.}
-}
-
-@Inbook{Addis2025,
-author="Addis, Nick
-and Rees, Ella
-and Johnson, Ian
-and Legg, Phil
-and Brennan, Maggie",
-editor="McCartan, Kieran
-and Eason, Anne
-and Senker, Sarah
-and Addis, Nick
-and Porter, Cody",
-title="Examining the Role of Online Communities in the Prevention of Child Sexual Abuse",
-bookTitle="Developing and Implementing a Public Health and Criminological Approach to Tackling Sexual Abuse: Prevention, Treatment and Integration",
-year="2025",
-publisher="Springer Nature Switzerland",
-address="Cham",
-pages="87--110",
-abstract="2024 witnessed the highest levels of online child sexual abuse material ever observed since records began, with the Internet Watch Foundation (IWF) identifying 291,273 webpages containing child sexual abuse imagery, links to imagery, or the advertising of this (IWF, 2025), facilitated through online communities accessible via the surface web (i.e. social media platforms, and online gaming communities). The sheer scale and harms caused by these crimes have led to calls for this to be viewed as a global public health issue, in need of an immediate and coordinated response. However, research into the nature of such online communities is largely limited in scope, with focus predominantly targeting potential perpetrators and their access to online communities (rather than the safeguarding activities of specific online platforms). This chapter seeks to bridge this gap, presenting work exploring the role played by online communities (i.e. through social media and gaming platforms) in preventing online child sexual abuse. Specifically, the chapter examines current practices utilised by such platforms (as well as challenges faced) in the fight against online child sexual abuse. This includes the impact of the ever-growing use of generative AI, as well as the need to hold technology companies to account for content hosted on their platforms, particularly considering the recently implemented Online Safety Act 2023.",
-html={https://link.springer.com/chapter/10.1007/978-3-031-93634-0_5},
-}
-
-@inproceedings{tchuindjang2025jailbreaking,
-  title={Jailbreaking LLMs Through Tense Manipulation in Multi-Turn Dialogues},
-  author={Tchuindjang, Michael and Duran, Nathan and Legg, Phil and Medjek, Faiza},
-  booktitle={Advances in Computational Intelligence Systems: Contributions Presented at the 24th UK Workshop on Computational Intelligence, September 3-5, 2025, Edinburgh, UK},
-  year={2025},
-  organization={Springer International Publishing},
-  html={https://doi.org/10.1007/978-3-032-07938-1_24},
-selected={true},
-preview={2025jailbreakingllm.jpg},
-abstract={Large Language Models (LLMs) have demonstrated great potential across many domains, however their susceptibility to jailbreak attacks presents opportunities for malicious actors. These attacks manipulate LLMs to divulge sensitive information or generate harmful content, that could further be utilised in nefarious ways, including as part of cyber-enabled crime, hence presenting a crucial cyber security challenge for the safe and secure interaction of AI-enabled systems. Previous studies highlight the security challenges posed by multi-turn interactions, in which attackers strategically conceal their malicious intent through extended conversations. However, the influence of tense variations on the efficacy of such attacks has received limited attention. This study addresses this gap by systematically examining the role of tense manipulation in multi-turn jailbreak attacks on LLMs. We introduce a novel multi-turn jailbreak attack that specifically exploits past tense reformulation, along with a multi-turn dialogue dataset designed for cyber-related attacks. Experiments conducted on both open-source LLMs (Llama 2-7B, Qwen 2-7B) and closed-source LLMs (GPT-4o-mini, Gemini 2-flash) demonstrate that past tense reformulation significantly enhances attack performance, yielding an average increase of 25.30\% with larger effect on closed-source models. These findings highlight the urgent need to strengthen LLM defence strategies against tense variations in multi-turn dialogues. The dataset and jailbreak artefacts are available at: https://github.com/Micdejc/llm_multiturn_attacks}
-}
-
-
-@Article{bdcc9090238,
-AUTHOR = {Zafar, Saniya and White, Jonathan and Legg, Phil},
-TITLE = {Federated Learning with Adversarial Optimisation for Secure and Efficient 5G Edge Computing Networks},
-JOURNAL = {Big Data and Cognitive Computing},
-VOLUME = {9},
-YEAR = {2025},
-NUMBER = {9},
-ARTICLE-NUMBER = {238},
-html={https://www.mdpi.com/2504-2289/9/9/238},
-ISSN = {2504-2289},
-ABSTRACT = {With the evolution of 5G edge computing networks, privacy-aware applications are gaining significant attention due to their decentralised processing capabilities. However, these networks face substantial challenges to ensure privacy and security, specifically in a Federated Learning (FL) setup, where adversarial attacks can potentially influence the model integrity. Conventional privacy-preserving FL mechanisms are often susceptible to such attacks, leading to degraded model performance and severe security vulnerabilities. To address this issue, we propose FL with adversarial optimisation framework to improve adversarial robustness in 5G edge computing networks while ensuring privacy preservation. The proposed framework considers two models; a classifier model and an adversary model, where the classifier model is integrated with the adversary model, trained jointly considering Fast Gradient Sign Method (FGSM) for generation of adversarial perturbations. This adversarial optimisation enhances classifier’s resilience to attacks, thereby improving both privacy preservation and model accuracy. Experimental analysis reveals that the proposed model achieves up to 99.44% accuracy on adversarial test data, while improving robustness and sustaining high precision and recall across varying client scenarios. The experimental results further ensure the effectiveness of the proposed model in terms of communication efficiency and computational efficiency while reducing inference time and FLOPs making it ideal for secure 5G edge computing applications.},
-DOI = {10.3390/bdcc9090238},
-selected={true},
-preview={2025zafar.jpg}
-}
-
-@article{LO2026108382,
-title = {LOTL-hunter: Detecting multi-stage living-off-the-land attacks in cyber-physical systems using decision fusion techniques with digital twins},
-journal = {Future Generation Computer Systems},
-volume = {180},
-pages = {108382},
-year = {2026},
-issn = {0167-739X},
-doi = {https://doi.org/10.1016/j.future.2026.108382},
-url = {https://www.sciencedirect.com/science/article/pii/S0167739X26000166},
-author = {Carol Lo and Thu Yein Win and Zeinab Rezaeifar and Zaheer Khan and Phil Legg},
-preview={2026lo.jpg},
-selected={true},
-keywords = {Digital twins, ICS testbed, Cyber physical systems, Big data analytics, Decision fusion, Threat hunting, Threat simulation, Advanced persistent threats, Multi-stage attacks, Living off the land attacks},
-abstract = {The integration of smart sensors and actuators in industrial environments has expanded the cyber-physical attack surface, making it increasingly difficult to distinguish anomalies caused by cyberattacks from those due to mechanical or electrical faults. This challenge is exacerbated by stealthy, multi-stage attacks leveraging Living off the Land (LOTL) techniques, which often evade conventional anomaly detection or intrusion detection systems (IDS). This study presents a Digital Twin-based testbed for safe, repeatable simulation of multi-stage cyber-physical attacks targeting Cyber-Physical Systems (CPS) and Industrial Control Systems (ICS). We propose a two-level decision fusion method that aggregates and aligns anomalies across network, process, and host domains in synchronized 1-minute intervals. The first-level fusion improves OT-layer detection by applying confidence-aware decision logic to outputs combined from (a) a supervised deep learning model (LSTM-FCN) for process anomalies, (b) an unsupervised model (Isolation Forest) for OPC UA network anomalies, and (c) process alarm signals. The second-level fusion integrates these results with host-based anomalies, computed through point-based scoring of Wazuh alerts, to provide comprehensive IT/OT situational awareness. Experimental results demonstrate improved detection of stealthy, multi-stage APT attack behaviours. Additionally, Large Language Models (LLM) provide summarization of the integrated IT/OT anomaly logs into human-readable insights, enhancing interpretability and supporting cyber threat hunting.}
-}
 
 
