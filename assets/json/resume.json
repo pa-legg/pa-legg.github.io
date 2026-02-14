@@ -190,6 +190,13 @@
   ],
 
   "invited talks": [
+    {
+      "name": "Media - Trowbridge musician's warning after voice and face used in AI deep-fake romance scam",
+      "date": "2026-02-11",
+      "issuer": "ITV News, February 2026",
+      "url": "https://www.itv.com/news/westcountry/2026-02-11/musician-speaks-out-after-ai-deep-fake-used-in-romance-scam",
+      "icon": "fa-solid fa-tv"
+    },
      {
       "name": "Panel Member - A transatlantic learning community for cyber security education",
       "date": "2025-06-01",
