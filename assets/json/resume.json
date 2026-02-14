@@ -190,6 +190,12 @@
   ],
 
   "invited talks": [
+     {
+      "name": "Panel Member - Transparency as The Foundation: Standards, Assurance, and Trust in Cyber Security",
+      "date": "2026-04-22",
+      "issuer": "CYBERUK, Glasgow, 2026",
+      "icon": "fa-solid fa-podium"
+    },
     {
       "name": "Media - Trowbridge musician's warning after voice and face used in AI deep-fake romance scam",
       "date": "2026-02-11",
