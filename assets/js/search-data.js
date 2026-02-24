@@ -579,9 +579,9 @@ ninja.data = [{
           description: "Sadegh Bamohabbat Chafjiri (2025)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/phd_sadegh-bamohabbat/";
-            },},{id: "projects-advancing-rust-based-malware-analysis",
-          title: 'Advancing rust-based malware analysis',
-          description: "Yen Wang",
+            },},{id: "projects-",
+          title: '',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/phd_yen-wang/";
             },},{id: "projects-tri-partite-multimedia-object-description",
