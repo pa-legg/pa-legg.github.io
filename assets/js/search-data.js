@@ -579,9 +579,9 @@ ninja.data = [{
           description: "Sadegh Bamohabbat Chafjiri (2025)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/phd_sadegh-bamohabbat/";
-            },},{id: "projects-",
-          title: '',
-          description: "",
+            },},{id: "projects-rust-binary-analysis-framework-rbaf-a-hybrid-llvm-ir-based-approach-for-effective-decomposition-of-rust-based-binaries",
+          title: 'Rust binary analysis framework (RBAF) - A hybrid LLVM-IR based approach for effective...',
+          description: "Yen Wang",
           section: "Projects",handler: () => {
               window.location.href = "/projects/phd_yen-wang/";
             },},{id: "projects-tri-partite-multimedia-object-description",
