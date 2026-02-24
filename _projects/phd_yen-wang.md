@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Advancing rust-based malware analysis
+title: Rust binary analysis framework (RBAF): A hybrid LLVM-IR based approach for effective decomposition of Rust-based binaries
 description: Yen Wang
 img: assets/img/thumbs/phd-notepad.jpg
 importance: 4
