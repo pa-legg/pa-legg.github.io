@@ -564,8 +564,8 @@ ninja.data = [{
           description: "Jonathan White",
           section: "Projects",handler: () => {
               window.location.href = "/projects/phd_jon-white/";
-            },},{id: "projects-cybersecurity-for-the-internet-of-medical-things",
-          title: 'Cybersecurity for the internet of medical things',
+            },},{id: "projects-system-level-vulnerability-and-security-analysis-of-closed-loop-implantable-medical-devices",
+          title: 'System-Level Vulnerability and Security Analysis of Closed-Loop Implantable Medical Devices',
           description: "Mia Smith",
           section: "Projects",handler: () => {
               window.location.href = "/projects/phd_mia-smith/";
