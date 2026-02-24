@@ -19,6 +19,6 @@ Finally, we investigate the role of neural network optimisations in fuzzing, emp
 
 #### Links
 
-[Thesis - To appear online](#)
+[Thesis - Advancing software fuzzing techniques through the exploration of cryptographic concepts and machine learning](https://uwe-repository.worktribe.com/output/13980131/advancing-software-fuzzing-techniques-through-the-exploration-of-cryptographic-concepts-and-machine-learning)
 
 [Sadegh Bamohabbat Chafjiri - Academic Profile](https://people.uwe.ac.uk/Person/SadeghBamohabbatchafjiri)
