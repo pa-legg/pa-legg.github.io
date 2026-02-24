@@ -479,11 +479,6 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "projects-facebounce",
-          title: 'Facebounce',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/dev_2010_fundusreg%20copy/";
             },},{id: "projects-fundus-slo-registration",
           title: 'Fundus-SLO Registration',
           description: "",
@@ -509,6 +504,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/dev_2011_tidetimes/";
+            },},{id: "projects-facebounce",
+          title: 'Facebounce',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/dev_2012_facebounce/";
             },},{id: "projects-insidervis",
           title: 'InsiderVis',
           description: "",
