@@ -4,7 +4,7 @@ title: Methods for improving robustness against adversarial machine learning att
 description: Andrew McCarthy (2023)
 img: assets/img/thumbs/phd-notepad.jpg
 importance: 4
-category: phd students
+category: phd students (completed)
 ---
 
 #### Abstract
