@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cybersecurity for the internet of medical things
+title: System-Level Vulnerability and Security Analysis of Closed-Loop Implantable Medical Devices
 description: Mia Smith
 img: assets/img/thumbs/phd-notepad.jpg
 importance: 4
