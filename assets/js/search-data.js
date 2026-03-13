@@ -782,6 +782,13 @@ ninja.data = [{
           window.open("mailto:%50%68%69%6C.%4C%65%67%67@%75%77%65.%61%63.%75%6B", "_blank");
         },
       },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/pa-legg", "_blank");
+        },
+      },{
         id: 'social-linkedin',
         title: 'LinkedIn',
         section: 'Socials',
