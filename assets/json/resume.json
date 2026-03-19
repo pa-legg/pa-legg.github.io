@@ -35,6 +35,41 @@
     },
     {
       "name": "University of the West of England (UWE Bristol)",
+      "position": "Co-Director of UWEcyber Academic Centre of Excellence in Cyber Security Education (NCSC Certified)",
+      "url": "http://www.uwe.ac.uk",
+      "startDate": "2020-10-01",
+      "endDate": "Present",
+      "summary": "Computer Science and Creative Technologies"
+    },
+    {
+      "name": "University of the West of England (UWE Bristol)",
+      "position": "Programme Leadership Team - BSc Cyber Security and Digital Forensics",
+      "url": "http://www.uwe.ac.uk",
+      "startDate": "2024-07-01",
+      "endDate": "Present",
+      "summary": "Computer Science and Creative Technologies".
+      "highlights": ["I joined the BSc Cyber Security and Digital Forensics programme leadership team in 2024, to support and mentor a new leadership team, and to further promote opportunities of external industry engagement for our undergraduate students."]
+    },
+    {
+      "name": "University of the West of England (UWE Bristol)",
+      "position": "Cyber Security Research Theme Lead",
+      "url": "http://www.uwe.ac.uk",
+      "startDate": "2023-08-01",
+      "endDate": "Present",
+      "summary": "Computer Science and Creative Technologies".
+      "highlights": ["The Computer Science Research Centre (CSRC) at UWE is made up of 5 themes: Artificial Intelligence, Cyber Security, Data Science, Expressive Computer Interaction, and Smart Cities. I have acted as Cyber Security Research Theme Lead since the CSRC officially formed in 2023."]
+    },
+    {
+      "name": "University of the West of England (UWE Bristol)",
+      "position": "Programme Leader - MSc Cyber Security (NCSC Certified)",
+      "url": "http://www.uwe.ac.uk",
+      "startDate": "2018-01-01",
+      "endDate": "2024-07-31",
+      "summary": "Computer Science and Creative Technologies".
+      "highlights": ["I served as Programme Leader for the NCSC-certified MSc Cyber Security at UWE, from the first run of the programme in 2018 through to 2024."]
+    },
+    {
+      "name": "University of the West of England (UWE Bristol)",
       "position": "Associate Professor of Cyber Security",
       "url": "http://www.uwe.ac.uk",
       "startDate": "2018-09-30",
@@ -48,6 +83,21 @@
       "startDate": "2015-02-09",
       "endDate": "2018-09-30",
       "summary": "Computer Science and Creative Technologies"
+    },
+    {
+      "name": "Cabinet Office",
+      "position": "Member of the UK Government Cyber Advisory Board",
+      "url": "http://www.gov.uk",
+      "startDate": "2025-03-01",
+      "endDate": "Present"
+    },
+    {
+      "name": "CSE Connect",
+      "position": "Co-Founder / Co-Director",
+      "url": "http://www.gov.uk",
+      "startDate": "2019-07-01",
+      "endDate": "Present",
+      "highlights":["A National Cyber Security Education network to bring together academia, industry and government. Supported by the UK National Cyber Security Centre, the network hosts regular events as well as an annual conference, that promotes collaboration and sharing to enhance cyber security education, both within the UK and working with global partners. (Formerly CISSEUK, a UK chapter of CISSE - the Colloquium of Information Systems Security Education)"]
     },
     {
       "name": "University of Oxford",
