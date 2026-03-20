@@ -176,6 +176,27 @@
     }
   ],
 
+  "projects": [
+    {
+      "name": "...",
+      "summary": "...",
+      "highlights": ["...",, "...",],
+      "startDate": "2018-01-01",
+      "endDate": "2018-01-01",
+      "url": "https://example.com"
+    }
+  ],
+
+  "awards": [
+    {
+      "title": "...",
+      "date": "1921-11-01",
+      "awarder": "...",
+      "url": "https://example.com"
+      "summary": "..."
+    }
+  ],
+
   "certificates": [
     {
       "name": "CompTIA SecurityX CAS-005",
@@ -505,6 +526,29 @@
       "url": "http://www.walesonline.co.uk/news/wales-news/welsh-scientists-set-create-revolution-1837867",
       "icon": "fa-solid fa-tv"
     }
-  ]
+  ],
+  "publications": [
+    {
+      "name": "...",
+      "publisher": "...",
+      "releaseDate": "1900-01-01",
+      "url": "...",
+      "summary": "..."
+    },
+    {
+      "name": "...",
+      "publisher": "...",
+      "releaseDate": "1900-01-01",
+      "url": "...",
+      "summary": "..."
+    },
+    {
+      "name": "...",
+      "publisher": "...",
+      "releaseDate": "1900-01-01",
+      "url": "...",
+      "summary": "..."
+    },
+  ],
   
 }
