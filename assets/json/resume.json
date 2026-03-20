@@ -35,7 +35,6 @@
       "url": "http://www.uwe.ac.uk",
       "startDate": "2020-10-01",
       "endDate": "Present",
-      "summary": "Computer Science and Creative Technologies",
       "highlights": ["Co-Director of UWEcyber 'Gold' NCSC Academic Centre of Excellence in Cyber Security Education (ACE-CSE) that brings together teaching, research, outreach and knowledge exchange in Cyber Security, with a multi-disciplinary perspective involving staff across the entire University, a regional network of educators, and a regular guest speaker seminar series that has attracted presenters from across the globe."]
     },
     {
@@ -44,6 +43,7 @@
       "url": "http://www.uwe.ac.uk",
       "startDate": "2024-07-01",
       "endDate": "Present",
+      "summary": "School of Computing and Creative Technologies",
       "highlights": ["I joined the BSc Cyber Security and Digital Forensics programme leadership team in 2024, to support and mentor a new leadership team, and to further promote opportunities of external industry engagement for our undergraduate students, including the continued organisation of guest speakers as well as new industry collaboration with teaching."]
     },
     {
@@ -52,6 +52,7 @@
       "url": "http://www.uwe.ac.uk",
       "startDate": "2019-08-01",
       "endDate": "Present",
+      "summary": "Computer Science Research Centre (CSRC)",
       "highlights": ["The Computer Science Research Centre (CSRC) at UWE is made up of 5 themes: Artificial Intelligence, Cyber Security, Data Science, Expressive Computer Interaction, and Smart Cities. I serve as Cyber Security Research Theme Lead since the reorganisation of the CSRC in 2019, supporting academic staff and PhD researchers to develop cyber security research across infrastructure security, software security, AI/data security, and cyber crime domains."]
     },
     {
@@ -60,6 +61,7 @@
       "url": "http://www.uwe.ac.uk",
       "startDate": "2018-01-01",
       "endDate": "2024-07-31",
+      "summary": "School of Computing and Creative Technologies",
       "highlights": ["Former Programme Leader of the NCSC-Certified MSc Cyber Security, having grown the programme from its initial delivery for 13 students in 2018 to as many as 150 students across two intakes in an academic year, and achieving a PTES overall student satisfaction score of 92% (2024)."]
     },
     {
@@ -81,7 +83,7 @@
     {
       "name": "Cabinet Office",
       "position": "Member of the UK Government Cyber Advisory Board",
-      "url": "http://www.gov.uk",
+      "url": "https://www.gov.uk/government/publications/government-cyber-action-plan",
       "startDate": "2025-03-01",
       "endDate": "Present"
     },
