@@ -22,14 +22,10 @@
       "endDate": "Present",
       "summary": "School of Computing and Creative Technologies",
       "highlights": ["Full Professor in Cyber Security in recognition of 'Advancing Teaching and Learning' (primary domain) and for 'Research with Impact' (secondary domain).",
-      "Co-Director of UWEcyber 'Gold' NCSC Academic Centre of Excellence in Cyber Security Education (ACE-CSE) (2020-present) that brings together teaching, research, outreach and knowledge exchange in Cyber Security, with a multi-disciplinary perspective involving staff across the entire University, a regional network of educators, and a regular guest speaker seminar series that has attracted presenters from across the globe.",
-      "Former Programme Leader of the NCSC-Certified MSc Cyber Security (2018-2024), having grown the programme from its initial run of 13 students to as many as 150 students across two intakes in an academic year, and achieving a PTES overall student satisfaction score of 92% (2024).",
-      "Programme Leadership Team for BSc Cyber Security and Digital Forensics (2024-), with a focus on industry partnership through guest speakers and industry collaboration with teaching.",
-      "Cyber Security Research Theme Lead for the Computer Science Research Centre (2019-present), supporting academic staff and PhD researchers to develop cyber security research across infrastructure security, software security, AI/data security, and cyber crime domains.",
-      "Experienced in attracting successful research grant income with over £2.1M directed awarded from external funding sources, and over £3.7M in total (see projects page for futher details).",
-      "Published over 70 academic articles in high-quality journals and conference venues (see publications page for further details).",
-      "Experience of supervising PhD students to completion, as well as hosting post-doctoral research fellows (see projects page for further details).",
-      "Experience of leading outreach initiatives and upskilling educators and industry professionals in cyber security (see teaching page for further details)."
+      "Successful research grant income with over £2.1M directed awarded from external funding sources, and over £3.7M in total (see projects page for futher details).",
+      "Published over 85 academic articles as of March 2026, in high-quality journals and conference venues (see publications page for further details).",
+      "Supervision of PhD students through to completion, as well as supporting post-doctoral research fellows (see projects page for further details).",
+      "Leading outreach initiatives and upskilling educators and industry professionals in cyber security (see teaching page for further details)."
     ]
 
     },
@@ -39,7 +35,8 @@
       "url": "http://www.uwe.ac.uk",
       "startDate": "2020-10-01",
       "endDate": "Present",
-      "summary": "Computer Science and Creative Technologies"
+      "summary": "Computer Science and Creative Technologies",
+      "highlights": [Co-Director of UWEcyber 'Gold' NCSC Academic Centre of Excellence in Cyber Security Education (ACE-CSE) that brings together teaching, research, outreach and knowledge exchange in Cyber Security, with a multi-disciplinary perspective involving staff across the entire University, a regional network of educators, and a regular guest speaker seminar series that has attracted presenters from across the globe."]
     },
     {
       "name": "University of the West of England (UWE Bristol)",
@@ -47,15 +44,15 @@
       "url": "http://www.uwe.ac.uk",
       "startDate": "2024-07-01",
       "endDate": "Present",
-      "highlights": ["I joined the BSc Cyber Security and Digital Forensics programme leadership team in 2024, to support and mentor a new leadership team, and to further promote opportunities of external industry engagement for our undergraduate students."]
+      "highlights": ["I joined the BSc Cyber Security and Digital Forensics programme leadership team in 2024, to support and mentor a new leadership team, and to further promote opportunities of external industry engagement for our undergraduate students through partnership through guest speakers and industry collaboration with teaching."]
     },
     {
       "name": "University of the West of England (UWE Bristol)",
       "position": "Cyber Security Research Theme Lead",
       "url": "http://www.uwe.ac.uk",
-      "startDate": "2023-08-01",
+      "startDate": "2019-08-01",
       "endDate": "Present",
-      "highlights": ["The Computer Science Research Centre (CSRC) at UWE is made up of 5 themes: Artificial Intelligence, Cyber Security, Data Science, Expressive Computer Interaction, and Smart Cities. I have acted as Cyber Security Research Theme Lead since the CSRC officially formed in 2023."]
+      "highlights": ["The Computer Science Research Centre (CSRC) at UWE is made up of 5 themes: Artificial Intelligence, Cyber Security, Data Science, Expressive Computer Interaction, and Smart Cities. I serve as Cyber Security Research Theme Lead since the reorganisation of the CSRC in 2019, supporting academic staff and PhD researchers to develop cyber security research across infrastructure security, software security, AI/data security, and cyber crime domains."]
     },
     {
       "name": "University of the West of England (UWE Bristol)",
@@ -63,7 +60,7 @@
       "url": "http://www.uwe.ac.uk",
       "startDate": "2018-01-01",
       "endDate": "2024-07-31",
-      "highlights": ["I served as Programme Leader for the NCSC-certified MSc Cyber Security at UWE, from the first run of the programme in 2018 through to 2024."]
+      "highlights": ["Former Programme Leader of the NCSC-Certified MSc Cyber Security, having grown the programme from its initial delivery for 13 students in 2018 to as many as 150 students across two intakes in an academic year, and achieving a PTES overall student satisfaction score of 92% (2024)."
     },
     {
       "name": "University of the West of England (UWE Bristol)",
