@@ -13,22 +13,7 @@
       value: "Office 4Q59, Frenchay Campus, Coldharbour Lane, Bristol BS16 1QY, UK"
     - name: Summary
       value: "A Computer Scientist by trade, and a tech enthusiast for as far back as I can remember (since getting my hands on a BBC Micro B and my Dad's subscription to the Micro User magazine...!)"
-- title: Education
-  type: time_table
-  contents:
-    - title: "Postgraduate Certificate in Teaching and Learning for Higher Education (PGCert)"
-      institution: "University of the West of England (UWE Bristol)"
-      year: "2015 - 2016"
-    - title: "PhD Computer Science"
-      institution: "Cardiff University"
-      year: "2006 - 2010"
-      description:
-        - "Multi-modal Retinal Imaging: Improving Accuracy and Efficiency of Image Registration using Mutual Information"
-    - title: "BSc Computer Science"
-      institution: "Cardiff University"
-      year: "2003 - 2006"
-      description:
-        - "Final Year Project: Chinese Checkers Multi-player Internet Game with AI opponent"
+
 - title: Experience
   type: time_table
   contents:
@@ -128,6 +113,24 @@
       year: "2010 - 2015"
       description:
         - "Development of research-led Android mobile application, GeoCaption."
+
+- title: Education
+  type: time_table
+  contents:
+    - title: "Postgraduate Certificate in Teaching and Learning for Higher Education (PGCert)"
+      institution: "University of the West of England (UWE Bristol)"
+      year: "2015 - 2016"
+    - title: "PhD Computer Science"
+      institution: "Cardiff University"
+      year: "2006 - 2010"
+      description:
+        - "Multi-modal Retinal Imaging: Improving Accuracy and Efficiency of Image Registration using Mutual Information"
+    - title: "BSc Computer Science"
+      institution: "Cardiff University"
+      year: "2003 - 2006"
+      description:
+        - "Final Year Project: Chinese Checkers Multi-player Internet Game with AI opponent"
+        
 - title: Honors and Awards
   type: time_table
   contents:
@@ -147,6 +150,7 @@
     - year: "2022"
       items:
         - "Chartered Institute of Information Security (CIISec) Full Member — CIISec (<a href=\"https://www.credly.com/badges/fe5f7cad-d8ea-4576-b01e-e083ec33e4a0\">Credly</a>)"
+
 - title: Invited Talks
   type: time_table
   contents:
