@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: PhD studentships, research projects, external activities and code
 nav: true
-nav_order: 3
-display_categories: [work, fun]
+nav_order: 2
+display_categories: [phd students, phd students (completed), projects, dev, resources, cool things]
 horizontal: false
 ---
 
@@ -63,3 +63,4 @@ horizontal: false
   {% endif %}
 {% endif %}
 </div>
+
