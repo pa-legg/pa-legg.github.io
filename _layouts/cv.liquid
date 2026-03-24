@@ -166,9 +166,9 @@ layout: default
               {% elsif section_title == 'Languages' %}
                 {% assign entries = section_entries %}
                 {% include cv/languages.liquid %}
-              {% elsif section_title == 'Interests' or section_title == 'Academic Interests' %}
+              {% elsif section_title == 'Invited Talks' or section_title == 'Academic Invited Talks' %}
                 {% assign entries = section_entries %}
-                {% include cv/interests.liquid %}
+                {% include cv/invitedtalks.liquid %}
               {% elsif section_title == 'Certificates' %}
                 {% assign entries = section_entries %}
                 {% include cv/certificates.liquid %}
@@ -336,14 +336,14 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- Interests -->
-        {% if site.data.resume.interests.size > 0 %}
-          <a class="anchor" id="interests"></a>
+        <!-- invitedtalks -->
+        {% if site.data.resume.invitedtalks.size > 0 %}
+          <a class="anchor" id="invitedtalks"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Interests</h3>
+            <h3 class="card-title font-weight-medium">Invited Talks</h3>
             <div>
-              {% assign entries = site.data.resume.interests %}
-              {% include cv/interests.liquid %}
+              {% assign entries = site.data.resume.invitedtalks %}
+              {% include cv/invitedtalks.liquid %}
             </div>
           </div>
         {% endif %}
