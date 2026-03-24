@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Encryption Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 2em auto;
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.5em;
+    }
+    button {
+      margin-top: 1em;
+      padding: 0.5em 1em;
+    }
+    .output {
+      margin-top: 1em;
+      padding: 0.5em;
+      background-color: #f4f4f4;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Simple Encryption Demo</h1>
+
+  <label for="plaintext">Enter text:</label>
+  <textarea id="plaintext" rows="4" oninput="updateCipher()"></textarea>
+
+  <label for="key">Enter key (number):</label>
+  <input type="number" id="key" value="3" oninput="updateCipher()"/>
+
+  <button onclick="clearText()">Clear</button>
+
+  <div class="output">
+    <strong>Encrypted text:</strong>
+    <p id="ciphertext"></p>
+  </div>
+
+  <div class="output">
+    <strong>Decrypted text (from encrypted):</strong>
+    <p id="decrypted"></p>
+  </div>
+
+  <script>
+    function caesarShift(str, key) {
+      let result = "";
+      for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+        if (char.match(/[a-z]/i)) {
+          let code = str.charCodeAt(i);
+          if (code >= 65 && code <= 90) {
+            char = String.fromCharCode(((code - 65 + key + 26) % 26) + 65);
+          } else if (code >= 97 && code <= 122) {
+            char = String.fromCharCode(((code - 97 + key + 26) % 26) + 97);
+          }
+        }
+        result += char;
+      }
+      return result;
+    }
+
+    function updateCipher() {
+      const text = document.getElementById("plaintext").value;
+      const key = parseInt(document.getElementById("key").value) || 0;
+      const encrypted = caesarShift(text, key);
+      const decrypted = caesarShift(encrypted, -key);
+
+      document.getElementById("ciphertext").textContent = encrypted;
+      document.getElementById("decrypted").textContent = decrypted;
+    }
+
+    function clearText() {
+      document.getElementById("plaintext").value = "";
+      document.getElementById("ciphertext").textContent = "";
+      document.getElementById("decrypted").textContent = "";
+    }
+
+    // Initialize output
+    updateCipher();
+  </script>
+
+</body>
+</html>

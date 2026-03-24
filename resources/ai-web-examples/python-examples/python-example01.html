@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python Interactive Playground</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center p-4">
+  <div class="max-w-2xl w-full space-y-4">
+    <h1 class="text-2xl font-bold text-center">Python Interactive Playground</h1>
+
+    <textarea id="code" rows="8" class="w-full p-2 rounded border font-mono text-sm" placeholder="Type your Python code here...">print("Hello, World!")</textarea>
+
+    <button id="run" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 disabled:opacity-50">
+      Loading Python...
+    </button>
+
+    <div class="bg-gray-100 rounded p-4 font-mono text-sm whitespace-pre-wrap min-h-[100px]" id="output">
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.24.0/full/pyodide.js"></script>
+  <script>
+    let pyodideReady = false;
+    let pyodide;
+
+    async function loadPyodideAndPackages() {
+      pyodide = await loadPyodide();
+      pyodideReady = true;
+      document.getElementById("run").innerText = "Run Code";
+      document.getElementById("run").disabled = false;
+    }
+
+    loadPyodideAndPackages();
+
+    document.getElementById("run").addEventListener("click", async () => {
+      if (!pyodideReady) return;
+      const code = document.getElementById("code").value;
+      const outputDiv = document.getElementById("output");
+      try {
+        const result = await pyodide.runPythonAsync(code);
+        outputDiv.textContent = String(result !== undefined ? result : "");
+      } catch (err) {
+        outputDiv.textContent = String(err);
+      }
+    });
+  </script>
+</body>
+</html>
