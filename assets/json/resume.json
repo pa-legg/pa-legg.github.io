@@ -180,7 +180,7 @@
     {
       "name": "...",
       "summary": "...",
-      "highlights": ["...",, "...",],
+      "highlights": ["...", "..."],
       "startDate": "2018-01-01",
       "endDate": "2018-01-01",
       "url": "https://example.com"
@@ -192,7 +192,7 @@
       "title": "...",
       "date": "1921-11-01",
       "awarder": "...",
-      "url": "https://example.com"
+      "url": "https://example.com",
       "summary": "..."
     }
   ],
@@ -548,7 +548,7 @@
       "releaseDate": "1900-01-01",
       "url": "...",
       "summary": "..."
-    },
-  ],
+    }
+  ]
   
 }
