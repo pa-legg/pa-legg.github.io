@@ -336,17 +336,7 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- invitedtalks -->
-        {% if site.data.resume.invitedtalks.size > 0 %}
-          <a class="anchor" id="invitedtalks"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Invited Talks</h3>
-            <div>
-              {% assign entries = site.data.resume.invitedtalks %}
-              {% include cv/invitedtalks.liquid %}
-            </div>
-          </div>
-        {% endif %}
+        
 
         <!-- Certificates -->
         {% if site.data.resume.certificates.size > 0 %}
@@ -356,6 +346,18 @@ layout: default
             <div>
               {% assign entries = site.data.resume.certificates %}
               {% include cv/certificates.liquid %}
+            </div>
+          </div>
+        {% endif %}
+
+        <!-- invitedtalks -->
+        {% if site.data.resume.invitedtalks.size > 0 %}
+          <a class="anchor" id="invitedtalks"></a>
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">Invited Talks</h3>
+            <div>
+              {% assign entries = site.data.resume.invitedtalks %}
+              {% include cv/invitedtalks.liquid %}
             </div>
           </div>
         {% endif %}
