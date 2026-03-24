@@ -5,7 +5,7 @@
     "email": "Phil.Legg@uwe.ac.uk",
     "phone": "0117 32 82880",
     "url": "https://pa-legg.github.io",
-    "summary": "A Computer Scientist by trade, and a tech enthusiast for as far back as I can remember (since getting my hands on a BBC Micro B and my Dad's subscription to the Micro User magazine...!)",
+    "summary": "Computer Scientist by trade, and a tech enthusiast for as far back as I can remember (since getting my hands on a BBC Micro B and my Dad's subscription to the Micro User magazine...!)",
     "location": {
       "address": "Office 4Q59, Frenchay Campus, Coldharbour Lane",
       "postalCode": "BS16 1QY",
@@ -173,27 +173,6 @@
       "startDate": "2003-10-01",
       "endDate": "2006-07-01",
       "courses": ["Final Year Project: Chinese Checkers Multi-player Internet Game with AI opponent"]
-    }
-  ],
-
-  "projects": [
-    {
-      "name": "...",
-      "summary": "...",
-      "highlights": ["...", "..."],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
-    }
-  ],
-
-  "awards": [
-    {
-      "title": "...",
-      "date": "1921-11-01",
-      "awarder": "...",
-      "url": "https://example.com",
-      "summary": "..."
     }
   ],
 
@@ -525,29 +504,6 @@
       "issuer": "Western Mail, April 2011",
       "url": "http://www.walesonline.co.uk/news/wales-news/welsh-scientists-set-create-revolution-1837867",
       "icon": "fa-solid fa-tv"
-    }
-  ],
-  "publications": [
-    {
-      "name": "...",
-      "publisher": "...",
-      "releaseDate": "1900-01-01",
-      "url": "...",
-      "summary": "..."
-    },
-    {
-      "name": "...",
-      "publisher": "...",
-      "releaseDate": "1900-01-01",
-      "url": "...",
-      "summary": "..."
-    },
-    {
-      "name": "...",
-      "publisher": "...",
-      "releaseDate": "1900-01-01",
-      "url": "...",
-      "summary": "..."
     }
   ]
   
