@@ -72,7 +72,117 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-a-post-with-plotly-js",
+            },{id: "post-wazuh-ubuntu-kali-caldera-a-super-quick-way-of-building-a-disposable-cyber-lab",
+        
+          title: 'Wazuh, Ubuntu, Kali, Caldera — a super quick way of building a disposable cyber lab... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/wazuh-ubuntu-kali-caldera-a-super-quick-way-of-building-a-disposable-cyber-lab-1ad693665fa5?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-more-fun-with-kasm-and-docker-quickly-spin-up-x86-based-ubuntu-or-kali-on-macos",
+        
+          title: 'More Fun with Kasm and Docker: Quickly spin up x86-based Ubuntu or Kali... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/more-fun-with-kasm-and-docker-quickly-spin-up-x86-based-ubuntu-or-kali-on-macos-b982e4536f6c?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-part-1-quick-setup-of-a-virtual-machine-in-a-web-browser-using-kasm-and-docker",
+        
+          title: 'Part 1: Quick setup of a Virtual Machine in a Web Browser using... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/quick-setup-of-a-virtual-machine-in-a-web-browser-using-kasm-and-docker-01f3445146d1?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-ai-for-rapid-prototyping-in-education",
+        
+          title: 'AI for rapid prototyping in education <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/ai-for-rapid-prototyping-in-education-32fe4a89bea8?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-security-data-analytics-09-future-research-directions",
+        
+          title: 'Security Data Analytics — 09 — Future Research Directions <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/security-data-analytics-09-future-research-directions-4b6811d7c2c0?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-security-data-analytics-08-file-image-and-video-analytics",
+        
+          title: 'Security Data Analytics — 08 — File, Image and Video Analytics <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/security-data-analytics-08-file-image-and-video-analytics-ca74bf915312?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-security-data-analytics-07-text-analytics",
+        
+          title: 'Security Data Analytics — 07 — Text Analytics <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/security-data-analytics-07-text-analytics-72620bdd0028?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-security-data-analytics-06-visual-analytics",
+        
+          title: 'Security Data Analytics — 06 — Visual Analytics <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/security-data-analytics-06-visual-analytics-d914156553cc?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-security-data-analytics-05-visualisation",
+        
+          title: 'Security Data Analytics — 05 — Visualisation <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/security-data-analytics-05-visualisation-492820fd7cd0?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-security-data-analytics-04-machine-learning",
+        
+          title: 'Security Data Analytics — 04 — Machine Learning <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/security-data-analytics-04-machine-learning-5edef0e764f0?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
@@ -92,17 +202,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2024/photo-gallery/";
-          
-        },
-      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
-        
-          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
           
         },
       },{id: "post-a-post-with-tabs",
@@ -323,17 +422,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2022/giscus-comments/";
-          
-        },
-      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
-        
-          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
           
         },
       },{id: "post-a-post-with-redirect",
