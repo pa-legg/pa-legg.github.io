@@ -4,7 +4,7 @@ title: Micro, Meso, and Macro Level Detection of Advanced Persistent Threats (AP
 description: Carol Lo (2026)
 img: assets/img/thumbs/phd-notepad.jpg
 importance: 4
-category: phd students
+category: phd students (completed)
 ---
 
 
