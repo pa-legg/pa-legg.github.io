@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>08 FURTHER RESEARCH DIRECTIONS &#8212; Cyber Security Analytics</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="07 MALWARE ANALYSIS" href="book-07-malwareanalysis.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/uwecyber.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Cyber Security Analytics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-00-csa_start.html">
+   CYBER SECURITY ANALYTICS
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-01-csa_intro.html">
+   01 INTRODUCTION TO CYBER SECURITY DATA ANALYTICS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-02-operationsandinfrastructure.html">
+   02 SECURITY OPERATIONS AND INCIDENT MANAGEMENT
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-03-operationsandmonitoring.html">
+   03 SECURITY OPERATIONS AND MONITORING
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-04-machinelearningandvisualisation.html">
+   04 MACHINE LEARNING AND VISUALISATION
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-05-cybertoolsthreatvuln.html">
+   05 CYBER SECURITY ANALYTICS TOOLS - THREAT HUNTING
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-06-cybertoolsincidentresp.html">
+   06 CYBER SECURITY ANALYTICS TOOLS - INCIDENT RESPONSE
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-07-malwareanalysis.html">
+   07 MALWARE ANALYSIS
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   08 FURTHER RESEARCH DIRECTIONS
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/book-08-furtherresearch.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   08 FURTHER RESEARCH DIRECTIONS
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualisation-for-cyber-security">
+     Visualisation for Cyber Security
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#further-reading">
+   Further reading:
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>08 FURTHER RESEARCH DIRECTIONS</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   08 FURTHER RESEARCH DIRECTIONS
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualisation-for-cyber-security">
+     Visualisation for Cyber Security
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#further-reading">
+   Further reading:
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="further-research-directions">
+<h1>08 FURTHER RESEARCH DIRECTIONS<a class="headerlink" href="#further-research-directions" title="Permalink to this headline">¶</a></h1>
+<p>We have covered a lot of ground through this course, from the initial ideas around cyber security analytics, through to managing workflows, machine learning and visualisation, and different applications of analysis that may be required. Of course, future research will continue to evolve and we will see greater uses of data analytics to understand the world around us and how best to secure this.</p>
+<p>A Cyber Security Analyst’s job is to protect an organisation from cyber threats. They develop protocols that are used to respond to and mitigate the effects of cyber attacks. They protect the organisation’s infrastructure such as computer networks, hardware, and software from cyber criminals. Tools – what tools are being used by cyber security analysts?
+Evaluation and reporting – how is this done?</p>
+<p>Scripting and programming, data management, penetration testing, hacking and countermeasures, and more will all be critical elements of your cybersecurity education.</p>
+<div class="section" id="visualisation-for-cyber-security">
+<h2>Visualisation for Cyber Security<a class="headerlink" href="#visualisation-for-cyber-security" title="Permalink to this headline">¶</a></h2>
+<p>The IEEE VizSec conference started in 2004 as the Workshop on Visualization and Data Mining for Computer Security, as a co-located event as part of the IEEE Vis conference – one of the largest International conferences on the topic of data visualisation.</p>
+<p>For this session, we will visit some of the recent literature that has been published at the IEEE VizSec conference. We will typically review a set of papers that have been published, and discuss the strengths and weaknesses of the papers, identifying key topic areas being addressed within cyber security, and how visualisation is proposed to alleviate the security challenges. Whilst the conference name has evolved, the actual principle of the conference remains akin to the original name – much of the challenge is in how we mine appropriate data as well as how with they visualise and explore this data. This echoes earlier discussions around the interplay of machine learning and human interaction that we have highlighted in previous sections, but here we can observe the research perspectives of this in cyber security research applications designed to contribute towards our understanding of how visualisation can benefit in cyber security analysis.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="further-reading">
+<h1>Further reading:<a class="headerlink" href="#further-reading" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://infosecjupyterthon.com/introduction.html">Infosec Jupyterthon!</a></p></li>
+<li><p><a class="reference external" href="https://www.wikigain.com/set-up-a-static-ip-in-kali-linux.">Set up static IP in Kali</a></p></li>
+<li><p><a class="reference external" href="https://www.wgu.edu/career-guide/information-technology/cybersecurity-analyst-career.html">How to Become a Cybersecurity Analyst</a></p></li>
+<li><p><a class="reference external" href="https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/becoming-a-microsoft-sentinel-notebooks-ninja-the-series/ba-p/2693491?WT.mc_id=m365-0000-rotrent">Becoming a Microsoft Sentinel Notebooks Ninja - The Series!</a></p></li>
+<li><p><a class="reference external" href="https://www.sans.org/cyber-security-courses/applied-data-science-machine-learning/">SANS SEC595: Applied Data Science and AI/Machine Learning for Cybersecurity Professionals</a></p></li>
+<li><p><a class="reference external" href="https://360digitmg.com/course/certification-program-in-cyber-security-analytics/#:%7E:text=%20Cyber%20Security%20Analytics%20Course%20Modules%20%201,Deep%20Learning%20in%20Cyber%20Security.%20%20More%20">Certificate Program in Cyber Security Analytics</a></p></li>
+<li><p><a class="reference external" href="https://casugol.com/acsa/">Advanced Cyber Security Analytics</a></p></li>
+<li><p><a class="reference external" href="https://onlinecybersecurity.seas.gwu.edu/me-cybersecurity-analytics/">ONLINE CYBERSECURITY MASTER’S DEGREE — CYBERSECURITY ANALYTICS</a></p></li>
+<li><p><a class="reference external" href="https://education.dellemc.com/content/dam/dell-emc/documents/en-us/2015KS_Krishnappa-Big_Data_Analytics_for_Cyber_Security.pdf">BIG DATA ANALYTICS FOR CYBER SECURITY</a></p></li>
+<li><p><a class="reference external" href="https://adamtheautomator.com/get-eventlog/">Get-EventLog: Querying Windows Event Logs with PowerShell</a></p></li>
+<li><p><a class="reference external" href="https://posts.specterops.io/threat-hunting-with-jupyter-notebooks-part-1-your-first-notebook-9a99a781fde7">Threat Hunting with Jupyter Notebooks— Part 1: Your First Notebook</a></p></li>
+<li><p><a class="reference external" href="https://www.netscylla.com/blog/2019/10/28/Jupyter-Notebooks-for-Incident-Response.html">Jupyter Notebooks for Incident Response</a></p></li>
+<li><p><a class="reference external" href="https://www.cytomic.ai/trends/jupyter-notebooks-cybersecurity/">What do Jupyter Notebooks bring to cybersecurity?</a></p></li>
+<li><p><a class="reference external" href="https://online.datasciencedojo.com/blogs/how-data-science-has-changed-cybersecurity">How Data Science Has Changed Cybersecurity</a></p></li>
+<li><p><a class="reference external" href="https://online.datasciencedojo.com/blogs/101-machine-learning-algorithms-for-data-science-with-cheat-sheets">101 Machine Learning Algorithms for Data Science with Cheat Sheets</a></p></li>
+<li><p><a class="reference external" href="https://www.socinvestigation.com/cyber-threat-intelligence-tools-for-security-professionals-2021/">Cyber Threat Intelligence Tools For Security Professionals – 2021</a></p></li>
+</ul>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="book-07-malwareanalysis.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">07 MALWARE ANALYSIS</p>
+        </div>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Prof. Phil Legg<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

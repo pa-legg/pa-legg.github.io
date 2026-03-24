@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02 SECURITY OPERATIONS AND INCIDENT MANAGEMENT &#8212; Cyber Security Analytics</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="03 SECURITY OPERATIONS AND MONITORING" href="book-03-operationsandmonitoring.html" />
+    <link rel="prev" title="01 INTRODUCTION TO CYBER SECURITY DATA ANALYTICS" href="book-01-csa_intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/uwecyber.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Cyber Security Analytics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-00-csa_start.html">
+   CYBER SECURITY ANALYTICS
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-01-csa_intro.html">
+   01 INTRODUCTION TO CYBER SECURITY DATA ANALYTICS
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   02 SECURITY OPERATIONS AND INCIDENT MANAGEMENT
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-03-operationsandmonitoring.html">
+   03 SECURITY OPERATIONS AND MONITORING
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-04-machinelearningandvisualisation.html">
+   04 MACHINE LEARNING AND VISUALISATION
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-05-cybertoolsthreatvuln.html">
+   05 CYBER SECURITY ANALYTICS TOOLS - THREAT HUNTING
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-06-cybertoolsincidentresp.html">
+   06 CYBER SECURITY ANALYTICS TOOLS - INCIDENT RESPONSE
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-07-malwareanalysis.html">
+   07 MALWARE ANALYSIS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="book-08-furtherresearch.html">
+   08 FURTHER RESEARCH DIRECTIONS
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/book-02-operationsandinfrastructure.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#security-operations-centre">
+   Security Operations Centre
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#security-operations-staffing-and-organizational-structure">
+     Security operations staffing and organizational structure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#key-functions-performed-by-the-soc">
+     10 key functions performed by the SOC
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mitre-att-ck">
+   MITRE ATT&amp;CK
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#common-terminology">
+     Common Terminology
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-in-the-mitre-att-ck-matrix">
+     What is in the MITRE ATT&amp;CK Matrix?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cyber-analytics-repository">
+     Cyber Analytics Repository
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#access-control">
+   Access Control
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#active-directory">
+     Active Directory
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lsass">
+     LSASS
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#further-reading">
+     Further Reading
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>02 SECURITY OPERATIONS AND INCIDENT MANAGEMENT</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#security-operations-centre">
+   Security Operations Centre
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#security-operations-staffing-and-organizational-structure">
+     Security operations staffing and organizational structure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#key-functions-performed-by-the-soc">
+     10 key functions performed by the SOC
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mitre-att-ck">
+   MITRE ATT&amp;CK
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#common-terminology">
+     Common Terminology
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-in-the-mitre-att-ck-matrix">
+     What is in the MITRE ATT&amp;CK Matrix?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cyber-analytics-repository">
+     Cyber Analytics Repository
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#access-control">
+   Access Control
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#active-directory">
+     Active Directory
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lsass">
+     LSASS
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#further-reading">
+     Further Reading
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="security-operations-and-incident-management">
+<h1>02 SECURITY OPERATIONS AND INCIDENT MANAGEMENT<a class="headerlink" href="#security-operations-and-incident-management" title="Permalink to this headline">¶</a></h1>
+<p>Often in cyber security, we refer to the red team the and blue team. Red team are seen as the offensive team. They are the real-world attackers, or penetration testers who are acting in this offensive capacity trying to break into our systems to obtain confidential information or to gain illegitimate access. Blue team are the defenders, trying to protect our organisational and operational infrastructure. As a game that pits attackers vs defenders, blue teams have a massive challenge to contend with. Blue teams want to successfully defend their systems against a whole range of attacks. Red teams only need to be successful with their attacks once to go on a potentially cause major problems for an organisation.</p>
+<p>In this section, we will cover:</p>
+<ul class="simple">
+<li><p>Security Operations Centres - how the blue team operate.</p></li>
+<li><p>Common blue team methodologies.</p></li>
+<li><p>Access controls.</p></li>
+</ul>
+<p>Security Operations and Incident Management (SOIM) can be described in the context of MAPE-K: Monitor, Analyse, Plan, Execute - Knowledge.</p>
+<p>Intrusion Detection Systems (IDS) provide the ability to monitor and analyse data.</p>
+<p>Security Information and Event Management (SIEM) systems provide the ability to also plan.</p>
+<p>More recently, Security Orchestration and Automated Response (SOAR) tools have started to introduce automation in the cycle.</p>
+<div class="section" id="security-operations-centre">
+<h2>Security Operations Centre<a class="headerlink" href="#security-operations-centre" title="Permalink to this headline">¶</a></h2>
+<p>A Security Operation Center (SOC) is a centralized function within an organization employing people, processes, and technology to continuously monitor and improve an organization’s security posture while preventing, detecting, analyzing, and responding to cybersecurity incidents.</p>
+<p>A SOC acts like the hub or central command post, taking in telemetry from across an organization’s IT infrastructure, including its networks, devices, appliances, and information stores, wherever those assets reside. The proliferation of advanced threats places a premium on collecting context from diverse sources. Essentially, the SOC is the correlation point for every event logged within the organization that is being monitored. For each of these events, the SOC must decide how they will be managed and acted upon.</p>
+<div class="section" id="security-operations-staffing-and-organizational-structure">
+<h3>Security operations staffing and organizational structure<a class="headerlink" href="#security-operations-staffing-and-organizational-structure" title="Permalink to this headline">¶</a></h3>
+<p>The function of a security operations team and, frequently, of a security operations center (SOC), is to monitor, detect, investigate, and respond to cyberthreats around the clock. Security operations teams are charged with monitoring and protecting many assets, such as intellectual property, personnel data, business systems, and brand integrity. As the implementation component of an organization’s overall cybersecurity framework, security operations teams act as the central point of collaboration in coordinated efforts to monitor, assess, and defend against cyberattacks.</p>
+<p>SOCs have been typically built around a hub-and-spoke architecture, where a security information and event management (SIEM) system aggregates and correlates data from security feeds. Spokes of this model can incorporate a variety of systems, such as vulnerability assessment solutions, governance, risk and compliance (GRC) systems, application and database scanners, intrusion prevention systems (IPS), user and entity behavior analytics (UEBA), endpoint detection and remediation (EDR), and threat intelligence platforms (TIP).</p>
+<p>The SOC is usually led by a SOC manager, and may include incident responders, SOC Analysts (levels 1, 2 and 3), threat hunters and incident response manager(s). The SOC reports to the CISO, who in turn reports to either the CIO or directly to the CEO.</p>
+</div>
+<div class="section" id="key-functions-performed-by-the-soc">
+<h3>10 key functions performed by the SOC<a class="headerlink" href="#key-functions-performed-by-the-soc" title="Permalink to this headline">¶</a></h3>
+<p><strong>1. Take Stock of Available Resources</strong>
+The SOC is responsible for two types of assets—the various devices, processes and applications they’re charged with safeguarding, and the defensive tools at their disposal to help ensure this protection.</p>
+<ul class="simple">
+<li><p>What The SOC Protects
+The SOC can’t safeguard devices and data they can’t see. Without visibility and control from device to the cloud, there are likely to be blind spots in the network security posture that can be found and exploited. So the SOC’s goal is to gain a complete view of the business’ threat landscape, including not only the various types of endpoints, servers and software on premises, but also third-party services and traffic flowing between these assets.</p></li>
+<li><p>How The SOC Protects
+The SOC should also have a complete understanding of all cybersecurity tools on hand and all workflows in use within the SOC. This increases agility and allows the SOC to run at peak efficiency.</p></li>
+</ul>
+<p><strong>2. Preparation and Preventative Maintenance</strong>
+Even the most well-equipped and agile response processes are no match for preventing problems from occurring in the first place. To help keep attackers at bay, the SOC implements preventative measures, which can be divided into two main categories.</p>
+<ul class="simple">
+<li><p>Preparation
+Team members should stay informed on the newest security innovations, the latest trends in cybercrime and the development of new threats on the horizon. This research can help inform the creation a security roadmap that will provide direction for the company’s cybersecurity efforts going forward, and a disaster recovery plan that will serve as ready guidance in a worst-case scenario.</p></li>
+<li><p>Preventative Maintenance
+This step includes all actions taken to make successful attacks more difficult, including regularly maintaining and updating existing systems; updating firewall policies; patching vulnerabilities; and whitelisting, blacklisting and securing applications.</p></li>
+</ul>
+<p><strong>3. Continuous Proactive Monitoring</strong>
+Tools used by the SOC scan the network 24/7 to flag any abnormalities or suspicious activities. Monitoring the network around the clock allows the SOC to be notified immediately of emerging threats, giving them the best chance to prevent or mitigate harm. Monitoring tools can include a SIEM or an EDR, the most advanced of which can use behavioral analysis to “teach” systems the difference between regular day-to-day operations and actual threat behavior, minimizing the amount of triage and analysis that must be done by humans.</p>
+<p><strong>4. Alert Ranking and Management</strong>
+When monitoring tools issue alerts, it is the responsibility of the SOC to look closely at each one, discard any false positives, and determine how aggressive any actual threats are and what they could be targeting. This allows them to triage emerging threats appropriately, handling the most urgent issues first.</p>
+<p><strong>5. Threat Response</strong>
+These are the actions most people think of when they think of the SOC. As soon as an incident is confirmed, the SOC acts as first responder, performing actions like shutting down or isolating endpoints, terminating harmful processes (or preventing them from executing), deleting files, and more. The goal is to respond to the extent necessary while having as small an impact on business continuity as possible.</p>
+<p><strong>6. Recovery and Remediation</strong>
+In the aftermath of an incident, the SOC will work to restore systems and recover any lost or compromised data. This may include wiping and restarting endpoints, reconfiguring systems or, in the case of ransomware attacks, deploying viable backups in order to circumvent the ransomware. When successful, this step will return the network to the state it was in prior to the incident.</p>
+<p><strong>7. Log Management</strong>
+The SOC is responsible for collecting, maintaining, and regularly reviewing the log of all network activity and communications for the entire organization. This data helps define a baseline for “normal” network activity, can reveal the existence of threats, and can be used for remediation and forensics in the aftermath of an incident. Many SOCs use a SIEM to aggregate and correlate the data feeds from applications, firewalls, operating systems and endpoints, all of which produce their own internal logs.</p>
+<p><strong>8. Root Cause Investigation</strong>
+In the aftermath of an incident, the SOC is responsible for figuring out exactly what happened when, how and why. During this investigation, the SOC uses log data and other information to trace the problem to its source, which will help them prevent similar problems from occurring in the future.</p>
+<p><strong>9. Security Refinement and Improvement</strong>
+Cybercriminals are constantly refining their tools and tactics—and in order to stay ahead of them, the SOC needs to implement improvements on a continuous basis. During this step, the plans outlined in the Security Road Map come to life, but this refinement can also include hands-on practices such as red-teaming and purple-teaming.</p>
+<p><strong>10. Compliance Management</strong>
+Many of the SOC’s processes are guided by established best practices, but some are governed by compliance requirements. The SOC is responsible for regularly auditing their systems to ensure compliance with such regulations, which may be issued by their organization, by their industry, or by governing bodies. Examples of these regulations include GDPR, HIPAA, and PCI DSS. Acting in accordance with these regulations not only helps safeguard the sensitive data that the company has been entrusted with—it can also shield the organization from reputational damage and legal challenges resulting from a breach.</p>
+<p><a class="reference external" href="https://www.mcafee.com/enterprise/en-us/security-awareness/operations/what-is-soc.html">https://www.mcafee.com/enterprise/en-us/security-awareness/operations/what-is-soc.html</a></p>
+</div>
+</div>
+<div class="section" id="mitre-att-ck">
+<h2>MITRE ATT&amp;CK<a class="headerlink" href="#mitre-att-ck" title="Permalink to this headline">¶</a></h2>
+<p>MITRE ATT&amp;CK (Adversarial Tactics, Techniques, and Common Knowledge) is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&amp;CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community. MITRE ATT&amp;CK was created in 2013 as a result of MITRE’s Fort Meade Experiment (FMX) where researchers emulated both adversary and defender behavior in an effort to improve post-compromise detection of threats through telemetry sensing and behavioral analysis. The key question for the researchers was “How well are we doing at detecting documented adversary behavior?” To answer that question, the researchers developed ATT&amp;CK, which was used as a tool to categorize adversary behavior. <a class="reference external" href="https://www.mcafee.com/enterprise/en-us/security-awareness/cybersecurity/what-is-mitre-attack-framework.html">More detail…</a></p>
+<div class="section" id="common-terminology">
+<h3>Common Terminology<a class="headerlink" href="#common-terminology" title="Permalink to this headline">¶</a></h3>
+<p>APT is an acronym for Advanced Persistent Threat. This can be considered a team/group (threat group), or even country (nation-state group), that engages in long-term attacks against organizations and/or countries. The term ‘advanced’ can be misleading as it will tend to cause us to believe that each APT group all have some super-weapon, e.i. a zero-day exploit, that they use. That is not the case. As we will see a bit later, the techniques these APT groups use are quite common and can be detected with the right implementations in place. You can view FireEye’s current list of APT groups here.</p>
+<p>TTP is an acronym for Tactics, Techniques, and Procedures, but what does each of these terms mean?</p>
+<ul class="simple">
+<li><p>The Tactic is the adversary’s goal or objective.</p></li>
+<li><p>The Technique is how the adversary achieves the goal or objective.</p></li>
+<li><p>The Procedure is how the technique is executed.</p></li>
+</ul>
+<p>MITRE established the CVE (Common Vulnerabilities and Exposures) Program <a class="reference external" href="https://en.wikipedia.org/wiki/Common_Vulnerabilities_and_Exposures">back in 1999</a>, where their mission is to identify, define, and catalog publicly disclosed cybersecurity vulnerabilities. The database can be accessed online at <a class="reference external" href="https://cve.mitre.org/">https://cve.mitre.org/</a>. Further sources exist nowadays, including <a class="reference external" href="https://www.cvedetails.com/">https://www.cvedetails.com/</a> that also reports the Common Vulnerability Scoring System (CVSS). All new vulnerabilities are assigned a CVE reference, for example, the EternalBlue vulnerability is recorded as CVE-2017-0144. We can find further detail in the original CVE database, or alternatively, we can search a richer database such as the NIST National Vulnerability Database based in the USA: <a class="reference external" href="https://nvd.nist.gov/vuln/detail/CVE-2017-0144">https://nvd.nist.gov/vuln/detail/CVE-2017-0144</a>.</p>
+</div>
+<div class="section" id="what-is-in-the-mitre-att-ck-matrix">
+<h3>What is in the MITRE ATT&amp;CK Matrix?<a class="headerlink" href="#what-is-in-the-mitre-att-ck-matrix" title="Permalink to this headline">¶</a></h3>
+<p>The MITRE ATT&amp;CK matrix contains a set of techniques used by adversaries to accomplish a specific objective. Those objectives are categorized as tactics in the ATT&amp;CK Matrix. The objectives are presented linearly from the point of reconnaissance to the final goal of exfiltration or “impact”. Looking at the broadest version of ATT&amp;CK for Enterprise, which includes Windows, MacOS, Linux, AWS, GCP, Azure, Azure AD, Office 365, SaaS, and Network environments, the following adversary tactics are categorized:</p>
+<ul class="simple">
+<li><p>Reconnaissance: gathering information to plan future adversary operations, i.e., information about the target organization</p></li>
+<li><p>Resource Development: establishing resources to support operations, i.e., setting up command and control infrastructure</p></li>
+<li><p>Initial Access: trying to get into your network, i.e., spear phishing</p></li>
+<li><p>Execution: trying the run malicious code, i.e., running a remote access tool</p></li>
+<li><p>Persistence: trying to maintain their foothold, i.e., changing configurations</p></li>
+<li><p>Privilege Escalation: trying to gain higher-level permissions, i.e., leveraging a vulnerability to elevate access</p></li>
+<li><p>Defense Evasion: trying to avoid being detected, i.e., using trusted processes to hide malware</p></li>
+<li><p>Credential Access: stealing accounts names and passwords, i.e., keylogging</p></li>
+<li><p>Discovery: trying to figure out your environment, i.e., exploring what they can control</p></li>
+<li><p>Lateral Movement: moving through your environment, i.e., using legitimate credentials to pivot through multiple systems</p></li>
+<li><p>Collection: gathering data of interest to the adversary goal, i.e., accessing data in cloud storage</p></li>
+<li><p>Command and Control: communicating with compromised systems to control them, i.e., mimicking normal web traffic to communicate with a victim network</p></li>
+<li><p>Exfiltration: stealing data, i.e., transfer data to cloud account</p></li>
+<li><p>Impact: manipulate, interrupt, or destroy systems and data, i.e., encrypting data with ransomware</p></li>
+</ul>
+<p>Within each tactic of the MITRE ATT&amp;CK matrix there are adversary techniques, which describe the actual activity carried out by the adversary. Some techniques have sub-techniques that explain how an adversary carries out a specific technique in greater detail.</p>
+<p><a class="reference external" href="https://attack.mitre.org/">MITRE ATT&amp;CK</a></p>
+<p><a class="reference external" href="https://mitre-attack.github.io/attack-navigator/">ATT&amp;CK Navigator</a></p>
+<p><img alt="" src="_images/002-mitre_attack.png" /></p>
+<p>Here we can see at a glance all of the attributes that a threat group (“Lazarus group”) map against.</p>
+<p>From here, we can delve into the detail about a threat group - <a class="reference external" href="https://attack.mitre.org/groups/G0032/">https://attack.mitre.org/groups/G0032/</a></p>
+<p>If we explore the “File and Directory Discovery” as highlighted in the “Discovery” column, we can right-click to “view techniques” or “view tactic”.</p>
+<p>Technique - <a class="reference external" href="https://attack.mitre.org/techniques/T1083/">https://attack.mitre.org/techniques/T1083/</a> - if we search for Lazarus we can find the following: <em>Several Lazarus Group malware samples use a common function to identify target files by their extension. Lazarus Group malware families can also enumerate files and directories, including a Destover-like variant that lists files and gathers information for all drives.</em></p>
+<p>Exploring the <a class="reference external" href="https://attack.mitre.org/groups/G0032/">threat actor</a> further, we can see what software is attributed to them, and the corresponding techniques used by these software tools. Here, we can see that the infamous <a class="reference external" href="https://attack.mitre.org/software/S0366/">WannaCry</a> ransomware is attributed to this threat actor.</p>
+<div class="tip admonition">
+<p class="admonition-title">Task</p>
+<p>Explore MITRE ATT&amp;CK and the ATT&amp;CK Navigator.</p>
+<ol class="simple">
+<li><p>What is the technique ID associated with software supply chain security?</p></li>
+<li><p>What is the group associated with the Solarwinds attack?</p></li>
+<li><p>What is the group that has compromised legitimate web browser updates?</p></li>
+</ol>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Answer</p>
+<p>The following page will be useful to address the above challenge: <a class="reference external" href="https://attack.mitre.org/techniques/T1195/002/">https://attack.mitre.org/techniques/T1195/002/</a></p>
+<ol class="simple">
+<li><p>T1195</p></li>
+<li><p>APT29</p></li>
+<li><p>Cobalt Group</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="cyber-analytics-repository">
+<h3>Cyber Analytics Repository<a class="headerlink" href="#cyber-analytics-repository" title="Permalink to this headline">¶</a></h3>
+<p>The MITRE Cyber Analytics Repository (CAR) is a knowledge base of analytics developed by MITRE based on the MITRE ATT&amp;CK adversary model. CAR defines a data model that is leveraged in its pseudocode representations, but also includes implementations directly targeted at specific tools (e.g., Splunk, EQL) in its analytics. With respect to coverage, CAR is focused on providing a set of validated and well-explained analytics, in particular with regards to their operating theory and rationale.</p>
+<p>We can look at an example submission: <a class="reference external" href="https://car.mitre.org/analytics/CAR-2021-05-010/">CAR-2021-05-010: Create local admin accounts using net exe</a>. This example was submitted on 2021/05/11, and we see information related to platform, contributor, information domain and other useful data. This particular search looks for the creation of local administrator accounts using net.exe. The record also provides implementations and test cases for being able to reproduce the attack vector, and how this could be detected in popular SIEM tools such as Splunk.</p>
+<p>As from the CAR webpages - <em>“It’s important to remember that ATT&amp;CK and CAR are separate projects for good reason. It’s critical to keep how we articulate threats with ATT&amp;CK separate from a set of possible ways to detect them with the analytics. We don’t want the defender content in ATT&amp;CK to be overly prescriptive about how someone can defend against ATT&amp;CK techniques because there could be many different ways, and it’s up to the organization implementing them to determine what works best for their environment and the threats they face. This is why we didn’t put the analytics in ATT&amp;CK to begin with. CAR is a good starting point for many organizations and can be a great platform for open analytic collaboration - but it isn’t the be-all/end-all for defending against the threats described by ATT&amp;CK.”</em></p>
+</div>
+</div>
+<div class="section" id="access-control">
+<h2>Access Control<a class="headerlink" href="#access-control" title="Permalink to this headline">¶</a></h2>
+<p>As an organisation grows in size, so does the IT estate being managed. Organisations often deploy Mobile Device Management (MDM) policies to be able to specify how devices perform, what access is granted to company resources, what users are entitled to use the devices, and many other configurations.</p>
+<div class="section" id="active-directory">
+<h3>Active Directory<a class="headerlink" href="#active-directory" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Active_Directory">Active Directory</a> is the directory service used by Windows domain networks. Think about a University campus network. Students and staff may need to log on to different machines around campus, including shared computers as well as machines that have been specifically assigned for them. User profiles will need to have specific read, write, and execute behaviours associated with them, essentially giving role-based access control across a large estate of Windows machines. Active Directory allows for the control and monitoring of user’s computers through a single domain controller. It means that no matter what machine a user logs in from, they can then access their files in the server, as well as local storage on the machine. Active Directory is the standard approach for many large organisations to manage their computing infrastructure.</p>
+<p>Whilst AD has become widely adopted by many organisations, the origins stem back to <a class="reference external" href="https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol">Lightweight Directory Access Protocol (LDAP)</a>. This is an open and vendor-neutral protocol for accessing and maintaining distributed directory information services over an Internet Protocol.</p>
+</div>
+<div class="section" id="lsass">
+<h3>LSASS<a class="headerlink" href="#lsass" title="Permalink to this headline">¶</a></h3>
+<p>Local Security Authority Subsystem Service (LSASS) is the process on Microsoft Windows that handles all user authentication, password changes, creation of access tokens, and enforcement of security policies. This means the process stores multiple forms of hashed passwords, and in some instances even stores plaintext user passwords.</p>
+<p>On LSASS, <a class="reference external" href="https://attack.mitre.org/techniques/T1003/001/">MITRE ATT&amp;CK reports</a> that adversaries may attempt to access credential material stored in the process memory of the Local Security Authority Subsystem Service (LSASS). After a user logs on, the system generates and stores a variety of credential materials in LSASS process memory. These credential materials can be harvested by an administrative user or SYSTEM and used to conduct Lateral Movement using Use Alternate Authentication Material.</p>
+<p>A popular tool for accessing LSASS is <a class="reference external" href="https://github.com/gentilkiwi/mimikatz">Mimikatz</a>. Mimikatz is an open-source application that allows users to view and save authentication credentials like Kerberos tickets. Benjamin Delpy continues to lead Mimikatz developments, so the toolset works with the current release of Windows and includes the most up-to-date attacks. Attackers commonly use Mimikatz to steal credentials and escalate privileges: in most cases, endpoint protection software and anti-virus systems will detect and delete it. Conversely, pentesters use Mimikatz to detect and exploit vulnerabilities in your networks so you can fix them. <a class="reference external" href="https://www.varonis.com/blog/what-is-mimikatz/">More details…</a></p>
+</div>
+<div class="section" id="further-reading">
+<h3>Further Reading<a class="headerlink" href="#further-reading" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ldap/lightweight-directory-access-protocol-ldap-api#:%7E:text=Lightweight%20Directory%20Access%20Protocol%201%20Purpose.%20The%20Lightweight,Run-time%20requirements.%20...%204%20In%20this%20section.%20">Lightweight Directory Access Protocol | Microsoft Docs</a></p>
+<p><a class="reference external" href="https://www.beyondtrust.com/blog/entry/active-directory-security-explained-7-best-practices">Active Directory Security Explained &amp; 7 Best Practices  | BeyondTrust</a></p>
+<p><a class="reference external" href="https://tryhackme.com/room/activedirectorybasics">TryHackMe | Active Directory Basics</a></p>
+<p><a class="reference external" href="https://www.varonis.com/blog/the-difference-between-active-directory-and-ldap/">The Difference Between Active Directory and LDAP (varonis.com)</a></p>
+<p><a class="reference external" href="https://www.checkpoint.com/cyber-hub/threat-prevention/soar-security-what-is-security-orchestration-automation-and-response/">W3 Schools: Cyber Security Security Operations</a></p>
+<p><a class="reference external" href="https://tryhackme.com/room/mitre">TryHackMe: MITRE</a></p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="book-01-csa_intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">01 INTRODUCTION TO CYBER SECURITY DATA ANALYTICS</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="book-03-operationsandmonitoring.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">03 SECURITY OPERATIONS AND MONITORING</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Prof. Phil Legg<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
