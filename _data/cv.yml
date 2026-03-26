@@ -151,49 +151,18 @@ cv:
         highlights:
           - "Development of research-led Android mobile application, GeoCaption."
 
-    Awards:
-      - title: UWEcyber Research Laboratory strategic investment
-        summary: Wallscourt Foundation (£1.5m).
-        start_date: 2023-10-01
-        end_date: 2027-10-01
-
-      - title: "Cyber Sandpit - Linking cyber effect to mission objectives"
-        summary: DSTL Serapis Framework in collaboration with Trimetis Ltd. (Total £120k, UWE £50k).
-        start_date: 2023-01-01
-        end_date: 2023-10-01
-
-      - title: "Every human a sensor - Crowdsourcing Cyber Data"
-        summary: DSTL Serapis Framework in collaboration with Trimetis Ltd. (Total £80k, UWE £41k).
-        start_date: 2023-01-01
-        end_date: 2023-10-01
-
-      - title: "Teaching CyBOK through Cyber Physical Systems"
-        summary: CyBOK (Cyber Security Body of Knowledge) and NCSC (Total £5k).
-        highlights:
-          - "Alan Mills, Jonathan White, and Prof Phil Legg"
-        start_date: 2023-01-01
-        end_date: 2023-06-30
-        
-      - title: "Best Paper Award, IEEE CyberSA conference"
-        date: 2016
-
-      - title: "CSCT Researcher of the Year Award, UWE Bristol"
-        date: 2015
-        
-      - title: "Best Paper Award, Managing Insider Security Threats (MIST) conference"
-        date: 2014
-
-
-
     Publications:
-      - title: Zur Elektrodynamik bewegter Körper
+      - title: Adversarially Resilient Federated Learning for Heterogeneous Edge Nodes in 5G Networks with Non-IID Data
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
+          - Saniya Zafar
+          - Phil Legg
+          - Jonathan White
+          - Ahmad Salman
+        publisher: Internet of Things
+        releaseDate: 2026-03-14
+        url: https://www.sciencedirect.com/science/article/pii/S2542660526000491
+        summary: The rapid deployment of 5G and Beyond-5G (B5G) edge networks introduces unique challenges for federated learning (FL) frameworks deployed at the edge, primarily due to heterogeneous non-IID data distributions and adversarial vulnerabilities. This paper proposes an adversarially robust federated learning (ARFL) mechanism that integrates hybrid feature selection and adversarial optimization to jointly enhance robustness against adversarial perturbations and improve computational efficiency under heterogeneous data distributions. The proposed methodology jointly optimizes classifier and adversary in a min-max formulation to enable robustness against perturbations of varying strengths. Experimental results on a real-world intrusion detection 5G-NIDD dataset demonstrates that standard FL suffers drastic deterioration under adversarial conditions, with accuracy, precision, recall, and F1-scores dropping to 20%–30% at . In contrast, the proposed ARFL framework consistently sustains performance above 92% across these metrics under all non-IID distributions, highlighting its robustness and reliability. Overall, ARFL achieves absolute adversarial accuracy improvements of 20%–70% points over standard FL while incurring only a marginal reduction in clean performance. Scalability experiments demonstrate the stability and efficiency of the ARFL framework, underscoring its suitability for real-world 5G edge deployments where robustness and efficiency are paramount.
+        
     Certificates:
       - name: CompTIA SecurityX CAS-005
         date: 2024-07-16
@@ -201,23 +170,17 @@ cv:
         icon: fa-solid fa-clipboard-check
         url: "https://www.credly.com/badges/78b0b945-2196-442f-b666-0d84e78afd29/public_url"
 
+      - name: Chartered Institute of Information Security (CIISec) Full Member
+        date: 2022-10-20
+        issuer: CIISec
+        icon: fa-solid fa-clipboard-check
+        url: "https://www.credly.com/badges/fe5f7cad-d8ea-4576-b01e-e083ec33e4a0"
+        
       - name: CompTIA PenTest+ PT0-002
         date: 2021-05-07
         issuer: CompTIA
         icon: fa-solid fa-clipboard-check
         url: "https://www.credly.com/badges/4260e82a-aff4-4a57-b6ab-6a7a74796bb1/public_url"
-
-      - name: CompTIA Security+
-        date: 2020-07-02
-        issuer: CompTIA
-        icon: fa-solid fa-clipboard-check
-        url: "https://www.credly.com/badges/902a8305-7c19-4a09-b79b-68f4841ee375/public_url"
-
-      - name: Azure Fundamentals AZ-900
-        date: 2020-10-07
-        issuer: Microsoft
-        icon: fa-solid fa-clipboard-check
-        url: "https://www.credly.com/badges/1f4e81fd-d8d8-490a-84f1-e1db736ad533/public_url"
 
       - name: Security, Compliance, and Identity Fundamentals SC-900
         date: 2021-04-20
@@ -237,25 +200,57 @@ cv:
         icon: fa-solid fa-clipboard-check
         url: "https://www.credly.com/badges/d517f0c0-a43a-4070-9a0d-fa5a0cceb179/public_url"
 
-      - name: Chartered Institute of Information Security (CIISec) Full Member
-        date: 2022-10-20
-        issuer: CIISec
+      - name: Azure Fundamentals AZ-900
+        date: 2020-10-07
+        issuer: Microsoft
         icon: fa-solid fa-clipboard-check
-        url: "https://www.credly.com/badges/fe5f7cad-d8ea-4576-b01e-e083ec33e4a0"
+        url: "https://www.credly.com/badges/1f4e81fd-d8d8-490a-84f1-e1db736ad533/public_url"
 
-            
+      - name: CompTIA Security+
+        date: 2020-07-02
+        issuer: CompTIA
+        icon: fa-solid fa-clipboard-check
+        url: "https://www.credly.com/badges/902a8305-7c19-4a09-b79b-68f4841ee375/public_url"
+
     Projects:
-      - name: "Panel Member - Transparency as The Foundation: Standards, Assurance, and Trust in Cyber Security"
-        summary: "CYBERUK, Glasgow, 2026"
-        date: 2026-04-22
-        icon: fa-solid fa-podium
+      - name: UWEcyber Research Laboratory strategic investment
+        summary: Wallscourt Foundation (£1.5m).
+        start_date: 2023-10-01
+        end_date: 2027-10-01
+
+      - name: "Cyber Sandpit - Linking cyber effect to mission objectives"
+        summary: DSTL Serapis Framework in collaboration with Trimetis Ltd. (Total £120k, UWE £50k).
+        start_date: 2023-01-01
+        end_date: 2023-10-01
+
+      - name: "Every human a sensor - Crowdsourcing Cyber Data"
+        summary: DSTL Serapis Framework in collaboration with Trimetis Ltd. (Total £80k, UWE £41k).
+        start_date: 2023-01-01
+        end_date: 2023-10-01
+
+      - name: "Teaching CyBOK through Cyber Physical Systems"
+        summary: CyBOK (Cyber Security Body of Knowledge) and NCSC (Total £5k).
+        highlights:
+          - "Alan Mills, Jonathan White, and Prof Phil Legg"
+        start_date: 2023-01-01
+        end_date: 2023-06-30
         
     Talks:
       - name: "Panel Member - Transparency as The Foundation: Standards, Assurance, and Trust in Cyber Security"
         summary: "CYBERUK, Glasgow, 2026"
         date: 2026-04-22
         icon: fa-solid fa-podium
+
+    Awards:  
+      - title: "Best Paper Award, IEEE CyberSA conference"
+        date: 2016
+
+      - title: "CSCT Researcher of the Year Award, UWE Bristol"
+        date: 2015
         
+      - title: "Best Paper Award, Managing Insider Security Threats (MIST) conference"
+        date: 2014
+
     References:
       - name: Professor John Doe
         icon: fa-solid fa-laptop
