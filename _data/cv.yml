@@ -167,20 +167,24 @@ cv:
         summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
 
     Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
+      - name: CompTIA SecurityX CAS-005
+        date: 2024-07-16
+        issuer: CompTIA
+        icon: fa-solid fa-clipboard-check
+        url: "https://www.credly.com/badges/78b0b945-2196-442f-b666-0d84e78afd29/public_url"
 
     Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+      - name: UWEcyber Research Laboratory strategic investment
+        summary: Wallscourt Foundation (£1.5m).
+        start_date: 2023-10-01
+        end_date: 2027-10-01
 
+    Invited Talks:
+      - name: "Panel Member - Transparency as The Foundation: Standards, Assurance, and Trust in Cyber Security"
+        summary: "CYBERUK, Glasgow, 2026"
+        date: 2026-04-22
+        icon: fa-solid fa-podium
+        
     References:
       - name: Professor John Doe
         icon: fa-solid fa-laptop
