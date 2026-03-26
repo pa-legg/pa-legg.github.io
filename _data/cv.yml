@@ -270,18 +270,18 @@ cv:
         start_date: 2022-09-01
         end_date: 2023-03-31
 
-      - name: "CyberWEST: Cyber Security Education for Schools"
+      - name: "CyberWEST - Cyber Security Education for Schools"
         summary: National Cyber Security Centre (Total £41k).
         start_date: 2022-09-01
         end_date: 2023-03-31
 
-      - name: "Transform Suspicious Activity Reports (SARs); UK's First Technology Line of Defence"
+      - name: "Transform Suspicious Activity Reports (SARs) - UK First Technology Line of Defence"
         summary: National Cyber Security Centre (Total £458k, UWE £37k).
         start_date: 2022-09-01
         end_date: 2024-02-28
         
     Talks:
-      - name: "Panel Member - Transparency as The Foundation: Standards, Assurance, and Trust in Cyber Security"
+      - name: "Panel Member - Transparency as The Foundation, Standards, Assurance, and Trust in Cyber Security"
         summary: "CYBERUK, Glasgow, 2026"
         date: 2026-04-22
         icon: fa-solid fa-podium
@@ -296,7 +296,7 @@ cv:
       - title: "Best Paper Award, Managing Insider Security Threats (MIST) conference"
         date: 2014
 
-    References:
+   # References:
    #   - name: Professor John Doe
    #     icon: fa-solid fa-laptop
    #     reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
