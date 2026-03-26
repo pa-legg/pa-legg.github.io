@@ -5,7 +5,7 @@ on:
       - main
       - master
     paths:
-      - "_data/albert-cv.yml"
+      - "_data/cv.yml"
       - "assets/rendercv/design.yaml"
       - "assets/rendercv/locale.yaml"
       - "assets/rendercv/settings.yaml"
