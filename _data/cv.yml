@@ -2,10 +2,7 @@ cv:
   name: Phil Legg
   label: Professor of Cyber Security
   email: Phil.Legg@uwe.ac.uk
-  location: Office 4Q59, Frenchay Campus, Coldharbour Lane, Bristol, BS16 1QY
   website: https://pa-legg.github.io
-  image: ""
-  summary: ""
 
   sections:
     Education:
