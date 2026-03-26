@@ -173,12 +173,72 @@ cv:
         icon: fa-solid fa-clipboard-check
         url: "https://www.credly.com/badges/78b0b945-2196-442f-b666-0d84e78afd29/public_url"
 
+      - name: CompTIA PenTest+ PT0-002
+        date: 2021-05-07
+        issuer: CompTIA
+        icon: fa-solid fa-clipboard-check
+        url: "https://www.credly.com/badges/4260e82a-aff4-4a57-b6ab-6a7a74796bb1/public_url"
+
+      - name: CompTIA Security+
+        date: 2020-07-02
+        issuer: CompTIA
+        icon: fa-solid fa-clipboard-check
+        url: "https://www.credly.com/badges/902a8305-7c19-4a09-b79b-68f4841ee375/public_url"
+
+      - name: Azure Fundamentals AZ-900
+        date: 2020-10-07
+        issuer: Microsoft
+        icon: fa-solid fa-clipboard-check
+        url: "https://www.credly.com/badges/1f4e81fd-d8d8-490a-84f1-e1db736ad533/public_url"
+
+      - name: Security, Compliance, and Identity Fundamentals SC-900
+        date: 2021-04-20
+        issuer: Microsoft
+        icon: fa-solid fa-clipboard-check
+        url: "https://www.credly.com/badges/52101c96-e767-4cdd-bc1e-bab49e3afb51/public_url"
+
+      - name: Azure Data Fundamentals DP-900
+        date: 2021-03-16
+        issuer: Microsoft
+        icon: fa-solid fa-clipboard-check
+        url: "https://www.credly.com/badges/0c345f09-2810-422c-8605-fbbdaa2d70ea/public_url"
+
+      - name: Azure AI Fundamentals AI-900
+        date: 2021-02-06
+        issuer: Microsoft
+        icon: fa-solid fa-clipboard-check
+        url: "https://www.credly.com/badges/d517f0c0-a43a-4070-9a0d-fa5a0cceb179/public_url"
+
+      - name: Chartered Institute of Information Security (CIISec) Full Member
+        date: 2022-10-20
+        issuer: CIISec
+        icon: fa-solid fa-clipboard-check
+        url: "https://www.credly.com/badges/fe5f7cad-d8ea-4576-b01e-e083ec33e4a0"
+
+            
     Projects:
       - name: UWEcyber Research Laboratory strategic investment
         summary: Wallscourt Foundation (£1.5m).
         start_date: 2023-10-01
         end_date: 2027-10-01
 
+      - name: "Cyber Sandpit - Linking cyber effect to mission objectives"
+        summary: DSTL Serapis Framework in collaboration with Trimetis Ltd. (Total £120k, UWE £50k).
+        start_date: 2023-01-01
+        end_date: 2023-10-01
+
+      - name: "Every human a sensor - Crowdsourcing Cyber Data"
+        summary: DSTL Serapis Framework in collaboration with Trimetis Ltd. (Total £80k, UWE £41k).
+        start_date: 2023-01-01
+        end_date: 2023-10-01
+
+      - name: "Teaching CyBOK through Cyber Physical Systems"
+        summary: CyBOK (Cyber Security Body of Knowledge) and NCSC (Total £5k).
+        highlights:
+          - "Alan Mills, Jonathan White, and Prof Phil Legg"
+        start_date: 2023-01-01
+        end_date: 2023-06-30
+        
     Talks:
       - name: "Panel Member - Transparency as The Foundation: Standards, Assurance, and Trust in Cyber Security"
         summary: "CYBERUK, Glasgow, 2026"
