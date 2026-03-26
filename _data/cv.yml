@@ -112,10 +112,10 @@ cv:
         end_date: 2015-02-09
         highlights:
           - "Cyber Security Centre, Department of Computer Science"
-          - "Research project: 'Corporate Insider Threat Detection (CITD)' funded by the Centre for the Protection of National Infrastructure (CPNI).",
-          - "Lectureship post at St. Catherine College, teaching Computer Graphics.",
-          - "Lectureship post at Worcester College, tutoring International students in Computer Graphics",
-          - "Teaching at the Department of Computer Science includes classes for the Visual Analytics postgraduate course, and both tutorials and practical labs for the Computer Graphics course.",
+          - "Research project: 'Corporate Insider Threat Detection (CITD)' funded by the Centre for the Protection of National Infrastructure (CPNI)."
+          - "Lectureship post at St. Catherine College, teaching Computer Graphics."
+          - "Lectureship post at Worcester College, tutoring International students in Computer Graphics"
+          - "Teaching at the Department of Computer Science includes classes for the Visual Analytics postgraduate course, and both tutorials and practical labs for the Computer Graphics course."
           - "Supervision of postgraduate projects in the Centre for Doctoral Training in Cyber Security"
 
 
@@ -126,9 +126,9 @@ cv:
         end_date: 2013-03-20
         highlights:
           - "Department of Computer Science"
-          - "Research project: 'Sports Video Visualization' funded by the Welsh Assembly Government.",
-          - "Guest lecturer on iOS Software Development and Sports Video Visualisation",
-          - "'Inspirational Speaker' and iOS Schools Workshop Lead for Technocamps Wales.",
+          - "Research project: 'Sports Video Visualization' funded by the Welsh Assembly Government."
+          - "Guest lecturer on iOS Software Development and Sports Video Visualisation"
+          - "'Inspirational Speaker' and iOS Schools Workshop Lead for Technocamps Wales."
           - "Supervision of undergraduate and postgraduate projects."
 
       - company: Freelance
@@ -137,10 +137,10 @@ cv:
         start_date: 2010-05-01
         end_date: 2015-02-09
         highlights:
-          - "Desktop and Mobile (iOS, Android, Blackberry) development.",
-          - "Over 40,000 paid downloads on the iOS App Store worldwide since July 2011, with Tide Times being recognised in the Stuff magazine '200 best apps of all time', and also achieving #1 in the 'Top Paid Weather' category (Summer 2011).",
-          - "PocketCoder used by top sports clubs worldwide including Manchester United FC, Welsh Rugby Union, Ireland RFU, Barnsley FC, Bolton FC, QPR, and the Football Association.",
-          - "Desktop software includes collaborative development with University Hospital Wales and NHS, producing a 3D stereoscopic imaging system for ophthalmic clinical assessment based on PhD research.",
+          - "Desktop and Mobile (iOS, Android, Blackberry) development."
+          - "Over 40,000 paid downloads on the iOS App Store worldwide since July 2011, with Tide Times being recognised in the Stuff magazine '200 best apps of all time', and also achieving #1 in the 'Top Paid Weather' category (Summer 2011)."
+          - "PocketCoder used by top sports clubs worldwide including Manchester United FC, Welsh Rugby Union, Ireland RFU, Barnsley FC, Bolton FC, QPR, and the Football Association."
+          - "Desktop software includes collaborative development with University Hospital Wales and NHS, producing a 3D stereoscopic imaging system for ophthalmic clinical assessment based on PhD research."
           - "Proficient in variety of development languages: Python, Javascript, Java, C++, C#, Objective-C, Swift."
 
       - company: Cardiff University
@@ -149,7 +149,7 @@ cv:
         start_date: 2010-04-01
         end_date: 2010-07-01
         highlights:
-          - "Development of research-led Android mobile application, GeoCaption.",
+          - "Development of research-led Android mobile application, GeoCaption."
           
     Awards:
       - title: "CompTIA SecurityX CAS-005"
