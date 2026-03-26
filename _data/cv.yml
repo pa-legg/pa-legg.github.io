@@ -23,7 +23,7 @@ cv:
         start_date: 2006
         end_date: 2010
         highlights:
-          - "PhD thesis, Multi-modal Retinal Imaging: Improving Accuracy and Efficiency of Image Registration using Mutual Information"
+          - "PhD thesis - Multi-modal Retinal Imaging: Improving Accuracy and Efficiency of Image Registration using Mutual Information"
 
       - institution: Cardiff University, UK
         location: Cardiff, UK
@@ -32,7 +32,7 @@ cv:
         start_date: 2003
         end_date: 2006
         highlights:
-          - "BSc Computer Science Final Year Project, Multi-player Internet Game: Chinese Checkers"
+          - "BSc Computer Science Final Year Project - Online Multi-player Chinese Checkers Game with Intelligent Computer Opponent"
 
     Experience:
       - company: University of the West of England (UWE Bristol)
@@ -43,7 +43,7 @@ cv:
         highlights:
           - "Full Professor in Cyber Security in recognition of 'Advancing Teaching and Learning' (primary domain) and for 'Research with Impact' (secondary domain)."
           - "Successful research grant income with over £2.1M directed awarded from external funding sources, and over £3.7M in total (see projects page for futher details)."
-          - "Published over 85 academic articles as of March 2026, in high-quality journals and conference venues (see publications page for further details)."
+          - "Published 85+ academic articles as of March 2026, in high-quality journals and conference venues (see publications page for further details)."
           - "Supervision of PhD student research (4 completions, 6 current - March 2026), as well as supporting post-doctoral research fellows (2 former, 2 current - March 2026) (see projects page for further details)."
           - "Experience of supervising 100+ student research projects across undergraduate and postgraduate level, as well as supporting extra curricula paid student research and consultancy work (see projects page for further details)."
           - "Leading outreach initiatives and upskilling educators and industry professionals in cyber security (see teaching page for further details)."
@@ -92,17 +92,68 @@ cv:
         start_date: 2018-02-09
         end_date: 2018-09-30
 
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: Cabinet Office
+        position: "Member of the UK Government Cyber Advisory Board"
+        location: London, UK
+        start_date: 2025-03-01
+        end_date: Present
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - "Former Programme Leader of the NCSC-Certified MSc Cyber Security, having grown the programme from its initial delivery for 13 students in 2018 to as many as 150 students across two intakes in an academic year, and achieving a PTES overall student satisfaction score of 92% (2024)."
 
+      - company: CSE Connect
+        position: "Co-Founder / Co-Director"
+        location: UK
+        start_date: 2019-07-01
+        end_date: Present
+        highlights:
+          - "A National Cyber Security Education network to bring together academia, industry and government. Supported by the UK National Cyber Security Centre, the network hosts regular events as well as an annual conference, that promotes collaboration and sharing to enhance cyber security education, both within the UK and working with global partners. (Formerly CISSEUK, a UK chapter of CISSE - the Colloquium of Information Systems Security Education)"
+
+      - company: University of Oxford
+        position: "Post-Doctoral Research Associate"
+        location: Oxford, UK
+        start_date: 2013-03-20
+        end_date: 2015-02-09
+        highlights:
+          - "Cyber Security Centre, Department of Computer Science"
+          - "Research project: 'Corporate Insider Threat Detection (CITD)' funded by the Centre for the Protection of National Infrastructure (CPNI).",
+          - "Lectureship post at St. Catherine College, teaching Computer Graphics.",
+          - "Lectureship post at Worcester College, tutoring International students in Computer Graphics",
+          - "Teaching at the Department of Computer Science includes classes for the Visual Analytics postgraduate course, and both tutorials and practical labs for the Computer Graphics course.",
+          - "Supervision of postgraduate projects in the Centre for Doctoral Training in Cyber Security"
+
+
+      - company: Swansea University
+        position: "Post-Doctoral Research Assistant"
+        location: Swansea, UK
+        start_date: 2010-07-01
+        end_date: 2013-03-20
+        highlights:
+          - "Department of Computer Science"
+          - "Research project: 'Sports Video Visualization' funded by the Welsh Assembly Government.",
+          - "Guest lecturer on iOS Software Development and Sports Video Visualisation",
+          - "'Inspirational Speaker' and iOS Schools Workshop Lead for Technocamps Wales.",
+          - "Supervision of undergraduate and postgraduate projects."
+
+      - company: Freelance
+        position: "Software Developer"
+        location: UK
+        start_date: 2010-05-01
+        end_date: 2015-02-09
+        highlights:
+          - "Desktop and Mobile (iOS, Android, Blackberry) development.",
+          - "Over 40,000 paid downloads on the iOS App Store worldwide since July 2011, with Tide Times being recognised in the Stuff magazine '200 best apps of all time', and also achieving #1 in the 'Top Paid Weather' category (Summer 2011).",
+          - "PocketCoder used by top sports clubs worldwide including Manchester United FC, Welsh Rugby Union, Ireland RFU, Barnsley FC, Bolton FC, QPR, and the Football Association.",
+          - "Desktop software includes collaborative development with University Hospital Wales and NHS, producing a 3D stereoscopic imaging system for ophthalmic clinical assessment based on PhD research.",
+          - "Proficient in variety of development languages: Python, Javascript, Java, C++, C#, Objective-C, Swift."
+
+      - company: Cardiff University
+        position: "Software Developer"
+        location: UK
+        start_date: 2010-04-01
+        end_date: 2010-07-01
+        highlights:
+          - "Development of research-led Android mobile application, GeoCaption.",
+          
     Awards:
       - title: "CompTIA SecurityX CAS-005"
         date: 2024
@@ -117,17 +168,6 @@ cv:
         releaseDate: 1905-06-30
         url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
         summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
 
     Certificates:
       - name: Machine Learning
