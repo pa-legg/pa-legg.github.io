@@ -161,8 +161,35 @@ cv:
         publisher: Internet of Things
         releaseDate: 2026-03-14
         url: https://www.sciencedirect.com/science/article/pii/S2542660526000491
-        summary: The rapid deployment of 5G and Beyond-5G (B5G) edge networks introduces unique challenges for federated learning (FL) frameworks deployed at the edge, primarily due to heterogeneous non-IID data distributions and adversarial vulnerabilities. This paper proposes an adversarially robust federated learning (ARFL) mechanism that integrates hybrid feature selection and adversarial optimization to jointly enhance robustness against adversarial perturbations and improve computational efficiency under heterogeneous data distributions. The proposed methodology jointly optimizes classifier and adversary in a min-max formulation to enable robustness against perturbations of varying strengths. Experimental results on a real-world intrusion detection 5G-NIDD dataset demonstrates that standard FL suffers drastic deterioration under adversarial conditions, with accuracy, precision, recall, and F1-scores dropping to 20%–30% at . In contrast, the proposed ARFL framework consistently sustains performance above 92% across these metrics under all non-IID distributions, highlighting its robustness and reliability. Overall, ARFL achieves absolute adversarial accuracy improvements of 20%–70% points over standard FL while incurring only a marginal reduction in clean performance. Scalability experiments demonstrate the stability and efficiency of the ARFL framework, underscoring its suitability for real-world 5G edge deployments where robustness and efficiency are paramount.
-        
+
+      - title: LOTL-hunter: Detecting multi-stage living-off-the-land attacks in cyber-physical systems using decision fusion techniques with digital twins
+        authors:
+          - Carol Lo
+          - Thu Yein Win
+          - Zeinab Rezaeifar
+          - Zaheer Khan
+          - Phil Legg
+        publisher: Future Generation Computer Systems
+        releaseDate: 2026-01-23
+        url: https://www.sciencedirect.com/science/article/pii/S0167739X26000166
+
+      - title: Advances in Teaching and Learning for Cyber Security Education
+        authors:
+          - Phil Legg
+          - Natalie Coull
+          - Charles Clarke
+        publisher: Springer
+        releaseDate: 2026-01-29
+        url: https://link.springer.com/book/10.1007/978-3-032-15105-6
+
+      - title: Machine Learning and Data Analytics for Cyber Security
+        authors:
+          - Phil Legg
+          - Giorgio Giacinto
+        publisher: MDPI
+        releaseDate: 2025-04-01
+        url: https://www.mdpi.com/books/reprint/10756-machine-learning-and-data-analytics-for-cyber-security
+
     Certificates:
       - name: CompTIA SecurityX CAS-005
         date: 2024-07-16
@@ -230,10 +257,28 @@ cv:
 
       - name: "Teaching CyBOK through Cyber Physical Systems"
         summary: CyBOK (Cyber Security Body of Knowledge) and NCSC (Total £5k).
-        highlights:
-          - "Alan Mills, Jonathan White, and Prof Phil Legg"
         start_date: 2023-01-01
         end_date: 2023-06-30
+
+      - name: "Autonomous Resilience in Cyber Defence"
+        summary: DSTL Serapis Framework in collaboration with Trimetis Ltd. (Total £30k, UWE £5k).
+        start_date: 2022-09-01
+        end_date: 2022-11-30
+
+      - name: "Cyber Security and Data Governance for SMEs"
+        summary: National Cyber Security Centre (Total £40k).
+        start_date: 2022-09-01
+        end_date: 2023-03-31
+
+      - name: "CyberWEST: Cyber Security Education for Schools"
+        summary: National Cyber Security Centre (Total £41k).
+        start_date: 2022-09-01
+        end_date: 2023-03-31
+
+      - name: "Transform Suspicious Activity Reports (SARs); UK's First Technology Line of Defence"
+        summary: National Cyber Security Centre (Total £458k, UWE £37k).
+        start_date: 2022-09-01
+        end_date: 2024-02-28
         
     Talks:
       - name: "Panel Member - Transparency as The Foundation: Standards, Assurance, and Trust in Cyber Security"
@@ -252,10 +297,10 @@ cv:
         date: 2014
 
     References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+   #   - name: Professor John Doe
+   #     icon: fa-solid fa-laptop
+   #     reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+   #   - name: Professor Jane Smith
+   #     reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+   #     icon: fa-solid fa-thumbtack
