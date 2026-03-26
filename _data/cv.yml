@@ -152,6 +152,28 @@ cv:
           - "Development of research-led Android mobile application, GeoCaption."
 
     Awards:
+      - title: UWEcyber Research Laboratory strategic investment
+        summary: Wallscourt Foundation (£1.5m).
+        start_date: 2023-10-01
+        end_date: 2027-10-01
+
+      - title: "Cyber Sandpit - Linking cyber effect to mission objectives"
+        summary: DSTL Serapis Framework in collaboration with Trimetis Ltd. (Total £120k, UWE £50k).
+        start_date: 2023-01-01
+        end_date: 2023-10-01
+
+      - title: "Every human a sensor - Crowdsourcing Cyber Data"
+        summary: DSTL Serapis Framework in collaboration with Trimetis Ltd. (Total £80k, UWE £41k).
+        start_date: 2023-01-01
+        end_date: 2023-10-01
+
+      - title: "Teaching CyBOK through Cyber Physical Systems"
+        summary: CyBOK (Cyber Security Body of Knowledge) and NCSC (Total £5k).
+        highlights:
+          - "Alan Mills, Jonathan White, and Prof Phil Legg"
+        start_date: 2023-01-01
+        end_date: 2023-06-30
+        
       - title: "Best Paper Award, IEEE CyberSA conference"
         date: 2016
 
@@ -223,27 +245,10 @@ cv:
 
             
     Projects:
-      - name: UWEcyber Research Laboratory strategic investment
-        summary: Wallscourt Foundation (£1.5m).
-        start_date: 2023-10-01
-        end_date: 2027-10-01
-
-      - name: "Cyber Sandpit - Linking cyber effect to mission objectives"
-        summary: DSTL Serapis Framework in collaboration with Trimetis Ltd. (Total £120k, UWE £50k).
-        start_date: 2023-01-01
-        end_date: 2023-10-01
-
-      - name: "Every human a sensor - Crowdsourcing Cyber Data"
-        summary: DSTL Serapis Framework in collaboration with Trimetis Ltd. (Total £80k, UWE £41k).
-        start_date: 2023-01-01
-        end_date: 2023-10-01
-
-      - name: "Teaching CyBOK through Cyber Physical Systems"
-        summary: CyBOK (Cyber Security Body of Knowledge) and NCSC (Total £5k).
-        highlights:
-          - "Alan Mills, Jonathan White, and Prof Phil Legg"
-        start_date: 2023-01-01
-        end_date: 2023-06-30
+      - name: "Panel Member - Transparency as The Foundation: Standards, Assurance, and Trust in Cyber Security"
+        summary: "CYBERUK, Glasgow, 2026"
+        date: 2026-04-22
+        icon: fa-solid fa-podium
         
     Talks:
       - name: "Panel Member - Transparency as The Foundation: Standards, Assurance, and Trust in Cyber Security"
