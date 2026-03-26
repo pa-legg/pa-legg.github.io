@@ -233,7 +233,7 @@ cv:
         icon: fa-solid fa-clipboard-check
         url: "https://www.credly.com/badges/1f4e81fd-d8d8-490a-84f1-e1db736ad533/public_url"
 
-      - name: CompTIA Security+
+      - name: CompTIA Security+ SY0-501
         date: 2020-07-02
         issuer: CompTIA
         icon: fa-solid fa-clipboard-check
