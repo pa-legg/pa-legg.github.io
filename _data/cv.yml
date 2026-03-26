@@ -150,12 +150,18 @@ cv:
         end_date: 2010-07-01
         highlights:
           - "Development of research-led Android mobile application, GeoCaption."
-          
+
     Awards:
-      - title: "CompTIA SecurityX CAS-005"
-        date: 2024
-        awarder: CompTIA
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
+      - title: "Best Paper Award, IEEE CyberSA conference"
+        date: 2016
+
+      - title: "CSCT Researcher of the Year Award, UWE Bristol"
+        date: 2015
+        
+      - title: "Best Paper Award, Managing Insider Security Threats (MIST) conference"
+        date: 2014
+
+
 
     Publications:
       - title: Zur Elektrodynamik bewegter Körper
