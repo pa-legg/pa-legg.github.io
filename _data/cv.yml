@@ -294,9 +294,9 @@ cv:
     Awards:  
       - title: "Best Paper Award"
         authors:
-          - "IEEE CyberSA 2016"
+          - "IEEE International Conference on Cyber Situational Awareness, Data Analytics and Assessment (Cyber SA 2016)"
         date: 2016-07-01
-        awarder: IEEE CyberSA 2016
+        awarder: IEEE International Conference on Cyber Situational Awareness, Data Analytics and Assessment (Cyber SA 2016)
         url: https://c-mric.org
         summary: ""
         
@@ -308,7 +308,7 @@ cv:
         url: https://www.uwe.ac.uk
         summary: ""
         
-      - title: "Best Paper Award, "
+      - title: "Best Paper Award"
         authors:
           - "Managing Insider Security Threats (MIST) conference"
         date: 2014-11-22
@@ -317,5 +317,5 @@ cv:
         summary: ""
     
     invited_talks:
-      - reversed_number: Scaling Laws for Efficient Inference — Stanford HAI Symposium (2024)
-      - reversed_number: Building AI Infrastructure for the Next Decade — TechCrunch Disrupt (2024)
+      - reversed_number: Transparency as The Foundation: Standards, Assurance, and Trust in Cyber Security — CYBERUK (2026)
+      - reversed_number: Trowbridge musician's warning after voice and face used in AI deep-fake romance scam — ITV News (2026)
