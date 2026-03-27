@@ -21,7 +21,7 @@ cv:
         start_date: 2006
         end_date: 2010
         highlights:
-          - "PhD thesis - Multi-modal Retinal Imaging: Improving Accuracy and Efficiency of Image Registration using Mutual Information"
+          - "Multi-modal Retinal Imaging: Improving Accuracy and Efficiency of Image Registration using Mutual Information"
 
       - institution: Cardiff University, UK
         location: Cardiff, UK
@@ -31,7 +31,7 @@ cv:
         start_date: 2003
         end_date: 2006
         highlights:
-          - "BSc Computer Science Final Year Project - Online Multi-player Chinese Checkers Game with Intelligent Computer Opponent"
+          - "Online Multi-player Chinese Checkers Game with Intelligent Computer Opponent"
 
     Experience:
       - company: University of the West of England (UWE Bristol)
