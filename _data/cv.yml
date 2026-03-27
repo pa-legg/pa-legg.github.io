@@ -314,6 +314,6 @@ cv:
         url: https://isyou.info/conf/mist14/
         summary: ""
     
-    invited_talks:
-      - Transparency as The Foundation, Standards, Assurance, and Trust in Cyber Security (CYBERUK, 2026)
-      - Trowbridge musician's warning after voice and face used in AI deep-fake romance scam (ITV News, 2026)
+    #invited_talks:
+    #  - Transparency as The Foundation, Standards, Assurance, and Trust in Cyber Security (CYBERUK, 2026)
+    #  - Trowbridge musician's warning after voice and face used in AI deep-fake romance scam (ITV News, 2026)
