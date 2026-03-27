@@ -162,7 +162,7 @@ cv:
         releaseDate: 2026-03-14
         url: https://www.sciencedirect.com/science/article/pii/S2542660526000491
 
-      - title: LOTL-hunter: Detecting multi-stage living-off-the-land attacks in cyber-physical systems using decision fusion techniques with digital twins
+      - title: "LOTL-hunter: Detecting multi-stage living-off-the-land attacks in cyber-physical systems using decision fusion techniques with digital twins"
         authors:
           - Carol Lo
           - Thu Yein Win
