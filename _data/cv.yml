@@ -1,13 +1,19 @@
 cv:
   name: Phil Legg
+  location: Bristol, UK
   email: Phil.Legg@uwe.ac.uk
   website: https://pa-legg.github.io
-
+  social_networks:
+    - network: LinkedIn
+      username: prof-phil-legg
+    - network: GitHub
+      username: pa-legg
   sections:
     Education:
       - institution: University of the West of England (UWE Bristol)
         location: Bristol, UK
         url: https://www.uwe.ac.uk
+        degree: PGCert 
         studyType: PGCert 
         area: Teaching and Learning for Higher Education
         start_date: 2015
@@ -16,6 +22,7 @@ cv:
       - institution: Cardiff University, UK
         location: Cardiff, UK
         url: https://www.uwe.ac.uk
+        degree: PhD
         studyType: PhD
         area: Computer Science
         start_date: 2006
@@ -26,6 +33,7 @@ cv:
       - institution: Cardiff University, UK
         location: Cardiff, UK
         url: https://www.uwe.ac.uk
+        degree: BSc
         studyType: BSc
         area: Computer Science
         start_date: 2003
@@ -307,3 +315,7 @@ cv:
         awarder: Managing Insider Security Threats (MIST) conference
         url: https://isyou.info/conf/mist14/
         summary: ""
+    
+    invited_talks:
+      - reversed_number: Scaling Laws for Efficient Inference — Stanford HAI Symposium (2024)
+      - reversed_number: Building AI Infrastructure for the Next Decade — TechCrunch Disrupt (2024)
