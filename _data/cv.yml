@@ -8,15 +8,15 @@ cv:
       - institution: University of the West of England (UWE Bristol)
         location: Bristol, UK
         url: https://www.uwe.ac.uk
-        studyType: Postgraduate Certificate in Teaching and Learning for Higher Education (PGCert)
-        area: Education
+        studyType: PGCert 
+        area: Teaching and Learning for Higher Education
         start_date: 2015
         end_date: 2016
 
       - institution: Cardiff University, UK
         location: Cardiff, UK
         url: https://www.uwe.ac.uk
-        studyType: PhD Computer Science
+        studyType: PhD
         area: Computer Science
         start_date: 2006
         end_date: 2010
@@ -26,7 +26,7 @@ cv:
       - institution: Cardiff University, UK
         location: Cardiff, UK
         url: https://www.uwe.ac.uk
-        studyType: BSc Computer Science
+        studyType: BSc
         area: Computer Science
         start_date: 2003
         end_date: 2006
