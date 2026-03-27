@@ -100,12 +100,10 @@ cv:
         end_date: 2018-09-30
 
       - company: Cabinet Office
-        position: "Member of the UK Government Cyber Advisory Board"
+        position: "Member of the UK Government Cyber Advisory Board (GCAB)"
         location: London, UK
         start_date: 2025-03-01
         end_date: present
-        highlights:
-          - "Former Programme Leader of the NCSC-Certified MSc Cyber Security, having grown the programme from its initial delivery for 13 students in 2018 to as many as 150 students across two intakes in an academic year, and achieving a PTES overall student satisfaction score of 92% (2024)."
 
       - company: CSE Connect
         position: "Co-Founder / Co-Director"
