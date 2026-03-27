@@ -13,9 +13,9 @@ cv:
       - institution: University of the West of England (UWE Bristol)
         location: Bristol, UK
         url: https://www.uwe.ac.uk
-        degree: PGCert 
-        studyType: PGCert 
-        area: Teaching and Learning for Higher Education
+        degree: ""
+        studyType: ""
+        area: Postgraduate Certificate in Teaching and Learning for Higher Education
         start_date: 2015
         end_date: 2016
 
