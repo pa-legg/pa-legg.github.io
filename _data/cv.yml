@@ -282,9 +282,10 @@ cv:
         
     Talks:
       - name: "Panel Member - Transparency as The Foundation, Standards, Assurance, and Trust in Cyber Security"
-        summary: "CYBERUK, Glasgow, 2026"
         date: 2026-04-22
+        issuer: "CYBERUK, Glasgow, 2026"
         icon: fa-solid fa-podium
+        url: "https://www.cyberuk.uk"
 
     Awards:  
       - title: "Best Paper Award, IEEE CyberSA conference"
