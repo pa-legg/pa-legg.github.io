@@ -9,38 +9,6 @@ cv:
     - network: GitHub
       username: pa-legg
   sections:
-    Education:
-      - institution: University of the West of England (UWE Bristol)
-        location: Bristol, UK
-        url: https://www.uwe.ac.uk
-        degree: ""
-        studyType: ""
-        area: Postgraduate Certificate in Teaching and Learning for Higher Education
-        start_date: 2015
-        end_date: 2016
-
-      - institution: Cardiff University, UK
-        location: Cardiff, UK
-        url: https://www.uwe.ac.uk
-        degree: PhD
-        studyType: PhD
-        area: Computer Science
-        start_date: 2006
-        end_date: 2010
-        highlights:
-          - "Multi-modal Retinal Imaging: Improving Accuracy and Efficiency of Image Registration using Mutual Information"
-
-      - institution: Cardiff University, UK
-        location: Cardiff, UK
-        url: https://www.uwe.ac.uk
-        degree: BSc
-        studyType: BSc
-        area: Computer Science
-        start_date: 2003
-        end_date: 2006
-        highlights:
-          - "Online Multi-player Chinese Checkers Game with Intelligent Computer Opponent"
-
     Experience:
       - company: University of the West of England (UWE Bristol)
         position: Professor of Cyber Security
@@ -158,7 +126,39 @@ cv:
         end_date: 2010-07-01
         highlights:
           - "Development of research-led Android mobile application, GeoCaption."
+    
+    Education:
+      - institution: University of the West of England (UWE Bristol)
+        location: Bristol, UK
+        url: https://www.uwe.ac.uk
+        degree: ""
+        studyType: ""
+        area: Postgraduate Certificate in Teaching and Learning for Higher Education
+        start_date: 2015
+        end_date: 2016
 
+      - institution: Cardiff University, UK
+        location: Cardiff, UK
+        url: https://www.uwe.ac.uk
+        degree: PhD
+        studyType: PhD
+        area: Computer Science
+        start_date: 2006
+        end_date: 2010
+        highlights:
+          - "Multi-modal Retinal Imaging: Improving Accuracy and Efficiency of Image Registration using Mutual Information"
+
+      - institution: Cardiff University, UK
+        location: Cardiff, UK
+        url: https://www.uwe.ac.uk
+        degree: BSc
+        studyType: BSc
+        area: Computer Science
+        start_date: 2003
+        end_date: 2006
+        highlights:
+          - "Online Multi-player Chinese Checkers Game with Intelligent Computer Opponent"
+          
     Publications:
       - title: Adversarially Resilient Federated Learning for Heterogeneous Edge Nodes in 5G Networks with Non-IID Data
         authors:
@@ -166,9 +166,11 @@ cv:
           - Phil Legg
           - Jonathan White
           - Ahmad Salman
-        publisher: Internet of Things
-        releaseDate: 2026-03-14
-        url: https://www.sciencedirect.com/science/article/pii/S2542660526000491
+        summary:
+        doi: 10.1016/j.iot.2026.101919
+        url:
+        journal: Internet of Things
+        date: 2026-03-14
 
       - title: "LOTL-hunter: Detecting multi-stage living-off-the-land attacks in cyber-physical systems using decision fusion techniques with digital twins"
         authors:
@@ -177,26 +179,33 @@ cv:
           - Zeinab Rezaeifar
           - Zaheer Khan
           - Phil Legg
-        publisher: Future Generation Computer Systems
-        releaseDate: 2026-01-23
-        url: https://www.sciencedirect.com/science/article/pii/S0167739X26000166
+        summary:
+        doi: 10.1016/j.future.2026.108382
+        url:
+        journal: Future Generation Computer Systems
+        date: 2026-03-14
 
       - title: Advances in Teaching and Learning for Cyber Security Education
         authors:
           - Phil Legg
           - Natalie Coull
           - Charles Clarke
-        publisher: Springer
-        releaseDate: 2026-01-29
-        url: https://link.springer.com/book/10.1007/978-3-032-15105-6
+        summary:
+        doi: 10.1007/978-3-032-15105-6
+        url:
+        journal: Springer
+        date: 2026-01-29
 
       - title: Machine Learning and Data Analytics for Cyber Security
         authors:
           - Phil Legg
           - Giorgio Giacinto
-        publisher: MDPI
-        releaseDate: 2025-04-01
-        url: https://www.mdpi.com/books/reprint/10756-machine-learning-and-data-analytics-for-cyber-security
+        summary:
+        doi: 10.3390/books978-3-7258-3360-3
+        url:
+        journal: MDPI
+        date: 2025-04-01
+        publisher: 
 
     Certificates:
       - name: CompTIA SecurityX CAS-005
