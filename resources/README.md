@@ -6,4 +6,4 @@ A collection of online resources that are shared with the community.
 * [PiLab](http://pa-legg.github.io/resources/pilab/)
 * [UWE Offer Holder Day](http://pa-legg.github.io/resources/uwe-ohd2025)
 * [WebXR Examples](http://pa-legg.github.io/resources/webxr)
-* [UWEcyber AI CTF](http://pa-legg.github.io/resources/uwecyber-ai-ctf)
+* [UWEcyber CTF 2026](http://pa-legg.github.io/resources/uwecyber-ctf-2026)
