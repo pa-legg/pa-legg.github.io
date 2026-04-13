@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "publications",
-          description: "publications in reversed chronological order (91 publications listed as of April 2026)",
+          description: "91 publications (up to April 2026) in reversed chronological order",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
