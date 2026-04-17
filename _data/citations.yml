@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-01'
+  last_updated: '2026-04-17'
 papers:
   Tn43ogoAAAAJ:-f6ydRqryjwC:
     citations: 3
@@ -22,7 +22,7 @@ papers:
     title: 'Honggfuzz+: Fuzzing by Adaptation of Cryptographic Mutation'
     year: '2023'
   Tn43ogoAAAAJ:4DMP91E08xMC:
-    citations: 44
+    citations: 46
     title: Efficient and interpretable real-time malware detection using random-forest
     year: '2019'
   Tn43ogoAAAAJ:4OULZ7Gr8RgC:
@@ -62,7 +62,7 @@ papers:
     title: Teaching Offensive and Defensive Cyber Security in Schools using a Raspberry Pi Cyber Range
     year: '2022'
   Tn43ogoAAAAJ:HDshCWvjkbEC:
-    citations: 219
+    citations: 225
     title: Automated insider threat detection system using user and role-based profile assessment
     year: '2015'
   Tn43ogoAAAAJ:HoB7MX3m0LUC:
@@ -110,15 +110,15 @@ papers:
     title: 'Fail-safe Glyph Encoding based on Quasi-Hamming Distances: With a Case Study on Visualizing File System Events'
     year: Unknown Year
   Tn43ogoAAAAJ:MXK_kJrjxJIC:
-    citations: 341
+    citations: 342
     title: 'Understanding insider threat: A framework for characterising attacks'
     year: '2014'
   Tn43ogoAAAAJ:NMxIlDl6LWMC:
-    citations: 97
+    citations: 99
     title: 'Functionality-preserving adversarial machine learning for robust classification in cybersecurity and intrusion detection domains: A survey'
     year: '2022'
   Tn43ogoAAAAJ:O3NaXMp0MMsC:
-    citations: 48
+    citations: 50
     title: 'Defending against adversarial machine learning attacks using hierarchical learning: A case study on network traffic attack classification'
     year: '2022'
   Tn43ogoAAAAJ:OU6Ihb5iCvQC:
@@ -130,7 +130,7 @@ papers:
     title: Cyber Security and Applications
     year: Unknown Year
   Tn43ogoAAAAJ:QIV2ME_5wuYC:
-    citations: 87
+    citations: 88
     title: Improving accuracy and efficiency of mutual information for multi-modal retinal image registration using adaptive probability density estimation
     year: '2013'
   Tn43ogoAAAAJ:RHpTSmoSYBkC:
@@ -146,7 +146,7 @@ papers:
     title: Enhancing cyber situation awareness for non-expert users using visual analytics
     year: '2016'
   Tn43ogoAAAAJ:SeFeTyx0c_EC:
-    citations: 36
+    citations: 38
     title: 'Vulnerability detection through machine learning-based fuzzing: A systematic review'
     year: '2024'
   Tn43ogoAAAAJ:TFP_iSt0sucC:
@@ -206,7 +206,7 @@ papers:
     title: Identifying attack patterns for insider threat detection
     year: '2015'
   Tn43ogoAAAAJ:ZeXyd9-uunAC:
-    citations: 164
+    citations: 165
     title: Turn costs change the value of animal search paths
     year: '2013'
   Tn43ogoAAAAJ:Zph67rFs4hoC:
@@ -226,7 +226,7 @@ papers:
     title: 'Quasi-Hamming distances: An overarching concept for measuring glyph similarity'
     year: '2015'
   Tn43ogoAAAAJ:_xSYboBqXhAC:
-    citations: 26
+    citations: 28
     title: An Explainable Ensemble-based Intrusion Detection System for Software-Defined Vehicle Ad-hoc Networks
     year: '2025'
   Tn43ogoAAAAJ:abG-DnoFyZgC:
@@ -294,7 +294,7 @@ papers:
     title: "Improving accuracy and efficiency of registration by mutual information using Sturges\u2019 histogram rule"
     year: '2007'
   Tn43ogoAAAAJ:isC4tDSrTZIC:
-    citations: 48
+    citations: 49
     title: Investigating anti-evasion malware triggers using automated sandbox reconfiguration techniques
     year: '2020'
   Tn43ogoAAAAJ:j3f4tGmQtD8C:
@@ -310,11 +310,11 @@ papers:
     title: Publication-Chair
     year: Unknown Year
   Tn43ogoAAAAJ:mB3voiENLucC:
-    citations: 20
+    citations: 21
     title: Predicting user confidence during visual decision making
     year: '2018'
   Tn43ogoAAAAJ:mVmsd5A6BfQC:
-    citations: 79
+    citations: 80
     title: 'Caught in the act of an insider attack: detection and assessment of insider threat'
     year: '2015'
   Tn43ogoAAAAJ:maZDTaKrznsC:
@@ -342,7 +342,7 @@ papers:
     title: 'Glyph sorting: Interactive visualization for multi-dimensional data'
     year: '2015'
   Tn43ogoAAAAJ:qxL8FJ1GzNcC:
-    citations: 13
+    citations: 14
     title: 'Glyph visualization: A fail-safe design scheme based on quasi-hamming distances'
     year: '2016'
   Tn43ogoAAAAJ:r0BpntZqJG4C:
@@ -362,7 +362,7 @@ papers:
     title: 'LOTL-Hunter: Detecting Multi-Stage Living-off-the-Land Attacks in Cyber-Physical Systems using Decision Fusion Techniques with Digital Twins'
     year: '2026'
   Tn43ogoAAAAJ:u_35RYKgDlwC:
-    citations: 10
+    citations: 11
     title: Digital twins of cyber physical systems in smart manufacturing for threat simulation and detection with deep learning for time series classification
     year: '2024'
   Tn43ogoAAAAJ:ufrVoPGSRksC:
@@ -370,7 +370,7 @@ papers:
     title: 'Knowledge-assisted ranking: A visual analytic application for sports event data'
     year: '2015'
   Tn43ogoAAAAJ:vV6vV6tmYwMC:
-    citations: 6
+    citations: 7
     title: 'Federated Learning: Data Privacy and Cyber Security in Edge-Based Machine Learning'
     year: '2023'
   Tn43ogoAAAAJ:xtRiw3GOFMkC:
@@ -382,7 +382,7 @@ papers:
     title: Improving Search Space Analysis of Fuzzing Mutators Using Cryptographic Structures
     year: '2023'
   Tn43ogoAAAAJ:zA6iFVUQeVQC:
-    citations: 2
+    citations: 3
     title: 'GoibhniUWE: A Lightweight and Modular Container-Based Cyber Range'
     year: '2024'
   Tn43ogoAAAAJ:zYLM7Y9cAGgC:
