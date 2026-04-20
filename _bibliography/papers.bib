@@ -31,15 +31,24 @@
   html={#}
 }
 
-
-@article{chafjiri2026advancing,
-  title={Advancing Fuzzing with Unbiased Random Generator and Feistel Network-Based Mutations},
-  author={Chafjiri, Sadegh Bamohabbat and Legg, Phil and Tsompanas, Michail-Antisthenis and Hong, Jun},
-  journal={Information and Software Technology},
-  year={2026},
-  preview={},
-  html={#},
-  doi={#}
+@article{bamohabbatchafjiri2026advancing,
+title = {Advancing fuzzing with unbiased random generator and Feistel network-based mutations},
+journal = {Information and Software Technology},
+volume = {196},
+pages = {108140},
+year = {2026},
+issn = {0950-5849},
+preview={2026bamohabbatchafjiri.png},
+doi = {https://doi.org/10.1016/j.infsof.2026.108140},
+html = {https://www.sciencedirect.com/science/article/pii/S0950584926001291},
+author = {Sadegh {Bamohabbat Chafjiri} and Phil Legg and Jun Hong and Michail-Antisthenis Tsompanas},
+keywords = {Fuzzing, AFL++, Feistel-besed mutation, Unbiased random generator, Permuted Congruential Generator},
+abstract = {Context:
+This research tackles challenges in traditional fuzzing, such as limited coverage, instability, and inefficiency in bug discovery. We propose two novel models and their combination to enhance mutation processes and improve its reliability through unbiased randomisation, building on cryptographic techniques from our prior work. To our knowledge, we are the first to apply this approach to AFL++, extending Feistel-inspired mutation and high-performance randomisation to generate high-quality test cases, with potential to attract attention in the fuzzing community.
+Objectives: Integrate and assess Feistel-inspired mutations’ impact on AFL++ performance, focusing on code coverage and stability. Integrate the Permuted Congruential Generator (PCG) into AFL++ and evaluate its performance compared to traditional random number generators (RNGs). Evaluate a hybrid model combining Feistel and PCG randomness for better stability and coverage.
+Methods: We enhance AFL++ with algorithmic improvements and RNGs modifications. Our models include: CAFL++ (Cryptographic-AFL++): Integrates Feistel-inspired transformations for improved coverage. PCGAFL++: Refines the AFL’s RNG with PCG to reduce bias. CPCGAFL++: Combines Feistel-inspired swaps and PCG-based RNG for a robust fuzzing approach. Performance was analysed using metrics like Code Coverage and the Vargha-Delaney_A12 statistic across 20 Fuzzbench targets, and bug discovery on three targets.
+Results: Our models showed significant improvements over AFL++. CAFL++ outperformed AFL++ in 75% of test targets, offering better code coverage and stability. PCGAFL++ surpassed AFL++ in 60% of targets by enhancing randomness, resulting in more efficient fuzzing. CPCGAFL++ demonstrated improved stability and enhanced bug discovery performance, while achieving code coverage comparable to AFL++. These results highlight the key improvements introduced by our two models for fuzz testing.
+Conclusion: Our models advance fuzzing by improving code coverage and stability. Integrating Feistel-inspired swaps and PCG-based RNG overcomes traditional fuzzing limitations, offering a more efficient and reliable method. These models represent a step forward in fuzzing techniques, influencing both academic research and industrial practices.}
 }
 
 @article{ZAFAR2026101919,
