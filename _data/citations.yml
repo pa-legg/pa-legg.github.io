@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-17'
+  last_updated: '2026-04-20'
 papers:
   Tn43ogoAAAAJ:-f6ydRqryjwC:
     citations: 3
@@ -38,7 +38,7 @@ papers:
     title: 'Guest Editorial: Emerging Trends in Research for Insider Threat Detection.'
     year: '2014'
   Tn43ogoAAAAJ:70eg2SAEIzsC:
-    citations: 16
+    citations: 17
     title: Longitudinal Risk-based Security Assessment of Docker Software Container Images
     year: '2023'
   Tn43ogoAAAAJ:8k81kl-MbHgC:
@@ -118,12 +118,12 @@ papers:
     title: 'Functionality-preserving adversarial machine learning for robust classification in cybersecurity and intrusion detection domains: A survey'
     year: '2022'
   Tn43ogoAAAAJ:O3NaXMp0MMsC:
-    citations: 50
+    citations: 51
     title: 'Defending against adversarial machine learning attacks using hierarchical learning: A case study on network traffic attack classification'
     year: '2022'
   Tn43ogoAAAAJ:OU6Ihb5iCvQC:
     citations: 0
-    title: Adversarially Resilient Federated Learning for Heterogeneous Edge Nodes in 5G Networks with Non-IID Data
+    title: Adversarially resilient federated learning for heterogeneous edge nodes in 5G networks with non-IID data
     year: '2026'
   Tn43ogoAAAAJ:P5F9QuxV20EC:
     citations: 0
@@ -226,7 +226,7 @@ papers:
     title: 'Quasi-Hamming distances: An overarching concept for measuring glyph similarity'
     year: '2015'
   Tn43ogoAAAAJ:_xSYboBqXhAC:
-    citations: 28
+    citations: 29
     title: An Explainable Ensemble-based Intrusion Detection System for Software-Defined Vehicle Ad-hoc Networks
     year: '2025'
   Tn43ogoAAAAJ:abG-DnoFyZgC:
@@ -254,7 +254,7 @@ papers:
     title: Trends and Challenges in Data Analytics and Machine Learning Using Call Detail Records in Telecom Systems
     year: '2024'
   Tn43ogoAAAAJ:d1gkVwhDpl0C:
-    citations: 17
+    citations: 18
     title: Predicting the occurrence of world news events using recurrent neural networks and auto-regressive moving average models
     year: '2017'
   Tn43ogoAAAAJ:dfsIfKJdRG4C:
