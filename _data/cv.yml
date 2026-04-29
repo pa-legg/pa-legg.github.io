@@ -18,7 +18,7 @@ cv:
         highlights:
           - "Full Professor in Cyber Security in recognition of 'Advancing Teaching and Learning' (primary domain) and for 'Research with Impact' (secondary domain)."
           - "Successful research grant income with over £2.1M directed awarded from external funding sources, and over £3.7M in total (see projects page for futher details)."
-          - "Published 85+ academic articles as of March 2026, in high-quality journals and conference venues (see publications page for further details)."
+          - "Published 90+ academic articles as of April 2026, in high-quality journals and conference venues (see publications page for further details)."
           - "Supervision of PhD student research (4 completions, 6 current - March 2026), as well as supporting post-doctoral research fellows (2 former, 2 current - March 2026) (see projects page for further details)."
           - "Experience of supervising 100+ student research projects across undergraduate and postgraduate level, as well as supporting extra curricula paid student research and consultancy work (see projects page for further details)."
           - "Leading outreach initiatives and upskilling educators and industry professionals in cyber security (see teaching page for further details)."
@@ -296,8 +296,107 @@ cv:
         summary: InnovateUK Smart Grant in collaboration with Synalogik Ltd. (Total £458k, UWE £37k).
         start_date: 2022-09-01
         end_date: 2024-02-28
-        
 
+      - name: "Building a place-based approach to preventing online sexual abuse"
+        summary: Vice Chancellor’s Challenge Fund 2022-23 (Total £25k internal).
+        start_date: 2022-05-01
+        end_date: 2023-04-30
+
+      - name: "Turing Network Development Awards"
+        summary: Alan Turing Institute (Total £25k).
+        start_date: 2022-02-01
+        end_date: 2023-01-31
+
+      - name: "Cyber Security and Cyber Crime Cluster (CSC3)"
+        summary: UWE Expanding Research Excellence Scheme (Total £100k internal).
+        start_date: 2022-02-01
+        end_date: 2023-07-31
+
+      - name: "Cyber security analytics in telecommunications systems: Managing security and service in complex real-time 5G networks"
+        summary: PhD 50-50 studentship in collaboration with Ribbon Communications Ltd. (Total £35k external, £35k internal).
+        start_date: 2022-01-01
+        end_date: 2024-12-31
+
+      - name: "Co-creation of innovative school projects for teachers to improve cyber security education"
+        summary: National Cyber Security Centre (Total £50k).
+        start_date: 2021-09-01
+        end_date: 2022-02-28
+
+      - name: "Teaching CyBOK Cyber-Physical Systems Security through Interactive Simulation"
+        summary: CyBOK / National Cyber Security Centre (Total £5k).
+        start_date: 2021-01-01
+        end_date: 2021-04-30
+
+      - name: "Identifying and Tackling Counter-Terrorism Finances through Investigation Automation (SCOUT: A fully automated enhanced risk assessment engine)"
+        summary: InnovateUK Smart Grants (Total £490k).
+        start_date: 2020-04-01
+        end_date: 2022-03-30
+        
+      - name: "Cyber Security Assessment for Project CAVForth (An Autonomous Bus Service From Park & Ride Across Forth Bridge to Edinburgh Park Train & Tram Interchange)"
+        summary: Innovate UK and Centre for Connected and Autonomous Vehicles (CCAV) (Total £34k).
+        start_date: 2020-01-01
+        end_date: 2020-12-31
+
+      - name: "Analysis and Visualisation of Ransomware and Malicious Network Propagation"
+        summary: National Cyber Security Centre Internship Award (Total £2.4k).
+        start_date: 2019-05-01
+        end_date: 2019-09-30
+
+      - name: "Penetration testing Consultancy"
+        summary: VQ Communications Ltd. (Total £9k).
+        start_date: 2019-11-01
+        end_date: 2020-07-31
+
+      - name: "Interactive Inspection of Adversarial Machine Learning for Collaborative Human-Machine Trust and Security in Data-Driven Military and Defence"
+        summary: PhD 50-50 studentship in collaboration with Techmodal Ltd. (Total £35k external, £35k internal).
+        start_date: 2019-10-01
+        end_date: 2022-09-30
+        
+      - name: "Shared Collaborative Project Planning in Secure Federated Learning Environments"
+        summary: PhD 50-50 studentship in collaboration with Techmodal Ltd. (Total £35k external, £35k internal).
+        start_date: 2019-10-01
+        end_date: 2022-09-30
+
+      - name: "Travel Grant: Colloquium for Information Systems Security in Education 2019, Las Vegas, USA"
+        summary: National Cyber Security Centre (Total £2k).
+        start_date: 2019-07-01
+        end_date: 2019-07-01
+
+      - name: "Cyber Security in the Home: Detecting IoT Threats"
+        summary: National Cyber Security Centre Internship Award (Total £2.4k).
+        start_date: 2019-05-01
+        end_date: 2019-09-30
+        
+      - name: "Travel Grant: Colloquium for Information Systems Security in Education 2018, New Orleans, USA"
+        summary: National Cyber Security Centre (Total £2k).
+        start_date: 2018-07-01
+        end_date: 2018-07-01
+
+      - name: "HASTE: Human-centric Active-learning for decision Support in Threat Exploration"
+        summary: DSTL Defence and Security Accelerator (Total £85k).
+        start_date: 2018-02-01
+        end_date: 2018-07-31
+
+      - name: "Creating Machine Intelligence with Intelligent Interactive Visualisation"
+        summary: PhD 50-50 studentship in collaboration with Montvieux Ltd. (Total £35k external, £35k internal).
+        start_date: 2016-10-01
+        end_date: 2019-09-30
+
+      - name: "RicherPicture: Automated network defence through business and threat-led machine learning – Phase 2"
+        summary: DSTL Centre for Defence Enterprise (Total £280k).
+        start_date: 2016-04-01
+        end_date: 2017-03-31
+        
+      - name: "Enhanced personal situational awareness through network and systems visualization"
+        summary: UWE Bristol Vice-Chancellor’s Early Career Researcher Development Awards (Total £13k internal).
+        start_date: 2015-08-01
+        end_date: 2016-07-30
+
+      - name: "RicherPicture: Automated network defence through business and threat-led machine learning"
+        summary: DSTL Centre for Defence Enterprise (Total £108k).
+        start_date: 2015-04-01
+        end_date: 2016-09-30
+        
     Awards:  
       - title: "Best Paper Award"
         authors:
