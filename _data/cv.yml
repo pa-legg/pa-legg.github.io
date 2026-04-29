@@ -423,38 +423,38 @@ cv:
         summary: ""
     
     Invited Talks:
-      - name: Transparency as The Foundation, Standards, Assurance, and Trust in Cyber Security, CYBERUK, 2026
-      - name: Trowbridge musician's warning after voice and face used in AI deep fake romance scam, ITV News, 2026
-      - name: Security and AI in the year of vibe coding and computer use agents, where do we go next? Keynote speaker at 10th International Conference on Internet of Things and Connected Technologies (ICIoTCT 2025), Maulana Azad National Institute of Technology (MANIT), Bhopal, India. December 2025.
-      - name: Cyber Security and Artificial Intelligence, AI for Security or the Security of AI?, Cyber security research seminar series, Centre for Cyber Security, Communications and Network Research, University of Plymouth (2025).
-      - name: Cyber Security and Artificial Intelligence, AI for Security or the Security of AI?, International Conference on Future Tech, CASUGOL Singapore Keynote Speaker, June 2023.
-      - name: Cyber Growth and Innovation, Invited Panel Member, DSIT, Engine Shed Bristol, March 2023.
-      - name: Cynam Guest Host, Cyber Cheltenham, March 2023.
-      - name: Breaking into Cyber Security, CASUGOL Singapore, October 2022.
-      - name: Getting into Cyber Security, NCSC CyberFirst Futures, August 2022.
-      - name: Cryptocurrency, crime, and cyber security, Let's Make Tech Inclusive, London Borough of Redbridge, May 2022.
-      - name: An audience with Professor Phil Legg, UK Cyber Security Council Leader's Briefing, May 2022.
-      - name: Cyber Security and the Global Pandemic, City of Bristol College, February 2022.
-      - name: Cyber Security and Working with Academia, South West Cyber Resilience Centre, December 2021.
-      - name: HCI and Cyber Security Boundaries and Fusion, Cardiff University, December 2021.
-      - name: Cyber Security at UWE, UTC Berkeley Green, July 2021.
-      - name: Post-Pandemic Cyber Security Education, IEEE Cyber Science Keynote Speaker, June 2021.
-      - name: Light bulbs and race cars, Cyber security education using cyber-physical systems, Cybersecurity, Privacy and Human-Centred Computing Seminar, Cardiff University, March 2021
-      - name: Cyber Security, AI, and Digital Futures, CASUGOL Nights Out Talk, September 2020.
-      - name: Colloquium on Information Systems Security Education UK: How do we inspire sharing and collaboration in higher education, NCSC Annual Education Conference, Stratford upon Avon, 2019.
-      - name: Establishing a forum for the UK cyber security education community, and the role of education with research, NCSC Academic Centres of Excellence in Cyber Security Research (ACECSR) Annual Conference, Stratford upon Avon, 2019.
-      - name: Cyber Security in the UK, Addressing the state of the nation, Colloquium on Information Systems Security Education, Las Vegas, USA, 2019.
-      - name: Establishing a forum for the UK cyber security education community, CYBERUK, Glasgow, 2019
-      - name: What do we really mean by 'understanding cyber security'?, Emerson Green Library, Bristol Festival of Learning, June 2018.
-      - name: Visual Analytics and Human Machine Collaboration for Insider Threat Detection, University of Bristol, December 2017.
-      - name: Human Machine Collaboration in Active Machine Learning, Adarga.ai, August 2017.
-      - name: Data Driven Decision Making, Cranfield University, April 2016.
-      - name: Visualizing Cyber Security, vLunch, Cardiff University, March 2016.
-      - name: Visualization What is it good for? Software Engineering Research Group, UWE, March 2015.
-      - name: Corporate Insider Threat Detection, SMi Oil and Gas Cyber Security, Oslo, June 2014. 
-      - name: Corporate Insider Threat Detection, CIFAS Annual conference, London, June 2013. 
-      - name: Glyph-based Visualization for Sports Analytics, Sports Informatics Symposium, Loughborough University, June 2012. 
-      - name: Glyph-based Visualization for Sports Analytics, Glyph-Based Visualization Workshop, Oxford University, May 2012. 
-      - name: Sports Video Visualization, vLunch, Cardiff University, October 2011.
+      - name: "Transparency as The Foundation, Standards, Assurance, and Trust in Cyber Security, CYBERUK, 2026"
+      - name: "Trowbridge musician's warning after voice and face used in AI deep fake romance scam, ITV News, 2026"
+      - name: "Security and AI in the year of vibe coding and computer use agents, where do we go next? Keynote speaker at 10th International Conference on Internet of Things and Connected Technologies (ICIoTCT 2025), Maulana Azad National Institute of Technology (MANIT), Bhopal, India. December 2025."
+      - name: "Cyber Security and Artificial Intelligence, AI for Security or the Security of AI?, Cyber security research seminar series, Centre for Cyber Security, Communications and Network Research, University of Plymouth (2025)."
+      - name: "Cyber Security and Artificial Intelligence, AI for Security or the Security of AI?, International Conference on Future Tech, CASUGOL Singapore Keynote Speaker, June 2023."
+      - name: "Cyber Growth and Innovation, Invited Panel Member, DSIT, Engine Shed Bristol, March 2023."
+      - name: "Cynam Guest Host, Cyber Cheltenham, March 2023."
+      - name: "Breaking into Cyber Security, CASUGOL Singapore, October 2022."
+      - name: "Getting into Cyber Security, NCSC CyberFirst Futures, August 2022."
+      - name: "Cryptocurrency, crime, and cyber security, Let's Make Tech Inclusive, London Borough of Redbridge, May 2022."
+      - name: "An audience with Professor Phil Legg, UK Cyber Security Council Leader's Briefing, May 2022."
+      - name: "Cyber Security and the Global Pandemic, City of Bristol College, February 2022."
+      - name: "Cyber Security and Working with Academia, South West Cyber Resilience Centre, December 2021."
+      - name: "HCI and Cyber Security Boundaries and Fusion, Cardiff University, December 2021."
+      - name: "Cyber Security at UWE, UTC Berkeley Green, July 2021."
+      - name: "Post-Pandemic Cyber Security Education, IEEE Cyber Science Keynote Speaker, June 2021."
+      - name: "Light bulbs and race cars, Cyber security education using cyber-physical systems, Cybersecurity, Privacy and Human-Centred Computing Seminar, Cardiff University, March 2021"
+      - name: "Cyber Security, AI, and Digital Futures, CASUGOL Nights Out Talk, September 2020."
+      - name: "Colloquium on Information Systems Security Education UK: How do we inspire sharing and collaboration in higher education, NCSC Annual Education Conference, Stratford upon Avon, 2019."
+      - name: "Establishing a forum for the UK cyber security education community, and the role of education with research, NCSC Academic Centres of Excellence in Cyber Security Research (ACECSR) Annual Conference, Stratford upon Avon, 2019."
+      - name: "Cyber Security in the UK, Addressing the state of the nation, Colloquium on Information Systems Security Education, Las Vegas, USA, 2019."
+      - name: "Establishing a forum for the UK cyber security education community, CYBERUK, Glasgow, 2019"
+      - name: "What do we really mean by 'understanding cyber security'?, Emerson Green Library, Bristol Festival of Learning, June 2018."
+      - name: "Visual Analytics and Human Machine Collaboration for Insider Threat Detection, University of Bristol, December 2017."
+      - name: "Human Machine Collaboration in Active Machine Learning, Adarga.ai, August 2017."
+      - name: "Data Driven Decision Making, Cranfield University, April 2016."
+      - name: "Visualizing Cyber Security, vLunch, Cardiff University, March 2016."
+      - name: "Visualization What is it good for? Software Engineering Research Group, UWE, March 2015."
+      - name: "Corporate Insider Threat Detection, SMi Oil and Gas Cyber Security, Oslo, June 2014. "
+      - name: "Corporate Insider Threat Detection, CIFAS Annual conference, London, June 2013. "
+      - name: "Glyph-based Visualization for Sports Analytics, Sports Informatics Symposium, Loughborough University, June 2012. "
+      - name: "Glyph-based Visualization for Sports Analytics, Glyph-Based Visualization Workshop, Oxford University, May 2012. "
+      - name: "Sports Video Visualization, vLunch, Cardiff University, October 2011."
 
 
