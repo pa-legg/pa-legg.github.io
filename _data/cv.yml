@@ -422,7 +422,7 @@ cv:
         url: https://isyou.info/conf/mist14/
         summary: ""
     
-    Invited Talks:
+    invited_talks:
       - name: "Transparency as The Foundation, Standards, Assurance, and Trust in Cyber Security, CYBERUK, 2026"
       - name: "Trowbridge musician's warning after voice and face used in AI deep fake romance scam, ITV News, 2026"
       - name: "Security and AI in the year of vibe coding and computer use agents, where do we go next? Keynote speaker at 10th International Conference on Internet of Things and Connected Technologies (ICIoTCT 2025), Maulana Azad National Institute of Technology (MANIT), Bhopal, India. December 2025."
