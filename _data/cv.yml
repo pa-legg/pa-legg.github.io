@@ -423,5 +423,5 @@ cv:
         summary: ""
     
     Invited Talks:
-      - Transparency as The Foundation, Standards, Assurance, and Trust in Cyber Security (CYBERUK, 2026)
-      - Trowbridge musician's warning after voice and face used in AI deep-fake romance scam (ITV News, 2026)
+      - name: Transparency as The Foundation, Standards, Assurance, and Trust in Cyber Security (CYBERUK, 2026)
+      - name: Trowbridge musician's warning after voice and face used in AI deep-fake romance scam (ITV News, 2026)
