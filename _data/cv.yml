@@ -159,53 +159,53 @@ cv:
         highlights:
           - "Online Multi-player Chinese Checkers Game with Intelligent Computer Opponent"
           
-    Publications:
-      - title: Adversarially Resilient Federated Learning for Heterogeneous Edge Nodes in 5G Networks with Non-IID Data
-        authors:
-          - Saniya Zafar
-          - Phil Legg
-          - Jonathan White
-          - Ahmad Salman
-        summary:
-        doi: 10.1016/j.iot.2026.101919
-        url:
-        journal: Internet of Things
-        date: 2026-03-14
+#    Publications:
+#      - title: Adversarially Resilient Federated Learning for Heterogeneous Edge Nodes in 5G Networks with Non-IID Data
+#        authors:
+#          - Saniya Zafar
+#          - Phil Legg
+#          - Jonathan White
+#          - Ahmad Salman
+#        summary:
+#        doi: 10.1016/j.iot.2026.101919
+#        url:
+#        journal: Internet of Things
+#        date: 2026-03-14
 
-      - title: "LOTL-hunter: Detecting multi-stage living-off-the-land attacks in cyber-physical systems using decision fusion techniques with digital twins"
-        authors:
-          - Carol Lo
-          - Thu Yein Win
-          - Zeinab Rezaeifar
-          - Zaheer Khan
-          - Phil Legg
-        summary:
-        doi: 10.1016/j.future.2026.108382
-        url:
-        journal: Future Generation Computer Systems
-        date: 2026-03-14
+#      - title: "LOTL-hunter: Detecting multi-stage living-off-the-land attacks in cyber-physical systems using decision fusion techniques with digital twins"
+#        authors:
+#          - Carol Lo
+#          - Thu Yein Win
+#          - Zeinab Rezaeifar
+#          - Zaheer Khan
+#          - Phil Legg
+#        summary:
+#        doi: 10.1016/j.future.2026.108382
+#        url:
+#        journal: Future Generation Computer Systems
+#        date: 2026-03-14
 
-      - title: Advances in Teaching and Learning for Cyber Security Education
-        authors:
-          - Phil Legg
-          - Natalie Coull
-          - Charles Clarke
-        summary:
-        doi: 10.1007/978-3-032-15105-6
-        url:
-        journal: Springer
-        date: 2026-01-29
+#      - title: Advances in Teaching and Learning for Cyber Security Education
+#        authors:
+#          - Phil Legg
+#          - Natalie Coull
+#          - Charles Clarke
+#        summary:
+#        doi: 10.1007/978-3-032-15105-6
+#        url:
+#        journal: Springer
+#        date: 2026-01-29
 
-      - title: Machine Learning and Data Analytics for Cyber Security
-        authors:
-          - Phil Legg
-          - Giorgio Giacinto
-        summary:
-        doi: 10.3390/books978-3-7258-3360-3
-        url:
-        journal: MDPI
-        date: 2025-04-01
-        publisher: 
+ #     - title: Machine Learning and Data Analytics for Cyber Security
+ #       authors:
+ #         - Phil Legg
+ #         - Giorgio Giacinto
+ #       summary:
+#      doi: 10.3390/books978-3-7258-3360-3
+#        url:
+#        journal: MDPI
+#        date: 2025-04-01
+#        publisher: 
 
     Certificates:
       - name: CompTIA SecurityX CAS-005
@@ -424,7 +424,9 @@ cv:
     
     Invited Talks:
       - title: "Transparency as The Foundation, Standards, Assurance, and Trust in Cyber Security, CYBERUK, 2026"
+        date: 2026
       - title: "Trowbridge musician's warning after voice and face used in AI deep fake romance scam, ITV News, 2026"
+        date: 2026
       - title: "Security and AI in the year of vibe coding and computer use agents, where do we go next? Keynote speaker at 10th International Conference on Internet of Things and Connected Technologies (ICIoTCT 2025), Maulana Azad National Institute of Technology (MANIT), Bhopal, India. December 2025."
       - title: "Cyber Security and Artificial Intelligence, AI for Security or the Security of AI?, Cyber security research seminar series, Centre for Cyber Security, Communications and Network Research, University of Plymouth (2025)."
       - title: "Cyber Security and Artificial Intelligence, AI for Security or the Security of AI?, International Conference on Future Tech, CASUGOL Singapore Keynote Speaker, June 2023."
