@@ -19,7 +19,7 @@ cv:
           - "Full Professor in Cyber Security in recognition of 'Advancing Teaching and Learning' (primary domain) and for 'Research with Impact' (secondary domain)."
           - "Successful research grant income with over £2.1M directed awarded from external funding sources, and over £3.7M in total (see projects page for futher details)."
           - "Published 90+ academic articles as of April 2026, in high-quality journals and conference venues (see publications page for further details)."
-          - "Supervision of PhD student research (4 completions, 6 current - March 2026), as well as supporting post-doctoral research fellows (2 former, 2 current - March 2026) (see projects page for further details)."
+          - "Supervision of PhD student research (4 completions, 6 current, March 2026), as well as supporting post-doctoral research fellows (2 former, 2 current, March 2026) (see projects page for further details)."
           - "Experience of supervising 100+ student research projects across undergraduate and postgraduate level, as well as supporting extra curricula paid student research and consultancy work (see projects page for further details)."
           - "Leading outreach initiatives and upskilling educators and industry professionals in cyber security (see teaching page for further details)."
 
@@ -32,7 +32,7 @@ cv:
           - "Co-Director of UWEcyber 'Gold' NCSC Academic Centre of Excellence in Cyber Security Education (ACE-CSE) that brings together our teaching and learning, external engagement, outreach, research and knowledge exchange in Cyber Security, with a multi-disciplinary perspective involving staff across the entire University, a regional network of educators with a passion to upskill cyber security education, and a regular guest speaker seminar series that has attracted presenters from across the globe."
 
       - company: University of the West of England (UWE Bristol)
-        position: "Programme Leadership Team - BSc Cyber Security and Digital Forensics"
+        position: "Programme Leadership Team BSc Cyber Security and Digital Forensics"
         location: Bristol, UK
         start_date: 2024-07-01
         end_date: present
@@ -48,7 +48,7 @@ cv:
           - "The Computer Science Research Centre (CSRC) at UWE is made up of 5 themes: Artificial Intelligence, Cyber Security, Data Science, Expressive Computer Interaction, and Smart Cities. I serve as Cyber Security Research Theme Lead since the reorganisation of the CSRC in 2019, supporting academic staff and PhD researchers to develop cyber security research across infrastructure security, software security, AI/data security, and cyber crime domains."
 
       - company: University of the West of England (UWE Bristol)
-        position: "Programme Leader - MSc Cyber Security (NCSC Certified)"
+        position: "Programme Leader MSc Cyber Security (NCSC Certified)"
         location: Bristol, UK
         start_date: 2018-01-01
         end_date: 2024-07-31
@@ -82,7 +82,7 @@ cv:
           - "A National Cyber Security Education network to bring together academia, industry and government. Supported by the UK National Cyber Security Centre, the network hosts regular events as well as an annual conference, that promotes collaboration and sharing to enhance cyber security education, both within the UK and working with global partners. (Formerly CISSEUK, a UK chapter of CISSE, the Colloquium of Information Systems Security Education)"
 
       - company: University of Oxford
-        position: "Post-Doctoral Research Associate"
+        position: "Post Doctoral Research Associate"
         location: Oxford, UK
         start_date: 2013-03-20
         end_date: 2015-02-09
@@ -96,7 +96,7 @@ cv:
 
 
       - company: Swansea University
-        position: "Post-Doctoral Research Assistant"
+        position: "Post Doctoral Research Assistant"
         location: Swansea, UK
         start_date: 2010-07-01
         end_date: 2013-03-20
@@ -146,7 +146,7 @@ cv:
         start_date: 2006
         end_date: 2010
         highlights:
-          - "Multi-modal Retinal Imaging: Improving Accuracy and Efficiency of Image Registration using Mutual Information"
+          - "Multi modal Retinal Imaging: Improving Accuracy and Efficiency of Image Registration using Mutual Information"
 
       - institution: Cardiff University, UK
         location: Cardiff, UK
@@ -157,7 +157,7 @@ cv:
         start_date: 2003
         end_date: 2006
         highlights:
-          - "Online Multi-player Chinese Checkers Game with Intelligent Computer Opponent"
+          - "Online Multi player Chinese Checkers Game with Intelligent Computer Opponent"
           
 #    Publications:
 #      - title: Adversarially Resilient Federated Learning for Heterogeneous Edge Nodes in 5G Networks with Non-IID Data
