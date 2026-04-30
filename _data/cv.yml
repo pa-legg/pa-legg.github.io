@@ -423,38 +423,69 @@ cv:
         summary: ""
     
     Talks:
-      - title: "Transparency as The Foundation, Standards, Assurance, and Trust in Cyber Security, CYBERUK, 2026"
+      - title: "Transparency as The Foundation, Standards, Assurance, and Trust in Cyber Security, CYBERUK."
         date: 2026
-      - title: "Trowbridge musician's warning after voice and face used in AI deep fake romance scam, ITV News, 2026"
+      - title: "Trowbridge musician's warning after voice and face used in AI deep fake romance scam, ITV News."
         date: 2026
-      - title: "Security and AI in the year of vibe coding and computer use agents, where do we go next? Keynote speaker at 10th International Conference on Internet of Things and Connected Technologies (ICIoTCT 2025), Maulana Azad National Institute of Technology (MANIT), Bhopal, India. December 2025."
-      - title: "Cyber Security and Artificial Intelligence, AI for Security or the Security of AI?, Cyber security research seminar series, Centre for Cyber Security, Communications and Network Research, University of Plymouth (2025)."
+      - title: "Security and AI in the year of vibe coding and computer use agents, where do we go next? Keynote speaker at 10th International Conference on Internet of Things and Connected Technologies (ICIoTCT 2025), Maulana Azad National Institute of Technology (MANIT), Bhopal, India."
+        date: 2025
+      - title: "Cyber Security and Artificial Intelligence, AI for Security or the Security of AI?, Cyber security research seminar series, Centre for Cyber Security, Communications and Network Research, University of Plymouth."
+        date: 2025
       - title: "Cyber Security and Artificial Intelligence, AI for Security or the Security of AI?, International Conference on Future Tech, CASUGOL Singapore Keynote Speaker, June 2023."
+        date: 2023
       - title: "Cyber Growth and Innovation, Invited Panel Member, DSIT, Engine Shed Bristol, March 2023."
+        date: 2023
       - title: "Cynam Guest Host, Cyber Cheltenham, March 2023."
+        date: 2023
       - title: "Breaking into Cyber Security, CASUGOL Singapore, October 2022."
+        date: 2022
       - title: "Getting into Cyber Security, NCSC CyberFirst Futures, August 2022."
+        date: 2022
       - title: "Cryptocurrency, crime, and cyber security, Let's Make Tech Inclusive, London Borough of Redbridge, May 2022."
+        date: 2022
       - title: "An audience with Professor Phil Legg, UK Cyber Security Council Leader's Briefing, May 2022."
+        date: 2022
       - title: "Cyber Security and the Global Pandemic, City of Bristol College, February 2022."
+        date: 2022
       - title: "Cyber Security and Working with Academia, South West Cyber Resilience Centre, December 2021."
+        date: 2021
       - title: "HCI and Cyber Security Boundaries and Fusion, Cardiff University, December 2021."
+        date: 2021
       - title: "Cyber Security at UWE, UTC Berkeley Green, July 2021."
+        date: 2021
       - title: "Post-Pandemic Cyber Security Education, IEEE Cyber Science Keynote Speaker, June 2021."
+        date: 2021
       - title: "Light bulbs and race cars, Cyber security education using cyber-physical systems, Cybersecurity, Privacy and Human-Centred Computing Seminar, Cardiff University, March 2021"
+        date: 2021
       - title: "Cyber Security, AI, and Digital Futures, CASUGOL Nights Out Talk, September 2020."
+        date: 2020
       - title: "Colloquium on Information Systems Security Education UK: How do we inspire sharing and collaboration in higher education, NCSC Annual Education Conference, Stratford upon Avon, 2019."
+        date: 2019
       - title: "Establishing a forum for the UK cyber security education community, and the role of education with research, NCSC Academic Centres of Excellence in Cyber Security Research (ACECSR) Annual Conference, Stratford upon Avon, 2019."
+        date: 2019
       - title: "Cyber Security in the UK, Addressing the state of the nation, Colloquium on Information Systems Security Education, Las Vegas, USA, 2019."
+        date: 2019
       - title: "Establishing a forum for the UK cyber security education community, CYBERUK, Glasgow, 2019"
+        date: 2019
       - title: "What do we really mean by 'understanding cyber security'?, Emerson Green Library, Bristol Festival of Learning, June 2018."
+        date: 2018
       - title: "Visual Analytics and Human Machine Collaboration for Insider Threat Detection, University of Bristol, December 2017."
+        date: 2017
       - title: "Human Machine Collaboration in Active Machine Learning, Adarga.ai, August 2017."
+        date: 2017
       - title: "Data Driven Decision Making, Cranfield University, April 2016."
+        date: 2016
       - title: "Visualizing Cyber Security, vLunch, Cardiff University, March 2016."
+        date: 2016
       - title: "Visualization What is it good for? Software Engineering Research Group, UWE, March 2015."
+        date: 2015
       - title: "Corporate Insider Threat Detection, SMi Oil and Gas Cyber Security, Oslo, June 2014."
+        date: 2014
       - title: "Corporate Insider Threat Detection, CIFAS Annual conference, London, June 2013."
+        date: 2013
       - title: "Glyph-based Visualization for Sports Analytics, Sports Informatics Symposium, Loughborough University, June 2012."
+        date: 2012
       - title: "Glyph-based Visualization for Sports Analytics, Glyph-Based Visualization Workshop, Oxford University, May 2012."
+        date: 2012
       - title: "Sports Video Visualization, vLunch, Cardiff University, October 2011."
+        date: 2011
