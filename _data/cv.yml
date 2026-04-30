@@ -431,6 +431,21 @@ cv:
         date: 2025
       - title: "Cyber Security and Artificial Intelligence, AI for Security or the Security of AI?, Cyber security research seminar series, Centre for Cyber Security, Communications and Network Research, University of Plymouth."
         date: 2025
+      - title: "Fake QR code scams, ITV West Country News"
+        date: 2024
+        url: https://mms.tveyes.com/MediaView/?RW5kRGF0ZVRpbWU9MTElMmYxMyUyZjIwMjQrMTglM2EwOSUzYTU4JiZtb2RlZGl0b3JkZXN0aW5hdGlvbnM9NCUyYzEwJnBhcnRuZXJpZD0xODMzNCZTdGFydERhdGVUaW1lPTExJTJmMTMlMmYyMDI0KzE4JTNhMDYlM2E0OCZzdGF0aW9uPUlUVjFXQ09VTlRSWUUmJmV4cGlyYXRpb249MTIlMmYxMyUyZjIwMjQrMTglM2EwNiUzYTQ4LjAwMCZpbnN0YW50UGxheT1UcnVlJnNpZ25hdHVyZT05Zjc0ODFjZTlkMDI3MTc2NDk0NmE2ZGNiMjdiMDNjMw==
+      - title: "10 steps to protect your business from cyber attacks, TechInformed"
+        date: 2024
+        url: https://techinformed.com/top-10-steps-to-protect-your-business-from-cyber-attacks
+      - title: "Three key tips for staying safe online, Independent Advisor, August 2023."
+        date: 2023
+        url: https://www.independent.co.uk/advisor/vpn/antivirus-with-vpn
+      - title: "What are the most important features in a VPN?, Independent Advisor, August 2023."
+        date: 2023
+        url: https://www.independent.co.uk/advisor/vpn/choosing-a-vpn
+      - title: "Hacking an IoT Home New opportunity for Cyber Security Education, Faculti, 2023."
+        date: 2023
+        url: https://faculti.net/hacking-an-iot-home-new-opportunities-for-cyber-security-education-combining-remote-learning-with-cyber-physical-systems/
       - title: "Cyber Security and Artificial Intelligence, AI for Security or the Security of AI?, International Conference on Future Tech, CASUGOL Singapore Keynote Speaker, June 2023."
         date: 2023
       - title: "Cyber Growth and Innovation, Invited Panel Member, DSIT, Engine Shed Bristol, March 2023."
@@ -473,6 +488,12 @@ cv:
         date: 2017
       - title: "Human Machine Collaboration in Active Machine Learning, Adarga.ai, August 2017."
         date: 2017
+      - title: "The five things everyone with a computer should do to prevent being hacked. Bristol Post, May 2017"
+        date: 2017
+        url: https://www.bristolpost.co.uk/news/bristol-news/five-things-everyone-computer-should-64785
+      - title: "AI tracks your every move and tells your boss if you’re slacking. New Scientist, January 2017."
+        date: 2017
+        url: https://www.newscientist.com/article/2119734-ai-tracks-your-every-move-and-tells-your-boss-if-youre-slacking/
       - title: "Data Driven Decision Making, Cranfield University, April 2016."
         date: 2016
       - title: "Visualizing Cyber Security, vLunch, Cardiff University, March 2016."
@@ -485,7 +506,18 @@ cv:
         date: 2013
       - title: "Glyph-based Visualization for Sports Analytics, Sports Informatics Symposium, Loughborough University, June 2012."
         date: 2012
+      - title: "ITWales London 2012 Olympics Special-Sports Visualisation, ITWales, June 2012. "
+        date: 2012
+        url: https://www.youtube.com/watch?v=Z0kaMvt_14Y
       - title: "Glyph-based Visualization for Sports Analytics, Glyph-Based Visualization Workshop, Oxford University, May 2012."
         date: 2012
       - title: "Sports Video Visualization, vLunch, Cardiff University, October 2011."
         date: 2011
+      - title: "Wales Rugby World Cup team using Swansea University app. BBC Online, September 2011."
+        date: 2011
+        url: http://www.bbc.co.uk/news/uk-wales-15105398
+      - title: "Welsh scientists set to create revolution in sports coaching. Western Mail, April 2011."
+        date: 2011
+        url: http://www.walesonline.co.uk/news/wales-news/welsh-scientists-set-create-revolution-1837867
+        
+      
