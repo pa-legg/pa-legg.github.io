@@ -400,154 +400,155 @@ cv:
     
     
     Talks:
-      - title: "Center of Academic Excellence (CAE) and Academic Centres of Excellence (ACE) - approaching institutional excellence in cybersecurity education in the US and UK, CAE Symposium, Pittsburgh, April 2026."
+      - title: "Center of Academic Excellence (CAE) and Academic Centres of Excellence (ACE) - approaching institutional excellence in cybersecurity education in the US and UK."
         date: 2026
         url: https://www.caecommunity.org/symposium
-        authors: " "
-      - title: "Developing the faculty pipeline - An international conversation on cybersecurity education, CAE Symposium, Pittsburgh, April 2026."
+        authors: "CAE Symposium, Pittsburgh, April 2026."
+      - title: "Developing the faculty pipeline - An international conversation on cybersecurity education."
         date: 2026
         url: https://www.caecommunity.org/symposium
-        authors: " "
-      - title: "Transparency as The Foundation, Standards, Assurance, and Trust in Cyber Security, CYBERUK 2026."
+        authors: "CAE Symposium, Pittsburgh, April 2026."
+      - title: "Transparency as The Foundation, Standards, Assurance, and Trust in Cyber Security."
         date: 2026
         url: https://www.cyberuk.uk
-        authors: " "
-      - title: "Trowbridge musician's warning after voice and face used in AI deep fake romance scam, ITV News."
+        authors: "CYBERUK, Glasgow, 2026."
+      - title: "Trowbridge musician's warning after voice and face used in AI deep fake romance scam"
         date: 2026
         url: https://www.itv.com/news/westcountry/2026-02-11/musician-speaks-out-after-ai-deep-fake-used-in-romance-scam
-        authors: " "
-      - title: "Security and AI in the year of vibe coding and computer use agents, where do we go next? Keynote speaker at 10th International Conference on Internet of Things and Connected Technologies (ICIoTCT 2025), Maulana Azad National Institute of Technology (MANIT), Bhopal, India."
+        authors: "ITV News, 2026."
+      - title: "Security and AI in the year of vibe coding and computer use agents, where do we go next?"
         date: 2025
         url: https://iciotct2025.iaasse.org/call-for-papers.html
-        authors: " "
-      - title: "Cyber Security and Artificial Intelligence, AI for Security or the Security of AI?, Cyber security research seminar series, Centre for Cyber Security, Communications and Network Research, University of Plymouth."
+        authors: "Keynote speaker at 10th International Conference on Internet of Things and Connected Technologies (ICIoTCT 2025), Maulana Azad National Institute of Technology (MANIT), Bhopal, India."
+      - title: "Cyber Security and Artificial Intelligence, AI for Security or the Security of AI?"
         date: 2025
-        authors: " "
-      - title: "Fake QR code scams, ITV West Country News"
+        authors: "Cyber security research seminar series, Centre for Cyber Security, Communications and Network Research, University of Plymouth."
+      - title: "Fake QR code scams"
         date: 2024
         url: https://www.linkedin.com/posts/prof-phil-legg_uwecyber-activity-7262560410397032448-nZXR/
-        authors: " "
-      - title: "10 steps to protect your business from cyber attacks, TechInformed"
+        authors: "ITV West Country News"
+      - title: "10 steps to protect your business from cyber attacks"
         date: 2024
         url: https://techinformed.com/top-10-steps-to-protect-your-business-from-cyber-attacks
-        authors: " "
-      - title: "Three key tips for staying safe online, Independent Advisor, August 2023."
+        authors: "TechInformed"
+      - title: "Three key tips for staying safe online"
         date: 2023
         url: https://www.independent.co.uk/advisor/vpn/antivirus-with-vpn
-        authors: " "
-      - title: "What are the most important features in a VPN?, Independent Advisor, August 2023."
+        authors: "Independent Advisor, August 2023."
+      - title: "What are the most important features in a VPN?"
         date: 2023
         url: https://www.independent.co.uk/advisor/vpn/choosing-a-vpn
-        authors: " "
-      - title: "Hacking an IoT Home New opportunity for Cyber Security Education, Faculti, 2023."
+        authors: "Independent Advisor, August 2023."
+      - title: "Hacking an IoT Home New opportunity for Cyber Security Education"
         date: 2023
         url: https://faculti.net/hacking-an-iot-home-new-opportunities-for-cyber-security-education-combining-remote-learning-with-cyber-physical-systems/
-        authors: " "
-      - title: "Cyber Security and Artificial Intelligence, AI for Security or the Security of AI?, International Conference on Future Tech, CASUGOL Singapore Keynote Speaker, June 2023."
+        authors: "Faculti, 2023."
+      - title: "Cyber Security and Artificial Intelligence, AI for Security or the Security of AI?"
         date: 2023
-        authors: " "
-      - title: "Cyber Growth and Innovation, Invited Panel Member, DSIT, Engine Shed Bristol, March 2023."
+        authors: "International Conference on Future Tech, CASUGOL Singapore Keynote Speaker, June 2023."
+      - title: "DSIT Cyber Growth and Innovation, Invited Panel Member"
         date: 2023
-        authors: " "
-      - title: "Cynam Guest Host, Cyber Cheltenham, March 2023."
+        authors: "Engine Shed Bristol, March 2023."
+      - title: "Cynam Guest Host"
         date: 2023
-        authors: " "
-      - title: "Breaking into Cyber Security, CASUGOL Singapore, October 2022."
+        authors: "Cyber Cheltenham, March 2023."
+      - title: "Breaking into Cyber Security"
         date: 2022
-        authors: " "
-      - title: "Getting into Cyber Security, NCSC CyberFirst Futures, August 2022."
+        authors: "CASUGOL Singapore, October 2022."
+      - title: "Getting into Cyber Security"
         date: 2022
-        authors: " "
-      - title: "Cryptocurrency, crime, and cyber security, Let's Make Tech Inclusive, London Borough of Redbridge, May 2022."
+        authors: "NCSC CyberFirst Futures, August 2022."
+      - title: "Cryptocurrency, crime, and cyber security, Let's Make Tech Inclusive"
         date: 2022
-        authors: " "
-      - title: "An audience with Professor Phil Legg, UK Cyber Security Council Leader's Briefing, May 2022."
+        authors: "London Borough of Redbridge, May 2022."
+      - title: "An audience with Professor Phil Legg"
         date: 2022
-        authors: " "
-      - title: "Cyber Security and the Global Pandemic, City of Bristol College, February 2022."
+        authors: "UK Cyber Security Council Leader's Briefing, May 2022."
+      - title: "Cyber Security and the Global Pandemic"
         date: 2022
-        authors: " "
-      - title: "Cyber Security and Working with Academia, South West Cyber Resilience Centre, December 2021."
+        authors: "City of Bristol College, February 2022."
+      - title: "Cyber Security and Working with Academia"
         date: 2021
-        authors: " "
-      - title: "HCI and Cyber Security Boundaries and Fusion, Cardiff University, December 2021."
+        authors: "South West Cyber Resilience Centre, December 2021."
+      - title: "HCI and Cyber Security Boundaries and Fusion"
         date: 2021
-      - title: "Cyber Security at UWE, UTC Berkeley Green, July 2021."
+        authors: "Cardiff University, December 2021."
+      - title: "Cyber Security at UWE"
         date: 2021
-        authors: " "
-      - title: "Post-Pandemic Cyber Security Education, IEEE Cyber Science Keynote Speaker, June 2021."
+        authors: "UTC Berkeley Green, July 2021."
+      - title: "Post-Pandemic Cyber Security Education"
         date: 2021
-        authors: " "
-      - title: "Light bulbs and race cars, Cyber security education using cyber-physical systems, Cybersecurity, Privacy and Human-Centred Computing Seminar, Cardiff University, March 2021"
+        authors: "IEEE Cyber Science Keynote Speaker, June 2021."
+      - title: "Light bulbs and race cars, Cyber security education using cyber-physical systems."
         date: 2021
-        authors: " "
-      - title: "Cyber Security, AI, and Digital Futures, CASUGOL Nights Out Talk, September 2020."
+        authors: "Cybersecurity, Privacy and Human-Centred Computing Seminar, Cardiff University, March 2021"
+      - title: "Cyber Security, AI, and Digital Futures"
         date: 2020
-        authors: " "
-      - title: "Colloquium on Information Systems Security Education UK: How do we inspire sharing and collaboration in higher education, NCSC Annual Education Conference, Stratford upon Avon, 2019."
+        authors: "CASUGOL Nights Out Talk, September 2020."
+      - title: "Colloquium on Information Systems Security Education UK: How do we inspire sharing and collaboration in higher education"
         date: 2019
-        authors: " "
-      - title: "Establishing a forum for the UK cyber security education community, and the role of education with research, NCSC Academic Centres of Excellence in Cyber Security Research (ACECSR) Annual Conference, Stratford upon Avon, 2019."
+        authors: "NCSC Annual Education Conference, Stratford upon Avon, 2019."
+      - title: "Establishing a forum for the UK cyber security education community, and the role of education with research"
         date: 2019
-        authors: " "
-      - title: "Cyber Security in the UK, Addressing the state of the nation, Colloquium on Information Systems Security Education, Las Vegas, USA, 2019."
+        authors: "NCSC Academic Centres of Excellence in Cyber Security Research (ACECSR) Annual Conference, Stratford upon Avon, 2019."
+      - title: "Cyber Security in the UK, Addressing the state of the nation"
         date: 2019
-        authors: " "
-      - title: "Establishing a forum for the UK cyber security education community, CYBERUK, Glasgow, 2019"
+        authors: "Colloquium on Information Systems Security Education, Las Vegas, USA, 2019."
+      - title: "Establishing a forum for the UK cyber security education community"
         date: 2019
-        authors: " "
-      - title: "What do we really mean by 'understanding cyber security'?, Emerson Green Library, Bristol Festival of Learning, June 2018."
+        authors: "CYBERUK, Glasgow, 2019"
+      - title: "What do we really mean by 'understanding cyber security'?"
         date: 2018
-        authors: " "
-      - title: "Visual Analytics and Human Machine Collaboration for Insider Threat Detection, University of Bristol, December 2017."
+        authors: "Bristol Festival of Learning, June 2018."
+      - title: "Visual Analytics and Human Machine Collaboration for Insider Threat Detection"
         date: 2017
-        authors: " "
-      - title: "Human Machine Collaboration in Active Machine Learning, Adarga.ai, August 2017."
+        authors: "University of Bristol, December 2017."
+      - title: "Human Machine Collaboration in Active Machine Learning"
         date: 2017
-        authors: " "
-      - title: "The five things everyone with a computer should do to prevent being hacked. Bristol Post, May 2017"
+        authors: "Adarga.ai, August 2017."
+      - title: "The five things everyone with a computer should do to prevent being hacked"
         date: 2017
-        authors: " "
+        authors: "Bristol Post, May 2017"
         url: https://www.bristolpost.co.uk/news/bristol-news/five-things-everyone-computer-should-64785
-      - title: "AI tracks your every move and tells your boss if you’re slacking. New Scientist, January 2017."
+      - title: "AI tracks your every move and tells your boss if you’re slacking"
         date: 2017
-        authors: " "
+        authors: "New Scientist, January 2017."
         url: https://www.newscientist.com/article/2119734-ai-tracks-your-every-move-and-tells-your-boss-if-youre-slacking/
-      - title: "Data Driven Decision Making, Cranfield University, April 2016."
+      - title: "Data Driven Decision Making"
         date: 2016
-        authors: " "
-      - title: "Visualizing Cyber Security, vLunch, Cardiff University, March 2016."
+        authors: "Cranfield University, April 2016."
+      - title: "Visualizing Cyber Security"
         date: 2016
-        authors: " "
-      - title: "Visualization What is it good for? Software Engineering Research Group, UWE, March 2015."
+        authors: "vLunch, Cardiff University, March 2016."
+      - title: "Visualization What is it good for?"
         date: 2015
-        authors: " "
-      - title: "Corporate Insider Threat Detection, SMi Oil and Gas Cyber Security, Oslo, June 2014."
+        authors: "Software Engineering Research Group, UWE, March 2015."
+      - title: "Corporate Insider Threat Detection"
         date: 2014
-        authors: " "
-      - title: "Corporate Insider Threat Detection, CIFAS Annual conference, London, June 2013."
+        authors: "SMi Oil and Gas Cyber Security, Oslo, June 2014."
+      - title: "Corporate Insider Threat Detection"
         date: 2013
-        authors: " "
-      - title: "Glyph-based Visualization for Sports Analytics, Sports Informatics Symposium, Loughborough University, June 2012."
+        authors: "CIFAS Annual conference, London, June 2013."
+      - title: "Glyph-based Visualization for Sports Analytics"
         date: 2012
-        authors: " "
-      - title: "ITWales London 2012 Olympics Special-Sports Visualisation, ITWales, June 2012. "
+        authors: "Sports Informatics Symposium, Loughborough University, June 2012."
+      - title: "ITWales London 2012 Olympics Special-Sports Visualisation"
         date: 2012
-        authors: " "
+        authors: "ITWales, June 2012."
         url: https://www.youtube.com/watch?v=Z0kaMvt_14Y
-      - title: "Glyph-based Visualization for Sports Analytics, Glyph-Based Visualization Workshop, Oxford University, May 2012."
+      - title: "Glyph-based Visualization for Sports Analytics"
         date: 2012
-        authors: " "
-      - title: "Sports Video Visualization, vLunch, Cardiff University, October 2011."
+        authors: "Glyph-Based Visualization Workshop, Oxford University, May 2012."
+      - title: "Sports Video Visualization"
         date: 2011
-        authors: " "
-      - title: "Wales Rugby World Cup team using Swansea University app. BBC Online, September 2011."
+        authors: "vLunch, Cardiff University, October 2011."
+      - title: "Wales Rugby World Cup team using Swansea University app"
         date: 2011
-        authors: " "
+        authors: "BBC Online, September 2011."
         url: http://www.bbc.co.uk/news/uk-wales-15105398
-      - title: "Welsh scientists set to create revolution in sports coaching. Western Mail, April 2011."
+      - title: "Welsh scientists set to create revolution in sports coaching"
         date: 2011
-        authors: " "
+        authors: "Western Mail, April 2011."
         url: http://www.walesonline.co.uk/news/wales-news/welsh-scientists-set-create-revolution-1837867
        
     Awards:  
