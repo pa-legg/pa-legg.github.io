@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-20'
+  last_updated: '2026-05-01'
 papers:
   Tn43ogoAAAAJ:-f6ydRqryjwC:
     citations: 3
@@ -62,7 +62,7 @@ papers:
     title: Teaching Offensive and Defensive Cyber Security in Schools using a Raspberry Pi Cyber Range
     year: '2022'
   Tn43ogoAAAAJ:HDshCWvjkbEC:
-    citations: 225
+    citations: 227
     title: Automated insider threat detection system using user and role-based profile assessment
     year: '2015'
   Tn43ogoAAAAJ:HoB7MX3m0LUC:
@@ -110,19 +110,19 @@ papers:
     title: 'Fail-safe Glyph Encoding based on Quasi-Hamming Distances: With a Case Study on Visualizing File System Events'
     year: Unknown Year
   Tn43ogoAAAAJ:MXK_kJrjxJIC:
-    citations: 342
+    citations: 344
     title: 'Understanding insider threat: A framework for characterising attacks'
     year: '2014'
   Tn43ogoAAAAJ:NMxIlDl6LWMC:
-    citations: 99
+    citations: 100
     title: 'Functionality-preserving adversarial machine learning for robust classification in cybersecurity and intrusion detection domains: A survey'
     year: '2022'
   Tn43ogoAAAAJ:O3NaXMp0MMsC:
-    citations: 51
+    citations: 53
     title: 'Defending against adversarial machine learning attacks using hierarchical learning: A case study on network traffic attack classification'
     year: '2022'
   Tn43ogoAAAAJ:OU6Ihb5iCvQC:
-    citations: 0
+    citations: 1
     title: Adversarially resilient federated learning for heterogeneous edge nodes in 5G networks with non-IID data
     year: '2026'
   Tn43ogoAAAAJ:P5F9QuxV20EC:
@@ -130,7 +130,7 @@ papers:
     title: Cyber Security and Applications
     year: Unknown Year
   Tn43ogoAAAAJ:QIV2ME_5wuYC:
-    citations: 88
+    citations: 87
     title: Improving accuracy and efficiency of mutual information for multi-modal retinal image registration using adaptive probability density estimation
     year: '2013'
   Tn43ogoAAAAJ:RHpTSmoSYBkC:
@@ -146,7 +146,7 @@ papers:
     title: Enhancing cyber situation awareness for non-expert users using visual analytics
     year: '2016'
   Tn43ogoAAAAJ:SeFeTyx0c_EC:
-    citations: 38
+    citations: 41
     title: 'Vulnerability detection through machine learning-based fuzzing: A systematic review'
     year: '2024'
   Tn43ogoAAAAJ:TFP_iSt0sucC:
@@ -206,7 +206,7 @@ papers:
     title: Identifying attack patterns for insider threat detection
     year: '2015'
   Tn43ogoAAAAJ:ZeXyd9-uunAC:
-    citations: 165
+    citations: 166
     title: Turn costs change the value of animal search paths
     year: '2013'
   Tn43ogoAAAAJ:Zph67rFs4hoC:
@@ -226,7 +226,7 @@ papers:
     title: 'Quasi-Hamming distances: An overarching concept for measuring glyph similarity'
     year: '2015'
   Tn43ogoAAAAJ:_xSYboBqXhAC:
-    citations: 29
+    citations: 32
     title: An Explainable Ensemble-based Intrusion Detection System for Software-Defined Vehicle Ad-hoc Networks
     year: '2025'
   Tn43ogoAAAAJ:abG-DnoFyZgC:
@@ -266,7 +266,7 @@ papers:
     title: Visual analytics for collaborative human-machine confidence in human-centric active learning tasks
     year: '2019'
   Tn43ogoAAAAJ:dshw04ExmUIC:
-    citations: 4
+    citations: 5
     title: Federated Learning with Adversarial Optimisation for Secure and Efficient 5G Edge Computing Networks
     year: '2025'
   Tn43ogoAAAAJ:e5wmG9Sq2KIC:
@@ -278,7 +278,7 @@ papers:
     title: 'Analyst-driven XAI for time series forecasting: Analytics for telecoms maintenance'
     year: '2024'
   Tn43ogoAAAAJ:hC7cP41nSMkC:
-    citations: 119
+    citations: 120
     title: Towards a conceptual model and reasoning structure for insider threat detection
     year: '2013'
   Tn43ogoAAAAJ:hFOr9nPyWt4C:
@@ -350,19 +350,23 @@ papers:
     title: 'Shouting Through Letterboxes: A study on attack susceptibility of voice assistants'
     year: '2020'
   Tn43ogoAAAAJ:rO6llkc54NcC:
-    citations: 1
+    citations: 2
     title: Improving Search Space Analysis of Fuzzing Mutators Using Cryptographic Structures
     year: '2024'
   Tn43ogoAAAAJ:u-x6o8ySG0sC:
     citations: 11
     title: Force-directed parallel coordinates
     year: '2013'
+  Tn43ogoAAAAJ:u9iWguZQMMsC:
+    citations: 0
+    title: Advancing fuzzing with unbiased random generator and Feistel network-based mutations
+    year: '2026'
   Tn43ogoAAAAJ:uWQEDVKXjbEC:
     citations: 1
     title: 'LOTL-Hunter: Detecting Multi-Stage Living-off-the-Land Attacks in Cyber-Physical Systems using Decision Fusion Techniques with Digital Twins'
     year: '2026'
   Tn43ogoAAAAJ:u_35RYKgDlwC:
-    citations: 11
+    citations: 12
     title: Digital twins of cyber physical systems in smart manufacturing for threat simulation and detection with deep learning for time series classification
     year: '2024'
   Tn43ogoAAAAJ:ufrVoPGSRksC:
