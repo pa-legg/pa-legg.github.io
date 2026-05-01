@@ -128,7 +128,7 @@ cv:
           - "Development of research-led Android mobile application, GeoCaption."
     
     Education:
-      - institution: University of the West of England (UWE Bristol)
+      - institution: University of the West of England
         location: Bristol, UK
         url: https://www.uwe.ac.uk
         degree: PGCert
@@ -137,7 +137,7 @@ cv:
         start_date: 2015
         end_date: 2016
 
-      - institution: Cardiff University, UK
+      - institution: Cardiff University
         location: Cardiff, UK
         url: https://www.uwe.ac.uk
         degree: PhD
@@ -148,7 +148,7 @@ cv:
         highlights:
           - "Multi modal Retinal Imaging: Improving Accuracy and Efficiency of Image Registration using Mutual Information"
 
-      - institution: Cardiff University, UK
+      - institution: Cardiff University
         location: Cardiff, UK
         url: https://www.uwe.ac.uk
         degree: BSc
