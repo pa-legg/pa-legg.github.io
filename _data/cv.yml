@@ -484,7 +484,8 @@ cv:
           - "UK Cyber Security Council Leader's Briefing, May 2022."
       - title: "Cyber Security and the Global Pandemic"
         date: 2022
-        authors: "City of Bristol College, February 2022."
+        authors: 
+          - "City of Bristol College, February 2022."
       - title: "Cyber Security and Working with Academia"
         date: 2021
         authors: 
