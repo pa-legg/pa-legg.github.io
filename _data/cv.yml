@@ -397,30 +397,7 @@ cv:
         start_date: 2015-04-01
         end_date: 2016-09-30
         
-    Awards:  
-      - title: "Best Paper Award"
-        authors:
-          - "IEEE International Conference on Cyber Situational Awareness, Data Analytics and Assessment (Cyber SA 2016)"
-        date: 2016-07-01
-        awarder: IEEE International Conference on Cyber Situational Awareness, Data Analytics and Assessment (Cyber SA 2016)
-        url: https://c-mric.org
-        summary: ""
-        
-      - title: "CSCT Researcher of the Year Award"
-        authors:
-          - "Faculty of Envinroment and Technology, UWE Bristol"
-        date: 2015-07-01
-        awarder: Faculty of Envinroment and Technology, UWE Bristol
-        url: https://www.uwe.ac.uk
-        summary: ""
-        
-      - title: "Best Paper Award"
-        authors:
-          - "Managing Insider Security Threats (MIST) conference"
-        date: 2014-11-22
-        awarder: Managing Insider Security Threats (MIST) conference
-        url: https://isyou.info/conf/mist14/
-        summary: ""
+    
     
     Talks:
       - title: "Center of Academic Excellence (CAE) and Academic Centres of Excellence (ACE) - approaching institutional excellence in cybersecurity education in the US and UK, CAE Symposium, Pittsburgh, April 2026."
@@ -528,5 +505,28 @@ cv:
       - title: "Welsh scientists set to create revolution in sports coaching. Western Mail, April 2011."
         date: 2011
         url: http://www.walesonline.co.uk/news/wales-news/welsh-scientists-set-create-revolution-1837867
+       
+    Awards:  
+      - title: "Best Paper Award"
+        authors:
+          - "IEEE International Conference on Cyber Situational Awareness, Data Analytics and Assessment (Cyber SA 2016)"
+        date: 2016-07-01
+        awarder: IEEE International Conference on Cyber Situational Awareness, Data Analytics and Assessment (Cyber SA 2016)
+        url: https://c-mric.org
+        summary: ""
         
-      
+      - title: "CSCT Researcher of the Year Award"
+        authors:
+          - "Faculty of Envinroment and Technology, UWE Bristol"
+        date: 2015-07-01
+        awarder: Faculty of Envinroment and Technology, UWE Bristol
+        url: https://www.uwe.ac.uk
+        summary: ""
+        
+      - title: "Best Paper Award"
+        authors:
+          - "Managing Insider Security Threats (MIST) conference"
+        date: 2014-11-22
+        awarder: Managing Insider Security Threats (MIST) conference
+        url: https://isyou.info/conf/mist14/
+        summary: ""
