@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-01'
+  last_updated: '2026-05-06'
 papers:
   Tn43ogoAAAAJ:-f6ydRqryjwC:
     citations: 3
@@ -34,7 +34,7 @@ papers:
     title: "A critical reflection on the threat from human insiders\u2013its nature, industry perceptions, and detection approaches"
     year: '2014'
   Tn43ogoAAAAJ:5nxA0vEk-isC:
-    citations: 9
+    citations: 10
     title: 'Guest Editorial: Emerging Trends in Research for Insider Threat Detection.'
     year: '2014'
   Tn43ogoAAAAJ:70eg2SAEIzsC:
@@ -62,7 +62,7 @@ papers:
     title: Teaching Offensive and Defensive Cyber Security in Schools using a Raspberry Pi Cyber Range
     year: '2022'
   Tn43ogoAAAAJ:HDshCWvjkbEC:
-    citations: 227
+    citations: 226
     title: Automated insider threat detection system using user and role-based profile assessment
     year: '2015'
   Tn43ogoAAAAJ:HoB7MX3m0LUC:
@@ -110,11 +110,11 @@ papers:
     title: 'Fail-safe Glyph Encoding based on Quasi-Hamming Distances: With a Case Study on Visualizing File System Events'
     year: Unknown Year
   Tn43ogoAAAAJ:MXK_kJrjxJIC:
-    citations: 344
+    citations: 346
     title: 'Understanding insider threat: A framework for characterising attacks'
     year: '2014'
   Tn43ogoAAAAJ:NMxIlDl6LWMC:
-    citations: 100
+    citations: 101
     title: 'Functionality-preserving adversarial machine learning for robust classification in cybersecurity and intrusion detection domains: A survey'
     year: '2022'
   Tn43ogoAAAAJ:O3NaXMp0MMsC:
@@ -142,7 +142,7 @@ papers:
     title: Advances in Teaching and Learning for Cyber Security Education - Proceedings of the Cyber Security Education 2025 CSE Connect Annual Conference
     year: '2026'
   Tn43ogoAAAAJ:Se3iqnhoufwC:
-    citations: 30
+    citations: 31
     title: Enhancing cyber situation awareness for non-expert users using visual analytics
     year: '2016'
   Tn43ogoAAAAJ:SeFeTyx0c_EC:
@@ -162,7 +162,7 @@ papers:
     title: 'Venue2vec: An efficient embedding model for fine-grained user location prediction in geo-social networks'
     year: '2019'
   Tn43ogoAAAAJ:ULOm3_A8WrAC:
-    citations: 78
+    citations: 77
     title: 'Visualizing the insider threat: challenges and tools for identifying malicious user activity'
     year: '2015'
   Tn43ogoAAAAJ:UeHWp8X0CEIC:
@@ -310,11 +310,11 @@ papers:
     title: Publication-Chair
     year: Unknown Year
   Tn43ogoAAAAJ:mB3voiENLucC:
-    citations: 21
+    citations: 22
     title: Predicting user confidence during visual decision making
     year: '2018'
   Tn43ogoAAAAJ:mVmsd5A6BfQC:
-    citations: 80
+    citations: 79
     title: 'Caught in the act of an insider attack: detection and assessment of insider threat'
     year: '2015'
   Tn43ogoAAAAJ:maZDTaKrznsC:
