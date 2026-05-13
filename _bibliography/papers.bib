@@ -3,6 +3,17 @@
 
 % 2026
 
+
+@inproceedings{smith2026,
+  title={DC-FL: A Server-Centric Distilled Clustered Federated Learning Framework for Heterogeneous Networks},
+  author={Djemma, Aimen and Djenouri, Djamel and Legg, Phil},
+  booktitle={31st IEEE Symposium on Computers and Communications (ISCC) - DistInSys Workshop, June 23-26, Vilamoura, Portugal},
+  year={2026},
+  organization={IEEE},
+  html={https://ieee-iscc.computer.org/2026/},
+  abstract={Most federated learning (FL) approaches assume homogeneous model architectures or address only statistical heterogeneity, which limits their applicability in heterogeneous environments such as Internet-of-Things (IoT) networks, where clients differ in both data distributions and model capacity. To address this challenge in wireless intrusion detection systems, we propose Distilled Clustered Federated Learning (DC-FL), a server-centric framework that groups clients by architecture and performs knowledge distillation (KD) strictly on the server after per-cluster aggregation. DC-FL uses only server-side proxy data with no client logits or features exchanged, which reduces client computation and potential privacy exposure. To further stabilise training under architectural diversity, an adaptive no-harm distillation mechanism is introduced. Dynamically selects the best-performing model as the teacher and commits the KD update only when the latter does not degrade cluster accuracy. Case-study experiments on two recent IoT IDS datasets (IDSIoT2024 and XCANIDS) show that DC-FL consistently outperforms FedAvg and FedMD. In data heterogeneous settings, DC-FL achieves up to 98.8% accuracy improvement over FedAvg (respectively FedMD) by approximately 14% (respectively 20%) at the convergence round. Moreover, it provides much larger early-round gains, and thus faster convergence, and narrows the gap between small and deep models, indicating improved cross-architecture transfer.}
+}
+
 @inproceedings{smith2026,
   title={Security Analysis of Bluetooth Low Energy Medical Device Telemetry},
   author={Smith, Mia and Draper, Thomas and Legg, Phil},
