@@ -2,7 +2,7 @@
 layout: page
 title: My AI
 description: 
-img: assets/img/myai.png
+img: assets/img/myai.PNG
 importance: 4
 category: dev
 ---
