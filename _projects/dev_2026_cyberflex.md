@@ -17,3 +17,5 @@ This provides a fun and interactive platform for developing skills, and will be 
 
 Privacy Statement - This app is designed with no tracking of user data.
 
+![cyberflex](../../assets/img/cyberflex.png)
+
