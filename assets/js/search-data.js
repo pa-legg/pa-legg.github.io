@@ -890,6 +890,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/dev_2026_myai/";
+            },},{id: "projects-neon-orbit",
+          title: 'Neon Orbit',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/dev_2026_neonorbit/";
             },},{id: "projects-mitigating-poisoning-attacks-in-federated-learning-environment",
           title: 'Mitigating poisoning attacks in federated learning environment',
           description: "Aimen Djemaa",
