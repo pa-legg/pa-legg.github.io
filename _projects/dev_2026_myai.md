@@ -15,3 +15,4 @@ My AI is provided as a privacy-first local LLM engine for iPhone and iPad. It al
 
 Privacy Statement - This app is designed with no tracking of user data.
 
+![myai](../../assets/img/myai.PNG)
