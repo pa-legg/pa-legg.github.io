@@ -880,6 +880,16 @@ ninja.data = [{
           description: "Alan Mills and Phil Legg",
           section: "Projects",handler: () => {
               window.location.href = "/projects/dev_2020_morrigu/";
+            },},{id: "projects-cyberflex",
+          title: 'CyberFlex',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/dev_2026_cyberflex/";
+            },},{id: "projects-my-ai",
+          title: 'My AI',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/dev_2026_myai/";
             },},{id: "projects-mitigating-poisoning-attacks-in-federated-learning-environment",
           title: 'Mitigating poisoning attacks in federated learning environment',
           description: "Aimen Djemaa",
