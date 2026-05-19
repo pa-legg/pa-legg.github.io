@@ -19,4 +19,4 @@ Simple yet addictive.
 
 Privacy Statement - This app is designed with no tracking of user data.
 
-![neon-orbit][../.../assets/img/neon-orbit.png]
+![neon-orbit](../../assets/img/neon-orbit.png)
