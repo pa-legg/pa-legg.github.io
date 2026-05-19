@@ -2,7 +2,7 @@
 layout: page
 title: Neon Orbit
 description: 
-img: assets/img/neonorbit.png
+img: assets/img/neon-orbit.png
 importance: 4
 category: dev
 ---
