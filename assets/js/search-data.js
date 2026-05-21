@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-hacking-the-hdmi-airwaves-side-channel-attacks-to-recover-a-target-display-part-1",
+        },{id: "post-how-vibe-coding-is-changing-the-game-or-how-ai-got-a-busy-me-back-into-software-development",
+        
+          title: 'How “Vibe Coding” is changing the game (or, How AI got a busy... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@plegg/how-vibe-coding-is-changing-the-game-or-how-ai-got-a-busy-me-back-into-software-development-d0676772995b?source=rss-b5e2ee2ae6ee------2", "_blank");
+          
+        },
+      },{id: "post-hacking-the-hdmi-airwaves-side-channel-attacks-to-recover-a-target-display-part-1",
         
           title: 'Hacking the HDMI airwaves — side channel attacks to recover a target display... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
@@ -141,17 +152,6 @@ ninja.data = [{
         handler: () => {
           
             window.open("https://medium.com/@plegg/security-data-analytics-06-visual-analytics-d914156553cc?source=rss-b5e2ee2ae6ee------2", "_blank");
-          
-        },
-      },{id: "post-security-data-analytics-05-visualisation",
-        
-          title: 'Security Data Analytics — 05 — Visualisation <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://medium.com/@plegg/security-data-analytics-05-visualisation-492820fd7cd0?source=rss-b5e2ee2ae6ee------2", "_blank");
           
         },
       },{id: "post-a-post-with-plotly-js",
