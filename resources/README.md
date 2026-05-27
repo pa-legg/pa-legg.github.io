@@ -10,6 +10,7 @@ A collection of online resources that are shared with the community.
 
 ## Generative AI Web Tools
 * [AI Web Examples](http://pa-legg.github.io/resources/ai-web-examples/)
+* [WaveTunes — Web Camera Musical Instrument](https://pa-legg.github.io/resources/web-camera-musical-instrument/)
 
 ## Computer Graphics / Computer Vision / VR
 
