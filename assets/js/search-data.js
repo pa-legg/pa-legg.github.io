@@ -1080,6 +1080,11 @@ ninja.data = [{
           description: "Nicola Turner and Phil Legg",
           section: "Projects",handler: () => {
               window.location.href = "/projects/projects_2023_humansensor/";
+            },},{id: "projects-more-resources",
+          title: 'More resources',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/resources_more/";
             },},{id: "projects-resources-for-phd-students",
           title: 'Resources for PhD Students',
           description: "",
