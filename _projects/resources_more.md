@@ -13,7 +13,7 @@ A more complete set of resources can also be found on my [Resources](https://pa-
 
 * [UWEcyber CTF 2026](http://pa-legg.github.io/resources/uwecyber-ctf-2026)
 * [UWE Offer Holder Day](http://pa-legg.github.io/resources/uwe-ohd2025)
-* [PiLab}(http://pa-legg.github.io/resources/pilab/)
+* [PiLab](http://pa-legg.github.io/resources/pilab/)
   
 ### Generative AI Web Tools
 
