@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-06'
+  last_updated: '2026-05-29'
 papers:
   Tn43ogoAAAAJ:-f6ydRqryjwC:
     citations: 3
@@ -10,7 +10,7 @@ papers:
     title: Using internet activity profiling for insider-threat detection
     year: '2015'
   Tn43ogoAAAAJ:1sJd4Hv_s6UC:
-    citations: 0
+    citations: 1
     title: 'gh0stEdit: Exploiting Layer-Based Access Vulnerability Within Docker Container Images'
     year: '2025'
   Tn43ogoAAAAJ:2P1L_qKh6hAC:
@@ -22,7 +22,7 @@ papers:
     title: 'Honggfuzz+: Fuzzing by Adaptation of Cryptographic Mutation'
     year: '2023'
   Tn43ogoAAAAJ:4DMP91E08xMC:
-    citations: 46
+    citations: 47
     title: Efficient and interpretable real-time malware detection using random-forest
     year: '2019'
   Tn43ogoAAAAJ:4OULZ7Gr8RgC:
@@ -38,7 +38,7 @@ papers:
     title: 'Guest Editorial: Emerging Trends in Research for Insider Threat Detection.'
     year: '2014'
   Tn43ogoAAAAJ:70eg2SAEIzsC:
-    citations: 17
+    citations: 18
     title: Longitudinal Risk-based Security Assessment of Docker Software Container Images
     year: '2023'
   Tn43ogoAAAAJ:8k81kl-MbHgC:
@@ -62,7 +62,7 @@ papers:
     title: Teaching Offensive and Defensive Cyber Security in Schools using a Raspberry Pi Cyber Range
     year: '2022'
   Tn43ogoAAAAJ:HDshCWvjkbEC:
-    citations: 226
+    citations: 229
     title: Automated insider threat detection system using user and role-based profile assessment
     year: '2015'
   Tn43ogoAAAAJ:HoB7MX3m0LUC:
@@ -82,7 +82,7 @@ papers:
     title: "\u201CHacking an IoT Home\u201D: New opportunities for cyber security education combining remote learning with cyber-physical systems"
     year: '2021'
   Tn43ogoAAAAJ:KlAtU1dfN6UC:
-    citations: 22
+    citations: 23
     title: Towards a User and Role-based Sequential Behavioural Analysis Tool for Insider Threat Detection.
     year: '2014'
   Tn43ogoAAAAJ:KxtntwgDAa4C:
@@ -98,7 +98,7 @@ papers:
     title: Systematic snooker skills test to analyze player performance
     year: '2014'
   Tn43ogoAAAAJ:M05iB0D1s5AC:
-    citations: 14
+    citations: 15
     title: Privacy-preserving intrusion detection in software-defined VANET using federated learning with BERT
     year: '2024'
   Tn43ogoAAAAJ:M3NEmzRMIkIC:
@@ -110,11 +110,11 @@ papers:
     title: 'Fail-safe Glyph Encoding based on Quasi-Hamming Distances: With a Case Study on Visualizing File System Events'
     year: Unknown Year
   Tn43ogoAAAAJ:MXK_kJrjxJIC:
-    citations: 346
+    citations: 350
     title: 'Understanding insider threat: A framework for characterising attacks'
     year: '2014'
   Tn43ogoAAAAJ:NMxIlDl6LWMC:
-    citations: 101
+    citations: 104
     title: 'Functionality-preserving adversarial machine learning for robust classification in cybersecurity and intrusion detection domains: A survey'
     year: '2022'
   Tn43ogoAAAAJ:O3NaXMp0MMsC:
@@ -142,7 +142,7 @@ papers:
     title: Advances in Teaching and Learning for Cyber Security Education - Proceedings of the Cyber Security Education 2025 CSE Connect Annual Conference
     year: '2026'
   Tn43ogoAAAAJ:Se3iqnhoufwC:
-    citations: 31
+    citations: 32
     title: Enhancing cyber situation awareness for non-expert users using visual analytics
     year: '2016'
   Tn43ogoAAAAJ:SeFeTyx0c_EC:
@@ -162,7 +162,7 @@ papers:
     title: 'Venue2vec: An efficient embedding model for fine-grained user location prediction in geo-social networks'
     year: '2019'
   Tn43ogoAAAAJ:ULOm3_A8WrAC:
-    citations: 77
+    citations: 78
     title: 'Visualizing the insider threat: challenges and tools for identifying malicious user activity'
     year: '2015'
   Tn43ogoAAAAJ:UeHWp8X0CEIC:
@@ -210,7 +210,7 @@ papers:
     title: Turn costs change the value of animal search paths
     year: '2013'
   Tn43ogoAAAAJ:Zph67rFs4hoC:
-    citations: 33
+    citations: 34
     title: A robust solution to multi-modal image registration by combining mutual information with multi-scale derivatives
     year: '2009'
   Tn43ogoAAAAJ:_FxGoFyzp5QC:
@@ -226,7 +226,7 @@ papers:
     title: 'Quasi-Hamming distances: An overarching concept for measuring glyph similarity'
     year: '2015'
   Tn43ogoAAAAJ:_xSYboBqXhAC:
-    citations: 32
+    citations: 34
     title: An Explainable Ensemble-based Intrusion Detection System for Software-Defined Vehicle Ad-hoc Networks
     year: '2025'
   Tn43ogoAAAAJ:abG-DnoFyZgC:
@@ -314,7 +314,7 @@ papers:
     title: Predicting user confidence during visual decision making
     year: '2018'
   Tn43ogoAAAAJ:mVmsd5A6BfQC:
-    citations: 79
+    citations: 80
     title: 'Caught in the act of an insider attack: detection and assessment of insider threat'
     year: '2015'
   Tn43ogoAAAAJ:maZDTaKrznsC:
@@ -374,7 +374,7 @@ papers:
     title: 'Knowledge-assisted ranking: A visual analytic application for sports event data'
     year: '2015'
   Tn43ogoAAAAJ:vV6vV6tmYwMC:
-    citations: 7
+    citations: 8
     title: 'Federated Learning: Data Privacy and Cyber Security in Edge-Based Machine Learning'
     year: '2023'
   Tn43ogoAAAAJ:xtRiw3GOFMkC:
@@ -386,7 +386,7 @@ papers:
     title: Improving Search Space Analysis of Fuzzing Mutators Using Cryptographic Structures
     year: '2023'
   Tn43ogoAAAAJ:zA6iFVUQeVQC:
-    citations: 3
+    citations: 4
     title: 'GoibhniUWE: A Lightweight and Modular Container-Based Cyber Range'
     year: '2024'
   Tn43ogoAAAAJ:zYLM7Y9cAGgC:
