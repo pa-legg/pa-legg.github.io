@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-05-29'
+  last_updated: '2026-06-08'
 papers:
   Tn43ogoAAAAJ:-f6ydRqryjwC:
     citations: 3
     title: Visualising state space representations of LSTM networks
     year: '2018'
   Tn43ogoAAAAJ:0EnyYjriUFMC:
-    citations: 44
+    citations: 45
     title: Using internet activity profiling for insider-threat detection
     year: '2015'
   Tn43ogoAAAAJ:1sJd4Hv_s6UC:
@@ -38,7 +38,7 @@ papers:
     title: 'Guest Editorial: Emerging Trends in Research for Insider Threat Detection.'
     year: '2014'
   Tn43ogoAAAAJ:70eg2SAEIzsC:
-    citations: 18
+    citations: 19
     title: Longitudinal Risk-based Security Assessment of Docker Software Container Images
     year: '2023'
   Tn43ogoAAAAJ:8k81kl-MbHgC:
@@ -110,11 +110,11 @@ papers:
     title: 'Fail-safe Glyph Encoding based on Quasi-Hamming Distances: With a Case Study on Visualizing File System Events'
     year: Unknown Year
   Tn43ogoAAAAJ:MXK_kJrjxJIC:
-    citations: 350
+    citations: 352
     title: 'Understanding insider threat: A framework for characterising attacks'
     year: '2014'
   Tn43ogoAAAAJ:NMxIlDl6LWMC:
-    citations: 104
+    citations: 106
     title: 'Functionality-preserving adversarial machine learning for robust classification in cybersecurity and intrusion detection domains: A survey'
     year: '2022'
   Tn43ogoAAAAJ:O3NaXMp0MMsC:
@@ -146,7 +146,7 @@ papers:
     title: Enhancing cyber situation awareness for non-expert users using visual analytics
     year: '2016'
   Tn43ogoAAAAJ:SeFeTyx0c_EC:
-    citations: 41
+    citations: 42
     title: 'Vulnerability detection through machine learning-based fuzzing: A systematic review'
     year: '2024'
   Tn43ogoAAAAJ:TFP_iSt0sucC:
@@ -189,6 +189,10 @@ papers:
     citations: 17
     title: 'RicherPicture: Semi-automated cyber defence using context-aware data analytics'
     year: '2017'
+  Tn43ogoAAAAJ:XiSMed-E-HIC:
+    citations: 0
+    title: Internet of Things
+    year: Unknown Year
   Tn43ogoAAAAJ:Y0pCki6q_DkC:
     citations: 5
     title: 'From Video to Animated 3D Reconstruction: A Computer Graphics Application for Snooker Skills Training.'
@@ -226,7 +230,7 @@ papers:
     title: 'Quasi-Hamming distances: An overarching concept for measuring glyph similarity'
     year: '2015'
   Tn43ogoAAAAJ:_xSYboBqXhAC:
-    citations: 34
+    citations: 35
     title: An Explainable Ensemble-based Intrusion Detection System for Software-Defined Vehicle Ad-hoc Networks
     year: '2025'
   Tn43ogoAAAAJ:abG-DnoFyZgC:
@@ -242,7 +246,7 @@ papers:
     title: Leveraging activation and optimisation layers as dynamic strategies in the multi-task fuzzing scheme
     year: '2025'
   Tn43ogoAAAAJ:bFI3QPDXJZMC:
-    citations: 20
+    citations: 21
     title: 'Understanding Insider Threat: A Framework for Characterising Attacks, 2014 IEEE Security and Privacy Workshops URL: https://www. ieee-security. org/TC/SPW2014/papers/5103a214'
     year: '2014'
   Tn43ogoAAAAJ:blknAaTinKkC:
@@ -262,11 +266,11 @@ papers:
     title: 'Cyber security unplugged: Teaching security management through immersive gameplay'
     year: '2024'
   Tn43ogoAAAAJ:dhFuZR0502QC:
-    citations: 25
+    citations: 26
     title: Visual analytics for collaborative human-machine confidence in human-centric active learning tasks
     year: '2019'
   Tn43ogoAAAAJ:dshw04ExmUIC:
-    citations: 5
+    citations: 6
     title: Federated Learning with Adversarial Optimisation for Secure and Efficient 5G Edge Computing Networks
     year: '2025'
   Tn43ogoAAAAJ:e5wmG9Sq2KIC:
@@ -278,7 +282,7 @@ papers:
     title: 'Analyst-driven XAI for time series forecasting: Analytics for telecoms maintenance'
     year: '2024'
   Tn43ogoAAAAJ:hC7cP41nSMkC:
-    citations: 120
+    citations: 121
     title: Towards a conceptual model and reasoning structure for insider threat detection
     year: '2013'
   Tn43ogoAAAAJ:hFOr9nPyWt4C:
