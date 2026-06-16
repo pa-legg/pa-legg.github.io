@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: 92 publications (up to May 2026) in reversed chronological order 
+description: 93 publications (up to June 2026) in reversed chronological order 
 nav: true
 nav_order: 1
 ---
