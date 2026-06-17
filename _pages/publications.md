@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: 93 publications (up to June 2026) in reversed chronological order. Explore key words via an [interactive word cloud](https://pa-legg.github.io/resources/publication-word-cloud/)
+description: 93 publications (up to June 2026) in reversed chronological order.
 nav: true
 nav_order: 1
 ---
@@ -17,4 +17,8 @@ nav_order: 1
 
 {% bibliography %}
 
+</div>
+
+<div class="word cloud">
+Explore key words via an <a href="https://pa-legg.github.io/resources/publication-word-cloud/">interactive word cloud</a>.
 </div>
