@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "publications",
-          description: "93 publications (up to June 2026) in reversed chronological order",
+          description: "93 publications (up to June 2026) in reversed chronological order. Explore key words via an [interactive word cloud](https://pa-legg.github.io/resources/publication-word-cloud/)",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
