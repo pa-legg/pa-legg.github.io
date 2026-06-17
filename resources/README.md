@@ -17,4 +17,7 @@ A collection of online resources that are shared with the community.
 * [Galaxy Computer Vision](http://pa-legg.github.io/resources/galaxy-cv)
 * [WebXR Examples](http://pa-legg.github.io/resources/webxr)
 
+## Visualisation
+
+* [Publication Word Cloud](https://pa-legg.github.io/resources/publication-word-cloud/)
 

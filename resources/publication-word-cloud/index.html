@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publications Word Cloud Explorer</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-cloud@1.2.7/build/d3.layout.cloud.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  </head>
+  <body data-theme="light">
+    <header class="topbar">
+      <button id="toggleControls" class="icon-btn" aria-expanded="false" aria-controls="controlsSidebar">
+        ⚙ Controls
+      </button>
+      <h1>Publications Word Cloud</h1>
+      <nav class="tabs" aria-label="View mode">
+        <button class="tab active" data-tab="cloud">Word cloud</button>
+        <button class="tab" data-tab="time">Over time</button>
+      </nav>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+    </header>
+
+    <div id="sidebarBackdrop" class="sidebar-backdrop" hidden></div>
+
+    <aside id="controlsSidebar" class="controls sidebar" aria-hidden="true">
+      <div class="sidebar-header">
+        <h2>Controls</h2>
+        <button id="closeControls" class="icon-btn" aria-label="Close controls">✕</button>
+      </div>
+
+      <label>
+        Max words
+        <input id="maxWords" type="range" min="25" max="400" value="150" />
+        <span id="maxWordsValue">150</span>
+      </label>
+
+      <label>
+        Min word length
+        <input id="minLength" type="range" min="2" max="12" value="4" />
+        <span id="minLengthValue">4</span>
+      </label>
+
+      <label>
+        Layout
+        <select id="layoutMode">
+          <option value="archimedean">Archimedean</option>
+          <option value="rectangular">Rectangular</option>
+        </select>
+      </label>
+
+      <label>
+        Rotation
+        <select id="rotationMode">
+          <option value="none">None</option>
+          <option value="mixed" selected>Mixed (0° / 90°)</option>
+          <option value="angled">Angled (-45° / 45°)</option>
+        </select>
+      </label>
+
+      <label>
+        Color palette
+        <select id="palette">
+          <option value="viridis">Viridis</option>
+          <option value="warm">Warm</option>
+          <option value="cool">Cool</option>
+          <option value="category10">Category 10</option>
+        </select>
+      </label>
+
+      <label class="checkbox-row">
+        <input id="titlesOnly" type="checkbox" />
+        Titles only (exclude abstracts)
+      </label>
+
+      <label>
+        Year range
+        <div class="year-range">
+          <input id="yearMin" type="number" />
+          <span>to</span>
+          <input id="yearMax" type="number" />
+        </div>
+      </label>
+
+      <label>
+        Track top words (time view)
+        <input id="trackedWords" type="number" min="3" max="20" value="8" />
+      </label>
+
+      <p id="status" class="status">Loading publications…</p>
+    </aside>
+
+    <main class="viz-main">
+      <section id="cloudTab" class="tab-panel active">
+        <div id="cloudWrap">
+          <svg id="cloudSvg" role="img" aria-label="Word cloud visualization"></svg>
+          <p id="cloudEmpty" class="empty-state" hidden>No words to display. Adjust filters in Controls.</p>
+        </div>
+      </section>
+
+      <section id="timeTab" class="tab-panel">
+        <div id="chartWrap">
+          <canvas id="timeChart"></canvas>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
