@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-17'
+  last_updated: '2026-06-22'
 papers:
   Tn43ogoAAAAJ:-f6ydRqryjwC:
     citations: 3
@@ -62,7 +62,7 @@ papers:
     title: Teaching Offensive and Defensive Cyber Security in Schools using a Raspberry Pi Cyber Range
     year: '2022'
   Tn43ogoAAAAJ:HDshCWvjkbEC:
-    citations: 229
+    citations: 230
     title: Automated insider threat detection system using user and role-based profile assessment
     year: '2015'
   Tn43ogoAAAAJ:HoB7MX3m0LUC:
@@ -114,11 +114,11 @@ papers:
     title: 'Understanding insider threat: A framework for characterising attacks'
     year: '2014'
   Tn43ogoAAAAJ:NMxIlDl6LWMC:
-    citations: 108
+    citations: 107
     title: 'Functionality-preserving adversarial machine learning for robust classification in cybersecurity and intrusion detection domains: A survey'
     year: '2022'
   Tn43ogoAAAAJ:O3NaXMp0MMsC:
-    citations: 54
+    citations: 53
     title: 'Defending against adversarial machine learning attacks using hierarchical learning: A case study on network traffic attack classification'
     year: '2022'
   Tn43ogoAAAAJ:OU6Ihb5iCvQC:
@@ -298,7 +298,7 @@ papers:
     title: "Improving accuracy and efficiency of registration by mutual information using Sturges\u2019 histogram rule"
     year: '2007'
   Tn43ogoAAAAJ:isC4tDSrTZIC:
-    citations: 49
+    citations: 50
     title: Investigating anti-evasion malware triggers using automated sandbox reconfiguration techniques
     year: '2020'
   Tn43ogoAAAAJ:j3f4tGmQtD8C:
