@@ -118,5 +118,7 @@ A collection of web resources that may be useful for researchers.
 ### Other Online Resources
 
 * [Cyber Security & Resilience Seminar Series](https://cyse3.org)
+* [CRANE](https://crane.ac.uk)
+* [CAE Community](https://www.caecommunity.org)
 
 
