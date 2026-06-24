@@ -122,4 +122,12 @@ A collection of web resources that may be useful for researchers.
 * [CRANE](https://crane.ac.uk)
 * [CAE Community](https://www.caecommunity.org)
 
+# AI Tooling
+
+*  [Cursor](https://cursor.com/)
+*  [Pi](https://pi.dev)
+*  [HuggingFace](https://huggingface.co)
+*  [Qwen3.5-35B-A3B-GGUF on HuggingFace](https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF)
+*  [llamafile](https://github.com/mozilla-ai/llamafile)
+
 
