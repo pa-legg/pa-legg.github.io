@@ -115,3 +115,8 @@ A collection of web resources that may be useful for researchers.
 * [MICCAI](https://miccai.org/index.php/)
 * [MIUA](https://www.ucd.ie/medicine/miua2026/)
 
+### Other Online Resources
+
+* [Cyber Security & Resilience Seminar Series](https://cyse3.org)
+
+
