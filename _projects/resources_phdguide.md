@@ -104,6 +104,7 @@ A collection of web resources that may be useful for researchers.
 * [IEEE Security and Privacy Workshops](https://sp2026.ieee-security.org/workshops.html)
 * [ACM CCS 2026](https://www.sigsac.org/ccs/CCS2026/) - Submissions: 14th January and 29th April 2026
 * [Cyber Science](https://c-mric.org) - Submissions: 28th February 2026
+* [ACM Wworkshop on Artificial Intelligence and Security (part of ACM CCS)](https://aisec.cc)
   
 ### Other Academic Conferences 2026
 
