@@ -400,6 +400,11 @@ cv:
     
     
     Talks:
+      - title: "AI Security - Current Challenges and Future Directions"
+        date: 2026
+        url: #
+        authors: 
+          - "x-gov GenAI Security Group"
       - title: "Center of Academic Excellence (CAE) and Academic Centres of Excellence (ACE) - approaching institutional excellence in cybersecurity education in the US and UK."
         date: 2026
         url: https://www.caecommunity.org/symposium
