@@ -599,6 +599,16 @@ cv:
     Awards:  
       - title: "Best Paper Award"
         authors:
+          - "Jailbreaking LLMs Through Tense Manipulation in Multi-Turn Dialogues"
+          - "24th UK Workshop on Computational Intelligence (UKCI 2025), September 3-5, 2025, Edinburgh, UK (UKCI 2025)"
+        date: 2025-09-05
+        awarder: 24th UK Workshop on Computational Intelligence (UKCI 2025), September 3-5, 2025, Edinburgh, UK (UKCI 2025)
+        url: https://innovationhub.napier.ac.uk/news-and-events/events/ukci-conference-2025
+        summary: ""
+        
+      - title: "Best Paper Award"
+        authors:
+          - "Visual Analytics for Non-Expert Users in Cyber Situation Awareness"
           - "IEEE International Conference on Cyber Situational Awareness, Data Analytics and Assessment (Cyber SA 2016)"
         date: 2016-07-01
         awarder: IEEE International Conference on Cyber Situational Awareness, Data Analytics and Assessment (Cyber SA 2016)
@@ -615,6 +625,7 @@ cv:
         
       - title: "Best Paper Award"
         authors:
+          - "Visual analytics of e-mail sociolinguistics for user behavioural analysis"
           - "Managing Insider Security Threats (MIST) conference"
         date: 2014-11-22
         awarder: Managing Insider Security Threats (MIST) conference
