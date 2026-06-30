@@ -1080,6 +1080,11 @@ ninja.data = [{
           description: "Nicola Turner and Phil Legg",
           section: "Projects",handler: () => {
               window.location.href = "/projects/projects_2023_humansensor/";
+            },},{id: "projects-online-information-disorder-community-tension-and-police-scotland-39-s-engagement-with-sikh-communities-in-the-central-belt",
+          title: 'Online Information Disorder, Community Tension, and Police Scotland&amp;#39;s Engagement with Sikh Communities in...',
+          description: "Belinda Onyeashie, Guanyu Jason Ran, Phil Legg and Kieran McCartan",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/projects_2026_safercommunities/";
             },},{id: "projects-more-resources",
           title: 'More resources',
           description: "",
