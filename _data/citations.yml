@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-13'
+  last_updated: '2026-07-22'
 papers:
   Tn43ogoAAAAJ:-f6ydRqryjwC:
     citations: 3
@@ -38,7 +38,7 @@ papers:
     title: 'Guest Editorial: Emerging Trends in Research for Insider Threat Detection.'
     year: '2014'
   Tn43ogoAAAAJ:70eg2SAEIzsC:
-    citations: 22
+    citations: 23
     title: Longitudinal Risk-based Security Assessment of Docker Software Container Images
     year: '2023'
   Tn43ogoAAAAJ:8k81kl-MbHgC:
@@ -62,7 +62,7 @@ papers:
     title: Teaching Offensive and Defensive Cyber Security in Schools using a Raspberry Pi Cyber Range
     year: '2022'
   Tn43ogoAAAAJ:HDshCWvjkbEC:
-    citations: 231
+    citations: 234
     title: Automated insider threat detection system using user and role-based profile assessment
     year: '2015'
   Tn43ogoAAAAJ:HoB7MX3m0LUC:
@@ -98,7 +98,7 @@ papers:
     title: Systematic snooker skills test to analyze player performance
     year: '2014'
   Tn43ogoAAAAJ:M05iB0D1s5AC:
-    citations: 18
+    citations: 19
     title: Privacy-preserving intrusion detection in software-defined VANET using federated learning with BERT
     year: '2024'
   Tn43ogoAAAAJ:M3NEmzRMIkIC:
@@ -110,15 +110,15 @@ papers:
     title: 'Fail-safe Glyph Encoding based on Quasi-Hamming Distances: With a Case Study on Visualizing File System Events'
     year: Unknown Year
   Tn43ogoAAAAJ:MXK_kJrjxJIC:
-    citations: 357
+    citations: 360
     title: 'Understanding insider threat: A framework for characterising attacks'
     year: '2014'
   Tn43ogoAAAAJ:NMxIlDl6LWMC:
-    citations: 108
+    citations: 109
     title: 'Functionality-preserving adversarial machine learning for robust classification in cybersecurity and intrusion detection domains: A survey'
     year: '2022'
   Tn43ogoAAAAJ:O3NaXMp0MMsC:
-    citations: 55
+    citations: 56
     title: 'Defending against adversarial machine learning attacks using hierarchical learning: A case study on network traffic attack classification'
     year: '2022'
   Tn43ogoAAAAJ:OU6Ihb5iCvQC:
@@ -146,7 +146,7 @@ papers:
     title: Enhancing cyber situation awareness for non-expert users using visual analytics
     year: '2016'
   Tn43ogoAAAAJ:SeFeTyx0c_EC:
-    citations: 45
+    citations: 47
     title: 'Vulnerability detection through machine learning-based fuzzing: A systematic review'
     year: '2024'
   Tn43ogoAAAAJ:TFP_iSt0sucC:
@@ -189,6 +189,10 @@ papers:
     citations: 0
     title: 'Automated registration of multimodal optic disc images: clinical assessment of alignment accuracy'
     year: '2016'
+  Tn43ogoAAAAJ:WbkHhVStYXYC:
+    citations: 0
+    title: "Corrigendum to \u201CAdvancing fuzzing with unbiased random generator and Feistel network-based mutations\u201D Information and Software Technology 196 (August 2026) 108140"
+    year: '2026'
   Tn43ogoAAAAJ:Wp0gIr-vW9MC:
     citations: 17
     title: 'RicherPicture: Semi-automated cyber defence using context-aware data analytics'
@@ -234,7 +238,7 @@ papers:
     title: 'Quasi-Hamming distances: An overarching concept for measuring glyph similarity'
     year: '2015'
   Tn43ogoAAAAJ:_xSYboBqXhAC:
-    citations: 36
+    citations: 38
     title: An Explainable Ensemble-based Intrusion Detection System for Software-Defined Vehicle Ad-hoc Networks
     year: '2025'
   Tn43ogoAAAAJ:abG-DnoFyZgC:
@@ -254,7 +258,7 @@ papers:
     title: 'Understanding Insider Threat: A Framework for Characterising Attacks, 2014 IEEE Security and Privacy Workshops URL: https://www. ieee-security. org/TC/SPW2014/papers/5103a214'
     year: '2014'
   Tn43ogoAAAAJ:blknAaTinKkC:
-    citations: 27
+    citations: 28
     title: Unsupervised one-class learning for anomaly detection on home IoT network devices
     year: '2021'
   Tn43ogoAAAAJ:cFHS6HbyZ2cC:
@@ -374,7 +378,7 @@ papers:
     title: 'LOTL-Hunter: Detecting Multi-Stage Living-off-the-Land Attacks in Cyber-Physical Systems using Decision Fusion Techniques with Digital Twins'
     year: '2026'
   Tn43ogoAAAAJ:u_35RYKgDlwC:
-    citations: 12
+    citations: 13
     title: Digital twins of cyber physical systems in smart manufacturing for threat simulation and detection with deep learning for time series classification
     year: '2024'
   Tn43ogoAAAAJ:ufrVoPGSRksC:
@@ -390,7 +394,7 @@ papers:
     title: Machine Learning and Data Analytics for Cyber Security
     year: '2025'
   Tn43ogoAAAAJ:yD5IFk8b50cC:
-    citations: 0
+    citations: 1
     title: Improving Search Space Analysis of Fuzzing Mutators Using Cryptographic Structures
     year: '2023'
   Tn43ogoAAAAJ:zA6iFVUQeVQC:
