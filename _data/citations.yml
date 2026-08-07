@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-27'
+  last_updated: '2026-08-07'
 papers:
   Tn43ogoAAAAJ:-f6ydRqryjwC:
     citations: 3
@@ -14,7 +14,7 @@ papers:
     title: 'gh0stEdit: Exploiting Layer-Based Access Vulnerability Within Docker Container Images'
     year: '2025'
   Tn43ogoAAAAJ:2P1L_qKh6hAC:
-    citations: 5
+    citations: 6
     title: A stacked ensemble learning ids model for software-defined vanet
     year: '2023'
   Tn43ogoAAAAJ:35N4QoGY0k4C:
@@ -22,7 +22,7 @@ papers:
     title: 'Honggfuzz+: Fuzzing by Adaptation of Cryptographic Mutation'
     year: '2023'
   Tn43ogoAAAAJ:4DMP91E08xMC:
-    citations: 49
+    citations: 47
     title: Efficient and interpretable real-time malware detection using random-forest
     year: '2019'
   Tn43ogoAAAAJ:4OULZ7Gr8RgC:
@@ -30,7 +30,7 @@ papers:
     title: 'Evaluating data distribution strategies in federated learning: A trade-off analysis between privacy and performance for IoT security'
     year: '2024'
   Tn43ogoAAAAJ:4TOpqqG69KYC:
-    citations: 46
+    citations: 47
     title: "A critical reflection on the threat from human insiders\u2013its nature, industry perceptions, and detection approaches"
     year: '2014'
   Tn43ogoAAAAJ:5nxA0vEk-isC:
@@ -38,11 +38,15 @@ papers:
     title: 'Guest Editorial: Emerging Trends in Research for Insider Threat Detection.'
     year: '2014'
   Tn43ogoAAAAJ:70eg2SAEIzsC:
-    citations: 24
+    citations: 25
     title: Longitudinal Risk-based Security Assessment of Docker Software Container Images
     year: '2023'
+  Tn43ogoAAAAJ:738O_yMBCRsC:
+    citations: 0
+    title: Sports Science & Coaching
+    year: Unknown Year
   Tn43ogoAAAAJ:8k81kl-MbHgC:
-    citations: 12
+    citations: 10
     title: Human-machine decision support systems for insider threat detection
     year: '2017'
   Tn43ogoAAAAJ:9yKSN-GCB0IC:
@@ -62,7 +66,7 @@ papers:
     title: Teaching Offensive and Defensive Cyber Security in Schools using a Raspberry Pi Cyber Range
     year: '2022'
   Tn43ogoAAAAJ:HDshCWvjkbEC:
-    citations: 235
+    citations: 229
     title: Automated insider threat detection system using user and role-based profile assessment
     year: '2015'
   Tn43ogoAAAAJ:HoB7MX3m0LUC:
@@ -78,31 +82,31 @@ papers:
     title: 'Multimodal retinal imaging: Improving accuracy and efficiency of image registration using Mutual Information'
     year: '2010'
   Tn43ogoAAAAJ:JV2RwH3_ST0C:
-    citations: 19
+    citations: 17
     title: "\u201CHacking an IoT Home\u201D: New opportunities for cyber security education combining remote learning with cyber-physical systems"
     year: '2021'
   Tn43ogoAAAAJ:KlAtU1dfN6UC:
-    citations: 23
+    citations: 22
     title: Towards a User and Role-based Sequential Behavioural Analysis Tool for Insider Threat Detection.
     year: '2014'
   Tn43ogoAAAAJ:KxtntwgDAa4C:
     citations: 0
-    title: Examining the role of online communities in the prevention of child sexual abuse
+    title: Examining the Role of Online Communities in the Prevention of Child Sexual Abuse
     year: '2025'
   Tn43ogoAAAAJ:L8Ckcad2t8MC:
     citations: 0
     title: "A critical reflection on the threat from human insiders\u2212 its nature \u201Aindustry perceptions \u201Aand detection approaches"
     year: '2014'
   Tn43ogoAAAAJ:LkGwnXOMwfcC:
-    citations: 20
+    citations: 19
     title: Systematic snooker skills test to analyze player performance
     year: '2014'
   Tn43ogoAAAAJ:M05iB0D1s5AC:
     citations: 19
-    title: Privacy-preserving intrusion detection in software-defined VANET using federated learning with BERT
+    title: Privacy-preserving intrusion detection in software-defined vanet using federated learning with bert
     year: '2024'
   Tn43ogoAAAAJ:M3NEmzRMIkIC:
-    citations: 20
+    citations: 19
     title: Feature vulnerability and robustness assessment against adversarial machine learning attacks
     year: '2021'
   Tn43ogoAAAAJ:M3ejUd6NZC8C:
@@ -110,15 +114,15 @@ papers:
     title: 'Fail-safe Glyph Encoding based on Quasi-Hamming Distances: With a Case Study on Visualizing File System Events'
     year: Unknown Year
   Tn43ogoAAAAJ:MXK_kJrjxJIC:
-    citations: 360
+    citations: 353
     title: 'Understanding insider threat: A framework for characterising attacks'
     year: '2014'
   Tn43ogoAAAAJ:NMxIlDl6LWMC:
-    citations: 108
+    citations: 103
     title: 'Functionality-preserving adversarial machine learning for robust classification in cybersecurity and intrusion detection domains: A survey'
     year: '2022'
   Tn43ogoAAAAJ:O3NaXMp0MMsC:
-    citations: 58
+    citations: 59
     title: 'Defending against adversarial machine learning attacks using hierarchical learning: A case study on network traffic attack classification'
     year: '2022'
   Tn43ogoAAAAJ:OU6Ihb5iCvQC:
@@ -130,31 +134,31 @@ papers:
     title: Cyber Security and Applications
     year: Unknown Year
   Tn43ogoAAAAJ:QIV2ME_5wuYC:
-    citations: 87
+    citations: 88
     title: Improving accuracy and efficiency of mutual information for multi-modal retinal image registration using adaptive probability density estimation
     year: '2013'
   Tn43ogoAAAAJ:RHpTSmoSYBkC:
     citations: 0
-    title: Video Visualization
+    title: Video Visualization.
     year: '2013'
   Tn43ogoAAAAJ:SP6oXDckpogC:
     citations: 0
     title: Advances in Teaching and Learning for Cyber Security Education - Proceedings of the Cyber Security Education 2025 CSE Connect Annual Conference
     year: '2026'
   Tn43ogoAAAAJ:Se3iqnhoufwC:
-    citations: 30
+    citations: 31
     title: Enhancing cyber situation awareness for non-expert users using visual analytics
     year: '2016'
   Tn43ogoAAAAJ:SeFeTyx0c_EC:
-    citations: 46
+    citations: 47
     title: 'Vulnerability detection through machine learning-based fuzzing: A systematic review'
     year: '2024'
   Tn43ogoAAAAJ:TFP_iSt0sucC:
-    citations: 7
+    citations: 6
     title: "\u201CWhat did you say?\u201D: Extracting unintentional secrets from predictive text learning systems"
     year: '2020'
   Tn43ogoAAAAJ:TQgYirikUcIC:
-    citations: 54
+    citations: 53
     title: Hierarchical event selection for video storyboards with a case study on snooker video visualization
     year: '2011'
   Tn43ogoAAAAJ:Tiz5es2fbqcC:
@@ -166,11 +170,11 @@ papers:
     title: 'Venue2vec: An efficient embedding model for fine-grained user location prediction in geo-social networks'
     year: '2019'
   Tn43ogoAAAAJ:ULOm3_A8WrAC:
-    citations: 78
+    citations: 77
     title: 'Visualizing the insider threat: challenges and tools for identifying malicious user activity'
     year: '2015'
   Tn43ogoAAAAJ:UeHWp8X0CEIC:
-    citations: 46
+    citations: 47
     title: Transformation of an uncertain video search pipeline to a sketch-based visual analytics loop
     year: '2013'
   Tn43ogoAAAAJ:UebtZRa9Y70C:
@@ -194,20 +198,20 @@ papers:
     title: "Corrigendum to \u201CAdvancing fuzzing with unbiased random generator and Feistel network-based mutations\u201D Information and Software Technology 196 (August 2026) 108140"
     year: '2026'
   Tn43ogoAAAAJ:Wp0gIr-vW9MC:
-    citations: 17
+    citations: 16
     title: 'RicherPicture: Semi-automated cyber defence using context-aware data analytics'
     year: '2017'
   Tn43ogoAAAAJ:XiSMed-E-HIC:
     citations: 0
-    title: Internet of things
-    year: '2024'
+    title: Internet of Things
+    year: Unknown Year
   Tn43ogoAAAAJ:Y0pCki6q_DkC:
     citations: 5
     title: 'From Video to Animated 3D Reconstruction: A Computer Graphics Application for Snooker Skills Training.'
     year: '2011'
   Tn43ogoAAAAJ:YFjsv_pBGBYC:
     citations: 5
-    title: 'OGMA: visualisation for software container security analysis and automated remediation'
+    title: 'OGMA: Visualisation for software container security analysis and automated remediation'
     year: '2022'
   Tn43ogoAAAAJ:YOwf2qJgpHMC:
     citations: 10
@@ -226,7 +230,7 @@ papers:
     title: A robust solution to multi-modal image registration by combining mutual information with multi-scale derivatives
     year: '2009'
   Tn43ogoAAAAJ:_FxGoFyzp5QC:
-    citations: 141
+    citations: 139
     title: "MatchPad: Interactive Glyph\u2010Based Visualization for Real\u2010Time Sports Performance Analysis"
     year: '2012'
   Tn43ogoAAAAJ:_Qo2XoVZTnwC:
@@ -238,7 +242,7 @@ papers:
     title: 'Quasi-Hamming distances: An overarching concept for measuring glyph similarity'
     year: '2015'
   Tn43ogoAAAAJ:_xSYboBqXhAC:
-    citations: 40
+    citations: 43
     title: An Explainable Ensemble-based Intrusion Detection System for Software-Defined Vehicle Ad-hoc Networks
     year: '2025'
   Tn43ogoAAAAJ:abG-DnoFyZgC:
@@ -246,7 +250,7 @@ papers:
     title: 'TRIST: Towards a Container-Based ICS Testbed for Cyber Threat Simulation and Anomaly Detection'
     year: '2025'
   Tn43ogoAAAAJ:aqlVkmm33-oC:
-    citations: 14
+    citations: 13
     title: Intelligent filtering by semantic importance for single-view 3D reconstruction from Snooker video
     year: '2011'
   Tn43ogoAAAAJ:b0M2c_1WBrUC:
@@ -258,7 +262,7 @@ papers:
     title: 'Understanding Insider Threat: A Framework for Characterising Attacks, 2014 IEEE Security and Privacy Workshops URL: https://www. ieee-security. org/TC/SPW2014/papers/5103a214'
     year: '2014'
   Tn43ogoAAAAJ:blknAaTinKkC:
-    citations: 28
+    citations: 31
     title: Unsupervised one-class learning for anomaly detection on home IoT network devices
     year: '2021'
   Tn43ogoAAAAJ:cFHS6HbyZ2cC:
@@ -279,7 +283,7 @@ papers:
     year: '2019'
   Tn43ogoAAAAJ:dshw04ExmUIC:
     citations: 7
-    title: Federated Learning with Adversarial Optimisation for Secure and Efficient 5G Edge Computing Networks
+    title: Federated learning with adversarial optimisation for secure and efficient 5G edge computing networks
     year: '2025'
   Tn43ogoAAAAJ:e5wmG9Sq2KIC:
     citations: 1
@@ -290,7 +294,7 @@ papers:
     title: 'Analyst-driven XAI for time series forecasting: Analytics for telecoms maintenance'
     year: '2024'
   Tn43ogoAAAAJ:hC7cP41nSMkC:
-    citations: 124
+    citations: 119
     title: Towards a conceptual model and reasoning structure for insider threat detection
     year: '2013'
   Tn43ogoAAAAJ:hFOr9nPyWt4C:
@@ -299,7 +303,7 @@ papers:
     year: '2015'
   Tn43ogoAAAAJ:hMod-77fHWUC:
     citations: 2
-    title: Investigating Malware Propagation and Behaviour Using System and Network Pixel-Based Visualisation
+    title: Investigating malware propagation and behaviour using system and network pixel-based visualisation
     year: '2022'
   Tn43ogoAAAAJ:hqOjcs7Dif8C:
     citations: 48
@@ -314,7 +318,7 @@ papers:
     title: The visual design of network data to enhance cyber security awareness of the everyday internet user
     year: '2020'
   Tn43ogoAAAAJ:k_IJM867U9cC:
-    citations: 69
+    citations: 64
     title: "Deep Learning\u2010Based Security Behaviour Analysis in IoT Environments: A Survey"
     year: '2021'
   Tn43ogoAAAAJ:lSLTfruPkqcC:
@@ -322,7 +326,7 @@ papers:
     title: Publication-Chair
     year: Unknown Year
   Tn43ogoAAAAJ:mB3voiENLucC:
-    citations: 22
+    citations: 21
     title: Predicting user confidence during visual decision making
     year: '2018'
   Tn43ogoAAAAJ:mVmsd5A6BfQC:
@@ -350,11 +354,11 @@ papers:
     title: Visual analytics of e-mail sociolinguistics for user behavioural analysis.
     year: '2014'
   Tn43ogoAAAAJ:qjMakFHDy7sC:
-    citations: 82
+    citations: 81
     title: 'Glyph sorting: Interactive visualization for multi-dimensional data'
     year: '2015'
   Tn43ogoAAAAJ:qxL8FJ1GzNcC:
-    citations: 14
+    citations: 13
     title: 'Glyph visualization: A fail-safe design scheme based on quasi-hamming distances'
     year: '2016'
   Tn43ogoAAAAJ:r0BpntZqJG4C:
@@ -378,12 +382,12 @@ papers:
     title: 'LOTL-Hunter: Detecting Multi-Stage Living-off-the-Land Attacks in Cyber-Physical Systems using Decision Fusion Techniques with Digital Twins'
     year: '2026'
   Tn43ogoAAAAJ:u_35RYKgDlwC:
-    citations: 13
+    citations: 14
     title: Digital twins of cyber physical systems in smart manufacturing for threat simulation and detection with deep learning for time series classification
     year: '2024'
   Tn43ogoAAAAJ:ufrVoPGSRksC:
-    citations: 24
-    title: 'Knowledge-assisted ranking: a visual analytic application for sport event data'
+    citations: 25
+    title: 'Knowledge-assisted ranking: A visual analytic application for sports event data'
     year: '2015'
   Tn43ogoAAAAJ:vV6vV6tmYwMC:
     citations: 8
@@ -399,7 +403,7 @@ papers:
     year: '2023'
   Tn43ogoAAAAJ:zA6iFVUQeVQC:
     citations: 4
-    title: 'GoibhniUWE: A Lightweight and Modular Container-Based Cyber Range'
+    title: 'GoibhniUWE: A lightweight and modular container-based cyber range'
     year: '2024'
   Tn43ogoAAAAJ:zYLM7Y9cAGgC:
     citations: 2
