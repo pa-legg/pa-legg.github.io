@@ -1,9 +1,18 @@
 % Legg Bibtex file - last updated Monday 27th July 2026
 % More recent entries being populated in reverse chronological order
 
-% 98 academic articles
+% 99 academic articles
 
 % 2026
+
+@inproceedings{lo2026grcmsat,
+AUTHOR = {Lo, Carol and Lancelot, Jonathan and Legg, Phil},
+TITLE = {GRC-MSAT: A SPARTA and COSO-Informed Governance Framework for Cyber-Physical Resilience of Meteorological Satellites},
+booktitle={International Conference on Global Security, Safety and Sustainability (ICGS3 '26)},
+year={2026},
+html={https://www.icgs3-26.org},
+abstract={Meteorological satellites provide essential upstream data for weather prediction, climate monitoring, and disaster preparedness. The disruption, manipulation, degradation, or delay of satellite-derived data could affect multiple sectors, including emergency response, aviation, agriculture, and energy management, while creating cascading risks across interconnected systems. Therefore, this paper argues that they should be governed as cross-sector critical information infrastructure. The paper develops GRC-MSAT, a governance framework to support the cyber-physical resilience of meteorological satellite operations. GRC-MSAT is grounded in two established frameworks: the Space Attack Research and Tactic Analysis (SPARTA) matrix, which provides an understanding of space systems attack tactics and techniques, and the Committee of Sponsoring Organizations of the Treadway Commission (COSO) Internal Control Integrated Framework, which provides 17 guiding principles across control environment, risk assessment, control activities, information and communication, and monitoring activities. By integrating these perspectives, GRC-MSAT applies COSO principles in a space-cyber context, and uses space-specific cyber threat intelligence to develop concrete, threat-informed internal control practices. The framework provides a structured approach for assessing and prioritising governance-relevant cyber risks associated with satellite operations and the downstream services that depend on them. To demonstrate how GRC-MSAT can be applied to support cyber-physical resilience governance, this paper provides an illustrative case study based on the NOAA 2014 cyberattack. The case illustrates how a satellite-sector cyber incident can affect weather service. Overall, it contributes a COSO-based, threat-informed GRC framework for managing cyber-physical threats and maintaining space-sector resilience.}
+}
 
 @article{Tchuindjang2026RefusalGuard,
 AUTHOR = {Tchuindjang, Michael Yamsi and Duran, Nathan and Legg, Phil and Medjek, Faiza },
@@ -13,7 +22,8 @@ JOURNAL = {Cybersecurity},
 VOLUME = {0},
 YEAR = {2026},
 NUMBER = {0},
-html={https://link.springer.com/journal/42400}
+html={https://link.springer.com/article/10.1186/s42400-026-00633-z},
+abstract={Existing multi-turn jailbreak evaluation methods increasingly rely on large language models (LLMs) as automated judges to reduce the cost and scalability limitations of human assessment. However, recent studies show that LLM-based evaluators can diverge from human judgments under adversarial strategies involving subtle linguistic and semantic variations, raising reliability concerns in safety-critical domains such as cybersecurity. To address this challenge, we propose Refusal Manifold Guard (RefusalGuard-M), an open-source semantic evaluation framework that constructs a semantic refusal manifold from human-validated refusal responses for assessing LLM jailbreak interactions, including multi-turn scenarios. RefusalGuard-M uses embedding-based geometric representations to measure deviations from refusal behavior, providing a lightweight, interpretable, and reproducible alternative to LLM-based judging. We evaluate the framework across AdvBench, HarmBench, and CyMulTenSet, covering diverse jailbreak strategies, linguistic transformations, and multi-turn scenarios. Results show that RefusalGuard-M achieves strong agreement with human annotations and comparable recall performance to GPT-based evaluators while adopting a conservative evaluation strategy that prioritizes the detection of harmful outputs. On CyMulTenSet, which evaluates past-tense reformulated multi-turn jailbreaks, RefusalGuard-M achieves up to 0.87 recall, compared with 0.86 for GPT-5 and 0.81 for GPT-4, and reduces inference overhead by up to 3.7 relative to embedding-based baselines. These findings demonstrate that semantic refusal representations provide an efficient and scalable approach for jailbreak evaluation, particularly in cybersecurity settings where minimizing missed harmful outputs is critical.}
 }
 
 @inproceedings{white2026vibecoding,
@@ -21,7 +31,8 @@ AUTHOR = {White, Jonathan and Legg, Phil},
 TITLE = {From Vibe Coding to Agentic Engineering: A hands-on investigation and framework for practical security education},
 booktitle={6th Advances in Teaching and Learning for Cyber Security Education (ATLCSE)},
 year={2026},
-html={https://www.cseconnect.org}
+html={https://www.cseconnect.org},
+abstract={Cyber security educators are often tasked with creating innovative practical activities for teaching concepts, such as investigating security flaws within operating systems, exploiting web application vulnerabilities, or investigating security alerts. Building virtual environments that support such activities, even when using containerisation techniques such as Docker or VMware, can be resource-intensive and time-consuming. Likewise, the creation of capture-the-flag activities, whereby a user has to find a flag within an operating system through the completion of an activity, are non-trivial to curate at scale. Educators must design environments that contain deliberate, pedagogically meaningful vulnerabilities whilst avoiding unintended attack surfaces, and must maintain these artefacts as technologies and threat landscapes evolve. This paper presents a critical practice-led investigation into using artificial intelligence coding tools, including large language models (LLMs), for rapid generation of bespoke software-based teaching artefacts for cyber security education. We argue that the informal practice popularly known as vibe coding is unsafe for this purpose, where an unintended vulnerability can subvert the learning objective, and that a shift to a more disciplined practice, agentic engineering, is required. We set this out as a six-stage methodology spanning learning outcome specification, challenge architecture captured in a product requirements document, iterative prompt-driven code generation, security validation, pedagogical review, and deployment, in which the educator acts as domain expert and validator rather than as the primary developer. The methodology is grounded in a portfolio of artefacts produced by the authors that spans much of the security lifecycle, including adversary-in-the-middle credential interception, vulnerability assessment and remediation, security operations centre alert triage, and browser-based simulated desktops for flag discovery and cyber kill-chain exercises. We further present a critical analysis of the failure modes encountered during the generation process and propose practical guidelines for educators seeking to adopt LLM-assisted approaches within their own programmes.}
 }
 
 @inproceedings{Tchuindjang2026Reliable,
@@ -31,7 +42,8 @@ TITLE = {How Reliable Are Automated Jailbreak Evaluators? A Study of Human-Machi
 booktitle={13th  International Symposium on Networks, Computers and Communications (ISNCC) },
 year={2026},
 organisation={IEEE},
-html={https://www.isncc-conf.org}
+html={https://www.isncc-conf.org},
+abstract={Evaluating the effectiveness of multi-turn jailbreak attacks on large language models (LLMs) increasingly relies on automated evaluators, yet their reliability and agreement with human judgments in cybersecurity conversations have not been systematically examined. This paper presents a systematic human–machine agreement study of four automated evaluators, namely GPT-4.1, GPT-5.2, Llama Guard 3, and a rule-based classifier, using human annotations as the reference. Experiments are conducted on 762 unique adversarial dialogs per target model, Llama 2-7B and Qwen 2-7B, covering multi-turn settings, temporal prompt variations (present vs. past tense), and cybersecurity-related topics. Rather than treating classification performance alone as evidence of evaluator reliability, we distinguish inter-rater agreement from predictive performance by using Cohen’s κas the primary agreement measure and F1-score as a complementary metric. Results show substantial agreement among human annotators, while human–machine agreement remains weak across multi-turn conditions, with κ values below 0.36 regardless of conversation depth. Notably, GPT-based evaluators achieve moderately high F1-scores (0.42–0.72), despite their limited agreement with human judgments, demonstrating that conventional classification metrics can mask systematic evaluator disagreement. Past-tense prompt formulations further reduce human–machine agreement, decreasing κ by 0.11–0.48 across turn depths. No evaluator achieves consistent agreement with human judgments (κ ≥ 0.40) across aggregated cybersecurity topics. These findings identify systematic limitations in current automated jailbreak evaluation and motivate evaluation protocols that combine agreement analysis, complementary performance metrics, contextual error analysis, and targeted human review for reliable multi-turn jailbreak benchmarking.}
 }
 
 
