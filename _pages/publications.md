@@ -11,6 +11,11 @@ nav_order: 1
 
 <!-- Bibsearch Feature -->
 
+<div class="word cloud">
+Search based on keywords below, or view keywords as an <a href="https://pa-legg.github.io/resources/publication-word-cloud/">interactive word cloud</a>.
+</div>
+
+
 {% include bib_search.liquid %}
 
 <div class="publications">
@@ -19,6 +24,4 @@ nav_order: 1
 
 </div>
 
-<div class="word cloud">
-Explore key words via an <a href="https://pa-legg.github.io/resources/publication-word-cloud/">interactive word cloud</a>.
-</div>
+
