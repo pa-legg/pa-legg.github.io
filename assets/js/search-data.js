@@ -915,8 +915,8 @@ ninja.data = [{
           description: "James Barrett (2026)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/phd_james-barrett/";
-            },},{id: "projects-security-privacy-and-performance-analysis-of-federated-learning-systems",
-          title: 'Security, privacy and performance analysis of federated learning systems',
+            },},{id: "projects-federated-learning-for-intrusion-detection-balancing-privacy-performance-and-adaptation-to-emerging-threats",
+          title: 'Federated Learning for Intrusion Detection - Balancing Privacy, Performance, and Adaptation to Emerging...',
           description: "Jonathan White",
           section: "Projects",handler: () => {
               window.location.href = "/projects/phd_jon-white/";
