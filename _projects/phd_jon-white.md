@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Security, privacy and performance analysis of federated learning systems
+title: Federated Learning for Intrusion Detection - Balancing Privacy, Performance, and Adaptation to Emerging Threats
 description: Jonathan White
 img: assets/img/thumbs/phd-notepad.jpg
 importance: 4
