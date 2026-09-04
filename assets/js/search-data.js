@@ -900,6 +900,11 @@ ninja.data = [{
           description: "Aimen Djemaa",
           section: "Projects",handler: () => {
               window.location.href = "/projects/phd_aimen-djemaa/";
+            },},{id: "projects-investigation-of-limited-resource-virtualisation-security-understanding-and-mitigating-against-open-software-vulnerabilities",
+          title: 'Investigation of Limited Resource Virtualisation Security - Understanding and Mitigating Against Open Software...',
+          description: "Alan Mills",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/phd_alan-mills/";
             },},{id: "projects-methods-for-improving-robustness-against-adversarial-machine-learning-attacks",
           title: 'Methods for improving robustness against adversarial machine learning attacks',
           description: "Andrew McCarthy (2023)",
