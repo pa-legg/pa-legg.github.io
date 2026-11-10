@@ -37,6 +37,10 @@
               <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.awarder }}</h6>
             {% endif %}
 
+            {% if entry.authors %}
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.authors | join: ', ' }}</h6>
+            {% endif %}
+
             {% if entry.summary %}
               <p class="ml-1 ml-md-4">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
             {% endif %}
@@ -53,6 +57,10 @@
 
             {% if entry.awarder %}
               <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.awarder }}</h6>
+            {% endif %}
+
+            {% if entry.authors %}
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.authors | join: ', ' }}</h6>
             {% endif %}
 
             {% if entry.summary %}
