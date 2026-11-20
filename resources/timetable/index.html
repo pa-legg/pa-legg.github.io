@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Timetable</title>
+  <style>
+    :root {
+      --navy: #0e2841;
+      --navy-2: #163554;
+      --accent: #156082;
+      --lecture: #e49edd;
+      --lab: #94dcf8;
+      --lectorial: #b3d9cc;
+      --other: #b7afa5;
+      --text: #17202a;
+      --muted: #5c6b7a;
+      --line: #d5dbe0;
+      --bg: #eef1f4;
+      --card: #ffffff;
+      --row-h: 6.25rem;
+      --day-w: 5.6rem;
+      --time-w: 4.2rem;
+      --danger: #9b1c2e;
+      --shadow: 0 1px 2px rgba(14, 40, 65, 0.06), 0 8px 24px rgba(14, 40, 65, 0.06);
+      --font: "Segoe UI", "Source Sans 3", "Helvetica Neue", Calibri, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: var(--font);
+      color: var(--text);
+      background: var(--bg);
+      min-height: 100vh;
+    }
+    header.app-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.9rem 1.25rem;
+      background: var(--navy);
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+    header h1 {
+      font-size: 1.15rem;
+      margin: 0 0 0.15rem;
+      font-weight: 650;
+      letter-spacing: 0.01em;
+    }
+    header .sub { margin: 0; font-size: 0.8rem; color: #c9d6e0; }
+    .header-actions { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+    button, .file-btn {
+      font: inherit;
+      font-size: 0.85rem;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      padding: 0.4rem 0.7rem;
+      cursor: pointer;
+      background: #fff;
+      color: var(--navy);
+    }
+    button.primary { background: #1d6ea3; color: #fff; border-color: #1d6ea3; }
+    button.ghost, .file-btn {
+      background: transparent;
+      color: #fff;
+      border-color: rgba(255,255,255,0.35);
+    }
+    button.secondary {
+      background: var(--card);
+      color: var(--navy);
+      border-color: var(--line);
+    }
+    button.danger {
+      background: #fff5f5;
+      color: var(--danger);
+      border-color: #e4b4b8;
+    }
+    button:hover, .file-btn:hover { filter: brightness(1.08); }
+    button:focus-visible, .file-btn:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+      outline: 2px solid #7ec8f0;
+      outline-offset: 2px;
+    }
+    .file-btn input { display: none; }
+    .dirty-dot {
+      width: 0.55rem; height: 0.55rem; border-radius: 50%;
+      background: #e2b04a; display: none;
+    }
+    body.is-dirty .dirty-dot { display: inline-block; }
+    .layout {
+      display: grid;
+      grid-template-columns: 16.75rem 1fr;
+      min-height: calc(100vh - 4.4rem);
+    }
+    body.detail-open .layout { grid-template-columns: 16.75rem 1fr 24rem; }
+    aside.filters, aside.detail {
+      background: var(--card);
+      border-right: 1px solid var(--line);
+      padding: 1rem 1rem 2rem;
+      overflow: auto;
+      max-height: calc(100vh - 4.4rem);
+      position: sticky;
+      top: 4.4rem;
+    }
+    aside.detail {
+      border-right: 0;
+      border-left: 1px solid var(--line);
+    }
+    aside h2 {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin: 1.1rem 0 0.45rem;
+    }
+    aside h2:first-child { margin-top: 0; }
+    .filter-group { display: flex; flex-direction: column; gap: 0.25rem; }
+    label.check {
+      display: flex; align-items: flex-start; gap: 0.45rem;
+      font-size: 0.88rem; cursor: pointer; line-height: 1.3;
+      padding: 0.15rem 0.1rem;
+    }
+    label.check input { margin-top: 0.15rem; }
+    .swatch {
+      width: 0.75rem; height: 0.75rem; border-radius: 2px;
+      border: 1px solid rgba(0,0,0,0.15); flex: 0 0 auto; margin-top: 0.2rem;
+    }
+    .row-actions { display: flex; gap: 0.35rem; margin: 0.2rem 0 0.35rem; }
+    .row-actions button { padding: 0.15rem 0.45rem; font-size: 0.75rem; color: var(--accent); background: #f3f7fa; border-color: #d0e1eb; }
+    .count { font-size: 0.8rem; color: var(--muted); margin: 0 0 0.6rem; }
+    main.board { padding: 1rem 1.1rem 3rem; overflow: auto; }
+    #status { font-size: 0.85rem; color: var(--muted); margin: 0 0 0.7rem; }
+    #status.error { color: var(--danger); }
+    .dropzone {
+      border: 2px dashed #9aadc0;
+      background: #f7fafc;
+      border-radius: 10px;
+      padding: 2rem 1rem;
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .dropzone strong { color: var(--navy); }
+    .dropzone.drag { background: #e7f3fb; border-color: var(--accent); }
+    .legend {
+      display: flex; flex-wrap: wrap; gap: 0.7rem 1.1rem;
+      font-size: 0.8rem; margin: 0 0 0.8rem; color: var(--muted);
+    }
+    .legend span { display: inline-flex; align-items: center; gap: 0.35rem; }
+    .grid-wrap {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      overflow: auto;
+      max-height: calc(100vh - 9rem);
+    }
+    .week { min-width: 52rem; font-size: 0.78rem; }
+    .week-head, .day-grid {
+      display: grid;
+      align-items: stretch;
+    }
+    .week-head {
+      position: sticky; top: 0; z-index: 6;
+      background: #f6f8fa;
+      border-bottom: 1px solid var(--line);
+      font-weight: 650;
+      color: var(--navy);
+      text-align: center;
+    }
+    .week-head > div { padding: 0.45rem 0.4rem; border-right: 1px solid var(--line); }
+    .week-head .corner { text-align: left; }
+    .day-grid { border-bottom: 1px solid var(--line); }
+    .day-label {
+      background: #e8eef3;
+      font-weight: 700;
+      text-align: center;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      letter-spacing: 0.06em;
+      color: var(--navy);
+      border-right: 1px solid var(--line);
+    }
+    .time {
+      background: #f7f9fb;
+      text-align: right;
+      padding: 0.3rem 0.45rem;
+      font-variant-numeric: tabular-nums;
+      color: var(--muted);
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .slot-bg {
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+    .slot-bg.blocked {
+      background: repeating-linear-gradient(-45deg, #f3f4f6, #f3f4f6 6px, #eceff2 6px, #eceff2 12px);
+    }
+
+    .session-wrap[data-type="lecture"], .swatch[data-type="lecture"] { background: var(--lecture); }
+    .session-wrap[data-type="lab"], .swatch[data-type="lab"] { background: var(--lab); }
+    .session-wrap[data-type="lectorial"], .swatch[data-type="lectorial"] { background: var(--lectorial); }
+    .session-wrap[data-type="other"], .swatch[data-type="other"] { background: var(--other); }
+    .session-wrap { color: var(--text); }
+    button.session {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100%;
+      height: auto;
+      min-height: 100%;
+      border: 0;
+      border-radius: 0;
+      text-align: left;
+      padding: 0.28rem 0.4rem 0.22rem;
+      color: inherit;
+      background: inherit;
+      font: inherit;
+      cursor: pointer;
+      overflow: visible;
+      gap: 0.12rem;
+    }
+    .session-wrap {
+      min-height: 100%;
+      height: auto;
+      overflow: visible;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      z-index: 1;
+    }
+    .session-wrap.selected { outline: 2px solid var(--navy); outline-offset: -2px; z-index: 2; }
+    button.session:hover { filter: brightness(0.97); }
+    .s-name {
+      flex: 0 0 auto;
+      font-weight: 650;
+      font-size: 0.74rem;
+      line-height: 1.2;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      hyphens: auto;
+    }
+    .s-meta {
+      flex: 0 1 auto;
+      min-height: 0;
+      overflow: hidden;
+      font-size: 0.68rem;
+      opacity: 0.9;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.2rem;
+      align-items: center;
+    }
+    .s-staff {
+      flex: 0 0 auto;
+      overflow: visible;
+      font-size: 0.68rem;
+      line-height: 1.25;
+    }
+    button.session.compact-initials .s-name { font-size: 0.7rem; line-height: 1.18; }
+    .s-staff .who { font-weight: 700; }
+    .s-staff .support { font-weight: 400; }
+    .type-pill, .tb-pill, .role-pill {
+      display: inline-block;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background: rgba(255,255,255,0.45);
+      padding: 0.05rem 0.3rem;
+      border-radius: 3px;
+    }
+    .role-pill.ml { background: rgba(14,40,65,0.16); }
+    .role-pill.sup { background: rgba(255,255,255,0.55); font-weight: 650; }
+    .detail-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem; }
+    .detail-header h2 { margin: 0; font-size: 1.05rem; text-transform: none; letter-spacing: 0; color: var(--text); flex: 1; }
+    .empty-detail { color: var(--muted); font-size: 0.9rem; }
+    .field { margin: 0.55rem 0; }
+    .field label, .add-staff label, .field-label { display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-bottom: 0.2rem; }
+    .tb-edit { display: flex; gap: 0.8rem; align-items: center; }
+    .tb-edit label.check { margin: 0; text-transform: none; letter-spacing: 0; font-size: 0.88rem; color: var(--text); }
+    .field input, .field textarea, .field select, .add-staff input {
+      width: 100%; font: inherit; padding: 0.35rem 0.45rem;
+      border: 1px solid var(--line); border-radius: 6px; background: #fff;
+    }
+    .field textarea { min-height: 4.2rem; resize: vertical; }
+    .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.45rem; }
+    .add-staff {
+      margin-top: 1.2rem; padding-top: 0.8rem; border-top: 1px solid var(--line);
+    }
+    .add-staff .grid2 { display: grid; grid-template-columns: 1fr auto; gap: 0.4rem; align-items: end; }
+    .muted { color: var(--muted); }
+    .staff-search {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.35rem;
+      margin: 0 0 0.45rem;
+    }
+    .staff-search input {
+      width: 100%; font: inherit; padding: 0.35rem 0.45rem;
+      border: 1px solid var(--line); border-radius: 6px; background: #fff;
+    }
+    .staff-search button { padding: 0.35rem 0.6rem; }
+    .staff-table-wrap {
+      max-height: 16.5rem;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+    table.staff-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.84rem;
+    }
+    table.staff-table th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: #f6f8fa;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      font-weight: 650;
+      padding: 0.32rem 0.4rem;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+    }
+    table.staff-table th.tick,
+    table.staff-table td.tick {
+      text-align: center;
+      width: 3.6rem;
+      padding-left: 0.2rem;
+      padding-right: 0.2rem;
+    }
+    table.staff-table td {
+      padding: 0.22rem 0.4rem;
+      border-bottom: 1px solid #eef1f4;
+      vertical-align: middle;
+    }
+    table.staff-table tr.assigned td { background: #f4f8fb; }
+    table.staff-table .staff-name {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    table.staff-table .swatch { margin-top: 0; }
+    #staff-search-empty { margin: 0.4rem 0.5rem 0.5rem; font-size: 0.8rem; }
+    .detail-actions { display: flex; gap: 0.4rem; margin-top: 1rem; }
+    footer.rooms {
+      margin-top: 1rem; font-size: 0.8rem; color: var(--muted);
+    }
+    footer.rooms ul { margin: 0.2rem 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; }
+    @media (max-width: 900px) {
+      .layout, body.detail-open .layout { grid-template-columns: 1fr; }
+      aside.filters, aside.detail { position: static; max-height: none; border: 0; border-bottom: 1px solid var(--line); }
+    }
+    @media print {
+      body { background: #fff; }
+      .session-wrap[data-type="lecture"] { background: var(--lecture); }
+      .session-wrap[data-type="lab"] { background: var(--lab); }
+      .session-wrap[data-type="lectorial"] { background: var(--lectorial); }
+      .session-wrap[data-type="other"] { background: var(--other); }
+      header.app-header, aside.filters, aside.detail, .dropzone, #status, .header-actions, .row-actions, footer.rooms { display: none !important; }
+      .layout, body.detail-open .layout { display: block; }
+      main.board { padding: 0; }
+      .grid-wrap { box-shadow: none; border: 0; max-height: none; overflow: visible; }
+      body::before {
+        content: attr(data-print-title);
+        display: block;
+        font-size: 14pt;
+        font-weight: 700;
+        margin: 0 0 8pt;
+        color: #0e2841;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <h1 id="doc-title">Timetable</h1>
+      <p class="sub" id="doc-sub">Load a timetable JSON file to begin</p>
+    </div>
+    <div class="header-actions">
+      <span class="dirty-dot" title="Unsaved changes in this browser session"></span>
+      <label class="file-btn">Open JSON<input type="file" id="file-input" accept="application/json,.json"></label>
+      <button type="button" class="ghost" id="btn-add">Add session</button>
+      <button type="button" class="ghost" id="btn-download">Download JSON</button>
+      <button type="button" class="ghost" id="btn-print">Print</button>
+    </div>
+  </header>
+  <div class="layout">
+    <aside class="filters" id="filters-panel" hidden>
+      <h2>Year groups</h2>
+      <div class="row-actions">
+        <button type="button" data-all="year" data-on="1">All</button>
+        <button type="button" data-all="year" data-on="0">None</button>
+      </div>
+      <div class="filter-group" id="year-filters"></div>
+
+      <h2>Session type</h2>
+      <div class="filter-group" id="type-filters"></div>
+
+      <h2>Teaching block</h2>
+      <div class="row-actions">
+        <button type="button" data-all="tb" data-on="1">All</button>
+        <button type="button" data-all="tb" data-on="0">None</button>
+      </div>
+      <div class="filter-group" id="tb-filters"></div>
+
+      <h2>Staff role</h2>
+      <div class="filter-group" id="role-filters"></div>
+
+      <h2>Staff</h2>
+      <div class="row-actions">
+        <button type="button" data-all="staff" data-on="1">All</button>
+        <button type="button" data-all="staff" data-on="0">None</button>
+      </div>
+      <div class="filter-group" id="staff-filters"></div>
+
+      <h2>Add staff</h2>
+      <form class="add-staff" id="add-staff-form">
+        <label for="new-name">Name</label>
+        <input id="new-name" name="name" required placeholder="Full name" autocomplete="name">
+        <label for="new-email">Email (optional)</label>
+        <input id="new-email" name="email" type="email" placeholder="name@uwe.ac.uk" autocomplete="email">
+        <div class="grid2">
+          <div>
+            <label for="new-colour">Colour</label>
+            <input id="new-colour" name="colour" type="color" value="#156082">
+          </div>
+          <button type="submit" class="secondary">Add</button>
+        </div>
+      </form>
+    </aside>
+    <main class="board">
+      <p id="status">Looking for timetable.json…</p>
+      <div class="dropzone" id="dropzone">
+        <p><strong>Drop a timetable.json file here</strong>, or use Open JSON in the header.</p>
+        <p>This fallback is used when the page is opened as a file (file://) and cannot fetch the JSON itself.</p>
+      </div>
+      <div class="legend" id="legend" hidden></div>
+      <p class="count" id="visible-count" hidden></p>
+      <div class="grid-wrap" id="grid-wrap" hidden></div>
+      <footer class="rooms" id="rooms-footer" hidden></footer>
+    </main>
+    <aside class="detail" id="detail-panel" hidden></aside>
+  </div>
+  <script>
+  (function () {
+    const DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+    const HOURS = Array.from({ length: 11 }, (_, i) => {
+      const pad = (n) => String(n).padStart(2, "0");
+      return { start: pad(i + 9) + ":00", end: pad(i + 10) + ":00" };
+    });
+    const TIME_OPTIONS = Array.from({ length: 12 }, (_, i) => String(i + 9).padStart(2, "0") + ":00");
+    const TYPE_LABELS = { lecture: "Lecture", lab: "Lab", lectorial: "Lectorial", other: "Other" };
+    const TYPE_ORDER = ["lecture", "lab", "lectorial", "other"];
+
+    function typeColour(type) {
+      const key = TYPE_ORDER.includes(type) ? type : "other";
+      const v = getComputedStyle(document.documentElement).getPropertyValue("--" + key).trim();
+      return v || "#b7afa5";
+    }
+    const TB_OPTIONS = ["TB1", "TB2"];
+
+    const els = {
+      title: document.getElementById("doc-title"),
+      sub: document.getElementById("doc-sub"),
+      status: document.getElementById("status"),
+      dropzone: document.getElementById("dropzone"),
+      legend: document.getElementById("legend"),
+      count: document.getElementById("visible-count"),
+      grid: document.getElementById("grid-wrap"),
+      rooms: document.getElementById("rooms-footer"),
+      filters: document.getElementById("filters-panel"),
+      detail: document.getElementById("detail-panel"),
+      yearFilters: document.getElementById("year-filters"),
+      typeFilters: document.getElementById("type-filters"),
+      tbFilters: document.getElementById("tb-filters"),
+      roleFilters: document.getElementById("role-filters"),
+      staffFilters: document.getElementById("staff-filters"),
+      fileInput: document.getElementById("file-input"),
+    };
+
+    let data = null;
+    let dirty = false;
+    let selectedId = null;
+    let staffSearchQuery = "";
+    const filters = {
+      yearGroups: new Set(),
+      types: new Set(["lecture", "lab", "lectorial", "other"]),
+      teachingBlocks: new Set(["TB1", "TB2", "unset"]),
+      roleLeader: true,
+      roleSupport: true,
+      staff: new Set(),
+      unassigned: true,
+    };
+
+    function setDirty(v) {
+      dirty = v;
+      document.body.classList.toggle("is-dirty", v);
+    }
+
+    function escapeHtml(s) {
+      return String(s ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function slugify(s) {
+      return String(s)
+        .toLowerCase()
+        .replace(/&/g, " and ")
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-|-$/g, "")
+        .slice(0, 48) || "item";
+    }
+
+    function textColour(bg) {
+      if (!bg) return "#17202a";
+      const h = bg.replace("#", "");
+      if (h.length !== 6) return "#17202a";
+      const r = parseInt(h.slice(0, 2), 16);
+      const g = parseInt(h.slice(2, 4), 16);
+      const b = parseInt(h.slice(4, 6), 16);
+      const l = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
+      return l > 0.58 ? "#17202a" : "#ffffff";
+    }
+
+    function sessionColour(s) {
+      return typeColour(s.type);
+    }
+
+    function staffById(id) {
+      return (data.staff || []).find((p) => p.id === id);
+    }
+
+    function staffSortedByName() {
+      return (data.staff || []).slice().sort((a, b) =>
+        String(a.name || "").localeCompare(String(b.name || ""), undefined, { sensitivity: "base" })
+        || String(a.id || "").localeCompare(String(b.id || ""))
+      );
+    }
+
+    function yearName(id) {
+      const y = (data.yearGroups || []).find((g) => g.id === id);
+      return y ? y.name : id;
+    }
+
+    function leadersOf(s) { return Array.isArray(s.moduleLeaders) ? s.moduleLeaders : []; }
+    function supportOf(s) { return Array.isArray(s.supportStaff) ? s.supportStaff : []; }
+
+    function migrateTeachingBlock(val) {
+      if (Array.isArray(val)) {
+        const set = new Set();
+        val.forEach((x) => {
+          if (x === "Both") { set.add("TB1"); set.add("TB2"); }
+          else if (x === "TB1" || x === "TB2") set.add(x);
+        });
+        return TB_OPTIONS.filter((t) => set.has(t));
+      }
+      if (val === "Both") return ["TB1", "TB2"];
+      if (val === "TB1" || val === "TB2") return [val];
+      return [];
+    }
+
+    function tbBlocks(s) {
+      return migrateTeachingBlock(s && s.teachingBlock);
+    }
+
+    function tbBadgeText(s) {
+      return tbBlocks(s).join(" ");
+    }
+
+    function migrateIfNeeded(doc) {
+      if (!Array.isArray(doc.sessions)) return doc;
+      doc.sessions.forEach((s) => {
+        if (!Array.isArray(s.moduleLeaders) && Array.isArray(s.staff)) {
+          s.moduleLeaders = s.staff.slice();
+        }
+        if (!Array.isArray(s.moduleLeaders)) s.moduleLeaders = [];
+        if (!Array.isArray(s.supportStaff)) s.supportStaff = [];
+        delete s.staff;
+        s.teachingBlock = migrateTeachingBlock(s.teachingBlock);
+        const colour = (s.colourHex || "").toUpperCase();
+        const notes = s.notes || "";
+        if (s.type === "other" && (colour === "#E97132" || /Spreadsheet key:\s*Lectorial/i.test(notes))) {
+          s.type = "lectorial";
+        }
+      });
+      return doc;
+    }
+
+    function isVisible(s) {
+      if (!filters.yearGroups.has(s.yearGroup)) return false;
+      if (!filters.types.has(s.type)) return false;
+      const blocks = tbBlocks(s);
+      const tbOk = blocks.length === 0
+        ? filters.teachingBlocks.has("unset")
+        : blocks.some((b) => filters.teachingBlocks.has(b));
+      if (!tbOk) return false;
+      const lead = leadersOf(s);
+      const sup = supportOf(s);
+      if (lead.length === 0 && sup.length === 0) return filters.unassigned;
+      const leaderMatch = lead.some((id) => filters.staff.has(id));
+      const supportMatch = sup.some((id) => filters.staff.has(id));
+      if (filters.roleLeader && leaderMatch) return true;
+      if (filters.roleSupport && supportMatch) return true;
+      return false;
+    }
+
+    function hourIndex(hhmm) {
+      return parseInt(hhmm.slice(0, 2), 10) - 9;
+    }
+
+    function overlapsTime(a, b) {
+      return a.startTime < b.endTime && b.startTime < a.endTime;
+    }
+
+    function validateShape(doc) {
+      if (!doc || typeof doc !== "object") throw new Error("File is not a JSON object.");
+      if (!Array.isArray(doc.yearGroups) || !Array.isArray(doc.sessions) || !Array.isArray(doc.staff)) {
+        throw new Error("JSON must contain yearGroups, staff and sessions arrays.");
+      }
+    }
+
+    function initFiltersFromData() {
+      filters.yearGroups = new Set(data.yearGroups.map((y) => y.id));
+      filters.types = new Set(["lecture", "lab", "lectorial", "other"]);
+      filters.teachingBlocks = new Set(["TB1", "TB2", "unset"]);
+      filters.roleLeader = true;
+      filters.roleSupport = true;
+      filters.staff = new Set(data.staff.map((s) => s.id));
+      filters.unassigned = true;
+    }
+
+    function setStatus(msg, isError) {
+      els.status.textContent = msg;
+      els.status.classList.toggle("error", !!isError);
+    }
+
+    function updateSubtitle() {
+      const year = data.meta && data.meta.academicYear ? data.meta.academicYear + " · " : "";
+      const ver = data.meta && data.meta.schemaVersion ? " · schema " + data.meta.schemaVersion : "";
+      els.sub.textContent = year + data.sessions.length + " sessions · " + data.staff.length + " staff" + ver;
+    }
+
+    function renderFilters() {
+      els.yearFilters.innerHTML = data.yearGroups.map((y) => {
+        const checked = filters.yearGroups.has(y.id) ? "checked" : "";
+        return `<label class="check"><input type="checkbox" data-yg="${escapeHtml(y.id)}" ${checked}>${escapeHtml(y.name)}</label>`;
+      }).join("");
+
+      els.typeFilters.innerHTML = TYPE_ORDER.map((t) => {
+        const checked = filters.types.has(t) ? "checked" : "";
+        return `<label class="check"><span class="swatch" data-type="${t}"></span><input type="checkbox" data-type="${t}" ${checked}>${TYPE_LABELS[t]}</label>`;
+      }).join("");
+
+      els.tbFilters.innerHTML = ["TB1", "TB2", "unset"].map((t) => {
+        const checked = filters.teachingBlocks.has(t) ? "checked" : "";
+        const label = t === "unset" ? "Unset / not specified" : t;
+        return `<label class="check"><input type="checkbox" data-tb="${t}" ${checked}>${label}</label>`;
+      }).join("");
+
+      els.roleFilters.innerHTML =
+        `<label class="check"><input type="checkbox" data-role="leader" ${filters.roleLeader ? "checked" : ""}>Module leaders</label>` +
+        `<label class="check"><input type="checkbox" data-role="support" ${filters.roleSupport ? "checked" : ""}>Support staff</label>`;
+
+      const staffItems = staffSortedByName().map((p) => {
+        const checked = filters.staff.has(p.id) ? "checked" : "";
+        const sw = p.colour || "#888888";
+        return `<label class="check"><span class="swatch" style="background:${escapeHtml(sw)}"></span><input type="checkbox" data-staff="${escapeHtml(p.id)}" ${checked}>${escapeHtml(p.name)}</label>`;
+      }).join("");
+      const un = filters.unassigned ? "checked" : "";
+      els.staffFilters.innerHTML =
+        `<label class="check"><input type="checkbox" data-unassigned="1" ${un}>Unassigned</label>` + staffItems;
+    }
+
+    function renderLegend() {
+      els.legend.innerHTML = TYPE_ORDER.map((t) =>
+        `<span><span class="swatch" data-type="${t}"></span>${TYPE_LABELS[t]}</span>`
+      ).join("") +
+        `<span><span class="role-pill ml">ML</span> Module leader</span>` +
+        `<span><span class="role-pill sup">S</span> Support staff</span>`;
+      els.legend.hidden = false;
+    }
+
+    function renderRooms() {
+      if (!data.rooms || !data.rooms.length) {
+        els.rooms.hidden = true;
+        return;
+      }
+      els.rooms.innerHTML = "<strong>Rooms (inventory)</strong><ul>" + data.rooms.map((r) => {
+        const cap = r.capacity != null ? `, cap. ${r.capacity}` : "";
+        const typ = r.type ? `${escapeHtml(r.type)} · ` : "";
+        return `<li>${typ}${escapeHtml(r.name)}${cap}</li>`;
+      }).join("") + "</ul>";
+      els.rooms.hidden = false;
+    }
+
+    function isBlocked(day, ygId, hi) {
+      if (day === "Friday") return true;
+      if (day === "Wednesday" && hi >= 5 && ygId !== "msc") return true;
+      if (day === "Wednesday" && hi === 5 && ygId === "msc") return true;
+      return false;
+    }
+
+    function assignLanes(list) {
+      const sorted = list.slice().sort((a, b) =>
+        a.startTime.localeCompare(b.startTime) || b.endTime.localeCompare(a.endTime) || a.id.localeCompare(b.id)
+      );
+      const lanes = [];
+      const laneOf = new Map();
+      for (const s of sorted) {
+        let placed = false;
+        for (let i = 0; i < lanes.length; i++) {
+          if (!lanes[i].some((t) => overlapsTime(t, s))) {
+            lanes[i].push(s);
+            laneOf.set(s.id, i);
+            placed = true;
+            break;
+          }
+        }
+        if (!placed) {
+          laneOf.set(s.id, lanes.length);
+          lanes.push([s]);
+        }
+      }
+      return { n: Math.max(1, lanes.length), laneOf };
+    }
+
+    function displayName(full, mode) {
+      const cleaned = String(full || "").replace(/\s*\([^)]*\)\s*$/, "").trim();
+      const parts = cleaned.split(/\s+/).filter(Boolean);
+      if (!parts.length) return String(full || "");
+      if (mode === "initials") return parts.map((p) => p[0]).join("").toUpperCase();
+      if (mode === "short") {
+        if (parts.length === 1) return parts[0];
+        return parts[0][0].toUpperCase() + ". " + parts[parts.length - 1];
+      }
+      return String(full || "");
+    }
+
+    function staffLine(s, mode) {
+      const lead = leadersOf(s).map((id) => staffById(id)?.name || id);
+      const sup = supportOf(s).map((id) => staffById(id)?.name || id);
+      const bits = [];
+      if (lead.length) {
+        const shown = lead.map((n) => displayName(n, mode));
+        bits.push(`<span class="role-pill ml">ML</span> <span class="who" data-full="${escapeHtml(lead.join(", "))}">${escapeHtml(shown.join(", "))}</span>`);
+      }
+      if (sup.length) {
+        const shown = sup.map((n) => displayName(n, mode));
+        bits.push(`<span class="role-pill sup">S</span> <span class="support" data-full="${escapeHtml(sup.join(", "))}">${escapeHtml(shown.join(", "))}</span>`);
+      }
+      if (!bits.length) bits.push("Unassigned");
+      return bits.join("<br>");
+    }
+
+    function staffTooltip(s) {
+      const lead = leadersOf(s).map((id) => staffById(id)?.name || id);
+      const sup = supportOf(s).map((id) => staffById(id)?.name || id);
+      const bits = [];
+      if (lead.length) bits.push("ML " + lead.join(", "));
+      if (sup.length) bits.push("S " + sup.join(", "));
+      return bits.join(" · ");
+    }
+
+    function sessionTooltip(s) {
+      const when = s.startTime + "–" + s.endTime;
+      const parts = [s.moduleName, s.day + " " + when];
+      const staff = staffTooltip(s);
+      if (staff) parts.push(staff);
+      const tb = tbBadgeText(s);
+      if (tb) parts.push(tb);
+      return parts.join(" · ");
+    }
+
+    function renderGrid() {
+      const ygs = data.yearGroups.filter((y) => filters.yearGroups.has(y.id));
+      if (!ygs.length) {
+        els.grid.innerHTML = "<p class='muted' style='padding:1rem'>Turn on at least one year group to see the grid.</p>";
+        els.grid.hidden = false;
+        els.count.hidden = false;
+        els.count.textContent = "0 sessions visible";
+        return;
+      }
+
+      const visible = data.sessions.filter(isVisible);
+      const lanesByDayYg = {};
+      const maxLanes = {};
+      ygs.forEach((y) => { maxLanes[y.id] = 1; });
+      DAYS.forEach((day) => {
+        ygs.forEach((y) => {
+          const list = visible.filter((s) => s.day === day && s.yearGroup === y.id);
+          const assigned = assignLanes(list);
+          lanesByDayYg[day + "|" + y.id] = assigned;
+          maxLanes[y.id] = Math.max(maxLanes[y.id], assigned.n);
+        });
+      });
+
+      const colCount = 2 + ygs.reduce((n, y) => n + maxLanes[y.id], 0);
+      const cols = `var(--day-w) var(--time-w) ` + ygs.map((y) => `repeat(${maxLanes[y.id]}, minmax(7.2rem, 1fr))`).join(" ");
+
+      let head = `<div class="week-head" style="grid-template-columns:${cols}">`;
+      head += `<div class="corner">Day</div><div>Time</div>`;
+      ygs.forEach((y) => {
+        head += `<div style="grid-column: span ${maxLanes[y.id]}">${escapeHtml(y.name)}</div>`;
+      });
+      head += `</div>`;
+
+      let body = "";
+      DAYS.forEach((day) => {
+        body += `<div class="day-grid" style="grid-template-columns:${cols};grid-template-rows:repeat(${HOURS.length}, minmax(var(--row-h), auto))">`;
+        body += `<div class="day-label" style="grid-column:1;grid-row:1 / span ${HOURS.length}">${escapeHtml(day)}</div>`;
+        HOURS.forEach((hour, hi) => {
+          body += `<div class="time" style="grid-column:2;grid-row:${hi + 1}">${hour.start}</div>`;
+          let cursor = 3;
+          ygs.forEach((y) => {
+            const span = maxLanes[y.id];
+            const blocked = isBlocked(day, y.id, hi) ? " blocked" : "";
+            body += `<div class="slot-bg${blocked}" style="grid-column:${cursor} / span ${span};grid-row:${hi + 1}"></div>`;
+            cursor += span;
+          });
+        });
+
+        ygs.forEach((y, yi) => {
+          let col0 = 3;
+          for (let i = 0; i < yi; i++) col0 += maxLanes[ygs[i].id];
+          const info = lanesByDayYg[day + "|" + y.id];
+          const localN = info.n;
+          const globalN = maxLanes[y.id];
+          visible.filter((s) => s.day === day && s.yearGroup === y.id).forEach((s) => {
+            const start = hourIndex(s.startTime);
+            const end = hourIndex(s.endTime);
+            if (start < 0 || end <= start) return;
+            const lane = info.laneOf.get(s.id) || 0;
+            const span = localN === 1 ? globalN : 1;
+            const col = col0 + (localN === 1 ? 0 : lane);
+            const type = TYPE_ORDER.includes(s.type) ? s.type : "other";
+            const sel = s.id === selectedId ? " selected" : "";
+            const tbText = tbBadgeText(s);
+            const tb = tbText ? `<span class="tb-pill">${escapeHtml(tbText)}</span>` : "";
+            const tip = sessionTooltip(s);
+            body += `<div class="session-wrap${sel}" data-type="${type}" style="grid-column:${col} / span ${span};grid-row:${start + 1} / ${end + 1}">
+              <button type="button" class="session" data-id="${escapeHtml(s.id)}" title="${escapeHtml(tip)}">
+                <div class="s-name">${escapeHtml(s.moduleName)}</div>
+                <div class="s-meta"><span class="type-pill">${escapeHtml(TYPE_LABELS[s.type] || s.type)}</span>${tb}</div>
+                <div class="s-staff">${staffLine(s, "short")}</div>
+              </button>
+            </div>`;
+          });
+        });
+        body += `</div>`;
+      });
+
+      els.grid.innerHTML = `<div class="week">${head}${body}</div>`;
+      els.grid.hidden = false;
+      els.count.hidden = false;
+      els.count.textContent = `${visible.length} of ${data.sessions.length} sessions visible`;
+      fitSessionCards();
+    }
+
+    function cardOverflows(btn) {
+      const wrap = btn.closest(".session-wrap") || btn;
+      const box = wrap.getBoundingClientRect();
+      const parts = [btn, btn.querySelector(".s-name"), btn.querySelector(".s-staff")].filter(Boolean);
+      return parts.some((el) => {
+        const r = el.getBoundingClientRect();
+        return r.bottom > box.bottom + 1
+          || r.right > box.right + 1
+          || el.scrollHeight > el.clientHeight + 1
+          || el.scrollWidth > el.clientWidth + 1;
+      });
+    }
+
+    function applyStaffMode(btn, mode) {
+      btn.querySelectorAll(".who, .support").forEach((el) => {
+        const full = el.getAttribute("data-full") || el.textContent;
+        const names = full.split(/,\s*/).filter(Boolean);
+        el.textContent = names.map((n) => displayName(n, mode)).join(", ");
+      });
+      btn.classList.toggle("compact-initials", mode === "initials");
+    }
+
+    function fitSessionCards() {
+      els.grid.querySelectorAll("button.session").forEach((btn) => {
+        applyStaffMode(btn, "short");
+        if (cardOverflows(btn)) applyStaffMode(btn, "initials");
+      });
+    }
+
+    function optionList(values, selected, labels) {
+      return values.map((v) => {
+        const lab = labels && labels[v] != null ? labels[v] : v;
+        const sel = v === selected ? " selected" : "";
+        return `<option value="${escapeHtml(v)}"${sel}>${escapeHtml(lab)}</option>`;
+      }).join("");
+    }
+
+    function renderDetail() {
+      const s = data && selectedId ? data.sessions.find((x) => x.id === selectedId) : null;
+      document.body.classList.toggle("detail-open", !!s);
+      els.detail.hidden = !s;
+      if (!s) return;
+
+      const roomOptions = (data.rooms || []).map((r) =>
+        `<option value="${escapeHtml(r.name)}"></option>`
+      ).join("");
+      const ygOpts = optionList(data.yearGroups.map((y) => y.id), s.yearGroup,
+        Object.fromEntries(data.yearGroups.map((y) => [y.id, y.name])));
+      const dayOpts = optionList(DAYS, s.day);
+      const startOpts = optionList(TIME_OPTIONS.slice(0, -1), s.startTime);
+      const endOpts = optionList(TIME_OPTIONS.slice(1), s.endTime);
+      const typeOpts = optionList(TYPE_ORDER, s.type, TYPE_LABELS);
+      const blocks = tbBlocks(s);
+
+      const peopleTable = staffAssignmentTable(s);
+
+      els.detail.innerHTML = `
+        <div class="detail-header">
+          <h2 id="detail-heading">${escapeHtml(s.moduleName)}</h2>
+          <button type="button" class="secondary" id="close-detail">Close</button>
+        </div>
+        <div class="field">
+          <label for="edit-name">Module name</label>
+          <input id="edit-name" value="${escapeHtml(s.moduleName)}">
+        </div>
+        <div class="field">
+          <label for="edit-code">Module code</label>
+          <input id="edit-code" value="${escapeHtml(s.moduleCode || "")}" placeholder="Optional">
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="edit-type">Type</label>
+            <select id="edit-type">${typeOpts}</select>
+          </div>
+          <div class="field">
+            <span class="field-label">Teaching block</span>
+            <div class="tb-edit" id="edit-tb">
+              <label class="check"><input type="checkbox" data-tb-edit="TB1" ${blocks.includes("TB1") ? "checked" : ""}>TB1</label>
+              <label class="check"><input type="checkbox" data-tb-edit="TB2" ${blocks.includes("TB2") ? "checked" : ""}>TB2</label>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label for="edit-yg">Year group</label>
+          <select id="edit-yg">${ygOpts}</select>
+        </div>
+        <div class="field">
+          <label for="edit-day">Day</label>
+          <select id="edit-day">${dayOpts}</select>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="edit-start">Start</label>
+            <select id="edit-start">${startOpts}</select>
+          </div>
+          <div class="field">
+            <label for="edit-end">End</label>
+            <select id="edit-end">${endOpts}</select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="edit-room">Room</label>
+          <input id="edit-room" list="room-list" value="${escapeHtml(s.room || "")}" placeholder="Optional">
+          <datalist id="room-list">${roomOptions}</datalist>
+        </div>
+        <div class="field">
+          <label for="edit-notes">Notes</label>
+          <textarea id="edit-notes" placeholder="Notes">${escapeHtml(s.notes || "")}</textarea>
+        </div>
+        <h2>Staff allocation</h2>
+        <p class="muted" style="margin:0 0 0.35rem;font-size:0.8rem">Tick ML or Support. A person can only hold one role on the same session. Assigned staff stay visible when you search.</p>
+        ${peopleTable}
+        <div class="detail-actions">
+          <button type="button" class="danger" id="delete-session">Delete session</button>
+        </div>
+        <p class="muted" style="font-size:0.75rem;margin-top:0.8rem">Id: ${escapeHtml(s.id)}</p>
+      `;
+      applyStaffSearch();
+    }
+
+    function staffAssignmentTable(s) {
+      const lead = new Set(leadersOf(s));
+      const sup = new Set(supportOf(s));
+      const staff = staffSortedByName();
+      if (!staff.length) {
+        return "<p class='muted'>No staff in the directory yet. Add someone in the left-hand panel.</p>";
+      }
+      const rows = staff.map((p) => {
+        const isAssigned = lead.has(p.id) || sup.has(p.id);
+        const sw = p.colour || "#888";
+        return `<tr class="${isAssigned ? "assigned" : ""}" data-name="${escapeHtml(p.name)}" data-id="${escapeHtml(p.id)}" data-assigned="${isAssigned ? "1" : "0"}">
+            <td><div class="staff-name"><span class="swatch" style="background:${escapeHtml(sw)}"></span>${escapeHtml(p.name)}</div></td>
+            <td class="tick"><input type="checkbox" data-assign="leader" data-id="${escapeHtml(p.id)}" ${lead.has(p.id) ? "checked" : ""} aria-label="Module leader: ${escapeHtml(p.name)}"></td>
+            <td class="tick"><input type="checkbox" data-assign="support" data-id="${escapeHtml(p.id)}" ${sup.has(p.id) ? "checked" : ""} aria-label="Support staff: ${escapeHtml(p.name)}"></td>
+          </tr>`;
+      }).join("");
+      return `<div class="staff-search">
+          <input type="search" id="staff-search" placeholder="Search staff" value="${escapeHtml(staffSearchQuery)}" autocomplete="off" aria-label="Search staff">
+          <button type="button" class="secondary" id="staff-search-clear">Clear</button>
+        </div>
+        <div class="staff-table-wrap">
+          <table class="staff-table" id="assign-list">
+            <thead>
+              <tr><th>Name</th><th class="tick">ML</th><th class="tick">Support</th></tr>
+            </thead>
+            <tbody>${rows}</tbody>
+          </table>
+          <p class="muted" id="staff-search-empty" hidden>No matching staff.</p>
+        </div>`;
+    }
+
+    function applyStaffSearch() {
+      const input = document.getElementById("staff-search");
+      if (input && input.value !== staffSearchQuery) input.value = staffSearchQuery;
+      const q = staffSearchQuery.trim().toLowerCase();
+      const rows = els.detail.querySelectorAll("#assign-list tbody tr");
+      if (!rows.length) return;
+      let visible = 0;
+      rows.forEach((tr) => {
+        const match = !q || (tr.dataset.name || "").toLowerCase().includes(q);
+        const assigned = tr.dataset.assigned === "1";
+        const show = match || assigned;
+        tr.hidden = !show;
+        if (show) visible += 1;
+      });
+      const empty = document.getElementById("staff-search-empty");
+      if (empty) empty.hidden = visible > 0;
+      const clearBtn = document.getElementById("staff-search-clear");
+      if (clearBtn) clearBtn.disabled = !staffSearchQuery;
+    }
+
+    function renderAll() {
+      if (!data) return;
+      const title = (data.meta && data.meta.title) || "Timetable";
+      els.title.textContent = title;
+      updateSubtitle();
+      document.body.dataset.printTitle = title;
+      document.title = title;
+      els.filters.hidden = false;
+      renderFilters();
+      renderLegend();
+      renderGrid();
+      renderRooms();
+      renderDetail();
+    }
+
+    function loadDocument(doc, sourceLabel) {
+      validateShape(doc);
+      data = migrateIfNeeded(doc);
+      if (!Array.isArray(data.staff)) data.staff = [];
+      if (data.meta && !data.meta.schemaVersion) data.meta.schemaVersion = "2.2.0";
+      selectedId = null;
+      staffSearchQuery = "";
+      initFiltersFromData();
+      setDirty(false);
+      els.dropzone.hidden = true;
+      setStatus("Loaded " + (sourceLabel || "timetable") + ".");
+      renderAll();
+    }
+
+    async function tryFetchJson() {
+      try {
+        const res = await fetch("timetable.json", { cache: "no-store" });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const doc = await res.json();
+        loadDocument(doc, "timetable.json");
+        return true;
+      } catch (err) {
+        setStatus("Could not fetch timetable.json automatically. Open the file or drop it onto the page. (" + err.message + ")", true);
+        els.dropzone.hidden = false;
+        return false;
+      }
+    }
+
+    function readFile(file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const doc = JSON.parse(reader.result);
+          loadDocument(doc, file.name);
+        } catch (err) {
+          setStatus("Could not read that file: " + err.message, true);
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function downloadJson() {
+      if (!data) return;
+      const blob = new Blob([JSON.stringify(data, null, 2) + "\n"], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "timetable.json";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(a.href);
+      setDirty(false);
+    }
+
+    function uniqueStaffId(name) {
+      let id = slugify(name);
+      const ids = new Set(data.staff.map((s) => s.id));
+      if (!ids.has(id)) return id;
+      let n = 2;
+      while (ids.has(id + "-" + n)) n += 1;
+      return id + "-" + n;
+    }
+
+    function uniqueSessionId(s) {
+      const base = [s.day.slice(0, 3).toLowerCase(), s.yearGroup, s.startTime.replace(":", ""), s.type, slugify(s.moduleName)].join("-");
+      const ids = new Set(data.sessions.map((x) => x.id));
+      if (!ids.has(base)) return base;
+      let n = 2;
+      while (ids.has(base + "-" + n)) n += 1;
+      return base + "-" + n;
+    }
+
+    function currentSession() {
+      return data && selectedId ? data.sessions.find((x) => x.id === selectedId) : null;
+    }
+
+    function addSession() {
+      if (!data) return;
+      const draft = {
+        id: "tmp",
+        moduleCode: null,
+        moduleName: "New session",
+        type: "lecture",
+        yearGroup: data.yearGroups[0].id,
+        day: "Monday",
+        startTime: "09:00",
+        endTime: "10:00",
+        teachingBlock: [],
+        room: null,
+        notes: null,
+        moduleLeaders: [],
+        supportStaff: [],
+        colourHex: typeColour("lecture")
+      };
+      draft.id = uniqueSessionId(draft);
+      data.sessions.push(draft);
+      staffSearchQuery = "";
+      selectedId = draft.id;
+      setDirty(true);
+      renderAll();
+    }
+
+    function deleteSession() {
+      const s = currentSession();
+      if (!s) return;
+      if (!confirm("Delete “" + s.moduleName + "” on " + s.day + " " + s.startTime + "–" + s.endTime + "?")) return;
+      data.sessions = data.sessions.filter((x) => x.id !== s.id);
+      selectedId = null;
+      setDirty(true);
+      renderAll();
+    }
+
+    els.fileInput.addEventListener("change", (e) => {
+      const f = e.target.files && e.target.files[0];
+      if (f) readFile(f);
+      e.target.value = "";
+    });
+    document.getElementById("btn-download").addEventListener("click", downloadJson);
+    document.getElementById("btn-print").addEventListener("click", () => window.print());
+    document.getElementById("btn-add").addEventListener("click", addSession);
+
+    ["dragenter", "dragover"].forEach((ev) => {
+      document.addEventListener(ev, (e) => {
+        e.preventDefault();
+        els.dropzone.classList.add("drag");
+        els.dropzone.hidden = false;
+      });
+    });
+    ["dragleave", "drop"].forEach((ev) => {
+      document.addEventListener(ev, (e) => {
+        e.preventDefault();
+        els.dropzone.classList.remove("drag");
+      });
+    });
+    document.addEventListener("drop", (e) => {
+      const f = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0];
+      if (f) readFile(f);
+    });
+
+    els.filters.addEventListener("change", (e) => {
+      const t = e.target;
+      if (t.dataset.yg) {
+        if (t.checked) filters.yearGroups.add(t.dataset.yg);
+        else filters.yearGroups.delete(t.dataset.yg);
+      } else if (t.dataset.type) {
+        if (t.checked) filters.types.add(t.dataset.type);
+        else filters.types.delete(t.dataset.type);
+      } else if (t.dataset.tb) {
+        if (t.checked) filters.teachingBlocks.add(t.dataset.tb);
+        else filters.teachingBlocks.delete(t.dataset.tb);
+      } else if (t.dataset.role === "leader") {
+        filters.roleLeader = t.checked;
+      } else if (t.dataset.role === "support") {
+        filters.roleSupport = t.checked;
+      } else if (t.dataset.unassigned) {
+        filters.unassigned = t.checked;
+      } else if (t.dataset.staff) {
+        if (t.checked) filters.staff.add(t.dataset.staff);
+        else filters.staff.delete(t.dataset.staff);
+      } else {
+        return;
+      }
+      renderGrid();
+    });
+
+    els.filters.addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-all]");
+      if (!btn || !data) return;
+      const on = btn.dataset.on === "1";
+      if (btn.dataset.all === "year") {
+        filters.yearGroups = on ? new Set(data.yearGroups.map((y) => y.id)) : new Set();
+      } else if (btn.dataset.all === "staff") {
+        filters.staff = on ? new Set(data.staff.map((s) => s.id)) : new Set();
+        filters.unassigned = on;
+      } else if (btn.dataset.all === "tb") {
+        filters.teachingBlocks = on ? new Set(["TB1", "TB2", "unset"]) : new Set();
+      }
+      renderFilters();
+      renderGrid();
+    });
+
+    document.getElementById("add-staff-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!data) return;
+      const form = e.target;
+      const name = form.name.value.trim();
+      if (!name) return;
+      const email = form.email.value.trim() || null;
+      const colour = form.colour.value || "#156082";
+      const person = { id: uniqueStaffId(name), name, email, colour };
+      data.staff.push(person);
+      filters.staff.add(person.id);
+      form.reset();
+      form.colour.value = colour;
+      setDirty(true);
+      updateSubtitle();
+      renderFilters();
+      renderDetail();
+      renderGrid();
+    });
+
+    els.grid.addEventListener("click", (e) => {
+      const btn = e.target.closest("button.session");
+      if (!btn) return;
+      if (btn.dataset.id !== selectedId) staffSearchQuery = "";
+      selectedId = btn.dataset.id;
+      renderGrid();
+      renderDetail();
+    });
+
+    els.detail.addEventListener("click", (e) => {
+      if (e.target.id === "close-detail") {
+        selectedId = null;
+        staffSearchQuery = "";
+        renderGrid();
+        renderDetail();
+      } else if (e.target.id === "delete-session") {
+        deleteSession();
+      } else if (e.target.id === "staff-search-clear") {
+        staffSearchQuery = "";
+        applyStaffSearch();
+        const input = document.getElementById("staff-search");
+        if (input) input.focus();
+      }
+    });
+
+    function applyField(s, field, value) {
+      if (field === "moduleName") {
+        s.moduleName = value.trim() || "Untitled session";
+        const heading = document.getElementById("detail-heading");
+        if (heading) heading.textContent = s.moduleName;
+      } else if (field === "moduleCode") {
+        s.moduleCode = value.trim() || null;
+      } else if (field === "type") {
+        s.type = value;
+      } else if (field === "teachingBlock") {
+        s.teachingBlock = value || null;
+      } else if (field === "yearGroup") {
+        s.yearGroup = value;
+      } else if (field === "day") {
+        s.day = value;
+      } else if (field === "startTime") {
+        s.startTime = value;
+        if (s.endTime <= s.startTime) {
+          const i = TIME_OPTIONS.indexOf(s.startTime);
+          s.endTime = TIME_OPTIONS[Math.min(i + 1, TIME_OPTIONS.length - 1)];
+          const end = document.getElementById("edit-end");
+          if (end) end.value = s.endTime;
+        }
+      } else if (field === "endTime") {
+        if (value > s.startTime) s.endTime = value;
+        else {
+          const end = document.getElementById("edit-end");
+          if (end) end.value = s.endTime;
+        }
+      } else if (field === "room") {
+        s.room = value.trim() || null;
+      } else if (field === "notes") {
+        s.notes = value.trim() || null;
+      }
+    }
+
+    els.detail.addEventListener("change", (e) => {
+      const s = currentSession();
+      if (!s) return;
+      const t = e.target;
+      if (t.dataset.assign) {
+        const id = t.dataset.id;
+        let lead = new Set(leadersOf(s));
+        let sup = new Set(supportOf(s));
+        if (t.dataset.assign === "leader") {
+          if (t.checked) { lead.add(id); sup.delete(id); }
+          else lead.delete(id);
+        } else {
+          if (t.checked) { sup.add(id); lead.delete(id); }
+          else sup.delete(id);
+        }
+        s.moduleLeaders = Array.from(lead);
+        s.supportStaff = Array.from(sup);
+        setDirty(true);
+        const keepAssign = { role: t.dataset.assign, id: t.dataset.id };
+        renderDetail();
+        renderGrid();
+        const again = els.detail.querySelector(`input[data-assign="${keepAssign.role}"][data-id="${CSS.escape(keepAssign.id)}"]`);
+        if (again) again.focus();
+        return;
+      }
+      if (t.dataset.tbEdit) {
+        const set = new Set(tbBlocks(s));
+        if (t.checked) set.add(t.dataset.tbEdit);
+        else set.delete(t.dataset.tbEdit);
+        s.teachingBlock = TB_OPTIONS.filter((b) => set.has(b));
+        setDirty(true);
+        renderGrid();
+        return;
+      }
+      const map = {
+        "edit-type": "type",
+        "edit-yg": "yearGroup",
+        "edit-day": "day",
+        "edit-start": "startTime",
+        "edit-end": "endTime",
+        "edit-room": "room",
+        "edit-code": "moduleCode",
+        "edit-name": "moduleName"
+      };
+      if (map[t.id]) {
+        applyField(s, map[t.id], t.value);
+        setDirty(true);
+        renderGrid();
+      }
+    });
+
+    els.detail.addEventListener("input", (e) => {
+      if (e.target.id === "staff-search") {
+        staffSearchQuery = e.target.value;
+        applyStaffSearch();
+        return;
+      }
+      const s = currentSession();
+      if (!s) return;
+      if (e.target.id === "edit-notes") {
+        applyField(s, "notes", e.target.value);
+        setDirty(true);
+      } else if (e.target.id === "edit-name") {
+        applyField(s, "moduleName", e.target.value);
+        setDirty(true);
+        // Update the visible card name without rebuilding the form (would steal focus).
+        const btn = els.grid.querySelector(`button.session[data-id="${CSS.escape(s.id)}"]`);
+        if (btn) {
+          const card = btn.querySelector(".s-name");
+          if (card) card.textContent = s.moduleName;
+          btn.title = sessionTooltip(s);
+          fitSessionCards();
+        }
+      } else if (e.target.id === "edit-code" || e.target.id === "edit-room") {
+        applyField(s, e.target.id === "edit-code" ? "moduleCode" : "room", e.target.value);
+        setDirty(true);
+      }
+    });
+
+    tryFetchJson();
+  })();
+  </script>
+</body>
+</html>
