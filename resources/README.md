@@ -21,3 +21,8 @@ A collection of online resources that are shared with the community.
 
 * [Publication Word Cloud](https://pa-legg.github.io/resources/publication-word-cloud/)
 
+
+## Timetable
+
+* [Interactive Timetable](https://pa-legg.github.io/resources/timetable/)
+
